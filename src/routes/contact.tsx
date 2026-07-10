@@ -6,9 +6,9 @@ import { useState } from "react";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Jeitinho, votre concierge à Rio" },
-      { name: "description", content: "Contactez Jeitinho pour préparer votre voyage à Rio de Janeiro. Réponse sous 24h." },
-      { property: "og:title", content: "Contact — Jeitinho" },
+      { title: "Contact & partenariats — Jeitinho" },
+      { name: "description", content: "Une idée d'article, une proposition d'interview, un partenariat ? Contactez la rédaction du blog Jeitinho." },
+      { property: "og:title", content: "Contact — Jeitinho Blog" },
       { property: "og:url", content: "/contact" },
     ],
     links: [{ rel: "canonical", href: "/contact" }],
@@ -23,9 +23,12 @@ function ContactPage() {
       <SiteHeader />
       <main className="mx-auto max-w-2xl px-5 md:px-8 py-20 md:py-28 flex-1">
         <p className="tracked-caps text-[10px] text-terracotta">Contact</p>
-        <h1 className="mt-4 text-5xl md:text-6xl">Parlez-nous de <em>votre voyage.</em></h1>
+        <h1 className="mt-4 text-5xl md:text-6xl">Une idée, un <em>partenariat ?</em></h1>
         <p className="mt-6 text-muted-foreground leading-relaxed">
-          Dites-nous quelques mots sur vos envies. On revient vers vous en moins de 24 heures avec des idées concrètes.
+          Proposition d'article, interview, retour sur un guide, partenariat éditorial : écrivez-nous, on répond sous 48 h.
+        </p>
+        <p className="mt-4 text-sm text-muted-foreground">
+          Pour organiser votre séjour à Rio, notre service de conciergerie est sur <a href="https://www.jeitinho.fr" target="_blank" rel="noopener" className="text-terracotta underline decoration-terracotta/40 underline-offset-4">jeitinho.fr</a>.
         </p>
 
         {sent ? (
@@ -41,7 +44,7 @@ function ContactPage() {
             {[
               { name: "prenom", label: "Prénom", type: "text" },
               { name: "email", label: "Email", type: "email" },
-              { name: "dates", label: "Dates approximatives", type: "text" },
+              { name: "sujet", label: "Sujet (article, interview, partenariat…)", type: "text" },
             ].map((f) => (
               <div key={f.name}>
                 <label htmlFor={f.name} className="tracked-caps text-[10px] text-terracotta">{f.label}</label>
@@ -55,7 +58,7 @@ function ContactPage() {
               </div>
             ))}
             <div>
-              <label htmlFor="message" className="tracked-caps text-[10px] text-terracotta">Votre voyage en quelques mots</label>
+              <label htmlFor="message" className="tracked-caps text-[10px] text-terracotta">Votre message</label>
               <textarea
                 id="message" name="message" rows={5} required
                 className="mt-2 w-full rounded-[3px] border border-border bg-card px-4 py-3 focus:outline-none focus:ring-2 focus:ring-ring"
