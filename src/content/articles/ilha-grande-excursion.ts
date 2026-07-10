@@ -12,7 +12,7 @@ export const article: Article = {
   author: "Marina Alves",
   hero,
   heroAlt: "Vue tropicale d'Ilha Grande au coucher du soleil",
-  relatedServices: [{ label: "Excursion Ilha Grande", href: "/experiences", description: "Transferts, bateau, hôtel, guide — on organise tout." }],
+  relatedServices: [{ label: "Excursion Ilha Grande", href: "https://www.jeitinho.fr/experiences", description: "Transferts, bateau, hôtel, guide — on organise tout." }],
   sections: [
     { type: "p", text: "Ilha Grande, c'est Rio de Janeiro sans les voitures, sans le bruit, avec des dizaines de plages désertes. Deux nuits minimum pour en profiter, trois pour vraiment décrocher." },
     { type: "h2", text: "Y aller depuis Rio" },

@@ -16,8 +16,8 @@ export const article: Article = {
   guide: true,
   popular: true,
   relatedServices: [
-    { label: "City tour privé", href: "/experiences", description: "On condense 25 idées en une journée sur mesure." },
-    { label: "Conciergerie", href: "/conciergerie", description: "Réservations, transferts, adresses : on s'occupe de tout." },
+    { label: "City tour privé", href: "https://www.jeitinho.fr/experiences", description: "On condense 25 idées en une journée sur mesure." },
+    { label: "Conciergerie", href: "https://www.jeitinho.fr/conciergerie", description: "Réservations, transferts, adresses : on s'occupe de tout." },
   ],
   sections: [
     { type: "p", text: "Il y a mille listes de « choses à faire à Rio ». La plupart se copient entre elles. Celle-ci est différente : on l'a écrite comme si on préparait le voyage d'un ami. Certaines idées sont évidentes (impossible d'y couper), d'autres sont notre carnet secret." },

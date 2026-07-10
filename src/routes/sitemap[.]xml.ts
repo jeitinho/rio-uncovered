@@ -11,11 +11,9 @@ export const Route = createFileRoute("/sitemap.xml")({
       GET: async () => {
         const urls: { loc: string; lastmod?: string; changefreq?: string; priority?: string }[] = [
           { loc: "/", changefreq: "weekly", priority: "1.0" },
-          { loc: "/experiences", changefreq: "monthly", priority: "0.8" },
-          { loc: "/conciergerie", changefreq: "monthly", priority: "0.8" },
+          { loc: "/blog", changefreq: "weekly", priority: "0.9" },
           { loc: "/a-propos", changefreq: "yearly", priority: "0.5" },
           { loc: "/contact", changefreq: "yearly", priority: "0.5" },
-          { loc: "/blog", changefreq: "weekly", priority: "0.9" },
         ];
         for (const c of CATEGORIES) urls.push({ loc: `/blog/categorie/${c.slug}`, changefreq: "weekly", priority: "0.7" });
         for (const a of getAllArticles()) urls.push({ loc: `/blog/${a.slug}`, lastmod: a.date, changefreq: "monthly", priority: "0.8" });

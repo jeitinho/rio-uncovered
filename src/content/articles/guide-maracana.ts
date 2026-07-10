@@ -15,7 +15,7 @@ export const article: Article = {
   featured: true,
   popular: true,
   relatedServices: [
-    { label: "Expérience Maracanã", href: "/experiences", description: "Billets, transfert, accompagnement par un supporter local. On sélectionne le meilleur match de la semaine." },
+    { label: "Expérience Maracanã", href: "https://www.jeitinho.fr/experiences", description: "Billets, transfert, accompagnement par un supporter local. On sélectionne le meilleur match de la semaine." },
   ],
   sections: [
     { type: "p", text: "Assister à un match au Maracanã n'est pas une activité touristique. C'est une immersion dans ce que Rio a de plus intense. Encore faut-il choisir le bon match, le bon secteur, et savoir comment y aller." },

@@ -1,17 +1,25 @@
 import { Link } from "@tanstack/react-router";
-import { Instagram } from "lucide-react";
+import { Instagram, ExternalLink } from "lucide-react";
+import logo from "@/assets/jeitinho-logo.png";
+import { CATEGORIES } from "@/content/categories";
 
 export function SiteFooter() {
+  const primaryCats = CATEGORIES.slice(0, 8);
+  const secondaryCats = CATEGORIES.slice(8);
+
   return (
     <footer className="mt-32 border-t border-border/60 bg-cream-deep/40">
       <div className="mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20 grid gap-12 md:grid-cols-4">
-        <div className="md:col-span-2">
-          <h3 className="text-3xl">
-            Jeitinho<span className="text-terracotta">.</span>
-          </h3>
+        <div className="md:col-span-1">
+          <Link to="/" className="flex items-center gap-2">
+            <img src={logo} alt="Jeitinho" className="h-9 w-auto" />
+            <span className="flex items-baseline gap-1.5">
+              <span className="font-serif text-2xl">Jeitinho</span>
+              <span className="tracked-caps text-[10px] text-terracotta">Blog</span>
+            </span>
+          </Link>
           <p className="mt-4 max-w-md text-sm text-muted-foreground leading-relaxed">
-            Conciergerie et expériences authentiques à Rio de Janeiro,
-            imaginées par des locaux passionnés. Découvrez le Brésil <em className="italic text-terracotta">autrement.</em>
+            Le guide francophone de Rio de Janeiro. Conseils, itinéraires, adresses et interviews par des locaux <em className="italic text-terracotta">passionnés.</em>
           </p>
           <a
             href="https://instagram.com"
@@ -24,20 +32,42 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <p className="tracked-caps text-[10px] text-terracotta">Découvrir</p>
+          <p className="tracked-caps text-[10px] text-terracotta">Catégories</p>
           <ul className="mt-4 space-y-2 text-sm">
-            <li><Link to="/experiences" className="hover:text-terracotta transition-colors">Expériences</Link></li>
-            <li><Link to="/conciergerie" className="hover:text-terracotta transition-colors">Conciergerie</Link></li>
-            <li><Link to="/blog" className="hover:text-terracotta transition-colors">Le Guide Jeitinho</Link></li>
-            <li><Link to="/a-propos" className="hover:text-terracotta transition-colors">À propos</Link></li>
+            {primaryCats.map((c) => (
+              <li key={c.slug}>
+                <Link to="/blog/categorie/$slug" params={{ slug: c.slug }} className="hover:text-terracotta transition-colors">
+                  {c.name}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 
         <div>
-          <p className="tracked-caps text-[10px] text-terracotta">Contact</p>
+          <p className="tracked-caps text-[10px] text-terracotta">Plus</p>
           <ul className="mt-4 space-y-2 text-sm">
-            <li><Link to="/contact" className="hover:text-terracotta transition-colors">Nous écrire</Link></li>
-            <li className="text-muted-foreground">Rio de Janeiro, Brésil</li>
+            {secondaryCats.map((c) => (
+              <li key={c.slug}>
+                <Link to="/blog/categorie/$slug" params={{ slug: c.slug }} className="hover:text-terracotta transition-colors">
+                  {c.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <p className="tracked-caps text-[10px] text-terracotta">Le site</p>
+          <ul className="mt-4 space-y-2 text-sm">
+            <li><Link to="/blog" className="hover:text-terracotta transition-colors">Tous les articles</Link></li>
+            <li><Link to="/a-propos" className="hover:text-terracotta transition-colors">À propos</Link></li>
+            <li><Link to="/contact" className="hover:text-terracotta transition-colors">Contact & partenariats</Link></li>
+            <li>
+              <a href="https://www.jeitinho.fr" target="_blank" rel="noopener" className="inline-flex items-center gap-1 hover:text-terracotta transition-colors">
+                Conciergerie <ExternalLink className="h-3 w-3" />
+              </a>
+            </li>
           </ul>
         </div>
       </div>

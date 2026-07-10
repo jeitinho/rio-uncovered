@@ -81,8 +81,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Jeitinho — Découvrez Rio de Janeiro autrement" },
-      { name: "description", content: "Conciergerie et expériences authentiques à Rio, imaginées par des locaux passionnés. Guides, itinéraires et conseils d'initiés pour un voyage inoubliable." },
+      { title: "Jeitinho — Le blog francophone sur Rio de Janeiro" },
+      { name: "description", content: "Conseils, guides, histoires, reviews et interviews sur Rio de Janeiro. Le guide francophone de référence, écrit par des locaux passionnés." },
       { name: "author", content: "Jeitinho" },
       { property: "og:site_name", content: "Jeitinho" },
       { property: "og:type", content: "website" },
@@ -106,8 +106,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Organization",
-          name: "Jeitinho",
-          description: "Conciergerie et expériences authentiques à Rio de Janeiro.",
+          name: "Jeitinho Blog",
+          description: "Blog francophone sur Rio de Janeiro : conseils, guides, interviews par des locaux.",
+          url: "https://www.jeitinho.fr",
           areaServed: "Rio de Janeiro, Brésil",
           inLanguage: "fr",
         }),

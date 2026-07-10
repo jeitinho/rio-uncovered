@@ -11,9 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as RssDotxmlRouteImport } from './routes/rss[.]xml'
-import { Route as ExperiencesRouteImport } from './routes/experiences'
 import { Route as ContactRouteImport } from './routes/contact'
-import { Route as ConciergerieRouteImport } from './routes/conciergerie'
 import { Route as AProposRouteImport } from './routes/a-propos'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
@@ -31,19 +29,9 @@ const RssDotxmlRoute = RssDotxmlRouteImport.update({
   path: '/rss.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ExperiencesRoute = ExperiencesRouteImport.update({
-  id: '/experiences',
-  path: '/experiences',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ConciergerieRoute = ConciergerieRouteImport.update({
-  id: '/conciergerie',
-  path: '/conciergerie',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AProposRoute = AProposRouteImport.update({
@@ -80,9 +68,7 @@ const BlogCategorieSlugRoute = BlogCategorieSlugRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/a-propos': typeof AProposRoute
-  '/conciergerie': typeof ConciergerieRoute
   '/contact': typeof ContactRoute
-  '/experiences': typeof ExperiencesRoute
   '/rss.xml': typeof RssDotxmlRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/blog/$slug': typeof BlogSlugRoute
@@ -93,9 +79,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/a-propos': typeof AProposRoute
-  '/conciergerie': typeof ConciergerieRoute
   '/contact': typeof ContactRoute
-  '/experiences': typeof ExperiencesRoute
   '/rss.xml': typeof RssDotxmlRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/blog/$slug': typeof BlogSlugRoute
@@ -107,9 +91,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/a-propos': typeof AProposRoute
-  '/conciergerie': typeof ConciergerieRoute
   '/contact': typeof ContactRoute
-  '/experiences': typeof ExperiencesRoute
   '/rss.xml': typeof RssDotxmlRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/blog/$slug': typeof BlogSlugRoute
@@ -122,9 +104,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/a-propos'
-    | '/conciergerie'
     | '/contact'
-    | '/experiences'
     | '/rss.xml'
     | '/sitemap.xml'
     | '/blog/$slug'
@@ -135,9 +115,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/a-propos'
-    | '/conciergerie'
     | '/contact'
-    | '/experiences'
     | '/rss.xml'
     | '/sitemap.xml'
     | '/blog/$slug'
@@ -148,9 +126,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/a-propos'
-    | '/conciergerie'
     | '/contact'
-    | '/experiences'
     | '/rss.xml'
     | '/sitemap.xml'
     | '/blog/$slug'
@@ -162,9 +138,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AProposRoute: typeof AProposRoute
-  ConciergerieRoute: typeof ConciergerieRoute
   ContactRoute: typeof ContactRoute
-  ExperiencesRoute: typeof ExperiencesRoute
   RssDotxmlRoute: typeof RssDotxmlRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   BlogSlugRoute: typeof BlogSlugRoute
@@ -189,25 +163,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof RssDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/experiences': {
-      id: '/experiences'
-      path: '/experiences'
-      fullPath: '/experiences'
-      preLoaderRoute: typeof ExperiencesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/contact': {
       id: '/contact'
       path: '/contact'
       fullPath: '/contact'
       preLoaderRoute: typeof ContactRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/conciergerie': {
-      id: '/conciergerie'
-      path: '/conciergerie'
-      fullPath: '/conciergerie'
-      preLoaderRoute: typeof ConciergerieRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/a-propos': {
@@ -258,9 +218,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AProposRoute: AProposRoute,
-  ConciergerieRoute: ConciergerieRoute,
   ContactRoute: ContactRoute,
-  ExperiencesRoute: ExperiencesRoute,
   RssDotxmlRoute: RssDotxmlRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   BlogSlugRoute: BlogSlugRoute,
