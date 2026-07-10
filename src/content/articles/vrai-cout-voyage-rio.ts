@@ -48,12 +48,13 @@ export const article: Article = {
 
     { type: "h2", text: "Les activités phares — prix indicatifs" },
     { type: "ul", items: [
-      "Christ Rédempteur (train) : 25 €",
-      "Pain de Sucre (téléphérique) : 30 €",
+      "Christ Rédempteur avec Jeitinho (3h) : 40 €",
+      "Pain de Sucre avec Jeitinho (3h) : 60 €",
       "Expérience Maracanã avec Jeitinho (billet + accompagnement) : 50 €",
-      "City tour privé (4h) : 120-180 € pour le groupe",
-      "Cours de surf à Copacabana : 30 € l'heure",
-      "Excursion journée Ilha Grande : 90-140 €",
+      "City Tour Jeitinho (3-4h) : 80 €",
+      "Randonnée Dois Irmãos ou Morro da Urca avec Jeitinho : 50 €",
+      "Excursion journée Ilha Grande, Búzios ou Arraial do Cabo (groupe) : 50 €",
+      "Tour d'hélicoptère (1h) : 185 € · Parapente / Deltaplane : 150 €",
     ]},
 
     { type: "h2", text: "Budget total pour une semaine (7 nuits)" },

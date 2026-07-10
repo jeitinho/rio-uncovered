@@ -20,6 +20,6 @@ export const article: Article = {
     { type: "p", text: "Trois étages, samba live, décor de brocanteur poète. Le lieu emblématique de Lapa." },
     { type: "h2", text: "Soirée 3 — MPB au Beco das Garrafas" },
     { type: "p", text: "Le berceau de la bossa nova. Petites salles intimes, musiciens de niveau."} ,
-    { type: "conseil", title: "Le conseil Jeitinho", text: "Un cours d'initiation à la samba (1h, 30 €) avant votre première roda vous change complètement l'expérience." },
+    { type: "conseil", title: "Le conseil Jeitinho", text: "Un atelier d'initiation à la samba avec Jeitinho (2h, sur demande) avant votre première roda vous change complètement l'expérience." },
   ],
 };
