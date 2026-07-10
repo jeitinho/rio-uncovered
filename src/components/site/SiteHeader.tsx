@@ -21,33 +21,47 @@ export function SiteHeader() {
 
   useEffect(() => {
     function onClick(e: MouseEvent) {
-      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(e.target as Node)
+      ) {
         setCatsOpen(false);
       }
     }
+
     document.addEventListener("mousedown", onClick);
     return () => document.removeEventListener("mousedown", onClick);
   }, []);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-border/60 bg-background/85 backdrop-blur">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 md:px-8 h-16 md:h-20">
+    <header className="sticky top-0 z-40 border-b border-border/60 bg-background/90 backdrop-blur">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-10 h-24">
+
         <Link
           to="/"
-          className="flex items-baseline gap-2"
           onClick={() => setOpen(false)}
-          aria-label="Jeitinho Blog — accueil"
+          aria-label="Jeitinho Blog"
+          className="flex items-center gap-3"
         >
-          <img src={logo} alt="Jeitinho" className="h-8 md:h-9 w-auto" />
-          <span className="tracked-caps text-[10px] md:text-[11px] text-terracotta">Blog</span>
+          <img
+            src={logo}
+            alt="Jeitinho"
+            className="h-20 w-auto shrink-0 object-contain"
+          />
+
+          <span className="tracked-caps text-[13px] text-terracotta">
+            BLOG
+          </span>
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-7">
+        <nav className="hidden lg:flex items-center gap-8">
           <Link
             to="/"
-            className="tracked-caps text-[11px] text-foreground/80 hover:text-terracotta transition-colors"
+            className="tracked-caps text-[13px] text-foreground/80 hover:text-terracotta transition-colors"
             activeOptions={{ exact: true }}
-            activeProps={{ className: "tracked-caps text-[11px] text-terracotta" }}
+            activeProps={{
+              className: "tracked-caps text-[13px] text-terracotta",
+            }}
           >
             Accueil
           </Link>
@@ -55,32 +69,39 @@ export function SiteHeader() {
           <div ref={dropdownRef} className="relative">
             <button
               onClick={() => setCatsOpen((v) => !v)}
-              className="flex items-center gap-1 tracked-caps text-[11px] text-foreground/80 hover:text-terracotta transition-colors"
-              aria-expanded={catsOpen}
-              aria-haspopup="true"
+              className="flex items-center gap-1 tracked-caps text-[13px] text-foreground/80 hover:text-terracotta transition-colors"
             >
-              Catégories <ChevronDown className={`h-3 w-3 transition-transform ${catsOpen ? "rotate-180" : ""}`} />
+              Catégories
+
+              <ChevronDown
+                className={`h-4 w-4 transition-transform ${
+                  catsOpen ? "rotate-180" : ""
+                }`}
+              />
             </button>
+
             {catsOpen && (
-              <div className="absolute left-1/2 top-full mt-4 -translate-x-1/2 w-[640px] rounded-[3px] border border-border bg-background shadow-lg p-6">
-                <div className="grid grid-cols-3 gap-x-6 gap-y-2">
+              <div className="absolute left-1/2 top-full mt-5 -translate-x-1/2 w-[680px] rounded border border-border bg-background shadow-xl p-6">
+
+                <div className="grid grid-cols-3 gap-x-6 gap-y-3">
                   {CATEGORIES.map((c) => (
                     <Link
                       key={c.slug}
                       to="/blog/categorie/$slug"
                       params={{ slug: c.slug }}
                       onClick={() => setCatsOpen(false)}
-                      className="text-sm text-foreground/80 hover:text-terracotta transition-colors py-1.5"
+                      className="text-sm hover:text-terracotta transition-colors"
                     >
                       {c.name}
                     </Link>
                   ))}
                 </div>
-                <div className="mt-5 pt-4 border-t border-border">
+
+                <div className="mt-6 pt-5 border-t border-border">
                   <Link
                     to="/blog"
                     onClick={() => setCatsOpen(false)}
-                    className="tracked-caps text-[10px] text-terracotta hover:text-terracotta-deep"
+                    className="tracked-caps text-[12px] text-terracotta hover:text-terracotta-deep"
                   >
                     Voir tous les articles →
                   </Link>
@@ -91,29 +112,40 @@ export function SiteHeader() {
 
           <Link
             to="/blog"
-            className="tracked-caps text-[11px] text-foreground/80 hover:text-terracotta transition-colors"
-            activeProps={{ className: "tracked-caps text-[11px] text-terracotta" }}
+            className="tracked-caps text-[13px] text-foreground/80 hover:text-terracotta transition-colors"
+            activeProps={{
+              className: "tracked-caps text-[13px] text-terracotta",
+            }}
           >
             Articles
           </Link>
+
           <Link
             to="/auteurs"
-            className="tracked-caps text-[11px] text-foreground/80 hover:text-terracotta transition-colors"
-            activeProps={{ className: "tracked-caps text-[11px] text-terracotta" }}
+            className="tracked-caps text-[13px] text-foreground/80 hover:text-terracotta transition-colors"
+            activeProps={{
+              className: "tracked-caps text-[13px] text-terracotta",
+            }}
           >
             Équipe
           </Link>
+
           <Link
             to="/a-propos"
-            className="tracked-caps text-[11px] text-foreground/80 hover:text-terracotta transition-colors"
-            activeProps={{ className: "tracked-caps text-[11px] text-terracotta" }}
+            className="tracked-caps text-[13px] text-foreground/80 hover:text-terracotta transition-colors"
+            activeProps={{
+              className: "tracked-caps text-[13px] text-terracotta",
+            }}
           >
             À propos
           </Link>
+
           <Link
             to="/contact"
-            className="tracked-caps text-[11px] text-foreground/80 hover:text-terracotta transition-colors"
-            activeProps={{ className: "tracked-caps text-[11px] text-terracotta" }}
+            className="tracked-caps text-[13px] text-foreground/80 hover:text-terracotta transition-colors"
+            activeProps={{
+              className: "tracked-caps text-[13px] text-terracotta",
+            }}
           >
             Contact
           </Link>
@@ -124,30 +156,37 @@ export function SiteHeader() {
             href={CONCIERGERIE_BOOK_URL}
             target="_blank"
             rel="noopener"
-            className="inline-flex items-center gap-1.5 rounded-[3px] bg-primary px-4 py-2.5 tracked-caps text-[10px] text-primary-foreground hover:bg-terracotta-deep transition-colors"
+            className="inline-flex items-center gap-2 rounded bg-primary px-5 py-3 tracked-caps text-[11px] text-primary-foreground hover:bg-terracotta-deep transition-colors"
           >
-            Conciergerie <ExternalLink className="h-3 w-3" />
+            Conciergerie
+
+            <ExternalLink className="h-4 w-4" />
           </a>
         </div>
 
         <button
           onClick={() => setOpen((v) => !v)}
-          className="lg:hidden p-2 text-foreground"
-          aria-label="Menu"
+          className="lg:hidden p-2"
         >
-          {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          {open ? (
+            <X className="h-7 w-7" />
+          ) : (
+            <Menu className="h-7 w-7" />
+          )}
         </button>
       </div>
 
       {open && (
-        <div className="lg:hidden border-t border-border/60 bg-background max-h-[80vh] overflow-y-auto">
-          <nav className="flex flex-col px-5 py-4 gap-1">
+        <div className="lg:hidden border-t border-border bg-background">
+
+          <nav className="flex flex-col px-5 py-4 gap-2">
+
             {NAV.map((item) => (
               <Link
                 key={item.to}
                 to={item.to}
                 onClick={() => setOpen(false)}
-                className="tracked-caps text-xs text-foreground/80 py-3 border-b border-border/40"
+                className="tracked-caps text-sm py-3 border-b border-border/40"
               >
                 {item.label}
               </Link>
@@ -155,21 +194,26 @@ export function SiteHeader() {
 
             <button
               onClick={() => setMobileCatsOpen((v) => !v)}
-              className="flex items-center justify-between tracked-caps text-xs text-foreground/80 py-3 border-b border-border/40"
-              aria-expanded={mobileCatsOpen}
+              className="flex items-center justify-between tracked-caps text-sm py-3 border-b border-border/40"
             >
               Catégories
-              <ChevronDown className={`h-3.5 w-3.5 transition-transform ${mobileCatsOpen ? "rotate-180" : ""}`} />
+
+              <ChevronDown
+                className={`h-4 w-4 ${
+                  mobileCatsOpen ? "rotate-180" : ""
+                }`}
+              />
             </button>
+
             {mobileCatsOpen && (
-              <div className="grid grid-cols-2 gap-x-4 gap-y-1 py-3 border-b border-border/40">
+              <div className="grid grid-cols-2 gap-2 py-4">
                 {CATEGORIES.map((c) => (
                   <Link
                     key={c.slug}
                     to="/blog/categorie/$slug"
                     params={{ slug: c.slug }}
                     onClick={() => setOpen(false)}
-                    className="text-sm text-foreground/80 py-1.5"
+                    className="text-sm py-1"
                   >
                     {c.name}
                   </Link>
@@ -181,11 +225,15 @@ export function SiteHeader() {
               href={CONCIERGERIE_BOOK_URL}
               target="_blank"
               rel="noopener"
-              className="mt-3 inline-flex items-center justify-center gap-1.5 rounded-[3px] bg-primary px-5 py-3 tracked-caps text-xs text-primary-foreground"
+              className="mt-4 inline-flex items-center justify-center gap-2 rounded bg-primary px-5 py-3 tracked-caps text-sm text-primary-foreground"
             >
-              Conciergerie <ExternalLink className="h-3 w-3" />
+              Conciergerie
+
+              <ExternalLink className="h-4 w-4" />
             </a>
+
           </nav>
+
         </div>
       )}
     </header>
