@@ -15,8 +15,8 @@ export const Route = createFileRoute("/")({
     meta: [
       { title: "Jeitinho — Le blog francophone sur Rio de Janeiro" },
       { name: "description", content: "Conseils, histoires, interviews et carnet d'adresses sur Rio de Janeiro. Écrit par des locaux passionnés." },
-      { property: "og:title", content: "Jeitinho — Le blog francophone sur Rio" },
-      { property: "og:description", content: "Conseils, histoires, reviews et interviews sur Rio de Janeiro." },
+      { property: "og:title", content: "Jeitinho — Le blog francophone sur Rio de Janeiro" },
+      { property: "og:description", content: "Conseils, histoires, interviews et carnet d'adresses sur Rio de Janeiro. Écrit par des locaux passionnés." },
       { property: "og:url", content: "/" },
     ],
     links: [
