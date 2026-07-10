@@ -16,7 +16,7 @@ export const article: Article = {
   guide: true,
   popular: true,
   relatedServices: [
-    { label: "Conciergerie Carnaval", href: "https://www.jeitinho.fr/conciergerie", description: "Places Sambodrome, camarotes, logement, transferts — on gère la logistique." },
+    { label: "Conciergerie Carnaval", href: "https://www.jeitinho.fr/trouver-un-jeitinho", description: "Places Sambodrome, camarotes, logement, transferts — on gère la logistique." },
   ],
   sections: [
     { type: "p", text: "Le Carnaval de Rio est un chef-d'œuvre logistique déguisé en fête. Pour en profiter, il faut préparer — pas improviser. Ce guide est écrit à partir de six éditions vécues sur place." },
