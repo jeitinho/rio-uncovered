@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import type { Article } from "@/content/types";
 import { getCategoryBySlug } from "@/content/categories";
 import { readingTime } from "@/content/types";
-import { resolveAuthor } from "@/content/authors";
+
 
 const MONTHS_FR = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
 function formatDate(iso: string) {
