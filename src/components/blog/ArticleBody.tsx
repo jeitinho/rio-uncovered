@@ -44,9 +44,40 @@ export function ArticleBody({ sections }: { sections: Section[] }) {
           case "image":
             return (
               <figure key={i} className="my-8">
-                <img src={s.src} alt={s.alt} loading="lazy" className="rounded-[3px]" />
-                {s.caption && <figcaption className="mt-2 text-center text-xs text-muted-foreground">{s.caption}</figcaption>}
+                <img
+                  src={s.src}
+                  alt={s.alt}
+                  loading={s.priority ? "eager" : "lazy"}
+                  {...(s.priority ? { fetchPriority: "high" as const } : {})}
+                  width={s.width}
+                  height={s.height}
+                  className="rounded-[3px] w-full h-auto"
+                />
+                {(s.caption || s.credit) && (
+                  <figcaption className="mt-2 text-center text-xs text-muted-foreground">
+                    {s.caption}
+                    {s.caption && s.credit && " · "}
+                    {s.credit && <span className="italic">© {s.credit}</span>}
+                  </figcaption>
+                )}
               </figure>
+            );
+          case "gallery":
+            return (
+              <div key={i} className="my-8 grid gap-3 sm:grid-cols-2">
+                {s.images.map((img, j) => (
+                  <figure key={j}>
+                    <img src={img.src} alt={img.alt} loading="lazy" className="rounded-[3px] w-full h-auto object-cover aspect-[4/3]" />
+                    {(img.caption || img.credit) && (
+                      <figcaption className="mt-1.5 text-xs text-muted-foreground">
+                        {img.caption}
+                        {img.caption && img.credit && " · "}
+                        {img.credit && <span className="italic">© {img.credit}</span>}
+                      </figcaption>
+                    )}
+                  </figure>
+                ))}
+              </div>
             );
         }
       })}
