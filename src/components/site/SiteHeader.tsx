@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import logo from "@/assets/jeitinho-logo.png";
+
 
 const NAV = [
   { to: "/experiences", label: "Expériences" },
@@ -15,9 +15,11 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/85 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8 md:py-5">
-        <Link to="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
-          <img src={logo} alt="Jeitinho" className="h-7 md:h-8 w-auto" />
+        <Link to="/" className="flex items-baseline gap-1" onClick={() => setOpen(false)}>
+          <span className="font-serif text-2xl md:text-[1.65rem] tracking-tight text-foreground">Jeitinho</span>
+          <span className="tracked-caps text-[10px] text-terracotta">BR</span>
         </Link>
+
 
         <nav className="hidden md:flex items-center gap-8">
           {NAV.map((item) => (
