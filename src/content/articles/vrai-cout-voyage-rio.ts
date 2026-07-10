@@ -50,7 +50,7 @@ export const article: Article = {
     { type: "ul", items: [
       "Christ Rédempteur (train) : 25 €",
       "Pain de Sucre (téléphérique) : 30 €",
-      "Match au Maracanã (place standard) : 15-40 €",
+      "Expérience Maracanã avec Jeitinho (billet + accompagnement) : 50 €",
       "City tour privé (4h) : 120-180 € pour le groupe",
       "Cours de surf à Copacabana : 30 € l'heure",
       "Excursion journée Ilha Grande : 90-140 €",

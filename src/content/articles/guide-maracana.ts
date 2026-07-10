@@ -32,11 +32,12 @@ export const article: Article = {
 
     { type: "h2", text: "Choisir son secteur" },
     { type: "h3", text: "Secteurs Norte et Sul (populaires)" },
-    { type: "p", text: "Places debout historiquement, aujourd'hui assises. C'est là que se rassemble la torcida (les fans hardcore). Ambiance électrique — mais chants, tambours, sauts non-stop. Pour l'immersion totale. Prix : 15-30 €." },
+    { type: "p", text: "Places debout historiquement, aujourd'hui assises. C'est là que se rassemble la torcida (les fans hardcore). Ambiance électrique — chants, tambours, sauts non-stop. Pour l'immersion totale." },
     { type: "h3", text: "Secteurs Oeste et Leste (latéraux)" },
-    { type: "p", text: "Vue plus tactique, ambiance plus mixte. Recommandé pour un premier match si vous voulez à la fois voir le foot et sentir la ferveur. Prix : 25-50 €." },
+    { type: "p", text: "Vue plus tactique, ambiance plus mixte. Recommandé pour un premier match si vous voulez à la fois voir le foot et sentir la ferveur." },
     { type: "h3", text: "Secteur Maracanã Mais (VIP)" },
-    { type: "p", text: "Sièges confortables, bar, moins d'ambiance. Pour qui veut « voir un match » sans plonger dans la foule. Prix : 60-120 €." },
+    { type: "p", text: "Sièges confortables, bar, moins d'ambiance. Pour qui veut « voir un match » sans plonger dans la foule." },
+    { type: "bonasavoir", title: "Bon à savoir", text: "Notre expérience Maracanã (billet + accompagnement par un supporter local + sélection du meilleur match de la semaine) est à 50 € sur jeitinho.fr." },
 
     { type: "h2", text: "Acheter ses billets" },
     { type: "ul", items: [
