@@ -9,7 +9,7 @@ export const article: Article = {
   category: "itineraires",
   tags: ["itinéraire", "5 jours", "planning"],
   date: "2026-06-10",
-  author: "Rafael Coelho",
+  author: "equipe-jeitinho",
   hero,
   heroAlt: "Vue panoramique de Rio depuis Pedra Bonita",
   guide: true,

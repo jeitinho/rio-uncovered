@@ -9,11 +9,11 @@ export const article: Article = {
   category: "evenements",
   tags: ["Réveillon", "31 décembre", "Copacabana"],
   date: "2026-07-05",
-  author: "Marina Alves",
+  author: "equipe-jeitinho",
   hero,
   heroAlt: "Feux d'artifice du Réveillon de Copacabana au-dessus de la baie",
   featured: true,
-  relatedServices: [{ label: "Conciergerie Réveillon", href: "https://www.jeitinho.fr/conciergerie", description: "Réservations, camarotes, transferts sécurisés." }],
+  relatedServices: [{ label: "Conciergerie Réveillon", href: "https://www.jeitinho.fr/trouver-un-jeitinho", description: "Réservations, camarotes, transferts sécurisés." }],
   sections: [
     { type: "p", text: "Copacabana pour le Nouvel An, c'est 3 millions de personnes en blanc, 15 minutes de feux d'artifice tirés depuis la mer, et une nuit qui ne finit jamais." },
     { type: "h2", text: "Les codes" },

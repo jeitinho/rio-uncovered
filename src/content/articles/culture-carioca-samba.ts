@@ -9,7 +9,7 @@ export const article: Article = {
   category: "culture",
   tags: ["samba", "culture", "musique"],
   date: "2026-04-15",
-  author: "Marina Alves",
+  author: "equipe-jeitinho",
   hero,
   heroAlt: "Roda de samba dans une rue de Lapa à Rio",
   sections: [

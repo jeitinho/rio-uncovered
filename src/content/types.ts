@@ -1,5 +1,9 @@
 // Article content system — structured sections rendered by <ArticleBody />.
 // Adding a new article = adding a file in src/content/articles/ and importing it in index.ts.
+// À terme (phase Markdown), les articles seront des fichiers .md dans src/content/blog/
+// avec frontmatter : slug, title, description, category, tags, date, author (slug),
+// hero, heroAlt, images[], relatedServices, sections… Les types ci-dessous restent
+// la source de vérité runtime.
 
 export type Section =
   | { type: "p"; text: string }
@@ -12,12 +16,33 @@ export type Section =
   | { type: "aeviter"; title?: string; text: string }
   | { type: "bonasavoir"; title?: string; text: string }
   | { type: "faq"; items: { q: string; a: string }[] }
-  | { type: "image"; src: string; alt: string; caption?: string };
+  | {
+      type: "image";
+      src: string;
+      alt: string;
+      caption?: string;
+      credit?: string;
+      priority?: boolean;
+      width?: number;
+      height?: number;
+    }
+  | {
+      type: "gallery";
+      images: { src: string; alt: string; caption?: string; credit?: string }[];
+    };
 
 export interface RelatedService {
   label: string;
   href: string;
   description: string;
+}
+
+export interface ArticleImage {
+  src: string;
+  alt: string;
+  caption?: string;
+  credit?: string;
+  priority?: boolean;
 }
 
 export interface Article {
@@ -28,9 +53,13 @@ export interface Article {
   category: string;           // category slug
   tags: string[];
   date: string;               // ISO
+  /** Slug d'auteur (voir src/content/authors.ts). Fallback : nom libre. */
   author: string;
   hero: string;               // hero image src (imported url)
   heroAlt: string;
+  heroCredit?: string;
+  /** Galerie optionnelle piloté par frontmatter (phase Markdown). */
+  gallery?: ArticleImage[];
   featured?: boolean;
   popular?: boolean;
   guide?: boolean;            // pillar guide

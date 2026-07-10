@@ -4,13 +4,15 @@ import { SiteFooter } from "@/components/site/SiteFooter";
 import { getArticleBySlug, getRelated, getAdjacent } from "@/content";
 import { getCategoryBySlug } from "@/content/categories";
 import { buildTOC, readingTime } from "@/content/types";
+import { resolveAuthor } from "@/content/authors";
+import { absoluteUrl, SITE_NAME } from "@/lib/site";
 import { Breadcrumb } from "@/components/blog/Breadcrumb";
 import { TableOfContents } from "@/components/blog/TableOfContents";
 import { ArticleBody } from "@/components/blog/ArticleBody";
 import { ArticleCard } from "@/components/blog/ArticleCard";
 import { ServiceCTA } from "@/components/blog/ServiceCTA";
 import { ShareBar } from "@/components/blog/ShareBar";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, User } from "lucide-react";
 
 export const Route = createFileRoute("/blog/$slug")({
   loader: ({ params }) => {
@@ -21,7 +23,10 @@ export const Route = createFileRoute("/blog/$slug")({
   head: ({ loaderData, params }) => {
     if (!loaderData) return { meta: [{ title: "Article introuvable" }, { name: "robots", content: "noindex" }] };
     const a = loaderData.article;
+    const author = resolveAuthor(a.author);
     const url = `/blog/${params.slug}`;
+    const absUrl = absoluteUrl(url);
+    const absHero = absoluteUrl(a.hero);
     const faq = a.sections.find((s) => s.type === "faq");
     const scripts: { type: string; children: string }[] = [
       {
@@ -32,9 +37,9 @@ export const Route = createFileRoute("/blog/$slug")({
           headline: a.title,
           description: a.description,
           datePublished: a.date,
-          author: { "@type": "Person", name: a.author },
-          publisher: { "@type": "Organization", name: "Jeitinho" },
-          image: a.hero,
+          author: { "@type": "Person", name: author.name, url: absoluteUrl(`/auteurs/${author.slug}`) },
+          publisher: { "@type": "Organization", name: SITE_NAME },
+          image: absHero,
           inLanguage: "fr",
         }),
       },
@@ -44,9 +49,9 @@ export const Route = createFileRoute("/blog/$slug")({
           "@context": "https://schema.org",
           "@type": "BreadcrumbList",
           itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Accueil", item: "/" },
-            { "@type": "ListItem", position: 2, name: "Le Guide", item: "/blog" },
-            { "@type": "ListItem", position: 3, name: a.title, item: url },
+            { "@type": "ListItem", position: 1, name: "Accueil", item: absoluteUrl("/") },
+            { "@type": "ListItem", position: 2, name: "Le Guide", item: absoluteUrl("/blog") },
+            { "@type": "ListItem", position: 3, name: a.title, item: absUrl },
           ],
         }),
       },
@@ -67,20 +72,25 @@ export const Route = createFileRoute("/blog/$slug")({
     }
     return {
       meta: [
-        { title: `${a.title} — Le Guide Jeitinho` },
+        { title: `${a.title} — Jeitinho` },
         { name: "description", content: a.description },
-        { name: "author", content: a.author },
+        { name: "author", content: author.name },
         { property: "article:published_time", content: a.date },
         { property: "article:section", content: a.category },
+        { property: "article:author", content: author.name },
         { property: "og:type", content: "article" },
         { property: "og:title", content: a.title },
         { property: "og:description", content: a.description },
-        { property: "og:url", content: url },
-        { property: "og:image", content: a.hero },
-        { name: "twitter:image", content: a.hero },
+        { property: "og:url", content: absUrl },
+        { property: "og:image", content: absHero },
+        { property: "og:image:alt", content: a.heroAlt },
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:title", content: a.title },
+        { name: "twitter:description", content: a.description },
+        { name: "twitter:image", content: absHero },
       ],
       links: [
-        { rel: "canonical", href: url },
+        { rel: "canonical", href: absUrl },
         { rel: "preload", as: "image", href: a.hero, fetchpriority: "high" } as never,
       ],
       scripts,
@@ -89,20 +99,22 @@ export const Route = createFileRoute("/blog/$slug")({
   component: ArticlePage,
 });
 
+const MONTHS_FR = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
 function formatDate(iso: string) {
-  return new Date(iso).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" });
+  const [y, m, d] = iso.split("-").map(Number);
+  return `${d} ${MONTHS_FR[m - 1]} ${y}`;
 }
 
 function ArticlePage() {
   const { article } = Route.useLoaderData();
   const params = Route.useParams();
   const cat = getCategoryBySlug(article.category);
+  const author = resolveAuthor(article.author);
   const toc = buildTOC(article.sections);
   const related = getRelated(article);
   const { prev, next } = getAdjacent(article.slug);
   const rt = readingTime(article.sections);
 
-  // Split title around the accent word
   let titleParts: (string | { em: string })[] = [article.title];
   if (article.titleAccent && article.title.includes(article.titleAccent)) {
     const [before, ...rest] = article.title.split(article.titleAccent);
@@ -113,7 +125,6 @@ function ArticlePage() {
     <div className="min-h-screen flex flex-col">
       <SiteHeader />
 
-      {/* HERO */}
       <section className="relative isolate">
         <div className="absolute inset-0 -z-10">
           <img src={article.hero} alt={article.heroAlt} className="h-full w-full object-cover" width={1600} height={1000} />
@@ -133,14 +144,15 @@ function ArticlePage() {
             )}
           </h1>
           <div className="mt-6 flex flex-wrap gap-x-6 gap-y-1 text-cream/85 text-sm">
-            <span>{article.author}</span>
+            <Link to="/auteurs/$slug" params={{ slug: author.slug }} className="hover:text-peach transition-colors">
+              {author.name}
+            </Link>
             <span>{formatDate(article.date)}</span>
             <span>{rt} min de lecture</span>
           </div>
         </div>
       </section>
 
-      {/* BODY + TOC */}
       <section className="mx-auto max-w-7xl px-5 md:px-8 py-16">
         <Breadcrumb items={[
           { label: "Accueil", to: "/" },
@@ -160,14 +172,33 @@ function ArticlePage() {
               <ServiceCTA services={article.relatedServices} />
             )}
 
-            <div className="mt-12 flex items-center justify-between pt-8 border-t border-border">
+            {/* Bloc auteur */}
+            <Link
+              to="/auteurs/$slug"
+              params={{ slug: author.slug }}
+              className="mt-12 flex gap-4 rounded-[3px] border border-border p-5 hover:border-terracotta transition-colors"
+            >
+              <div className="h-14 w-14 flex-none rounded-full bg-cream-deep flex items-center justify-center overflow-hidden">
+                {author.photo ? (
+                  <img src={author.photo} alt={author.name} className="h-full w-full object-cover" />
+                ) : (
+                  <User className="h-6 w-6 text-terracotta/60" />
+                )}
+              </div>
+              <div className="min-w-0">
+                <p className="tracked-caps text-[10px] text-terracotta">{author.role}</p>
+                <p className="mt-0.5 text-lg">{author.name}</p>
+                {author.bio && <p className="mt-1 text-sm text-muted-foreground line-clamp-2">{author.bio}</p>}
+              </div>
+            </Link>
+
+            <div className="mt-8 flex items-center justify-between pt-8 border-t border-border">
               <ShareBar title={article.title} url={`/blog/${params.slug}`} />
               <p className="tracked-caps text-[10px] text-muted-foreground">
-                Par {article.author}
+                Par {author.name}
               </p>
             </div>
 
-            {/* prev / next */}
             {(prev || next) && (
               <div className="mt-10 grid gap-4 sm:grid-cols-2">
                 {prev && (
@@ -192,7 +223,6 @@ function ArticlePage() {
         </div>
       </section>
 
-      {/* SIMILAIRES */}
       {related.length > 0 && (
         <section className="border-t border-border/60 bg-cream-deep/30">
           <div className="mx-auto max-w-7xl px-5 md:px-8 py-16 md:py-20">

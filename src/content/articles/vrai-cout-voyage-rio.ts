@@ -9,12 +9,12 @@ export const article: Article = {
   category: "budget",
   tags: ["budget", "coût", "argent", "planification"],
   date: "2026-05-18",
-  author: "Camille Duarte",
+  author: "equipe-jeitinho",
   hero,
   heroAlt: "Billets de reais brésiliens avec un café et un pastel sur une table en bois",
   popular: true,
   relatedServices: [
-    { label: "Conciergerie", href: "https://www.jeitinho.fr/conciergerie", description: "On négocie les tarifs locaux pour vous — souvent 20 à 30 % de moins." },
+    { label: "Conciergerie", href: "https://www.jeitinho.fr/trouver-un-jeitinho", description: "On négocie les tarifs locaux pour vous — souvent 20 à 30 % de moins." },
   ],
   sections: [
     { type: "p", text: "Rio a la réputation d'être « cher » ou « pas cher », selon qui parle. La vérité : Rio est modulable. On peut y vivre une semaine avec 700 € comme avec 7 000 €. Voici les chiffres réels, testés récemment." },

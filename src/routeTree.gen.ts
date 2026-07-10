@@ -11,12 +11,15 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as RssDotxmlRouteImport } from './routes/rss[.]xml'
+import { Route as ManuelJeitinhoRouteImport } from './routes/manuel-jeitinho'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AProposRouteImport } from './routes/a-propos'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
+import { Route as AuteursIndexRouteImport } from './routes/auteurs.index'
 import { Route as BlogRechercheRouteImport } from './routes/blog.recherche'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
+import { Route as AuteursSlugRouteImport } from './routes/auteurs.$slug'
 import { Route as BlogCategorieSlugRouteImport } from './routes/blog.categorie.$slug'
 
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
@@ -27,6 +30,11 @@ const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
 const RssDotxmlRoute = RssDotxmlRouteImport.update({
   id: '/rss.xml',
   path: '/rss.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ManuelJeitinhoRoute = ManuelJeitinhoRouteImport.update({
+  id: '/manuel-jeitinho',
+  path: '/manuel-jeitinho',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -49,6 +57,11 @@ const BlogIndexRoute = BlogIndexRouteImport.update({
   path: '/blog/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AuteursIndexRoute = AuteursIndexRouteImport.update({
+  id: '/auteurs/',
+  path: '/auteurs/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BlogRechercheRoute = BlogRechercheRouteImport.update({
   id: '/blog/recherche',
   path: '/blog/recherche',
@@ -57,6 +70,11 @@ const BlogRechercheRoute = BlogRechercheRouteImport.update({
 const BlogSlugRoute = BlogSlugRouteImport.update({
   id: '/blog/$slug',
   path: '/blog/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AuteursSlugRoute = AuteursSlugRouteImport.update({
+  id: '/auteurs/$slug',
+  path: '/auteurs/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BlogCategorieSlugRoute = BlogCategorieSlugRouteImport.update({
@@ -69,10 +87,13 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/a-propos': typeof AProposRoute
   '/contact': typeof ContactRoute
+  '/manuel-jeitinho': typeof ManuelJeitinhoRoute
   '/rss.xml': typeof RssDotxmlRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/auteurs/$slug': typeof AuteursSlugRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/blog/recherche': typeof BlogRechercheRoute
+  '/auteurs/': typeof AuteursIndexRoute
   '/blog/': typeof BlogIndexRoute
   '/blog/categorie/$slug': typeof BlogCategorieSlugRoute
 }
@@ -80,10 +101,13 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/a-propos': typeof AProposRoute
   '/contact': typeof ContactRoute
+  '/manuel-jeitinho': typeof ManuelJeitinhoRoute
   '/rss.xml': typeof RssDotxmlRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/auteurs/$slug': typeof AuteursSlugRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/blog/recherche': typeof BlogRechercheRoute
+  '/auteurs': typeof AuteursIndexRoute
   '/blog': typeof BlogIndexRoute
   '/blog/categorie/$slug': typeof BlogCategorieSlugRoute
 }
@@ -92,10 +116,13 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/a-propos': typeof AProposRoute
   '/contact': typeof ContactRoute
+  '/manuel-jeitinho': typeof ManuelJeitinhoRoute
   '/rss.xml': typeof RssDotxmlRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/auteurs/$slug': typeof AuteursSlugRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/blog/recherche': typeof BlogRechercheRoute
+  '/auteurs/': typeof AuteursIndexRoute
   '/blog/': typeof BlogIndexRoute
   '/blog/categorie/$slug': typeof BlogCategorieSlugRoute
 }
@@ -105,10 +132,13 @@ export interface FileRouteTypes {
     | '/'
     | '/a-propos'
     | '/contact'
+    | '/manuel-jeitinho'
     | '/rss.xml'
     | '/sitemap.xml'
+    | '/auteurs/$slug'
     | '/blog/$slug'
     | '/blog/recherche'
+    | '/auteurs/'
     | '/blog/'
     | '/blog/categorie/$slug'
   fileRoutesByTo: FileRoutesByTo
@@ -116,10 +146,13 @@ export interface FileRouteTypes {
     | '/'
     | '/a-propos'
     | '/contact'
+    | '/manuel-jeitinho'
     | '/rss.xml'
     | '/sitemap.xml'
+    | '/auteurs/$slug'
     | '/blog/$slug'
     | '/blog/recherche'
+    | '/auteurs'
     | '/blog'
     | '/blog/categorie/$slug'
   id:
@@ -127,10 +160,13 @@ export interface FileRouteTypes {
     | '/'
     | '/a-propos'
     | '/contact'
+    | '/manuel-jeitinho'
     | '/rss.xml'
     | '/sitemap.xml'
+    | '/auteurs/$slug'
     | '/blog/$slug'
     | '/blog/recherche'
+    | '/auteurs/'
     | '/blog/'
     | '/blog/categorie/$slug'
   fileRoutesById: FileRoutesById
@@ -139,10 +175,13 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AProposRoute: typeof AProposRoute
   ContactRoute: typeof ContactRoute
+  ManuelJeitinhoRoute: typeof ManuelJeitinhoRoute
   RssDotxmlRoute: typeof RssDotxmlRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  AuteursSlugRoute: typeof AuteursSlugRoute
   BlogSlugRoute: typeof BlogSlugRoute
   BlogRechercheRoute: typeof BlogRechercheRoute
+  AuteursIndexRoute: typeof AuteursIndexRoute
   BlogIndexRoute: typeof BlogIndexRoute
   BlogCategorieSlugRoute: typeof BlogCategorieSlugRoute
 }
@@ -161,6 +200,13 @@ declare module '@tanstack/react-router' {
       path: '/rss.xml'
       fullPath: '/rss.xml'
       preLoaderRoute: typeof RssDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/manuel-jeitinho': {
+      id: '/manuel-jeitinho'
+      path: '/manuel-jeitinho'
+      fullPath: '/manuel-jeitinho'
+      preLoaderRoute: typeof ManuelJeitinhoRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -191,6 +237,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/auteurs/': {
+      id: '/auteurs/'
+      path: '/auteurs'
+      fullPath: '/auteurs/'
+      preLoaderRoute: typeof AuteursIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog/recherche': {
       id: '/blog/recherche'
       path: '/blog/recherche'
@@ -203,6 +256,13 @@ declare module '@tanstack/react-router' {
       path: '/blog/$slug'
       fullPath: '/blog/$slug'
       preLoaderRoute: typeof BlogSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/auteurs/$slug': {
+      id: '/auteurs/$slug'
+      path: '/auteurs/$slug'
+      fullPath: '/auteurs/$slug'
+      preLoaderRoute: typeof AuteursSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/blog/categorie/$slug': {
@@ -219,10 +279,13 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AProposRoute: AProposRoute,
   ContactRoute: ContactRoute,
+  ManuelJeitinhoRoute: ManuelJeitinhoRoute,
   RssDotxmlRoute: RssDotxmlRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
+  AuteursSlugRoute: AuteursSlugRoute,
   BlogSlugRoute: BlogSlugRoute,
   BlogRechercheRoute: BlogRechercheRoute,
+  AuteursIndexRoute: AuteursIndexRoute,
   BlogIndexRoute: BlogIndexRoute,
   BlogCategorieSlugRoute: BlogCategorieSlugRoute,
 }

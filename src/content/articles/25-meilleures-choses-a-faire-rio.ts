@@ -9,7 +9,7 @@ export const article: Article = {
   category: "activites",
   tags: ["que faire à Rio", "incontournables", "activités"],
   date: "2026-06-20",
-  author: "Rafael Coelho",
+  author: "equipe-jeitinho",
   hero,
   heroAlt: "Vue aérienne du Christ Rédempteur et de la baie de Guanabara au coucher du soleil",
   featured: true,
@@ -17,7 +17,7 @@ export const article: Article = {
   popular: true,
   relatedServices: [
     { label: "City tour privé", href: "https://www.jeitinho.fr/experiences", description: "On condense 25 idées en une journée sur mesure." },
-    { label: "Conciergerie", href: "https://www.jeitinho.fr/conciergerie", description: "Réservations, transferts, adresses : on s'occupe de tout." },
+    { label: "Conciergerie", href: "https://www.jeitinho.fr/trouver-un-jeitinho", description: "Réservations, transferts, adresses : on s'occupe de tout." },
   ],
   sections: [
     { type: "p", text: "Il y a mille listes de « choses à faire à Rio ». La plupart se copient entre elles. Celle-ci est différente : on l'a écrite comme si on préparait le voyage d'un ami. Certaines idées sont évidentes (impossible d'y couper), d'autres sont notre carnet secret." },

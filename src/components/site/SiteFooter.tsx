@@ -1,7 +1,8 @@
 import { Link } from "@tanstack/react-router";
-import { Instagram, ExternalLink } from "lucide-react";
+import { Instagram, ExternalLink, Mail } from "lucide-react";
 import logo from "@/assets/jeitinho-logo.png";
 import { CATEGORIES } from "@/content/categories";
+import { CONCIERGERIE_URL, CONTACT_EMAIL, INSTAGRAM_HANDLE, INSTAGRAM_URL } from "@/lib/site";
 
 export function SiteFooter() {
   const primaryCats = CATEGORIES.slice(0, 8);
@@ -11,24 +12,21 @@ export function SiteFooter() {
     <footer className="mt-32 border-t border-border/60 bg-cream-deep/40">
       <div className="mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20 grid gap-12 md:grid-cols-4">
         <div className="md:col-span-1">
-          <Link to="/" className="flex items-center gap-2">
+          <Link to="/" className="flex items-baseline gap-2">
             <img src={logo} alt="Jeitinho" className="h-9 w-auto" />
-            <span className="flex items-baseline gap-1.5">
-              <span className="font-serif text-2xl">Jeitinho</span>
-              <span className="tracked-caps text-[10px] text-terracotta">Blog</span>
-            </span>
+            <span className="tracked-caps text-[11px] text-terracotta">Blog</span>
           </Link>
           <p className="mt-4 max-w-md text-sm text-muted-foreground leading-relaxed">
-            Le guide francophone de Rio de Janeiro. Conseils, itinéraires, adresses et interviews par des locaux <em className="italic text-terracotta">passionnés.</em>
+            Le média francophone sur Rio de Janeiro. Conseils, itinéraires, adresses et interviews par des locaux <em className="italic text-terracotta">passionnés.</em>
           </p>
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-6 inline-flex items-center gap-2 text-sm text-foreground/80 hover:text-terracotta transition-colors"
-          >
-            <Instagram className="h-4 w-4" /> @jeitinho.br
-          </a>
+          <div className="mt-6 flex flex-col gap-2 text-sm">
+            <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-foreground/80 hover:text-terracotta transition-colors">
+              <Instagram className="h-4 w-4" /> {INSTAGRAM_HANDLE}
+            </a>
+            <a href={`mailto:${CONTACT_EMAIL}`} className="inline-flex items-center gap-2 text-foreground/80 hover:text-terracotta transition-colors">
+              <Mail className="h-4 w-4" /> {CONTACT_EMAIL}
+            </a>
+          </div>
         </div>
 
         <div>
@@ -58,13 +56,15 @@ export function SiteFooter() {
         </div>
 
         <div>
-          <p className="tracked-caps text-[10px] text-terracotta">Le site</p>
+          <p className="tracked-caps text-[10px] text-terracotta">Le média</p>
           <ul className="mt-4 space-y-2 text-sm">
             <li><Link to="/blog" className="hover:text-terracotta transition-colors">Tous les articles</Link></li>
+            <li><Link to="/auteurs" className="hover:text-terracotta transition-colors">Notre équipe</Link></li>
+            <li><Link to="/manuel-jeitinho" className="hover:text-terracotta transition-colors">Manuel Jeitinho</Link></li>
             <li><Link to="/a-propos" className="hover:text-terracotta transition-colors">À propos</Link></li>
-            <li><Link to="/contact" className="hover:text-terracotta transition-colors">Contact & partenariats</Link></li>
+            <li><Link to="/contact" className="hover:text-terracotta transition-colors">Contact</Link></li>
             <li>
-              <a href="https://www.jeitinho.fr" target="_blank" rel="noopener" className="inline-flex items-center gap-1 hover:text-terracotta transition-colors">
+              <a href={CONCIERGERIE_URL} target="_blank" rel="noopener" className="inline-flex items-center gap-1 hover:text-terracotta transition-colors">
                 Conciergerie <ExternalLink className="h-3 w-3" />
               </a>
             </li>

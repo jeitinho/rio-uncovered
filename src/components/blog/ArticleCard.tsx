@@ -3,6 +3,7 @@ import type { Article } from "@/content/types";
 import { getCategoryBySlug } from "@/content/categories";
 import { readingTime } from "@/content/types";
 
+
 const MONTHS_FR = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
 function formatDate(iso: string) {
   const [y, m, d] = iso.split("-").map(Number);

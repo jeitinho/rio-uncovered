@@ -9,7 +9,7 @@ export const article: Article = {
   category: "gastronomie",
   tags: ["gastronomie", "restaurants", "feijoada"],
   date: "2026-04-22",
-  author: "Camille Duarte",
+  author: "equipe-jeitinho",
   hero,
   heroAlt: "Feijoada brésilienne servie dans un cadre traditionnel",
   sections: [

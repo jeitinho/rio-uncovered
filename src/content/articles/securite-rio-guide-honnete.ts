@@ -9,7 +9,7 @@ export const article: Article = {
   category: "securite",
   tags: ["sécurité", "conseils", "vigilance"],
   date: "2026-06-01",
-  author: "Rafael Coelho",
+  author: "equipe-jeitinho",
   hero,
   heroAlt: "Rue résidentielle calme d'Ipanema en journée",
   guide: true,

@@ -3,10 +3,12 @@ import { Menu, X, ChevronDown, ExternalLink } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import logo from "@/assets/jeitinho-logo.png";
 import { CATEGORIES } from "@/content/categories";
+import { CONCIERGERIE_BOOK_URL } from "@/lib/site";
 
 const NAV = [
   { to: "/", label: "Accueil" },
   { to: "/blog", label: "Articles" },
+  { to: "/auteurs", label: "Équipe" },
   { to: "/a-propos", label: "À propos" },
   { to: "/contact", label: "Contact" },
 ] as const;
@@ -29,10 +31,15 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/85 backdrop-blur">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8 md:py-5">
-        <Link to="/" className="flex items-baseline gap-3" onClick={() => setOpen(false)} aria-label="Jeitinho Blog — accueil">
-          <img src={logo} alt="Jeitinho" className="h-14 w-auto md:h-16" />
-          <span className="tracked-caps text-sm md:text-base text-terracotta">Blog</span>
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 md:px-8 h-16 md:h-20">
+        <Link
+          to="/"
+          className="flex items-baseline gap-2"
+          onClick={() => setOpen(false)}
+          aria-label="Jeitinho Blog — accueil"
+        >
+          <img src={logo} alt="Jeitinho" className="h-8 md:h-9 w-auto" />
+          <span className="tracked-caps text-[10px] md:text-[11px] text-terracotta">Blog</span>
         </Link>
 
         <nav className="hidden lg:flex items-center gap-7">
@@ -45,7 +52,6 @@ export function SiteHeader() {
             Accueil
           </Link>
 
-          {/* Dropdown catégories */}
           <div ref={dropdownRef} className="relative">
             <button
               onClick={() => setCatsOpen((v) => !v)}
@@ -76,7 +82,7 @@ export function SiteHeader() {
                     onClick={() => setCatsOpen(false)}
                     className="tracked-caps text-[10px] text-terracotta hover:text-terracotta-deep"
                   >
-                    Voir toutes les catégories →
+                    Voir tous les articles →
                   </Link>
                 </div>
               </div>
@@ -89,6 +95,13 @@ export function SiteHeader() {
             activeProps={{ className: "tracked-caps text-[11px] text-terracotta" }}
           >
             Articles
+          </Link>
+          <Link
+            to="/auteurs"
+            className="tracked-caps text-[11px] text-foreground/80 hover:text-terracotta transition-colors"
+            activeProps={{ className: "tracked-caps text-[11px] text-terracotta" }}
+          >
+            Équipe
           </Link>
           <Link
             to="/a-propos"
@@ -108,10 +121,10 @@ export function SiteHeader() {
 
         <div className="hidden lg:block">
           <a
-            href="https://www.jeitinho.fr"
+            href={CONCIERGERIE_BOOK_URL}
             target="_blank"
             rel="noopener"
-            className="inline-flex items-center gap-1.5 rounded-[3px] bg-primary px-5 py-2.5 tracked-caps text-[11px] text-primary-foreground hover:bg-terracotta-deep transition-colors"
+            className="inline-flex items-center gap-1.5 rounded-[3px] bg-primary px-4 py-2.5 tracked-caps text-[10px] text-primary-foreground hover:bg-terracotta-deep transition-colors"
           >
             Conciergerie <ExternalLink className="h-3 w-3" />
           </a>
@@ -165,7 +178,7 @@ export function SiteHeader() {
             )}
 
             <a
-              href="https://www.jeitinho.fr"
+              href={CONCIERGERIE_BOOK_URL}
               target="_blank"
               rel="noopener"
               className="mt-3 inline-flex items-center justify-center gap-1.5 rounded-[3px] bg-primary px-5 py-3 tracked-caps text-xs text-primary-foreground"
