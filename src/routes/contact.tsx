@@ -1,13 +1,15 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
+import { CONTACT_EMAIL, INSTAGRAM_HANDLE, INSTAGRAM_URL, CONCIERGERIE_URL } from "@/lib/site";
+import { Mail, Instagram } from "lucide-react";
 import { useState } from "react";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Contact & partenariats — Jeitinho" },
-      { name: "description", content: "Une idée d'article, une proposition d'interview, un partenariat ? Contactez la rédaction du blog Jeitinho." },
+      { name: "description", content: "Une idée d'article, une proposition d'interview, un partenariat ? Contactez la rédaction du média Jeitinho." },
       { property: "og:title", content: "Contact — Jeitinho Blog" },
       { property: "og:url", content: "/contact" },
     ],
@@ -18,6 +20,8 @@ export const Route = createFileRoute("/contact")({
 
 function ContactPage() {
   const [sent, setSent] = useState(false);
+  const subject = encodeURIComponent("Contact — Jeitinho Blog");
+
   return (
     <div className="min-h-screen flex flex-col">
       <SiteHeader />
@@ -27,8 +31,18 @@ function ContactPage() {
         <p className="mt-6 text-muted-foreground leading-relaxed">
           Proposition d'article, interview, retour sur un guide, partenariat éditorial : écrivez-nous, on répond sous 48 h.
         </p>
-        <p className="mt-4 text-sm text-muted-foreground">
-          Pour organiser votre séjour à Rio, notre service de conciergerie est sur <a href="https://www.jeitinho.fr" target="_blank" rel="noopener" className="text-terracotta underline decoration-terracotta/40 underline-offset-4">jeitinho.fr</a>.
+
+        <div className="mt-8 flex flex-col sm:flex-row gap-4 sm:gap-6">
+          <a href={`mailto:${CONTACT_EMAIL}?subject=${subject}`} className="inline-flex items-center gap-2 rounded-[3px] border border-terracotta px-5 py-3 tracked-caps text-[11px] text-terracotta hover:bg-terracotta hover:text-primary-foreground transition-colors">
+            <Mail className="h-4 w-4" /> {CONTACT_EMAIL}
+          </a>
+          <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-[3px] border border-border px-5 py-3 tracked-caps text-[11px] text-foreground/80 hover:border-terracotta hover:text-terracotta transition-colors">
+            <Instagram className="h-4 w-4" /> {INSTAGRAM_HANDLE}
+          </a>
+        </div>
+
+        <p className="mt-6 text-sm text-muted-foreground">
+          Pour organiser votre séjour à Rio, notre service de conciergerie est sur <a href={CONCIERGERIE_URL} target="_blank" rel="noopener" className="text-terracotta underline decoration-terracotta/40 underline-offset-4">jeitinho.fr</a>.
         </p>
 
         {sent ? (
