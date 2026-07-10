@@ -9,7 +9,7 @@ export const article: Article = {
   category: "plages",
   tags: ["plages", "Prainha", "Grumari", "Copacabana"],
   date: "2026-06-05",
-  author: "Marina Alves",
+  author: "equipe-jeitinho",
   hero,
   heroAlt: "Plage sauvage de Prainha à Rio",
   guide: true,

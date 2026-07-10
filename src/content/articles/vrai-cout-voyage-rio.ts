@@ -9,7 +9,7 @@ export const article: Article = {
   category: "budget",
   tags: ["budget", "coût", "argent", "planification"],
   date: "2026-05-18",
-  author: "Camille Duarte",
+  author: "equipe-jeitinho",
   hero,
   heroAlt: "Billets de reais brésiliens avec un café et un pastel sur une table en bois",
   popular: true,

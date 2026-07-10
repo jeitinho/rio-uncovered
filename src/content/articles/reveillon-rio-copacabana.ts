@@ -9,7 +9,7 @@ export const article: Article = {
   category: "evenements",
   tags: ["Réveillon", "31 décembre", "Copacabana"],
   date: "2026-07-05",
-  author: "Marina Alves",
+  author: "equipe-jeitinho",
   hero,
   heroAlt: "Feux d'artifice du Réveillon de Copacabana au-dessus de la baie",
   featured: true,

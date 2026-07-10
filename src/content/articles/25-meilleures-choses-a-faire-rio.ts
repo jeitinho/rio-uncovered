@@ -9,7 +9,7 @@ export const article: Article = {
   category: "activites",
   tags: ["que faire à Rio", "incontournables", "activités"],
   date: "2026-06-20",
-  author: "Rafael Coelho",
+  author: "equipe-jeitinho",
   hero,
   heroAlt: "Vue aérienne du Christ Rédempteur et de la baie de Guanabara au coucher du soleil",
   featured: true,

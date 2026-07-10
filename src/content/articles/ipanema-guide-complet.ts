@@ -9,7 +9,7 @@ export const article: Article = {
   category: "quartiers",
   tags: ["Ipanema", "Zona Sul", "guide de quartier", "plages"],
   date: "2026-06-15",
-  author: "Marina Alves",
+  author: "equipe-jeitinho",
   hero,
   heroAlt: "Rue bordée de palmiers à Ipanema, Rio de Janeiro, au coucher du soleil",
   featured: true,

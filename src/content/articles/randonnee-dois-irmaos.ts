@@ -9,7 +9,7 @@ export const article: Article = {
   category: "randonnees",
   tags: ["randonnée", "Dois Irmãos", "Vidigal"],
   date: "2026-05-25",
-  author: "Rafael Coelho",
+  author: "equipe-jeitinho",
   hero,
   heroAlt: "Vue depuis le sommet du Morro Dois Irmãos sur Ipanema et Leblon",
   sections: [

@@ -9,7 +9,7 @@ export const article: Article = {
   category: "carnaval",
   tags: ["Carnaval", "blocos", "Sambodrome", "février"],
   date: "2026-07-01",
-  author: "Marina Alves",
+  author: "equipe-jeitinho",
   hero,
   heroAlt: "Danseuses de samba en costumes rouges au Carnaval de Rio",
   featured: true,

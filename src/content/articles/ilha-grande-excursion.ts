@@ -9,7 +9,7 @@ export const article: Article = {
   category: "excursions",
   tags: ["Ilha Grande", "excursion", "plage"],
   date: "2026-05-10",
-  author: "Marina Alves",
+  author: "equipe-jeitinho",
   hero,
   heroAlt: "Vue tropicale d'Ilha Grande au coucher du soleil",
   relatedServices: [{ label: "Excursion Ilha Grande", href: "https://www.jeitinho.fr/experiences", description: "Transferts, bateau, hôtel, guide — on organise tout." }],

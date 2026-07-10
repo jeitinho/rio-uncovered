@@ -9,7 +9,7 @@ export const article: Article = {
   category: "transports",
   tags: ["transports", "Uber", "métro"],
   date: "2026-05-05",
-  author: "Camille Duarte",
+  author: "equipe-jeitinho",
   hero,
   heroAlt: "Rame du métro de Rio en station",
   sections: [

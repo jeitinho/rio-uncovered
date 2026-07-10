@@ -9,7 +9,7 @@ export const article: Article = {
   category: "vie-nocturne",
   tags: ["sortir", "bars", "Lapa", "samba"],
   date: "2026-05-30",
-  author: "Rafael Coelho",
+  author: "equipe-jeitinho",
   hero,
   heroAlt: "Rue de Lapa, Rio, la nuit avec l'aqueduc en arrière-plan",
   sections: [

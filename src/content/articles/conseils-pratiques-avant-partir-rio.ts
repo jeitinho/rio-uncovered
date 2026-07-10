@@ -9,7 +9,7 @@ export const article: Article = {
   category: "conseils-pratiques",
   tags: ["conseils", "préparation", "voyage"],
   date: "2026-03-30",
-  author: "Camille Duarte",
+  author: "equipe-jeitinho",
   hero,
   heroAlt: "Rue de Rio avec panneaux en portugais",
   sections: [

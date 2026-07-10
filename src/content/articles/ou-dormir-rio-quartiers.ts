@@ -9,7 +9,7 @@ export const article: Article = {
   category: "hebergements",
   tags: ["hôtels", "quartiers", "hébergement"],
   date: "2026-04-10",
-  author: "Marina Alves",
+  author: "equipe-jeitinho",
   hero,
   heroAlt: "Terrasse d'un hôtel avec vue sur la baie de Rio",
   sections: [

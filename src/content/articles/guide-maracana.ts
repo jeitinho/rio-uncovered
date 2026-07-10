@@ -9,7 +9,7 @@ export const article: Article = {
   category: "football",
   tags: ["Maracanã", "football", "Flamengo", "Fluminense"],
   date: "2026-06-25",
-  author: "Rafael Coelho",
+  author: "equipe-jeitinho",
   hero,
   heroAlt: "Vue intérieure du stade Maracanã de Rio de Janeiro pendant un match, foule et pelouse illuminée",
   featured: true,
