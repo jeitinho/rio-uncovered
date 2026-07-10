@@ -3,8 +3,10 @@ import type { Article } from "@/content/types";
 import { getCategoryBySlug } from "@/content/categories";
 import { readingTime } from "@/content/types";
 
+const MONTHS_FR = ["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
 function formatDate(iso: string) {
-  return new Date(iso).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" });
+  const [y, m, d] = iso.split("-").map(Number);
+  return `${d} ${MONTHS_FR[m - 1]} ${y}`;
 }
 
 export function ArticleCard({ article, size = "md" }: { article: Article; size?: "sm" | "md" | "lg" }) {

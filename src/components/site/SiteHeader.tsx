@@ -30,9 +30,9 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/85 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8 md:py-5">
-        <Link to="/" className="flex items-center gap-2.5" onClick={() => setOpen(false)} aria-label="Jeitinho Blog — accueil">
-          <img src={logo} alt="Jeitinho" className="h-9 w-auto md:h-10" width={40} height={40} />
-          <span className="tracked-caps text-[11px] text-terracotta">Blog</span>
+        <Link to="/" className="flex items-baseline gap-3" onClick={() => setOpen(false)} aria-label="Jeitinho Blog — accueil">
+          <img src={logo} alt="Jeitinho" className="h-14 w-auto md:h-16" />
+          <span className="tracked-caps text-sm md:text-base text-terracotta">Blog</span>
         </Link>
 
         <nav className="hidden lg:flex items-center gap-7">
