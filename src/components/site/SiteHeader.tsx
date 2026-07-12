@@ -119,15 +119,8 @@ export function SiteHeader() {
             Articles
           </Link>
 
-          <Link
-            to="/auteurs"
-            className="tracked-caps text-[13px] text-foreground/80 hover:text-terracotta transition-colors"
-            activeProps={{
-              className: "tracked-caps text-[13px] text-terracotta",
-            }}
-          >
-            Équipe
-          </Link>
+
+
 
           <Link
             to="/a-propos"
