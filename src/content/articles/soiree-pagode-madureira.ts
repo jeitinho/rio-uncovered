@@ -1,18 +1,20 @@
 import type { Article } from "../types";
-import hero from "@/assets/hero-blog.jpg";
+import heroAsset from "@/assets/soiree-pagode-madureira-hero.jpg.asset.json";
+import quiosqueAsset from "@/assets/quiosque-moise-madureira.jpg.asset.json";
 
 export const article: Article = {
   slug: "soiree-pagode-madureira",
   title: "Une soirée pagode à Madureira : une autre façon de découvrir Rio",
   titleAccent: "pagode",
   description:
-    "Récit d'une soirée pagode à Madureira, loin de la Zona Sul. Une autre façon — plus vraie, plus carioca — de découvrir Rio de Janeiro.",
+    "Récit d'une soirée pagode au Quiosque Moise, dans le Parque Madureira. Une immersion 100 % locale, loin de la Zona Sul, pour vivre le vrai Rio des cariocas.",
   category: "culture",
   tags: ["Madureira", "Pagode", "Rio de Janeiro", "Culture", "Samba", "Vie nocturne", "Cariocas"],
   date: "2026-07-12",
   author: "lili",
-  hero,
-  heroAlt: "Roda de pagode dans une rue de Madureira, quartier nord de Rio de Janeiro, en soirée",
+  hero: heroAsset.url,
+  heroAlt:
+    "Roda de pagode au coucher du soleil à Madureira, Rio de Janeiro — musiciens au cavaquinho et au pandeiro entourés du public qui chante",
   featured: true,
   relatedServices: [
     {
@@ -31,123 +33,117 @@ export const article: Article = {
   sections: [
     {
       type: "p",
-      text: "Il y a des soirées à Rio dont on parle pendant des semaines et dont on ne trouve pourtant aucune trace dans les guides. La mienne, c'était un mercredi soir à Madureira. Pas Copacabana, pas Ipanema, pas Lapa. Madureira. Un quartier de la Zona Norte que la plupart des touristes ne verront jamais — et qui est, sans doute, l'un des cœurs les plus vivants de la culture carioca.",
-    },
-    {
-      type: "p",
-      text: "Je suis arrivée à Rio il y a quelques mois, avec le regard un peu naïf d'une expatriée fraîchement débarquée. Je pensais connaître la samba parce que j'avais vu des vidéos. Je croyais avoir compris la ville parce que j'avais marché à Ipanema. Cette soirée à Madureira m'a remise à ma place — dans le bon sens.",
+      text: "Quand on pense à Rio de Janeiro, on imagine souvent Copacabana, Ipanema ou encore le Christ Rédempteur. Pourtant, il suffit de s'éloigner un peu de la Zona Sul pour découvrir une facette beaucoup plus authentique de la ville. C'est exactement ce que j'ai vécu lors d'une soirée à Madureira, dans la zone nord de Rio.",
     },
 
-    { type: "h2", text: "Madureira, un autre Rio" },
+    { type: "h2", text: "Aller à Madureira depuis la Zona Sul" },
     {
       type: "p",
-      text: "Madureira, c'est le nord. Loin des plages, loin des cartes postales. Un quartier populaire, dense, commerçant, traversé par le train et par une énergie que la Zona Sul n'a pas. Ici, on ne vient pas pour voir : on vient pour vivre quelque chose.",
-    },
-    {
-      type: "p",
-      text: "C'est ici qu'est né une bonne partie de la samba moderne. C'est ici que battent Portela et Império Serrano, deux des plus vieilles écoles de samba de Rio. C'est ici, aussi, que le pagode — cette samba plus intime, jouée en cercle autour d'une table — se pratique comme une religion.",
-    },
-    {
-      type: "conseil",
-      title: "Le conseil Jeitinho",
-      text:
-        "N'y allez pas seule un premier soir. Pas par peur — le quartier vit, il n'est pas dangereux quand on y va bien — mais parce que Madureira se comprend mieux accompagnée. Un local, un ami carioca, un guide francophone : quelqu'un qui connaît les codes.",
-    },
-
-    { type: "h2", text: "Arriver là-bas" },
-    {
-      type: "p",
-      text: "Depuis la Zona Sul, comptez entre 45 minutes et une heure en Uber selon la circulation. Le métro et le train fonctionnent aussi, mais après une certaine heure, l'Uber reste plus simple pour rentrer.",
-    },
-    {
-      type: "p",
-      text: "On m'avait dit : \"habille-toi normalement, sans bijoux, sans téléphone dernier cri à la main.\" C'est le conseil qu'on répète pour à peu près tout Rio, et il tient ici aussi. Rien de plus.",
+      text: "Madureira se situe à environ 40 minutes en voiture de la Zona Sul lorsqu'il n'y a pas de circulation. Le soir, le trafic est généralement assez fluide, ce qui permet de s'y rendre facilement. Pour cette sortie, j'ai choisi de prendre un Uber Moto, un moyen de transport très pratique, rapide et économique, très utilisé par les cariocas.",
     },
     {
       type: "bonasavoir",
       title: "Se déplacer intelligemment",
       text:
-        "L'Uber reste le moyen le plus sûr et le plus simple d'arriver et de rentrer d'une soirée à Madureira. Prévoyez la connexion 4G et un téléphone chargé.",
+        "L'Uber (voiture ou moto) reste le moyen le plus simple d'arriver et de rentrer d'une soirée à Madureira. Prévoyez la connexion 4G et un téléphone chargé, et évitez d'exhiber objets de valeur et bijoux.",
     },
 
-    { type: "h2", text: "La roda commence" },
+    { type: "h2", text: "Le Quiosque Moise, au cœur du Parque Madureira" },
     {
       type: "p",
-      text: "On s'est retrouvés dans une petite rue, autour d'un bar sans prétention. Une table au milieu, une nappe blanche, des instruments qui s'installent : cavaquinho, pandeiro, tantã, surdo. Pas de scène, pas de sono, pas de lumière tamisée. Juste une table, des musiciens, et la rue tout autour.",
+      text: "Je me suis rendue au Quiosque Moise, situé dans le Parque Madureira. Tout autour, plusieurs kiosques organisent également des rodas de pagode, ce qui crée une ambiance unique où la musique résonne un peu partout dans le parc. Il est même possible de passer d'un pagode à un autre au fil de la soirée, selon l'ambiance qui vous attire le plus.",
+    },
+    {
+      type: "image",
+      src: quiosqueAsset.url,
+      alt: "Le Quiosque Moise dans le Parque Madureira, avec sa fresque murale colorée et ses tables en bois",
+      caption: "Le Quiosque Moise, dans le Parque Madureira.",
+    },
+
+    { type: "h2", text: "Le pagode, une musique et une fête" },
+    {
+      type: "p",
+      text: "J'y suis allée avec des amis locaux, dont l'un jouait des percussions dans ce qu'on appelle un pagode. Le pagode est un style de musique brésilienne dérivé de la samba, mais c'est aussi le nom donné aux événements où des musiciens jouent en live pendant que le public chante, danse et profite de l'ambiance. En portugais, on dit tocar pour dire que l'on joue d'un instrument, et c'était un vrai plaisir de le voir mettre l'ambiance tout au long de la soirée.",
+    },
+
+    { type: "h2", text: "Un dimanche 100 % local" },
+    {
+      type: "p",
+      text: "J'y suis allée un dimanche, un jour où l'ambiance est particulièrement conviviale. Dès mon arrivée, j'ai tout de suite senti que je vivais une expérience différente de celles que l'on retrouve habituellement dans les quartiers les plus connus de Rio. Ici, l'atmosphère est plus locale, plus spontanée. Beaucoup de personnes se connaissent, reviennent chaque semaine et connaissent les chansons par cœur. Tout le monde chante, danse et vit chaque morceau avec une énergie incroyable. On a vraiment l'impression de partager un moment du quotidien des cariocas.",
     },
     {
       type: "p",
-      text: "Et puis ça commence. Un accord de cavaquinho, une voix qui lance le premier vers, et immédiatement tout le monde chante. Tout le monde. Les gens attablés, ceux qui passent, ceux qui vendent de la bière au coin. Personne ne se lève pour applaudir : on est déjà dedans.",
+      text: "Le public est très varié. On y croise des familles avec leurs enfants, des groupes d'amis, des couples et des personnes de tous les âges. Lors de ma visite, je n'ai d'ailleurs rencontré aucun touriste. L'ambiance était 100 % locale, avec uniquement des habitants du quartier ou des personnes venues des environs pour profiter de la soirée. C'est justement ce qui fait tout le charme de cette expérience : on découvre un Rio bien différent de celui des cartes postales, loin des circuits touristiques.",
     },
     {
       type: "quote",
-      text: "À Rio, on ne va pas voir un concert de pagode. On y participe.",
-      author: "Un carioca croisé ce soir-là",
+      text: "Même si vous ne savez pas danser la samba, c'est presque impossible de rester assis.",
+    },
+    {
+      type: "p",
+      text: "La musique est tellement entraînante qu'elle donne naturellement envie de bouger. Et ce que j'ai adoré, c'est la gentillesse des gens. Les cariocas sont très accueillants et n'hésitent pas à vous montrer quelques pas avec le sourire. Personne ne juge votre niveau : le plus important est simplement de passer un bon moment.",
     },
 
-    { type: "h2", text: "Ce que je n'avais pas compris avant" },
+    { type: "h2", text: "Entrée libre, ambiance sans chichis" },
     {
       type: "p",
-      text: "Le pagode, ce n'est pas un spectacle. C'est un cercle. Les musiciens ne jouent pas pour un public : ils jouent avec les gens autour. Les chansons sont connues de tout le monde, transmises depuis des générations. Un enfant de dix ans chante les mêmes refrains que sa grand-mère.",
+      text: "L'entrée est gratuite et il n'est même pas obligatoire de consommer. Vous pouvez tout à fait apporter vos propres boissons si vous le souhaitez. Pour ma part, j'ai choisi de boire une Brahma, l'une des bières les plus populaires au Brésil. Une façon simple de vivre cette expérience comme les locaux. En revanche, lors de certaines grandes fêtes qui se prolongent après 22 h, les conditions d'accès peuvent être différentes.",
     },
     {
-      type: "p",
-      text: "Ce soir-là, j'ai compris quelque chose qu'aucun article, aucun documentaire, aucun cours de samba en salle ne m'avait fait sentir : à Rio, la musique n'est pas une distraction. C'est un ciment social. Elle tient les quartiers, les familles, les générations.",
-    },
-    {
-      type: "ul",
-      items: [
-        "Ce n'est pas un événement touristique — c'est un rituel de quartier.",
-        "Les chansons sont un patrimoine partagé, pas un répertoire.",
-        "Chanter faux n'a aucune importance. Chanter, oui.",
-        "On y boit de la bière fraîche et on y mange ce qui se trouve — pastel, feijoada, boulettes.",
-      ],
-    },
-
-    { type: "h2", text: "Une autre façon de découvrir Rio" },
-    {
-      type: "p",
-      text: "Rio, c'est la plage d'Ipanema au coucher du soleil. C'est le Pain de Sucre, le Christ, le Sambodrome au Carnaval. Ce sont des choses qu'il faut voir, oui. Mais Rio, c'est aussi Madureira un mercredi soir. C'est un quartier populaire qui chante ensemble pendant que la ville dort ailleurs.",
-    },
-    {
-      type: "p",
-      text: "Si vous venez ici pour comprendre la ville et pas juste pour la photographier, il faut, au moins une fois, sortir de la Zona Sul. Aller vers le nord. Écouter. Chanter, mal, mais chanter quand même.",
-    },
-    {
-      type: "conseil",
-      title: "L'astuce",
+      type: "bonasavoir",
+      title: "Ce qu'il faut savoir avant d'y aller",
       text:
-        "Les meilleures rodas de pagode ne sont pas annoncées sur Google. Elles se transmettent de bouche à oreille — d'où l'intérêt d'être guidé la première fois, puis d'y retourner seul une fois qu'on a les repères.",
+        "Entrée gratuite, consommation non obligatoire, aucun code vestimentaire — short et tongs y sont aussi bienvenus qu'une tenue plus habillée. Personne n'y prête attention, on vient pour la musique.",
+    },
+
+    { type: "h2", text: "Après le pagode, la rue prend le relais" },
+    {
+      type: "p",
+      text: "Le pagode se termine généralement aux alentours de 22 h. Mais la soirée, elle, est loin d'être terminée. En se promenant dans les rues voisines, on découvre d'autres pagodes, des bars où résonne du funk et une ambiance festive qui continue jusque tard dans la nuit.",
+    },
+    {
+      type: "p",
+      text: "Les rues sont également remplies de vendeurs ambulants. On y trouve de tout : des burgers, des brochettes, du churrasco, des boissons fraîches et de nombreuses spécialités locales. C'est vivant, convivial et cela fait complètement partie de l'expérience.",
     },
 
     { type: "h2", text: "Ce que je retiens" },
     {
       type: "p",
-      text: "Je suis rentrée tard, un peu ébranlée, très heureuse. Je suis arrivée à Rio en pensant que j'allais l'apprendre. Ce soir-là, à Madureira, c'est elle qui m'a appris quelque chose : qu'on ne visite pas Rio, on s'y laisse traverser.",
+      text: "Cette soirée m'a rappelé qu'il ne faut pas hésiter à sortir de la Zona Sul pour découvrir un autre visage de Rio. C'est souvent en explorant des quartiers comme Madureira que l'on vit les expériences les plus mémorables et que l'on découvre la culture carioca sous un angle plus authentique.",
+    },
+    {
+      type: "conseil",
+      title: "Le conseil Jeitinho",
+      text:
+        "Allez-y accompagné de personnes qui connaissent les lieux — amis locaux ou habitués. Ils sauront vous guider, vous emmener aux bons kiosques et vous permettront de profiter pleinement de l'expérience, en toute tranquillité.",
     },
     {
       type: "p",
-      text: "Si vous préparez un voyage ici, gardez-vous une soirée. Une seule. Pour ça.",
+      text: "Si vous recherchez une immersion authentique dans la culture brésilienne, loin des itinéraires les plus classiques, alors une soirée pagode à Madureira est une expérience que je vous recommande sans hésiter. Vous découvrirez un Rio vivant, chaleureux et profondément local, celui que les cariocas vivent au quotidien. C'est sans aucun doute l'un des meilleurs moyens de comprendre l'âme de la ville.",
     },
 
     {
       type: "faq",
       items: [
         {
-          q: "Madureira est-il dangereux le soir ?",
-          a: "Le quartier vit énormément le soir, notamment autour des lieux de pagode. Il n'est pas dangereux en soi si on y va accompagné, en Uber, sans étalage d'objets de valeur. Comme partout à Rio, on adapte son comportement au contexte.",
+          q: "Où se trouve le Quiosque Moise ?",
+          a: "Il se trouve à l'intérieur du Parque Madureira, dans la zone nord de Rio. Plusieurs kiosques voisins organisent aussi leurs propres rodas de pagode, ce qui permet de passer de l'un à l'autre au fil de la soirée.",
         },
         {
-          q: "Faut-il parler portugais pour aller à une roda de pagode ?",
-          a: "Non. Comprendre les paroles enrichit l'expérience, mais l'énergie de la roda se ressent sans les mots. Un accompagnement francophone la première fois aide surtout à comprendre les codes du lieu.",
+          q: "Comment aller à Madureira depuis la Zona Sul ?",
+          a: "Comptez environ 40 minutes en voiture sans circulation. Le soir, l'Uber (voiture ou moto) reste le moyen le plus simple et le plus utilisé, y compris par les cariocas.",
         },
         {
-          q: "Quand ont lieu les rodas de pagode à Madureira ?",
-          a: "Il y a des rodas presque tous les soirs, avec des rendez-vous plus intenses en semaine (mercredi, jeudi) et le dimanche après-midi. Les dates changent souvent — d'où l'intérêt de passer par un local ou un guide.",
+          q: "Faut-il payer pour entrer au pagode ?",
+          a: "Non. L'entrée au Quiosque Moise est gratuite et la consommation n'est pas obligatoire. Vous pouvez même apporter vos propres boissons. Certaines grandes fêtes après 22 h peuvent toutefois avoir des conditions différentes.",
         },
         {
-          q: "C'est une expérience adaptée à un premier séjour à Rio ?",
-          a: "Oui, à condition d'être accompagné et d'avoir déjà pris ses marques dans la ville. C'est même l'une des expériences les plus marquantes pour comprendre ce qu'est vraiment la culture carioca.",
+          q: "Est-ce que je dois savoir danser la samba ?",
+          a: "Absolument pas. Personne ne juge votre niveau. Les cariocas sont très accueillants et n'hésitent pas à vous montrer quelques pas. L'essentiel est de profiter de la musique.",
+        },
+        {
+          q: "C'est adapté à un premier séjour à Rio ?",
+          a: "Oui, à condition d'y aller accompagné de locaux ou d'habitués qui connaissent les lieux. C'est l'une des expériences les plus marquantes pour comprendre ce qu'est vraiment la culture carioca.",
         },
       ],
     },
