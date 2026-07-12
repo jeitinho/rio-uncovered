@@ -1,6 +1,6 @@
 import type { Article } from "../types";
-import heroAsset from "@/assets/soiree-pagode-madureira-hero.jpg.asset.json";
-import quiosqueAsset from "@/assets/quiosque-moise-madureira.jpg.asset.json";
+import hero from "@/assets/article-soiree-pagode-madureira-rio.jpg";
+import quiosque from "@/assets/quiosque-moise-madureira.jpg";
 
 export const article: Article = {
   slug: "soiree-pagode-madureira",
@@ -12,7 +12,7 @@ export const article: Article = {
   tags: ["Madureira", "Pagode", "Rio de Janeiro", "Culture", "Samba", "Vie nocturne", "Cariocas"],
   date: "2026-07-12",
   author: "lili",
-  hero: heroAsset.url,
+  hero: hero,
   heroAlt:
     "Roda de pagode au coucher du soleil à Madureira, Rio de Janeiro — musiciens au cavaquinho et au pandeiro entourés du public qui chante",
   featured: true,
@@ -55,7 +55,7 @@ export const article: Article = {
     },
     {
       type: "image",
-      src: quiosqueAsset.url,
+      src: quiosque,
       alt: "Le Quiosque Moise dans le Parque Madureira, avec sa fresque murale colorée et ses tables en bois",
       caption: "Le Quiosque Moise, dans le Parque Madureira.",
     },
