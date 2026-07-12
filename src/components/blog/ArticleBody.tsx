@@ -2,6 +2,7 @@ import type { Section } from "@/content/types";
 import { slugifyHeading } from "@/content/types";
 import { ConseilJeitinho, AEviter, BonASavoir } from "./Callouts";
 import { FAQ } from "./FAQ";
+import { RichText } from "./RichText";
 
 export function ArticleBody({ sections }: { sections: Section[] }) {
   return (
@@ -9,7 +10,7 @@ export function ArticleBody({ sections }: { sections: Section[] }) {
       {sections.map((s, i) => {
         switch (s.type) {
           case "p":
-            return <p key={i}>{s.text}</p>;
+            return <RichText key={i} as="p" content={s.text} />;
           case "h2":
             return <h2 key={i} id={s.id ?? slugifyHeading(s.text)}>{s.text}</h2>;
           case "h3":
@@ -30,15 +31,16 @@ export function ArticleBody({ sections }: { sections: Section[] }) {
           case "quote":
             return (
               <blockquote key={i} className="my-8 border-l-2 border-terracotta pl-6 italic text-foreground/90">
-                « {s.text} »{s.author && <footer className="mt-2 text-xs not-italic tracked-caps text-muted-foreground">— {s.author}</footer>}
+                <RichText content={`« ${s.text} »`} />
+                {s.author && <footer className="mt-2 text-xs not-italic tracked-caps text-muted-foreground">— {s.author}</footer>}
               </blockquote>
             );
           case "conseil":
-            return <ConseilJeitinho key={i} title={s.title}>{s.text}</ConseilJeitinho>;
+            return <ConseilJeitinho key={i} title={s.title}><RichText content={s.text} /></ConseilJeitinho>;
           case "aeviter":
-            return <AEviter key={i} title={s.title}>{s.text}</AEviter>;
+            return <AEviter key={i} title={s.title}><RichText content={s.text} /></AEviter>;
           case "bonasavoir":
-            return <BonASavoir key={i} title={s.title}>{s.text}</BonASavoir>;
+            return <BonASavoir key={i} title={s.title}><RichText content={s.text} /></BonASavoir>;
           case "faq":
             return <FAQ key={i} items={s.items} />;
           case "image":

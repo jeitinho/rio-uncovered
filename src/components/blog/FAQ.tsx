@@ -21,7 +21,7 @@ export function FAQ({ items }: { items: { q: string; a: string }[] }) {
                 </span>
                 <ChevronDown className={`h-4 w-4 text-terracotta shrink-0 transition-transform ${isOpen ? "rotate-180" : ""}`} />
               </button>
-              {isOpen && <p className="mt-3 text-muted-foreground leading-relaxed">{it.a}</p>}
+              {isOpen && <div className="mt-3 text-muted-foreground leading-relaxed"><div dangerouslySetInnerHTML={{ __html: it.a }} /></div>}
             </div>
           );
         })}

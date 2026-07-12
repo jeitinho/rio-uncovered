@@ -7,7 +7,7 @@ export function ConseilJeitinho({ title = "Le conseil Jeitinho", children }: { t
       <p className="tracked-caps text-[10px] text-terracotta flex items-center gap-2">
         <Lightbulb className="h-3.5 w-3.5" /> {title}
       </p>
-      <p className="mt-2 text-foreground leading-relaxed">{children}</p>
+      <div className="mt-2 text-foreground leading-relaxed">{children}</div>
     </aside>
   );
 }
@@ -18,7 +18,7 @@ export function AEviter({ title = "À éviter", children }: { title?: string; ch
       <p className="tracked-caps text-[10px] text-destructive flex items-center gap-2">
         <AlertTriangle className="h-3.5 w-3.5" /> {title}
       </p>
-      <p className="mt-2 text-foreground leading-relaxed">{children}</p>
+      <div className="mt-2 text-foreground leading-relaxed">{children}</div>
     </aside>
   );
 }
@@ -29,7 +29,7 @@ export function BonASavoir({ title = "Bon à savoir", children }: { title?: stri
       <p className="tracked-caps text-[10px] text-terracotta-deep flex items-center gap-2">
         <Info className="h-3.5 w-3.5" /> {title}
       </p>
-      <p className="mt-2 text-foreground leading-relaxed">{children}</p>
+      <div className="mt-2 text-foreground leading-relaxed">{children}</div>
     </aside>
   );
 }

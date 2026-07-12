@@ -2,6 +2,18 @@
 import type { Article } from "./types";
 
 import { article as ipanema } from "./articles/ipanema-guide-complet";
+import { article as copacabana } from "./articles/copacabana-guide-complet";
+import { article as leblon } from "./articles/leblon-guide-complet";
+import { article as botafogo } from "./articles/botafogo-guide-complet";
+import { article as flamengo } from "./articles/flamengo-guide-complet";
+import { article as gloria } from "./articles/gloria-guide-complet";
+import { article as catete } from "./articles/catete-guide-complet";
+import { article as lapa } from "./articles/lapa-guide-complet";
+import { article as lagoa } from "./articles/lagoa-guide-complet";
+import { article as jardim } from "./articles/jardim-botanico-guide-complet";
+import { article as barra } from "./articles/barra-da-tijuca-guide-complet";
+import { article as santaTeresa } from "./articles/santa-teresa-guide-complet";
+
 import { article as rio25 } from "./articles/25-meilleures-choses-a-faire-rio";
 import { article as budget } from "./articles/vrai-cout-voyage-rio";
 import { article as carnaval } from "./articles/preparer-carnaval-rio";
@@ -22,9 +34,36 @@ import { article as pagode } from "./articles/soiree-pagode-madureira";
 
 export const ARTICLES: Article[] = [
   pagode,
-  ipanema, rio25, budget, carnaval, maracana,
-  ilha, gastro, sortir, plages, doisirmaos, culture,
-  conseils, securite, transports, hebergements, itineraire, reveillon,
+
+  ipanema,
+  copacabana,
+  leblon,
+  botafogo,
+  flamengo,
+  gloria,
+  catete,
+  lapa,
+  lagoa,
+  jardim,
+  barra,
+  santaTeresa,
+
+  rio25,
+  budget,
+  carnaval,
+  maracana,
+  ilha,
+  gastro,
+  sortir,
+  plages,
+  doisirmaos,
+  culture,
+  conseils,
+  securite,
+  transports,
+  hebergements,
+  itineraire,
+  reveillon,
 ];
 
 export function getAllArticles(): Article[] {
@@ -53,20 +92,31 @@ export function getGuides(): Article[] {
 
 export function getRelated(article: Article, limit = 3): Article[] {
   const tagSet = new Set(article.tags);
+
   return getAllArticles()
     .filter((a) => a.slug !== article.slug)
     .map((a) => ({
       article: a,
-      score: (a.category === article.category ? 3 : 0) + a.tags.filter((t) => tagSet.has(t)).length,
+      score:
+        (a.category === article.category ? 3 : 0) +
+        a.tags.filter((t) => tagSet.has(t)).length,
     }))
     .sort((a, b) => b.score - a.score)
     .slice(0, limit)
     .map((x) => x.article);
 }
 
-export function getAdjacent(slug: string): { prev?: Article; next?: Article } {
+export function getAdjacent(slug: string): {
+  prev?: Article;
+  next?: Article;
+} {
   const all = getAllArticles();
   const i = all.findIndex((a) => a.slug === slug);
+
   if (i === -1) return {};
-  return { prev: all[i + 1], next: all[i - 1] };
+
+  return {
+    prev: all[i + 1],
+    next: all[i - 1],
+  };
 }
