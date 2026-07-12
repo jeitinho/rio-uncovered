@@ -8,7 +8,6 @@ import { CONCIERGERIE_BOOK_URL } from "@/lib/site";
 const NAV = [
   { to: "/", label: "Accueil" },
   { to: "/blog", label: "Articles" },
-  { to: "/auteurs", label: "Équipe" },
   { to: "/a-propos", label: "À propos" },
   { to: "/contact", label: "Contact" },
 ] as const;
