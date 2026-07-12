@@ -45,8 +45,8 @@ function Home() {
           <div className="absolute inset-0 hero-overlay" />
         </div>
         <div className="mx-auto max-w-5xl px-5 md:px-8 py-28 md:py-40 text-center">
-          <p className="tracked-caps text-[11px] text-peach">Le blog · Rio de Janeiro · Brésil</p>
-          <h1 className="mt-5 text-5xl md:text-7xl leading-[1.05] text-cream">
+          <h1 className="text-5xl md:text-7xl leading-[1.05] text-cream">
+
             Rio de Janeiro <em className="italic font-light text-peach">raconté par des locaux.</em>
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-cream/85 text-lg leading-relaxed">
