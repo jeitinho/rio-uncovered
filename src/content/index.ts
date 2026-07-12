@@ -18,8 +18,10 @@ import { article as transports } from "./articles/transports-rio-uber-metro";
 import { article as hebergements } from "./articles/ou-dormir-rio-quartiers";
 import { article as itineraire } from "./articles/itineraire-5-jours-rio";
 import { article as reveillon } from "./articles/reveillon-rio-copacabana";
+import { article as pagode } from "./articles/soiree-pagode-madureira";
 
 export const ARTICLES: Article[] = [
+  pagode,
   ipanema, rio25, budget, carnaval, maracana,
   ilha, gastro, sortir, plages, doisirmaos, culture,
   conseils, securite, transports, hebergements, itineraire, reveillon,
