@@ -12,9 +12,9 @@ export type Section =
   | { type: "ul"; items: string[] }
   | { type: "ol"; items: string[] }
   | { type: "quote"; text: string; author?: string }
-  | { type: "conseil"; title?: string; text: string }
-  | { type: "aeviter"; title?: string; text: string }
-  | { type: "bonasavoir"; title?: string; text: string }
+  | { type: "conseil"; title?: string; text?: string }
+  | { type: "aeviter"; title?: string; text?: string }
+  | { type: "bonasavoir"; title?: string; text?: string }
   | { type: "faq"; items: { q: string; a: string }[] }
   | {
       type: "image";
