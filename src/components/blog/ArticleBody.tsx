@@ -3,27 +3,35 @@ import { slugifyHeading } from "@/content/types";
 import { ConseilJeitinho, AEviter, BonASavoir } from "./Callouts";
 import { FAQ } from "./FAQ";
 import { RichText } from "./RichText";
+import { autoLink } from "@/lib/interlink";
 
-export function ArticleBody({ sections }: { sections: Section[] }) {
+export function ArticleBody({ sections, currentSlug }: { sections: Section[]; currentSlug?: string }) {
+  const exclude = currentSlug ? `/blog/${currentSlug}` : undefined;
+  const link = (t: string) => autoLink(t, exclude);
+
   return (
     <div className="prose-jeitinho">
       {sections.map((s, i) => {
         switch (s.type) {
           case "p":
-            return <RichText key={i} as="p" content={s.text} />;
+            return <RichText key={i} as="p" content={link(s.text)} />;
           case "h2":
             return <h2 key={i} id={s.id ?? slugifyHeading(s.text)}>{s.text}</h2>;
           case "h3":
             return <h3 key={i} id={s.id ?? slugifyHeading(s.text)}>{s.text}</h3>;
           case "ul":
-            return <ul key={i}>{s.items.map((it, j) => <li key={j}>{it}</li>)}</ul>;
+            return (
+              <ul key={i}>
+                {s.items.map((it, j) => <RichText key={j} as="li" content={link(it)} />)}
+              </ul>
+            );
           case "ol":
             return (
               <ol key={i} className="my-4 space-y-2 counter-reset">
                 {s.items.map((it, j) => (
                   <li key={j} className="pl-8 relative">
                     <span className="absolute left-0 top-0 tracked-caps text-xs text-terracotta">{String(j + 1).padStart(2, "0")}</span>
-                    <span>{it}</span>
+                    <RichText as="span" content={link(it)} />
                   </li>
                 ))}
               </ol>
@@ -31,18 +39,18 @@ export function ArticleBody({ sections }: { sections: Section[] }) {
           case "quote":
             return (
               <blockquote key={i} className="my-8 border-l-2 border-terracotta pl-6 italic text-foreground/90">
-                <RichText content={`« ${s.text} »`} />
+                <RichText content={link(`« ${s.text} »`)} />
                 {s.author && <footer className="mt-2 text-xs not-italic tracked-caps text-muted-foreground">— {s.author}</footer>}
               </blockquote>
             );
           case "conseil":
-            return <ConseilJeitinho key={i} title={s.title}><RichText content={s.text} /></ConseilJeitinho>;
+            return <ConseilJeitinho key={i} title={s.title}><RichText content={link(s.text ?? "")} /></ConseilJeitinho>;
           case "aeviter":
-            return <AEviter key={i} title={s.title}><RichText content={s.text} /></AEviter>;
+            return <AEviter key={i} title={s.title}><RichText content={link(s.text ?? "")} /></AEviter>;
           case "bonasavoir":
-            return <BonASavoir key={i} title={s.title}><RichText content={s.text} /></BonASavoir>;
+            return <BonASavoir key={i} title={s.title}><RichText content={link(s.text ?? "")} /></BonASavoir>;
           case "faq":
-            return <FAQ key={i} items={s.items} />;
+            return <FAQ key={i} items={s.items.map((it) => ({ q: it.q, a: link(it.a) }))} />;
           case "image":
             return (
               <figure key={i} className="my-8">

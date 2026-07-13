@@ -167,7 +167,7 @@ function ArticlePage() {
           </aside>
 
           <article className="max-w-3xl">
-            <ArticleBody sections={article.sections} />
+            <ArticleBody sections={article.sections} currentSlug={article.slug} />
 
             {article.relatedServices && (
               <ServiceCTA services={article.relatedServices} />
