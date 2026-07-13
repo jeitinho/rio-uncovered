@@ -1,5 +1,5 @@
 import type { Article } from "../types";
-import hero from "@/assets/itineraire.jpg";
+import hero from "@/assets/hero-blog.jpg";
 
 export const article: Article = {
   slug: "itineraire-5-jours-rio",
