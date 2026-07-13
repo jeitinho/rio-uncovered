@@ -15,18 +15,14 @@ import { article as barra } from "./articles/barra-da-tijuca-guide-complet";
 import { article as santaTeresa } from "./articles/santa-teresa-guide-complet";
 
 import { article as rio25 } from "./articles/25-meilleures-choses-a-faire-rio";
-import { article as budget } from "./articles/vrai-cout-voyage-rio";
 import { article as carnaval } from "./articles/preparer-carnaval-rio";
 import { article as maracana } from "./articles/guide-maracana";
 import { article as ilha } from "./articles/ilha-grande-excursion";
 import { article as gastro } from "./articles/guide-gastronomie-rio";
-import { article as sortir } from "./articles/sortir-rio-vie-nocturne";
-import { article as plages } from "./articles/guide-plages-rio";
 import { article as doisirmaos } from "./articles/randonnee-dois-irmaos";
 import { article as culture } from "./articles/culture-carioca-samba";
 import { article as conseils } from "./articles/conseils-pratiques-avant-partir-rio";
 import { article as securite } from "./articles/securite-rio-guide-honnete";
-import { article as transports } from "./articles/transports-rio-uber-metro";
 import { article as hebergements } from "./articles/ou-dormir-rio-quartiers";
 import { article as itineraire } from "./articles/itineraire-5-jours-rio";
 import { article as reveillon } from "./articles/reveillon-rio-copacabana";
@@ -93,18 +89,14 @@ export const ARTICLES: Article[] = [
   santaTeresa,
 
   rio25,
-  budget,
   carnaval,
   maracana,
   ilha,
   gastro,
-  sortir,
-  plages,
   doisirmaos,
   culture,
   conseils,
   securite,
-  transports,
   hebergements,
   itineraire,
   reveillon,
