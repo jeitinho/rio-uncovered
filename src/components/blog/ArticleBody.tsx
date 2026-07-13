@@ -36,11 +36,11 @@ export function ArticleBody({ sections }: { sections: Section[] }) {
               </blockquote>
             );
           case "conseil":
-            return <ConseilJeitinho key={i} title={s.title}><RichText content={s.text} /></ConseilJeitinho>;
+            return <ConseilJeitinho key={i} title={s.title}><RichText content={s.text ?? ""} /></ConseilJeitinho>;
           case "aeviter":
-            return <AEviter key={i} title={s.title}><RichText content={s.text} /></AEviter>;
+            return <AEviter key={i} title={s.title}><RichText content={s.text ?? ""} /></AEviter>;
           case "bonasavoir":
-            return <BonASavoir key={i} title={s.title}><RichText content={s.text} /></BonASavoir>;
+            return <BonASavoir key={i} title={s.title}><RichText content={s.text ?? ""} /></BonASavoir>;
           case "faq":
             return <FAQ key={i} items={s.items} />;
           case "image":

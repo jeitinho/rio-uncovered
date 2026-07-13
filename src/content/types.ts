@@ -92,7 +92,7 @@ export function buildTOC(sections: Section[]): { id: string; text: string; level
 export function readingTime(sections: Section[]): number {
   let words = 0;
   for (const s of sections) {
-    if ("text" in s) words += s.text.split(/\s+/).length;
+    if ("text" in s && s.text) words += s.text.split(/\s+/).length;
     if ("items" in s) words += s.items.join(" ").split(/\s+/).length;
     if (s.type === "faq") words += s.items.map((i) => i.q + " " + i.a).join(" ").split(/\s+/).length;
   }
