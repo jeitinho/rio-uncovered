@@ -31,9 +31,53 @@ import { article as hebergements } from "./articles/ou-dormir-rio-quartiers";
 import { article as itineraire } from "./articles/itineraire-5-jours-rio";
 import { article as reveillon } from "./articles/reveillon-rio-copacabana";
 import { article as pagode } from "./articles/soiree-pagode-madureira";
+import { article as baileFunk } from "./articles/baile-funk-guide";
+import { article as budgetVoyage } from "./articles/budget-voyage-rio";
+import { article as choisirPlage } from "./articles/comment-choisir-sa-plage-rio";
+import { article as nuitCarioca } from "./articles/comprendre-la-nuit-carioca";
+import { article as couchersSoleil } from "./articles/couchers-de-soleil-caches-rio";
+import { article as erreursRio } from "./articles/erreurs-a-eviter-a-rio";
+import { article as marchesRio } from "./articles/marches-bonnes-affaires-rio";
+import { article as marquesBresiliennes } from "./articles/marques-bresiliennes-a-rapporter";
+import { article as payerPix } from "./articles/payer-au-bresil-pix";
+import { article as mangerPetitBudget } from "./articles/petit-budget-manger-rio";
+import { article as brunchsRio } from "./articles/petits-dejeuners-brunchs-rio";
+import { article as plagesNiteroi } from "./articles/plages-niteroi";
+import { article as plagesZoneOuest } from "./articles/plages-zone-ouest-rio";
+import { article as quandPartir } from "./articles/quand-partir-a-rio";
+import { article as restaurantsRomantiques } from "./articles/restaurants-romantiques-rio";
+import { article as esimRio } from "./articles/rester-connecte-rio-esim";
+import { article as roadTripNordeste } from "./articles/road-trip-nordeste";
+import { article as rodizios } from "./articles/rodizios-fruits-de-mer-rio";
+import { article as rooftops } from "./articles/rooftops-bars-vue-rio";
+import { article as sambaLapa } from "./articles/samba-a-lapa";
+import { article as seDeplacer } from "./articles/se-deplacer-a-rio";
+import { article as vivreCarioca } from "./articles/vivre-comme-un-carioca";
 
 export const ARTICLES: Article[] = [
   pagode,
+  baileFunk,
+  budgetVoyage,
+  choisirPlage,
+  nuitCarioca,
+  couchersSoleil,
+  erreursRio,
+  marchesRio,
+  marquesBresiliennes,
+  payerPix,
+  mangerPetitBudget,
+  brunchsRio,
+  plagesNiteroi,
+  plagesZoneOuest,
+  quandPartir,
+  restaurantsRomantiques,
+  esimRio,
+  roadTripNordeste,
+  rodizios,
+  rooftops,
+  sambaLapa,
+  seDeplacer,
+  vivreCarioca,
 
   ipanema,
   copacabana,
