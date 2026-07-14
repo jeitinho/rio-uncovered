@@ -59,6 +59,7 @@ export const AUTHORS: Author[] = [
     longBio:
       "Entrepreneuse et maman installée dans la favela Santa Marta depuis près d'un an, Charline développe un projet innovant autour de Rio. Elle partage un regard humain et authentique sur la ville et ses habitants.",
     location: "Santa Marta, Rio de Janeiro",
+    photo: charlinePhoto,
   },
   {
     slug: "rafael",
