@@ -70,6 +70,7 @@ export const AUTHORS: Author[] = [
     longBio:
       "Fondateur de Jeitinho, Rafael est un entrepreneur franco-brésilien, producteur d'événements, guide francophone et concierge spécialisé sur Rio de Janeiro. Il partage son temps entre Rio de Janeiro (six mois par an) et Paris (six mois par an), accompagne les voyageurs avant, pendant et après leur séjour, et dirige la ligne éditoriale du média.",
     location: "Rio de Janeiro / Paris",
+    photo: rafaelPhoto,
     social: { website: "https://www.jeitinho.fr" },
   },
 ];
