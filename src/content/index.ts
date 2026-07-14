@@ -88,24 +88,21 @@ export const ARTICLES: Article[] = [
   jardim,
   barra,
   santaTeresa,
+  urca,
 
   rio25,
-  budget,
   carnaval,
   maracana,
   ilha,
   gastro,
-  sortir,
-  plages,
   doisirmaos,
-  culture,
   conseils,
   securite,
-  transports,
   hebergements,
   itineraire,
   reveillon,
 ];
+
 
 export function getAllArticles(): Article[] {
   return [...ARTICLES].sort((a, b) => (a.date > b.date ? -1 : 1));
