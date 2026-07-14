@@ -2,6 +2,10 @@
 // Ajouter un auteur = ajouter une entrée ici (ou plus tard, un fichier Markdown).
 // L'article référence l'auteur par son `slug`. `equipe-jeitinho` est le fallback
 // utilisé pour tous les articles rédigés par la rédaction.
+import logo from "@/assets/jeitinho-logo.png";
+import liliPhoto from "@/assets/authors/lili.jpg";
+import charlinePhoto from "@/assets/authors/charline.jpg";
+import rafaelPhoto from "@/assets/authors/rafael.jpg";
 
 export interface AuthorSocial {
   instagram?: string;
@@ -32,6 +36,7 @@ export const AUTHORS: Author[] = [
     longBio:
       "L'Équipe Jeitinho rassemble des contributeurs francophones et brésiliens installés à Rio. Elle signe les guides collectifs, les mises à jour éditoriales et les articles rédigés à plusieurs mains.",
     location: "Rio de Janeiro",
+    photo: logo,
     social: { instagram: "https://www.instagram.com/jeitinho.fr" },
   },
   {
@@ -43,6 +48,7 @@ export const AUTHORS: Author[] = [
     longBio:
       "Juriste de formation et ancienne barmaid, Lili a complètement changé de vie pour construire son avenir dans le tourisme au Brésil. Fraîchement installée à Rio de Janeiro, elle partage le regard d'une expatriée qui découvre la ville en profondeur.",
     location: "Rio de Janeiro",
+    photo: liliPhoto,
   },
   {
     slug: "charline",
@@ -53,6 +59,7 @@ export const AUTHORS: Author[] = [
     longBio:
       "Entrepreneuse et maman installée dans la favela Santa Marta depuis près d'un an, Charline développe un projet innovant autour de Rio. Elle partage un regard humain et authentique sur la ville et ses habitants.",
     location: "Santa Marta, Rio de Janeiro",
+    photo: charlinePhoto,
   },
   {
     slug: "rafael",
@@ -63,6 +70,7 @@ export const AUTHORS: Author[] = [
     longBio:
       "Fondateur de Jeitinho, Rafael est un entrepreneur franco-brésilien, producteur d'événements, guide francophone et concierge spécialisé sur Rio de Janeiro. Il partage son temps entre Rio de Janeiro (six mois par an) et Paris (six mois par an), accompagne les voyageurs avant, pendant et après leur séjour, et dirige la ligne éditoriale du média.",
     location: "Rio de Janeiro / Paris",
+    photo: rafaelPhoto,
     social: { website: "https://www.jeitinho.fr" },
   },
 ];
