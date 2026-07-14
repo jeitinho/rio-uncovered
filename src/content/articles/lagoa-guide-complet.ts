@@ -11,7 +11,7 @@ export const article: Article = {
   category: "quartiers",
   tags: ["Lagoa", "Zona Sul", "guide de quartier", "sport"],
   date: "2026-07-08",
-  author: "equipe",
+  author: "equipe-jeitinho",
   hero,
   heroAlt: "Lagune Rodrigo de Freitas au coucher du soleil avec vue sur le Corcovado, Rio de Janeiro",
   featured: false,

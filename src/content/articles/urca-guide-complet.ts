@@ -11,7 +11,7 @@ export const article: Article = {
   category: "quartiers",
   tags: ["Urca", "Pain de Sucre", "guide de quartier", "coucher de soleil"],
   date: "2026-06-24",
-  author: "equipe",
+  author: "equipe-jeitinho",
   hero,
   heroAlt: "Front de mer d'Urca au coucher du soleil avec vue sur le Pain de Sucre, Rio de Janeiro",
   featured: false,

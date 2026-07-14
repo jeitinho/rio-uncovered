@@ -35,16 +35,6 @@ export const AUTHORS: Author[] = [
     social: { instagram: "https://www.instagram.com/jeitinho.fr" },
   },
   {
-    slug: "carolina",
-    name: "Carolina",
-    role: "Regard local & culturel",
-    language: "fr/pt",
-    bio: "Carioca de 28 ans, francophone, diplômée en Droit international.",
-    longBio:
-      "Née à Rio de Janeiro et installée dans la zone ouest de la ville, Carolina est diplômée en Droit international et a participé à plusieurs conférences organisées par les Nations Unies. Elle apporte au média un regard local, culturel et institutionnel sur Rio.",
-    location: "Zone ouest, Rio de Janeiro",
-  },
-  {
     slug: "lili",
     name: "Lili",
     role: "Regard expatrié",

@@ -11,7 +11,7 @@ export const article: Article = {
   category: "quartiers",
   tags: ["Jardim Botânico", "Zona Sul", "guide de quartier", "nature"],
   date: "2026-07-06",
-  author: "equipe",
+  author: "equipe-jeitinho",
   hero,
   heroAlt: "Allée de palmiers impériaux du Jardin Botanique de Rio de Janeiro",
   featured: false,

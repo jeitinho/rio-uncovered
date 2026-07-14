@@ -11,7 +11,7 @@ export const article: Article = {
   category: "quartiers",
   tags: ["Copacabana", "Zona Sul", "guide de quartier", "plages"],
   date: "2026-06-18",
-  author: "equipe",
+  author: "equipe-jeitinho",
   hero,
   heroAlt: "Vue aérienne de la plage de Copacabana avec sa promenade en vagues, Rio de Janeiro",
   featured: true,

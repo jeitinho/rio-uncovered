@@ -13,20 +13,16 @@ import { article as lagoa } from "./articles/lagoa-guide-complet";
 import { article as jardim } from "./articles/jardim-botanico-guide-complet";
 import { article as barra } from "./articles/barra-da-tijuca-guide-complet";
 import { article as santaTeresa } from "./articles/santa-teresa-guide-complet";
+import { article as urca } from "./articles/urca-guide-complet";
 
 import { article as rio25 } from "./articles/25-meilleures-choses-a-faire-rio";
-import { article as budget } from "./articles/vrai-cout-voyage-rio";
 import { article as carnaval } from "./articles/preparer-carnaval-rio";
 import { article as maracana } from "./articles/guide-maracana";
 import { article as ilha } from "./articles/ilha-grande-excursion";
 import { article as gastro } from "./articles/guide-gastronomie-rio";
-import { article as sortir } from "./articles/sortir-rio-vie-nocturne";
-import { article as plages } from "./articles/guide-plages-rio";
 import { article as doisirmaos } from "./articles/randonnee-dois-irmaos";
-import { article as culture } from "./articles/culture-carioca-samba";
 import { article as conseils } from "./articles/conseils-pratiques-avant-partir-rio";
 import { article as securite } from "./articles/securite-rio-guide-honnete";
-import { article as transports } from "./articles/transports-rio-uber-metro";
 import { article as hebergements } from "./articles/ou-dormir-rio-quartiers";
 import { article as itineraire } from "./articles/itineraire-5-jours-rio";
 import { article as reveillon } from "./articles/reveillon-rio-copacabana";
@@ -53,6 +49,7 @@ import { article as rooftops } from "./articles/rooftops-bars-vue-rio";
 import { article as sambaLapa } from "./articles/samba-a-lapa";
 import { article as seDeplacer } from "./articles/se-deplacer-a-rio";
 import { article as vivreCarioca } from "./articles/vivre-comme-un-carioca";
+
 
 export const ARTICLES: Article[] = [
   pagode,
@@ -91,24 +88,21 @@ export const ARTICLES: Article[] = [
   jardim,
   barra,
   santaTeresa,
+  urca,
 
   rio25,
-  budget,
   carnaval,
   maracana,
   ilha,
   gastro,
-  sortir,
-  plages,
   doisirmaos,
-  culture,
   conseils,
   securite,
-  transports,
   hebergements,
   itineraire,
   reveillon,
 ];
+
 
 export function getAllArticles(): Article[] {
   return [...ARTICLES].sort((a, b) => (a.date > b.date ? -1 : 1));

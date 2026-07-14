@@ -11,7 +11,7 @@ export const article: Article = {
   category: "quartiers",
   tags: ["Barra da Tijuca", "Zona Oeste", "guide de quartier", "sports nautiques"],
   date: "2026-07-10",
-  author: "equipe",
+  author: "equipe-jeitinho",
   hero,
   heroAlt: "Longue plage de Barra da Tijuca bordée de tours modernes, Rio de Janeiro",
   featured: false,

@@ -11,7 +11,7 @@ export const article: Article = {
   category: "quartiers",
   tags: ["Botafogo", "Zona Sul", "guide de quartier", "vie locale"],
   date: "2026-06-28",
-  author: "equipe",
+  author: "equipe-jeitinho",
   hero,
   heroAlt: "Baie de Botafogo avec vue sur le Pain de Sucre au coucher du soleil, Rio de Janeiro",
   featured: false,
