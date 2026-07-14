@@ -36,6 +36,7 @@ export const AUTHORS: Author[] = [
     longBio:
       "L'Équipe Jeitinho rassemble des contributeurs francophones et brésiliens installés à Rio. Elle signe les guides collectifs, les mises à jour éditoriales et les articles rédigés à plusieurs mains.",
     location: "Rio de Janeiro",
+    photo: logo,
     social: { instagram: "https://www.instagram.com/jeitinho.fr" },
   },
   {
