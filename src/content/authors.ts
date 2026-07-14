@@ -2,6 +2,10 @@
 // Ajouter un auteur = ajouter une entrée ici (ou plus tard, un fichier Markdown).
 // L'article référence l'auteur par son `slug`. `equipe-jeitinho` est le fallback
 // utilisé pour tous les articles rédigés par la rédaction.
+import logo from "@/assets/jeitinho-logo.png";
+import liliPhoto from "@/assets/authors/lili.jpg";
+import charlinePhoto from "@/assets/authors/charline.jpg";
+import rafaelPhoto from "@/assets/authors/rafael.jpg";
 
 export interface AuthorSocial {
   instagram?: string;
