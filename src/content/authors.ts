@@ -48,6 +48,7 @@ export const AUTHORS: Author[] = [
     longBio:
       "Juriste de formation et ancienne barmaid, Lili a complètement changé de vie pour construire son avenir dans le tourisme au Brésil. Fraîchement installée à Rio de Janeiro, elle partage le regard d'une expatriée qui découvre la ville en profondeur.",
     location: "Rio de Janeiro",
+    photo: liliPhoto,
   },
   {
     slug: "charline",
