@@ -11,7 +11,7 @@ export const article: Article = {
   category: "quartiers",
   tags: ["Flamengo", "Zona Sul", "guide de quartier", "parc"],
   date: "2026-06-30",
-  author: "equipe",
+  author: "equipe-jeitinho",
   hero,
   heroAlt: "Parc de l'Aterro do Flamengo avec vue sur la baie de Guanabara et le Pain de Sucre, Rio de Janeiro",
   featured: false,

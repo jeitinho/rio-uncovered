@@ -11,7 +11,7 @@ export const article: Article = {
   category: "quartiers",
   tags: ["Glória", "centre historique", "guide de quartier", "patrimoine"],
   date: "2026-07-02",
-  author: "equipe",
+  author: "equipe-jeitinho",
   hero,
   heroAlt: "Église Nossa Senhora da Glória do Outeiro dominant la baie de Guanabara, Rio de Janeiro",
   featured: false,

@@ -11,7 +11,7 @@ export const article: Article = {
   category: "quartiers",
   tags: ["Catete", "centre historique", "guide de quartier", "vie locale"],
   date: "2026-07-04",
-  author: "equipe",
+  author: "equipe-jeitinho",
   hero,
   heroAlt: "Rue animée du quartier de Catete avec ses immeubles Art déco, Rio de Janeiro",
   featured: false,

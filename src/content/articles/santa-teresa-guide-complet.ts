@@ -11,7 +11,7 @@ export const article: Article = {
   category: "quartiers",
   tags: ["Santa Teresa", "centre historique", "guide de quartier", "art"],
   date: "2026-06-22",
-  author: "equipe",
+  author: "equipe-jeitinho",
   hero,
   heroAlt: "Ruelle pavée bordée de maisons coloniales colorées à Santa Teresa, Rio de Janeiro",
   featured: false,

@@ -11,7 +11,7 @@ export const article: Article = {
   category: "quartiers",
   tags: ["Leblon", "Zona Sul", "guide de quartier", "gastronomie"],
   date: "2026-06-20",
-  author: "equipe",
+  author: "equipe-jeitinho",
   hero,
   heroAlt: "Front de mer de Leblon au coucher du soleil avec la Pedra da Gávea en arrière-plan, Rio de Janeiro",
   featured: false,

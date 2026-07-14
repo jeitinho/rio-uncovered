@@ -11,7 +11,7 @@ export const article: Article = {
   category: "quartiers",
   tags: ["Lapa", "centre historique", "guide de quartier", "samba"],
   date: "2026-06-26",
-  author: "equipe",
+  author: "equipe-jeitinho",
   hero,
   heroAlt: "Arcs de Lapa illuminés la nuit avec le tramway historique, Rio de Janeiro",
   featured: false,
