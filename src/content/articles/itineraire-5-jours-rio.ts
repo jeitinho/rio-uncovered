@@ -84,7 +84,7 @@ export const article: Article = {
     ]},
 
     { type: "h2", text: "Aller plus loin selon votre profil" },
-    { type: "p", text: "Si vous voyagez en famille ou en groupe et souhaitez découvrir un Rio plus moderne, remplacez le jour 5 par une journée à <a href=\"/blog/barra-da-tijuca-guide-complet\">Barra da Tijuca</a>. Si vous n'avez que trois jours, consultez plutôt notre <a href=\"/blog/itineraire-3-jours-rio\">itinéraire express de 3 jours</a>. Pour approfondir chaque étape, retrouvez nos guides complets de <a href=\"/blog/copacabana-guide-complet\">Copacabana</a>, <a href=\"/blog/ipanema-guide-complet\">Ipanema</a>, <a href=\"/blog/santa-teresa-guide-complet\">Santa Teresa</a> et <a href=\"/blog/lapa-guide-complet\">Lapa</a>." },
+    { type: "p", text: "Si vous voyagez en famille ou en groupe et souhaitez découvrir un Rio plus moderne, remplacez le jour 5 par une journée à <a href=\"/blog/barra-da-tijuca-guide-complet\">Barra da Tijuca</a>. Pour approfondir chaque étape, retrouvez nos guides complets de <a href=\"/blog/copacabana-guide-complet\">Copacabana</a>, <a href=\"/blog/ipanema-guide-complet\">Ipanema</a>, <a href=\"/blog/santa-teresa-guide-complet\">Santa Teresa</a> et <a href=\"/blog/lapa-guide-complet\">Lapa</a>." },
 
     { type: "faq", items: [
       { q: "5 jours suffisent-ils pour bien découvrir Rio ?", a: "Oui, c'est le format idéal pour combiner les incontournables (Corcovado, Pain de Sucre, plages) avec des découvertes plus authentiques comme Santa Teresa, sans se presser." },
