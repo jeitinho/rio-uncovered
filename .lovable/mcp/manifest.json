@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "sdk_version": "0.22.1",
+  "path": "/mcp",
+  "auth": {
+    "type": "none"
+  },
+  "mcp": {
+    "server": {
+      "name": "jeitinho-blog-mcp",
+      "version": "0.1.0",
+      "title": "Jeitinho — Blog Rio de Janeiro"
+    },
+    "tools": [
+      {
+        "name": "list_articles",
+        "title": "Lister les articles",
+        "description": "Liste les articles du blog Jeitinho (Rio de Janeiro), du plus récent au plus ancien. Filtres optionnels par catégorie et par tag. Renvoie slug, titre, description, catégorie, tags, date, auteur.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "category": {
+              "description": "Slug de catégorie (ex: quartiers, activites, gastronomie).",
+              "type": "string"
+            },
+            "tag": {
+              "description": "Filtrer par tag.",
+              "type": "string"
+            },
+            "limit": {
+              "description": "Nombre max de résultats (défaut 20).",
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100
+            }
+          }
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "search_articles",
+        "title": "Rechercher des articles",
+        "description": "Recherche plein texte simple sur les articles du blog Jeitinho (titre, description, tags). Utile pour trouver des guides sur un quartier, une activité, la gastronomie, etc.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "query": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Termes de recherche."
+            },
+            "limit": {
+              "description": "Nombre max de résultats (défaut 10).",
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 50
+            }
+          },
+          "required": [
+            "query"
+          ]
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "get_article",
+        "title": "Obtenir un article",
+        "description": "Renvoie le contenu complet d'un article du blog Jeitinho à partir de son slug (métadonnées + corps de l'article en texte lisible).",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "slug": {
+              "type": "string",
+              "minLength": 1,
+              "description": "Slug de l'article (ex: ipanema-guide-complet)."
+            }
+          },
+          "required": [
+            "slug"
+          ]
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_categories",
+        "title": "Lister les catégories",
+        "description": "Liste les catégories éditoriales du blog Jeitinho avec leur slug et description.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_authors",
+        "title": "Lister les auteurs",
+        "description": "Liste les auteurs et contributeurs du blog Jeitinho.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}
