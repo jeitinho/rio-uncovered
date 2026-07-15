@@ -49,7 +49,7 @@ import { article as rooftops } from "./articles/rooftops-bars-vue-rio";
 import { article as sambaLapa } from "./articles/samba-a-lapa";
 import { article as seDeplacer } from "./articles/se-deplacer-a-rio";
 import { article as vivreCarioca } from "./articles/vivre-comme-un-carioca";
-
+import { article as pharmacies } from "./articles/pharmacies-a-rio";
 
 export const ARTICLES: Article[] = [
   pagode,
@@ -75,6 +75,7 @@ export const ARTICLES: Article[] = [
   sambaLapa,
   seDeplacer,
   vivreCarioca,
+  pharmacies,
 
   ipanema,
   copacabana,
