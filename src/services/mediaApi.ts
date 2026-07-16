@@ -11,7 +11,7 @@ export interface NewContentPayload {
   auteur?: string;
 }
 
-const GOOGLE_MEDIA_WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbyDWi_F3LhbV1XQb9R30Id-4klzmEbPwuE8a6h4RxOAQ5VZ704M56XXSq_Vt-9ELTjZog/exec";
+const GOOGLE_MEDIA_WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbyDWi_F3LhbV1XQb9R30Id-4klzmEbPwuE8a6h4RxOAQ5VZ704M56XXSq_Vt-9ELTjZog/exeec";
 
 /**
  * Envoie un article vers le Google Sheets
