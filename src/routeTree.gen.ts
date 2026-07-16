@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as RssDotxmlRouteImport } from './routes/rss[.]xml'
+import { Route as PartenairesRouteImport } from './routes/partenaires'
 import { Route as McpRouteImport } from './routes/mcp'
 import { Route as ManuelJeitinhoRouteImport } from './routes/manuel-jeitinho'
 import { Route as ContactRouteImport } from './routes/contact'
@@ -34,6 +35,11 @@ const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
 const RssDotxmlRoute = RssDotxmlRouteImport.update({
   id: '/rss.xml',
   path: '/rss.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PartenairesRoute = PartenairesRouteImport.update({
+  id: '/partenaires',
+  path: '/partenaires',
   getParentRoute: () => rootRouteImport,
 } as any)
 const McpRoute = McpRouteImport.update({
@@ -116,6 +122,7 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/manuel-jeitinho': typeof ManuelJeitinhoRoute
   '/mcp': typeof McpRoute
+  '/partenaires': typeof PartenairesRoute
   '/rss.xml': typeof RssDotxmlRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
@@ -134,6 +141,7 @@ export interface FileRoutesByTo {
   '/contact': typeof ContactRoute
   '/manuel-jeitinho': typeof ManuelJeitinhoRoute
   '/mcp': typeof McpRoute
+  '/partenaires': typeof PartenairesRoute
   '/rss.xml': typeof RssDotxmlRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
@@ -153,6 +161,7 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/manuel-jeitinho': typeof ManuelJeitinhoRoute
   '/mcp': typeof McpRoute
+  '/partenaires': typeof PartenairesRoute
   '/rss.xml': typeof RssDotxmlRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
@@ -173,6 +182,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/manuel-jeitinho'
     | '/mcp'
+    | '/partenaires'
     | '/rss.xml'
     | '/sitemap.xml'
     | '/.mcp/list-tools'
@@ -191,6 +201,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/manuel-jeitinho'
     | '/mcp'
+    | '/partenaires'
     | '/rss.xml'
     | '/sitemap.xml'
     | '/.mcp/list-tools'
@@ -209,6 +220,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/manuel-jeitinho'
     | '/mcp'
+    | '/partenaires'
     | '/rss.xml'
     | '/sitemap.xml'
     | '/.mcp/list-tools'
@@ -228,6 +240,7 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   ManuelJeitinhoRoute: typeof ManuelJeitinhoRoute
   McpRoute: typeof McpRoute
+  PartenairesRoute: typeof PartenairesRoute
   RssDotxmlRoute: typeof RssDotxmlRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   Char91DotmcpChar93ListToolsRoute: typeof Char91DotmcpChar93ListToolsRoute
@@ -255,6 +268,13 @@ declare module '@tanstack/react-router' {
       path: '/rss.xml'
       fullPath: '/rss.xml'
       preLoaderRoute: typeof RssDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/partenaires': {
+      id: '/partenaires'
+      path: '/partenaires'
+      fullPath: '/partenaires'
+      preLoaderRoute: typeof PartenairesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/mcp': {
@@ -364,6 +384,7 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   ManuelJeitinhoRoute: ManuelJeitinhoRoute,
   McpRoute: McpRoute,
+  PartenairesRoute: PartenairesRoute,
   RssDotxmlRoute: RssDotxmlRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   Char91DotmcpChar93ListToolsRoute: Char91DotmcpChar93ListToolsRoute,
