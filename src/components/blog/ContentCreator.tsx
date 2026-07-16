@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { publishToMediaOS } from "../services/mediaApi";
+import { publishToMediaOS } from "../../services/mediaApi";
 
 export const ContentCreator: React.FC = () => {
   const [titre, setTitre] = useState("");
@@ -8,6 +8,7 @@ export const ContentCreator: React.FC = () => {
   const [pilier, setPilier] = useState("Insolite");
   const [type, setType] = useState("Article");
   const [seoTarget, setSeoTarget] = useState("");
+  const [auteur, setAuteur] = useState("Équipe Jeitinho");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
@@ -28,7 +29,7 @@ export const ContentCreator: React.FC = () => {
       pilier,
       type,
       seoTarget,
-      auteur: "Équipe Édito"
+      auteur
     });
 
     setIsSubmitting(false);
@@ -37,6 +38,7 @@ export const ContentCreator: React.FC = () => {
       setTitre("");
       setSlug("");
       setSeoTarget("");
+      setAuteur("Équipe Jeitinho");
     }
   };
 
@@ -49,8 +51,15 @@ export const ContentCreator: React.FC = () => {
       
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
-          <label className="block text-xs font-bold text-[#221E1A] uppercase tracking-wider mb-1">Titre de l'article</label>
+          <label 
+            htmlFor="titre" 
+            className="block text-xs font-bold text-[#221E1A] uppercase tracking-wider mb-1"
+          >
+            Titre de l'article
+          </label>
           <input 
+            id="titre"
+            name="titre"
             type="text" 
             value={titre} 
             onChange={(e) => handleSlugify(e.target.value)}
@@ -60,8 +69,15 @@ export const ContentCreator: React.FC = () => {
         </div>
 
         <div>
-          <label className="block text-xs font-bold text-[#221E1A] uppercase tracking-wider mb-1">Slug URL</label>
+          <label 
+            htmlFor="slug" 
+            className="block text-xs font-bold text-[#221E1A] uppercase tracking-wider mb-1"
+          >
+            Slug URL
+          </label>
           <input 
+            id="slug"
+            name="slug"
             type="text" 
             value={slug} 
             onChange={(e) => setSlug(e.target.value)}
@@ -72,8 +88,15 @@ export const ContentCreator: React.FC = () => {
 
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <label className="block text-xs font-bold text-[#221E1A] uppercase tracking-wider mb-1">Collection</label>
+            <label 
+              htmlFor="collection" 
+              className="block text-xs font-bold text-[#221E1A] uppercase tracking-wider mb-1"
+            >
+              Collection
+            </label>
             <select 
+              id="collection"
+              name="collection"
               value={collection} 
               onChange={(e) => setCollection(e.target.value)}
               className="w-full p-3 bg-white border border-[#221E1A] text-[#221E1A] rounded-sm focus:outline-none"
@@ -85,8 +108,15 @@ export const ContentCreator: React.FC = () => {
             </select>
           </div>
           <div>
-            <label className="block text-xs font-bold text-[#221E1A] uppercase tracking-wider mb-1">Pilier</label>
+            <label 
+              htmlFor="pilier" 
+              className="block text-xs font-bold text-[#221E1A] uppercase tracking-wider mb-1"
+            >
+              Pilier
+            </label>
             <input 
+              id="pilier"
+              name="pilier"
               type="text" 
               value={pilier} 
               onChange={(e) => setPilier(e.target.value)}
@@ -95,9 +125,59 @@ export const ContentCreator: React.FC = () => {
           </div>
         </div>
 
+        <div className="grid grid-cols-2 gap-4">
+          <div>
+            <label 
+              htmlFor="auteur" 
+              className="block text-xs font-bold text-[#221E1A] uppercase tracking-wider mb-1"
+            >
+              Auteur
+            </label>
+            <select 
+              id="auteur"
+              name="auteur"
+              value={auteur} 
+              onChange={(e) => setAuteur(e.target.value)}
+              className="w-full p-3 bg-white border border-[#221E1A] text-[#221E1A] rounded-sm focus:outline-none"
+            >
+              <option value="Rafael">Rafael</option>
+              <option value="Lili">Lili</option>
+              <option value="Charline">Charline</option>
+              <option value="Équipe Jeitinho">Équipe Jeitinho</option>
+            </select>
+          </div>
+
+          <div>
+            <label 
+              htmlFor="type" 
+              className="block text-xs font-bold text-[#221E1A] uppercase tracking-wider mb-1"
+            >
+              Type de Contenu
+            </label>
+            <select 
+              id="type"
+              name="type"
+              value={type} 
+              onChange={(e) => setType(e.target.value)}
+              className="w-full p-3 bg-white border border-[#221E1A] text-[#221E1A] rounded-sm focus:outline-none"
+            >
+              <option value="Article">Article</option>
+              <option value="Vidéo">Vidéo</option>
+              <option value="Post Insta">Post Insta</option>
+            </select>
+          </div>
+        </div>
+
         <div>
-          <label className="block text-xs font-bold text-[#221E1A] uppercase tracking-wider mb-1">Mot-clé principal SEO</label>
+          <label 
+            htmlFor="seoTarget" 
+            className="block text-xs font-bold text-[#221E1A] uppercase tracking-wider mb-1"
+          >
+            Mot-clé principal SEO
+          </label>
           <input 
+            id="seoTarget"
+            name="seoTarget"
             type="text" 
             value={seoTarget} 
             onChange={(e) => setSeoTarget(e.target.value)}
