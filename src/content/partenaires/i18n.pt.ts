@@ -184,6 +184,6 @@ export const pt = {
     ctaWhatsapp: "Entrar na comunidade WhatsApp",
     ctaBlog: "Conhecer a Jeitinho Média",
   },
-} as const;
+};
 
 export type Dict = typeof pt;
