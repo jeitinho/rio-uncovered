@@ -59,6 +59,9 @@ import { article as laveries } from "./articles/laveries-pressings-rio";
 import { article as urgences } from "./articles/numeros-urgence-adresses-utiles-rio";
 import { article as horaires } from "./articles/horaires-a-la-carioca";
 
+// NOUVEAU — guide Postos des plages
+import { article as postos } from "./articles/les-postos";
+
 export const ARTICLES: Article[] = [
   pagode,
   baileFunk,
@@ -90,6 +93,7 @@ export const ARTICLES: Article[] = [
   laveries,
   urgences,
   horaires,
+  postos,
 
   ipanema,
   copacabana,
