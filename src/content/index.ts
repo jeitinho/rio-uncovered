@@ -51,6 +51,14 @@ import { article as seDeplacer } from "./articles/se-deplacer-a-rio";
 import { article as vivreCarioca } from "./articles/vivre-comme-un-carioca";
 import { article as pharmacies } from "./articles/pharmacies-a-rio";
 
+// NOUVEAU — reste du cluster "Vie pratique locale" (pilier Rio au quotidien)
+import { article as courses } from "./articles/courses-supermarches-a-rio";
+import { article as argent } from "./articles/retirer-argent-distributeurs-rio";
+import { article as soigner } from "./articles/se-soigner-a-rio";
+import { article as laveries } from "./articles/laveries-pressings-rio";
+import { article as urgences } from "./articles/numeros-urgence-adresses-utiles-rio";
+import { article as horaires } from "./articles/horaires-a-la-carioca";
+
 export const ARTICLES: Article[] = [
   pagode,
   baileFunk,
@@ -76,6 +84,12 @@ export const ARTICLES: Article[] = [
   seDeplacer,
   vivreCarioca,
   pharmacies,
+  courses,
+  argent,
+  soigner,
+  laveries,
+  urgences,
+  horaires,
 
   ipanema,
   copacabana,
