@@ -95,7 +95,7 @@ export const ARTICLES: Article[] = [
   urgences,
   horaires,
   postos,
-  sambaRioDeJaneiro
+  sambaRioDeJaneiro,
 
   ipanema,
   copacabana,
