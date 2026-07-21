@@ -60,7 +60,8 @@ import { article as urgences } from "./articles/numeros-urgence-adresses-utiles-
 import { article as horaires } from "./articles/horaires-a-la-carioca";
 
 // NOUVEAU — guide Postos des plages
-import { article as postos } from "./articles/les-postos";
+import { article as postos } from "./articles/les-postos.ts";
+import { article as sambaRioDeJaneiro } from "./articles/samba-rio-de-janeiro";
 
 export const ARTICLES: Article[] = [
   pagode,
@@ -94,6 +95,7 @@ export const ARTICLES: Article[] = [
   urgences,
   horaires,
   postos,
+  sambaRioDeJaneiro
 
   ipanema,
   copacabana,
