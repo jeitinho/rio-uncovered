@@ -1,10 +1,13 @@
 import type { Article } from "../types";
 
-// Importation des photos à ajouter dans src/assets/
+// Importation des photos avec leurs noms exacts du dossier assets
 import heroImg from "@/assets/funk-hero.jpg";
 import baileFunkImg from "@/assets/baile-funk.jpg";
 import passinhoImg from "@/assets/passinho-dance.jpg";
 import femmesFunkImg from "@/assets/femmes-funk.jpg";
+
+// Helper pour garantir qu'on extrait la chaîne URL (gestion string vs object de Vite)
+const getImageSrc = (img: any): string => (typeof img === "string" ? img : img?.src || img);
 
 export const article: Article = {
   slug: "funk-carioca-rio-de-janeiro",
@@ -26,7 +29,7 @@ export const article: Article = {
   ],
   date: "2026-07-23",
   author: "nawal",
-  hero: heroImg,
+  hero: getImageSrc(heroImg),
   heroAlt:
     "Ambiance survoltée lors d'un baile funk à Rio de Janeiro avec des lumières et une foule en liesse",
   featured: true,
@@ -47,25 +50,25 @@ export const article: Article = {
   sections: [
     {
       type: "p",
-      text: "Si je vous dis « Brésil », vous pensez probablement aussitôt aux plages de Copacabana, au sable chaud, à la mer, et à vous, une caipirinha fraîche à la main, le tout bercé par une douce mélodie de samba.\n\nMême si la samba brésilienne est mondialement connue, il existe une multitude de styles musicaux différents qui font danser les Brésiliens aux quatre coins du pays.\n\nAujourd'hui, je vais vous parler plus spécifiquement de l'un d'entre eux, qui fait battre le cœur de la jeunesse carioca : le **Funk brésilien**.",
+      text: "Si je vous dis « Brésil », vous pensez probablement aussitôt aux plages de Copacabana, au sable chaud, à la mer, et à vous, une caipirinha fraîche à la main, le tout bercé par une douce mélodie de samba.\n\nMême si la samba brésilienne est mondialement connue, il existe une multitude de styles musicaux différents qui font danser les Brésiliens aux quatre coins du pays.\n\nAujourd'hui, je vais vous parler plus spécifiquement de l'un d'entre eux, qui fait battre le cœur de la jeunesse carioca : le <b>Funk brésilien</b>.",
     },
     {
       type: "p",
-      text: "C'est en 2019, alors que j'étais encore en Belgique, qu'une amie me fait découvrir une chanson qui va tout changer :\n\n*« MC Bin Laden — Ta Tranquilo Ta Favorável »*\n\nLe rythme me plaît immédiatement. C'est différent, les basses sont puissantes, les phrases répétitives et hypnotiques. Je laisse tourner le clip sur YouTube, et d'autres chansons se enchaînent automatiquement. C'est ainsi que je découvre **KONDZILLA**, un label emblématique qui me fera découvrir des artistes comme DJ Guuga, MC Livinho et bien d'autres.\n\nFêtes, festivals, trajets en voiture, soirées entre amis ou à la maison… le funk brésilien a commencé à accompagner mon quotidien pour ne plus jamais me quitter.",
+      text: "C'est en 2019, alors que j'étais encore en Belgique, qu'une amie me fait découvrir une chanson qui va tout changer :\n\n<i>« MC Bin Laden — Ta Tranquilo Ta Favorável »</i>\n\nLe rythme me plaît immédiatement. C'est différent, les basses sont puissantes, les phrases répétitives et hypnotiques. Je laisse tourner le clip sur YouTube, et d'autres chansons s'enchaînent automatiquement. C'est ainsi que je découvre <b>KONDZILLA</b>, un label emblématique qui me fera découvrir des artistes comme DJ Guuga, MC Livinho et bien d'autres.\n\nFêtes, festivals, trajets en voiture, soirées entre amis ou à la maison… le funk brésilien a commencé à accompagner mon quotidien pour ne plus jamais me quitter.",
     },
     {
       type: "p",
-      text: "Et là, vous vous dites probablement :\n\n*« Mais Nawal, au fait, c'est quoi exactement le funk brésilien ? »*\n\nLe funk brésilien (ou *funk carioca*) est un genre musical né à Rio de Janeiro, principalement au cours des années 1980 et 1990.\n\nMalgré son nom, il ne vient pas directement du funk américain vintage que l'on associe à James Brown. Ses racines sont plutôt liées à la musique noire américaine, à la soul, au hip-hop et surtout au **Miami Bass**, un style de musique électronique très rythmé caractérisé par des basses lourdes et puissantes.\n\nLes DJ brésiliens se sont réapproprié ces influences pour les transformer. Les paroles sont passées au portugais, les rythmes ont évolué et les artistes ont commencé à raconter leur propre réalité. C'est ainsi qu'est né le funk carioca : une musique issue d'une influence étrangère devenue profondément et viscéralement brésilienne.",
+      text: "Et là, vous vous dites probablement :\n\n<i>« Mais Nawal, au fait, c'est quoi exactement le funk brésilien ? »</i>\n\nLe funk brésilien (ou <i>funk carioca</i>) est un genre musical né à Rio de Janeiro, principalement au cours des années 1980 et 1990.\n\nMalgré son nom, il ne vient pas directement du funk américain vintage que l'on associe à James Brown. Ses racines sont plutôt liées à la musique noire américaine, à la soul, au hip-hop et surtout au <b>Miami Bass</b>, un style de musique électronique très rythmé caractérisé par des basses lourdes et puissantes.\n\nLes DJ brésiliens se sont réapproprié ces influences pour les transformer. Les paroles sont passées au portugais, les rythmes ont évolué et les artistes ont commencé à raconter leur propre réalité. C'est ainsi qu'est né le funk carioca : une musique issue d'une influence étrangère devenue profondément et viscéralement brésilienne.",
     },
 
     { type: "h2", text: "Le baile funk : là où tout commence" },
     {
       type: "p",
-      text: "Pour comprendre le funk, il faut impérativement comprendre ce qu'est un **baile funk**.\n\nUn baile funk est une fête populaire où la musique est diffusée à un volume impressionnant, grâce à des systèmes de son monumentaux (les *paredões*) émettant des basses que l'on ressent littéralement résonner dans tout son corps.\n\nÀ l'origine, ces fêtes se déroulaient principalement dans les quartiers populaires et les favelas de Rio. Pour beaucoup de jeunes, elles représentaient un espace unique de liberté, de rencontre, de fête et d'expression artistique.",
+      text: "Pour comprendre le funk, il faut impérativement comprendre ce qu'est un <b>baile funk</b>.\n\nUn baile funk est une fête populaire où la musique est diffusée à un volume impressionnant, grâce à des systèmes de son monumentaux (les <i>paredões</i>) émettant des basses que l'on ressent littéralement résonner dans tout son corps.\n\nÀ l'origine, ces fêtes se déroulaient principalement dans les quartiers populaires et les favelas de Rio. Pour beaucoup de jeunes, elles représentaient un espace unique de liberté, de rencontre, de fête et d'expression artistique.",
     },
     {
       type: "image",
-      src: baileFunkImg,
+      src: getImageSrc(baileFunkImg),
       alt: "Système de son massif et foule dans un baile funk dans une favela de Rio de Janeiro",
       caption: "Le baile funk : des basses puissantes et une énergie collective incomparable.",
     },
@@ -82,17 +85,17 @@ export const article: Article = {
     { type: "h2", text: "Une musique qui raconte la vie réelle" },
     {
       type: "p",
-      text: "L'une des grandes forces du funk réside dans la diversité de ses textes.\n\nCertains morceaux parlent de fête, de séduction, de relations amoureuses ou de liberté sexuelle. D'autres abordent la pauvreté, le racisme, les violences ou les difficultés quotidiennes des quartiers défavorisés.\n\nIl existe notamment le **funk consciente**, qui possède une forte dimension sociale et politique. Certaines chansons expriment simplement un désir fondamental : pouvoir vivre en paix, rentrer chez soi sans crainte et accéder aux mêmes opportunités que les autres.\n\nÀ l'opposé, le *proibidão* est un style plus controversé évoquant la réalité brute du quotidien et les tensions de la rue.\n\nC'est pour cela qu'il est impossible de réduire le funk à un message unique : il peut être drôle, romantique, engagé, provocateur, sensuel ou simplement ultra-festif.",
+      text: "L'une des grandes forces du funk réside dans la diversité de ses textes.\n\nCertains morceaux parlent de fête, de séduction, de relations amoureuses ou de liberté sexuelle. D'autres abordent la pauvreté, le racisme, les violences ou les difficultés quotidiennes des quartiers défavorisés.\n\nIl existe notamment le <b>funk consciente</b>, qui possède une forte dimension sociale et politique. Certaines chansons expriment simplement un désir fondamental : pouvoir vivre en paix, rentrer chez soi sans crainte et accéder aux mêmes opportunités que les autres.\n\nÀ l'opposé, le <i>proibidão</i> est un style plus controversé évoquant la réalité brute du quotidien et les tensions de la rue.\n\nC'est pour cela qu'il est impossible de réduire le funk à un message unique : il peut être drôle, romantique, engagé, provocateur, sensuel ou simplement ultra-festif.",
     },
 
     { type: "h2", text: "Quand le corps devient un instrument : le Passinho" },
     {
       type: "p",
-      text: "Au Brésil, le funk ne s'écoute pas seulement : il se vit et se danse avec une intensité incroyable.\n\nL'un des styles de danse les plus emblématiques est le **passinho**, né au cœur des favelas de Rio. Les danseurs y enchaînent des mouvements de jambes extrêmement rapides, précis et techniques.",
+      text: "Au Brésil, le funk ne s'écoute pas seulement : il se vit et se danse avec une intensité incroyable.\n\nL'un des styles de danse les plus emblématiques est le <b>passinho</b>, né au cœur des favelas de Rio. Les danseurs y enchaînent des mouvements de jambes extrêmement rapides, précis et techniques.",
     },
     {
       type: "image",
-      src: passinhoImg,
+      src: getImageSrc(passinhoImg),
       alt: "Jeunes danseurs réalisant des mouvements rapides de passinho dans les rues de Rio",
       caption: "Le passinho : un mélange virtuose de funk, samba, breakdance et danses urbaines.",
     },
@@ -108,7 +111,7 @@ export const article: Article = {
     },
     {
       type: "image",
-      src: femmesFunkImg,
+      src: getImageSrc(femmesFunkImg),
       alt: "Artiste féminine de funk brésilien chantant sur scène devant son public",
       caption: "Les femmes du funk carioca : indépendance, prise de parole et réappropriation de leur image.",
     },
@@ -120,19 +123,19 @@ export const article: Article = {
     { type: "h2", text: "De Rio au reste du monde" },
     {
       type: "p",
-      text: "Autrefois considéré comme un phénomène strictement local, le funk carioca s'est exporté partout sur la planète. Il influence désormais la pop internationale, le hip-hop et la scène électro.\n\nDes artistes comme **Anitta**, notamment avec son album *Funk Generation*, ont propulsé les sonorités des favelas sur les plus grandes scènes mondiales. Cette passion pour le funk m'a d'ailleurs amenée à développer ma propre vocation de DJ en 2024, alors que rien ne m'y préparait !\n\nMais cette expansion pose une belle question : peut-on exporter le son du funk sans oublier les communautés populaires qui l'ont façonné avec créativité et conviction ?",
+      text: "Autrefois considéré comme un phénomène strictement local, le funk carioca s'est exporté partout sur la planète. Il influence désormais la pop internationale, le hip-hop et la scène électro.\n\nDes artistes comme <b>Anitta</b>, notamment avec son album <i>Funk Generation</i>, ont propulsé les sonorités des favelas sur les plus grandes scènes mondiales. Cette passion pour le funk m'a d'ailleurs amenée à développer ma propre vocation de DJ en 2024, alors que rien ne m'y préparait !\n\nMais cette expansion pose une belle question : peut-on exporter le son du funk sans oublier les communautés populaires qui l'ont façonné avec créativité et conviction ?",
     },
 
     { type: "h2", text: "Pourquoi le funk est-il si important à Rio ?" },
     {
       type: "p",
-      text: "Parce qu'il raconte une autre facette de la ville.\n\nÀ côté des cartes postales d'Ipanema et du Corcovado, Rio est une métropole marquée par de forts contrastes sociaux. Le funk est la voix des quartiers populaires, le langage d'une génération et le reflet vibrant de la société carioca.\n\nMême sans maîtriser tout le portugais, on comprend vite l'essentiel : **le funk brésilien se ressent**.",
+      text: "Parce qu'il raconte une autre facette de la ville.\n\nÀ côté des cartes postales d'Ipanema et du Corcovado, Rio est une métropole marquée par de forts contrastes sociaux. Le funk est la voix des quartiers populaires, le langage d'une génération et le reflet vibrant de la société carioca.\n\nMême sans maîtriser tout le portugais, on comprend vite l'essentiel : <b>le funk brésilien se ressent</b>.",
     },
 
     {
       type: "bonasavoir",
       title: "La Playlist Funk de Nawal (10 titres incontournables)",
-      text: "Pour vous plonger immédiatement dans l'ambiance carioca, voici 10 classiques à écouter d'urgence :\n\n1. Dennis, Nandinho & Nego Bam — *Malandramente*\n2. Anitta, MC Zaac, Maejor & Tropkillaz — *Vai Malandra*\n3. MC Fioti — *Bum Bum Tam Tam*\n4. MC João — *Baile de Favela*\n5. Bonde do Tigrão — *Cerol na Mão*\n6. Cidinho & Doca — *Rap da Felicidade*\n7. MC Livinho & Rennan da Penha — *Hoje Eu Vou Parar na Gaiola*\n8. Dadá Boladão, Tati Zaqui & OIK — *Surtada*\n9. Pedro Sampaio, MC Pedrinho & Anitta — *Dançarina*\n10. Anitta — *Funk Rave*",
+      text: "Pour vous plonger immédiatement dans l'ambiance carioca, voici 10 classiques à écouter d'urgence :\n\n1. Dennis, Nandinho & Nego Bam — Malandramente\n2. Anitta, MC Zaac, Maejor & Tropkillaz — Vai Malandra\n3. MC Fioti — Bum Bum Tam Tam\n4. MC João — Baile de Favela\n5. Bonde do Tigrão — Cerol na Mão\n6. Cidinho & Doca — Rap da Felicidade\n7. MC Livinho & Rennan da Penha — Hoje Eu Vou Parar na Gaiola\n8. Dadá Boladão, Tati Zaqui & OIK — Surtada\n9. Pedro Sampaio, MC Pedrinho & Anitta — Dançarina\n10. Anitta — Funk Rave",
     },
 
     {
