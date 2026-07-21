@@ -7,8 +7,7 @@ import { autoLink } from "@/lib/interlink";
 
 export function ArticleBody({ sections, currentSlug }: { sections: Section[]; currentSlug?: string }) {
   const exclude = currentSlug ? `/blog/${currentSlug}` : undefined;
-  const link = (t: string) => autoLink(t, exclude);
-
+  const link = (t: string) => t;
   return (
     <div className="prose-jeitinho">
       {sections.map((s, i) => {
