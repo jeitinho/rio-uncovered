@@ -59,9 +59,10 @@ import { article as laveries } from "./articles/laveries-pressings-rio";
 import { article as urgences } from "./articles/numeros-urgence-adresses-utiles-rio";
 import { article as horaires } from "./articles/horaires-a-la-carioca";
 
-// NOUVEAU — guide Postos des plages
-import { article as postos } from "./articles/les-postos.ts";
+// NOUVEAU — guides
+import { article as postos } from "./articles/les-postos"; // <-- CORRIGÉ : suppression du .ts
 import { article as sambaRioDeJaneiro } from "./articles/samba-rio-de-janeiro";
+import { article as funkCariocaRio } from "./articles/funk-carioca-rio-de-janeiro";
 
 export const ARTICLES: Article[] = [
   pagode,
@@ -96,6 +97,7 @@ export const ARTICLES: Article[] = [
   horaires,
   postos,
   sambaRioDeJaneiro,
+  funkCariocaRio,
 
   ipanema,
   copacabana,
@@ -123,7 +125,6 @@ export const ARTICLES: Article[] = [
   itineraire,
   reveillon,
 ];
-
 
 export function getAllArticles(): Article[] {
   return [...ARTICLES].sort((a, b) => (a.date > b.date ? -1 : 1));
