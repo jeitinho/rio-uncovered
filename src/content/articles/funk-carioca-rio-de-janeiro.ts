@@ -34,18 +34,18 @@ export const article: Article = {
     "Ambiance survoltée lors d'un baile funk à Rio de Janeiro avec des lumières et une foule en liesse",
   featured: true,
   relatedServices: [
-    {
-      label: "Initiation à la danse Passinho avec Jeitinho",
-      href: "https://www.jeitinho.fr/calendrier",
-      description:
-        "Apprenez les pas emblématiques du passinho lors d'un cours d'une heure donné par un professeur professionnel à Rio.",
-    },
-    {
-      label: "Découvrir la vraie culture carioca",
-      href: "https://www.jeitinho.fr",
-      description:
-        "Musique, quartiers authentiques, soirées et expériences sur mesure pour vivre Rio comme un vrai habitant.",
-    },
+  {
+    label: "Initiation au Passinho avec Jeitinho",
+    href: "https://jeitinho.fr/experiences/cours-funk",
+    description:
+      "Apprenez les pas emblématiques du passinho lors d'un cours privé d'une heure avec un professeur professionnel à Rio de Janeiro.",
+  },
+  {
+    label: "Vivre un vrai Baile Funk",
+    href: "https://jeitinho.fr/calendrier",
+    description:
+      "Découvrez l'univers du baile funk accompagné d'un guide local et vivez une soirée authentique dans les meilleures conditions.",
+  },
   ],
   sections: [
     {
@@ -133,16 +133,40 @@ export const article: Article = {
     },
 
     {
-      type: "bonasavoir",
-      title: "La Playlist Funk de Nawal (10 titres incontournables)",
-      text: "Pour vous plonger immédiatement dans l'ambiance carioca, voici 10 classiques à écouter d'urgence :\n\n1. Dennis, Nandinho & Nego Bam — Malandramente\n2. Anitta, MC Zaac, Maejor & Tropkillaz — Vai Malandra\n3. MC Fioti — Bum Bum Tam Tam\n4. MC João — Baile de Favela\n5. Bonde do Tigrão — Cerol na Mão\n6. Cidinho & Doca — Rap da Felicidade\n7. MC Livinho & Rennan da Penha — Hoje Eu Vou Parar na Gaiola\n8. Dadá Boladão, Tati Zaqui & OIK — Surtada\n9. Pedro Sampaio, MC Pedrinho & Anitta — Dançarina\n10. Anitta — Funk Rave",
-    },
-
+  type: "bonasavoir",
+  title: "La Playlist Funk de Nawal (10 titres incontournables)",
+  text: "Pour vous plonger immédiatement dans l'ambiance carioca, voici dix classiques incontournables à écouter.",
+},
+{
+  type: "ol",
+  items: [
+    "Dennis, Nandinho & Nego Bam — Malandramente",
+    "Anitta, MC Zaac, Maejor & Tropkillaz — Vai Malandra",
+    "MC Fioti — Bum Bum Tam Tam",
+    "MC João — Baile de Favela",
+    "Bonde do Tigrão — Cerol na Mão",
+    "Cidinho & Doca — Rap da Felicidade",
+    "MC Livinho & Rennan da Penha — Hoje Eu Vou Parar na Gaiola",
+    "Dadá Boladão, Tati Zaqui & OIK — Surtada",
+    "Pedro Sampaio, MC Pedrinho & Anitta — Dançarina",
+    "Anitta — Funk Rave",
+  ],
+},
     {
       type: "quote",
       text: "Le funk carioca est bien plus qu'un genre musical : c'est une culture née dans les marges devenue impossible à ignorer. La prochaine fois que vous entendrez une basse résonner dans les rues de Rio, laissez-vous porter ! 🎧🇧🇷",
     },
-
+{
+  type: "bonasavoir",
+  title: "À lire aussi",
+  text: `
+<ul>
+<li><a href="/blog/copacabana-guide-complet">Guide complet de Copacabana</a></li>
+<li><a href="/blog/guide-maracana">Le Maracanã : bien plus qu'un stade</a></li>
+<li><a href="/blog/preparer-carnaval-rio">Comment préparer son Carnaval à Rio</a></li>
+</ul>
+`,
+},
     {
       type: "faq",
       items: [
