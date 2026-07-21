@@ -70,7 +70,7 @@ export const Route = createFileRoute("/api/partenaires")({
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            from: "Portail Partenaires Jeitinho <partenaires@jeitinho.fr>",
+            from: "Portail Partenaires Jeitinho <partenaires@media.jeitinho.fr>",
             to: [candidaturePartenaire.to ?? "blog@jeitinho.fr"],
             reply_to: payload.email,
             subject,
