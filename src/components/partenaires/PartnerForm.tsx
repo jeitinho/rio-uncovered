@@ -1,3 +1,4 @@
+
 import { useMemo, useState } from "react";
 import { useLang } from "@/lib/i18n";
 import type { PartnerApplication, PartnerCategory } from "@/content/partenaires/types";
@@ -10,9 +11,22 @@ const CATEGORY_ORDER: PartnerCategory[] = [
 
 type Props = { onSuccess: () => void };
 
-// TODO: replace with your Formspree/Basin endpoint
-const FORM_ENDPOINT = "https://formspree.io/f/xxxxxxxx";
-const FALLBACK_EMAIL = "blog@jeitinho.fr";
+// Taille totale max des pièces jointes (Mo) — au-delà, on prévient plutôt que
+// de risquer un échec silencieux côté Resend/Cloudflare.
+const MAX_MEDIA_MB = 8;
+
+function fileToBase64(file: File): Promise<string> {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => {
+      const result = reader.result as string;
+      // On retire le préfixe "data:...;base64," — Resend attend le base64 brut.
+      resolve(result.split(",")[1] ?? "");
+    };
+    reader.onerror = reject;
+    reader.readAsDataURL(file);
+  });
+}
 
 export function PartnerForm({ onSuccess }: Props) {
   const { t, lang } = useLang();
@@ -24,6 +38,9 @@ export function PartnerForm({ onSuccess }: Props) {
     offering: [],
     mediaFileNames: [],
   });
+  // Fichiers réels (pas seulement leurs noms) — nécessaires pour joindre les
+  // médias à l'email envoyé côté serveur.
+  const [mediaFiles, setMediaFiles] = useState<File[]>([]);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -45,8 +62,9 @@ export function PartnerForm({ onSuccess }: Props) {
 
   const onFilesChange = (files: FileList | null) => {
     if (!files) return;
-    const names = Array.from(files).map((f) => f.name);
-    set("mediaFileNames", names);
+    const arr = Array.from(files);
+    setMediaFiles(arr);
+    set("mediaFileNames", arr.map((file) => file.name));
   };
 
   const validate = (): string | null => {
@@ -56,6 +74,8 @@ export function PartnerForm({ onSuccess }: Props) {
     ] as const;
     for (const key of req) if (!state[key]) return f.errorGeneric;
     if (!state.consentUseInfo || !state.consentContact || !state.consentTerms) return f.errorGeneric;
+    const totalBytes = mediaFiles.reduce((sum, file) => sum + file.size, 0);
+    if (totalBytes > MAX_MEDIA_MB * 1024 * 1024) return f.errorGeneric;
     return null;
   };
 
@@ -100,6 +120,51 @@ export function PartnerForm({ onSuccess }: Props) {
     consentTerms: !!state.consentTerms,
   });
 
+  // Construit le tableau { label, value } attendu par le template email,
+  // en réutilisant les libellés déjà traduits par le site (PT/FR automatique).
+  const buildSummary = (payload: PartnerApplication): Array<{ label: string; value: string }> => {
+    const rows: Array<{ label: string; value: string }> = [];
+    const add = (label: string | undefined, value?: string | boolean | string[]) => {
+      if (!label) return;
+      if (value === undefined || value === null || value === "") return;
+      if (Array.isArray(value) && value.length === 0) return;
+      if (typeof value === "boolean") {
+        rows.push({ label, value: value ? f.fields.yes : f.fields.no });
+        return;
+      }
+      rows.push({ label, value: Array.isArray(value) ? value.join(", ") : value });
+    };
+
+    add(f.fields.contactRole, payload.contactRole);
+    add(f.fields.whatsapp, payload.whatsapp);
+    add(f.fields.website, payload.website);
+    add(f.fields.instagram, payload.instagram);
+    add(f.fields.facebook, payload.facebook);
+    add(f.fields.tiktok, payload.tiktok);
+    add(f.fields.category, payload.category ? f.categories[payload.category] : undefined);
+    add(f.fields.address, payload.address);
+    add(f.fields.neighborhood, payload.neighborhood);
+    add(f.fields.googleMapsUrl, payload.googleMapsUrl);
+    add(f.fields.gpsCoordinates, payload.gpsCoordinates);
+    add(f.fields.presentation, payload.presentation);
+    add(f.fields.differentiation, payload.differentiation);
+    add(f.fields.since, payload.since);
+    add(f.fields.openingDays, payload.openingDays);
+    add(f.fields.openingHours, payload.openingHours);
+    add(f.fields.annualClosure, payload.annualClosure);
+    add(f.fields.seats, payload.seats);
+    add(f.fields.hasTerrace, payload.hasTerrace);
+    add(f.fields.hasAirConditioning, payload.hasAirConditioning);
+    add(f.fields.rooms, payload.rooms);
+    add(f.fields.tables, payload.tables);
+    add(f.fields.maxGroupSize, payload.maxGroupSize);
+    add(f.sections.languages, payload.languagesSpoken);
+    add(f.sections.seeking, payload.seeking);
+    add(f.sections.offering, payload.offering);
+
+    return rows;
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError(null);
@@ -110,19 +175,29 @@ export function PartnerForm({ onSuccess }: Props) {
     setSubmitting(true);
 
     try {
-      if (FORM_ENDPOINT && !FORM_ENDPOINT.includes("xxxxxxxx")) {
-        const res = await fetch(FORM_ENDPOINT, {
-          method: "POST",
-          headers: { "Content-Type": "application/json", Accept: "application/json" },
-          body: JSON.stringify(payload),
-        });
-        if (!res.ok) throw new Error("submit failed");
-      } else {
-        // Fallback: mailto with payload as body
-        const body = encodeURIComponent(JSON.stringify(payload, null, 2));
-        const subject = encodeURIComponent(`Nouvelle candidature partenaire — ${payload.establishmentName}`);
-        window.location.href = `mailto:${FALLBACK_EMAIL}?subject=${subject}&body=${body}`;
-      }
+      const medias = await Promise.all(
+        mediaFiles.map(async (file) => ({
+          filename: file.name,
+          contentType: file.type,
+          base64: await fileToBase64(file),
+        }))
+      );
+
+      const res = await fetch("/api/partenaires", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          etablissement: payload.establishmentName,
+          responsable: payload.contactName,
+          email: payload.email,
+          telephone: payload.phone,
+          summary: buildSummary(payload),
+          message: payload.message,
+          medias,
+        }),
+      });
+
+      if (!res.ok) throw new Error("submit failed");
       onSuccess();
     } catch {
       setError(f.errorGeneric);

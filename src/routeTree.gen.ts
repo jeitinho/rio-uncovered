@@ -22,6 +22,7 @@ import { Route as AuteursIndexRouteImport } from './routes/auteurs.index'
 import { Route as BlogRechercheRouteImport } from './routes/blog.recherche'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 import { Route as AuteursSlugRouteImport } from './routes/auteurs.$slug'
+import { Route as ApiPartenairesRouteImport } from './routes/api.partenaires'
 import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } from './routes/[.well-known]/oauth-protected-resource'
 import { Route as Char91DotmcpChar93ListToolsRouteImport } from './routes/[.mcp]/list-tools'
 import { Route as BlogCategorieSlugRouteImport } from './routes/blog.categorie.$slug'
@@ -92,6 +93,11 @@ const AuteursSlugRoute = AuteursSlugRouteImport.update({
   path: '/auteurs/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiPartenairesRoute = ApiPartenairesRouteImport.update({
+  id: '/api/partenaires',
+  path: '/api/partenaires',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const Char91DotwellKnownChar93OauthProtectedResourceRoute =
   Char91DotwellKnownChar93OauthProtectedResourceRouteImport.update({
     id: '/.well-known/oauth-protected-resource',
@@ -127,6 +133,7 @@ export interface FileRoutesByFullPath {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
+  '/api/partenaires': typeof ApiPartenairesRoute
   '/auteurs/$slug': typeof AuteursSlugRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/blog/recherche': typeof BlogRechercheRoute
@@ -146,6 +153,7 @@ export interface FileRoutesByTo {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
+  '/api/partenaires': typeof ApiPartenairesRoute
   '/auteurs/$slug': typeof AuteursSlugRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/blog/recherche': typeof BlogRechercheRoute
@@ -166,6 +174,7 @@ export interface FileRoutesById {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
+  '/api/partenaires': typeof ApiPartenairesRoute
   '/auteurs/$slug': typeof AuteursSlugRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/blog/recherche': typeof BlogRechercheRoute
@@ -187,6 +196,7 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
+    | '/api/partenaires'
     | '/auteurs/$slug'
     | '/blog/$slug'
     | '/blog/recherche'
@@ -206,6 +216,7 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
+    | '/api/partenaires'
     | '/auteurs/$slug'
     | '/blog/$slug'
     | '/blog/recherche'
@@ -225,6 +236,7 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
+    | '/api/partenaires'
     | '/auteurs/$slug'
     | '/blog/$slug'
     | '/blog/recherche'
@@ -245,6 +257,7 @@ export interface RootRouteChildren {
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   Char91DotmcpChar93ListToolsRoute: typeof Char91DotmcpChar93ListToolsRoute
   Char91DotwellKnownChar93OauthProtectedResourceRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
+  ApiPartenairesRoute: typeof ApiPartenairesRoute
   AuteursSlugRoute: typeof AuteursSlugRoute
   BlogSlugRoute: typeof BlogSlugRoute
   BlogRechercheRoute: typeof BlogRechercheRoute
@@ -347,6 +360,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuteursSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/partenaires': {
+      id: '/api/partenaires'
+      path: '/api/partenaires'
+      fullPath: '/api/partenaires'
+      preLoaderRoute: typeof ApiPartenairesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/.well-known/oauth-protected-resource': {
       id: '/.well-known/oauth-protected-resource'
       path: '/.well-known/oauth-protected-resource'
@@ -390,6 +410,7 @@ const rootRouteChildren: RootRouteChildren = {
   Char91DotmcpChar93ListToolsRoute: Char91DotmcpChar93ListToolsRoute,
   Char91DotwellKnownChar93OauthProtectedResourceRoute:
     Char91DotwellKnownChar93OauthProtectedResourceRoute,
+  ApiPartenairesRoute: ApiPartenairesRoute,
   AuteursSlugRoute: AuteursSlugRoute,
   BlogSlugRoute: BlogSlugRoute,
   BlogRechercheRoute: BlogRechercheRoute,
