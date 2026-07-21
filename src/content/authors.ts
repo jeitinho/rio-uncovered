@@ -6,6 +6,7 @@ import logo from "@/assets/jeitinho-logo.png";
 import liliPhoto from "@/assets/authors/lili.jpg";
 import charlinePhoto from "@/assets/authors/charline.jpg";
 import rafaelPhoto from "@/assets/authors/rafael.jpg";
+import nawalPhoto from "@/assets/authors/nawal.jpg";
 
 export interface AuthorSocial {
   instagram?: string;
@@ -49,6 +50,17 @@ export const AUTHORS: Author[] = [
       "Juriste de formation et ancienne barmaid, Lili a complètement changé de vie pour construire son avenir dans le tourisme au Brésil. Fraîchement installée à Rio de Janeiro, elle partage le regard d'une expatriée qui découvre la ville en profondeur.",
     location: "Rio de Janeiro",
     photo: liliPhoto,
+  },
+  {
+  slug: "nawal",
+  name: "Nawal",
+  role: "Regard aventurier & épicurien",
+  language: "fr",
+  bio: "Voyageuse passionnée, DJ et créatrice artisanale installée à Rio de Janeiro.",
+  longBio:
+    "Après avoir travaillé dans le recrutement, le tourisme et comme hôtesse de l'air, Nawal a parcouru le monde avec une affection particulière pour l'Amérique latine. Après toutes ces expériences, elle a choisi de poser ses valises au Brésil et de transformer sa passion pour le voyage, les rencontres et la découverte en véritables métiers.\n\nÉgalement DJ, passionnée de danse, elle développe des créations artisanales inspirées de ses voyages et de son quotidien à Rio de Janeiro. À travers ses articles, elle partage un regard sensible, curieux et authentique sur Rio de Janeiro, ses habitants, sa culture et son art de vivre.",
+  location: "Vidigal, Rio de Janeiro",
+  photo: nawalPhoto,
   },
   {
     slug: "charline",
