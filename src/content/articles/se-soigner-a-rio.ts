@@ -12,7 +12,7 @@ export const article: Article = {
   date: "2026-07-18",
   author: "equipe-jeitinho",
   hero,
-  heroAlt: "Entrée d'un hôpital privé moderne à Copacabana, Rio de Janeiro",
+  heroAlt: "Salle d'attente lumineuse d'une clinique privée à Rio de Janeiro",
   sections: [
     {
       type: "p",
