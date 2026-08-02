@@ -1,6 +1,6 @@
 import type { Article } from "../types";
-import hero from "@/assets/hero-blog.jpg";
-// TODO: remplacer par une photo d'un distributeur Banco24Horas ou d'un paiement PIX en boutique
+import hero from "@/assets/article-argent-rio.jpg";
+
 
 export const article: Article = {
   slug: "retirer-argent-distributeurs-rio",
@@ -28,6 +28,26 @@ export const article: Article = {
       title: "Le conseil Jeitinho",
       text: "Utilisez le PIX dès le premier jour, même pour un petit montant (un café, une eau de coco). Deux ou trois paiements suffisent à prendre le réflexe, et vous gagnerez un temps précieux sur tout le reste du séjour.",
     },
+    { type: "h2", text: "Les frais : ce que coûte vraiment un retrait" },
+    {
+      type: "p",
+      text: "Un retrait au distributeur à Rio se paie deux fois. D'abord côté brésilien : la plupart des automates (Banco24Horas en tête) prélèvent une commission fixe d'environ 20 à 30 R$ par opération, quel que soit le montant retiré. Ensuite côté français : votre banque ajoute généralement des frais fixes par retrait hors zone euro (souvent 2 à 5 €) plus une commission de change de 2 à 3 % du montant. Sur un retrait de 500 R$, l'addition dépasse vite les 10 € de frais cumulés.",
+    },
+    {
+      type: "ul",
+      items: [
+        "Retirez peu de fois, mais des montants plus élevés : la commission locale étant fixe, multiplier les petits retraits est le pire scénario",
+        "Refusez toujours la conversion proposée par le distributeur (« conversion dynamique » / DCC) et choisissez le débit en réais : le taux de votre banque est presque toujours meilleur",
+        "Vérifiez avant le départ les conditions de votre carte : certaines néobanques ne facturent ni frais fixes ni commission de change",
+        "Payez en PIX ou en carte dès que possible — c'est ce qui réduit le plus la facture globale",
+      ],
+    },
+    {
+      type: "conseil",
+      title: "Le conseil Jeitinho",
+      text: "Le meilleur moyen d'éviter les frais de retrait, c'est de ne presque pas retirer. Notre <a href=\"/blog/rester-connecte-rio-esim\">Pack Connecté Brésil</a> (eSIM + création de compte PIX + assistance) vous permet de payer en PIX dès l'atterrissage, comme un local, sans commission de distributeur.",
+    },
+
     { type: "h2", text: "Où retirer de l'argent en toute sécurité" },
     {
       type: "ul",
@@ -76,6 +96,12 @@ export const article: Article = {
     },
   ],
   relatedServices: [
+    {
+      label: "Pack Connecté Brésil",
+      href: "https://www.jeitinho.fr",
+      description: "eSIM, création de compte PIX et assistance dès l'atterrissage — pour payer sans frais de distributeur.",
+    },
+
     {
       label: "Conciergerie sur mesure",
       href: "https://www.jeitinho.fr/trouver-un-jeitinho",

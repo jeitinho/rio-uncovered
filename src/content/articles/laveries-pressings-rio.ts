@@ -1,6 +1,6 @@
 import type { Article } from "../types";
-import hero from "@/assets/hero-blog.jpg";
-// TODO: remplacer par une photo d'une lavanderia self-service à Rio (machines alignées, paiement carte/PIX)
+import hero from "@/assets/article-laverie-rio.jpg";
+
 
 export const article: Article = {
   slug: "laveries-pressings-rio",

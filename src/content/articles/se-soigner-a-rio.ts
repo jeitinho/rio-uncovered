@@ -1,6 +1,6 @@
 import type { Article } from "../types";
-import hero from "@/assets/hero-blog.jpg";
-// TODO: remplacer par une photo de façade d'un hôpital privé de la Zona Sul
+import hero from "@/assets/article-sante-rio.jpg";
+
 
 export const article: Article = {
   slug: "se-soigner-a-rio",
@@ -12,7 +12,7 @@ export const article: Article = {
   date: "2026-07-18",
   author: "equipe-jeitinho",
   hero,
-  heroAlt: "Entrée d'un hôpital privé moderne à Copacabana, Rio de Janeiro",
+  heroAlt: "Salle d'attente lumineuse d'une clinique privée à Rio de Janeiro",
   sections: [
     {
       type: "p",
@@ -53,6 +53,26 @@ export const article: Article = {
       title: "Bon à savoir",
       text: "Il existe aussi un hôpital public de référence en Zona Sul, l'Hospital Municipal Miguel Couto (Av. Bartolomeu Mitre, 1108, Leblon — +55 21 3207-4555), avec des urgences 24h/24. La prise en charge y est gratuite mais les délais d'attente peuvent être plus longs qu'en clinique privée.",
     },
+    { type: "h2", text: "Trouver un médecin francophone à Rio" },
+    {
+      type: "p",
+      text: "Se faire soigner dans une langue qu'on maîtrise change tout, surtout quand il s'agit d'expliquer des symptômes. Rio compte plusieurs médecins et professionnels de santé francophones, mais la bonne source n'est pas un annuaire touristique : c'est la <a href=\"https://br.diplomatie.gouv.fr/fr/liste-de-notoriete\" target=\"_blank\" rel=\"noopener\">liste de notoriété du Consulat général de France</a>, qui recense les médecins généralistes, spécialistes, dentistes et psychologues francophones de la circonscription de Rio. Elle est mise à jour régulièrement — contrairement aux listes qui circulent sur les forums.",
+    },
+    {
+      type: "ul",
+      items: [
+        "Liste officielle des professionnels de santé francophones : br.diplomatie.gouv.fr/fr/liste-de-notoriete (rubrique « Traducteurs, avocats et professionnels de santé », circonscription de Rio de Janeiro)",
+        "Consulat général de France à Rio — Avenida Presidente Antônio Carlos, 58, Centro — accueil sur rendez-vous du lundi au vendredi de 9h à 12h",
+        "France Consulaire (plateforme téléphonique du ministère, en français) — +55 11 3351-7043, du lundi au vendredi de 14h à 20h",
+        "En cas d'urgence grave impliquant un ressortissant français, le consulat dispose d'une permanence téléphonique joignable 24h/24 via le standard",
+      ],
+    },
+    {
+      type: "conseil",
+      title: "Le conseil Jeitinho",
+      text: "Téléchargez la liste consulaire en PDF avant votre départ et gardez-la hors ligne sur votre téléphone : le jour où vous en aurez besoin, vous n'aurez peut-être ni réseau ni patience pour chercher. Les grands hôpitaux privés de la Zona Sul (Copa Star, Copa D'Or) comptent par ailleurs souvent un médecin francophone ou anglophone de garde — demandez-le à l'accueil.",
+    },
+
     { type: "h2", text: "Assurance voyage : l'indispensable" },
     {
       type: "p",
