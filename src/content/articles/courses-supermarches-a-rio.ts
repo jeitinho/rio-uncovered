@@ -1,6 +1,6 @@
 import type { Article } from "../types";
-import hero from "@/assets/hero-blog.jpg";
-// TODO: remplacer par une photo de rayon d'un supermarché Zona Sul ou d'une feira de rue
+import hero from "@/assets/article-courses-rio.jpg";
+
 
 export const article: Article = {
   slug: "courses-supermarches-a-rio",

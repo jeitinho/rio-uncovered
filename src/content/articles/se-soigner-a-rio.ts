@@ -1,6 +1,6 @@
 import type { Article } from "../types";
-import hero from "@/assets/hero-blog.jpg";
-// TODO: remplacer par une photo de façade d'un hôpital privé de la Zona Sul
+import hero from "@/assets/article-sante-rio.jpg";
+
 
 export const article: Article = {
   slug: "se-soigner-a-rio",

@@ -1,6 +1,6 @@
 import type { Article } from "../types";
-import hero from "@/assets/hero-blog.jpg";
-// TODO: remplacer par une photo d'un distributeur Banco24Horas ou d'un paiement PIX en boutique
+import hero from "@/assets/article-argent-rio.jpg";
+
 
 export const article: Article = {
   slug: "retirer-argent-distributeurs-rio",
