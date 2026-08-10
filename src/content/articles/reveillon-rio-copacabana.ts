@@ -18,7 +18,7 @@ export const article: Article = {
   relatedServices: [
     {
       label: "Le Réveillon avec Jeitinho",
-      href: "https://www.jeitinho.fr/packs/reveillon",
+      href: "https://jeitinho.fr/packs/reveillon",
       description: "10 jours pour vivre Rio comme un local, du 26 décembre au 4 janvier. Vols depuis Paris, hébergement Zona Sul, accès privilégié au feu d'artifice avec espace privatif. À partir de 3 500 €.",
     },
   ],

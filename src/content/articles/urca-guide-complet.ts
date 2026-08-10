@@ -20,12 +20,12 @@ export const article: Article = {
   relatedServices: [
     {
       label: "City tour privé",
-      href: "https://www.jeitinho.fr/experiences",
+      href: "https://jeitinho.fr/experiences",
       description: "Urca et le Pain de Sucre, un des plus beaux couchers de soleil de Rio avec un local.",
     },
     {
       label: "Conciergerie sur mesure",
-      href: "https://www.jeitinho.fr/trouver-un-jeitinho",
+      href: "https://jeitinho.fr/trouver-un-jeitinho",
       description: "On organise votre montée au Pain de Sucre au meilleur horaire, sans la foule.",
     },
   ],

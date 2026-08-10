@@ -18,7 +18,7 @@ export const article: Article = {
   relatedServices: [
     {
       label: "Transferts Jeitinho",
-      href: "https://www.jeitinho.fr/trouver-un-jeitinho",
+      href: "https://jeitinho.fr/trouver-un-jeitinho",
       description: "Chauffeur privé pour vos aéroports, soirées, excursions et Carnaval.",
     },
   ],

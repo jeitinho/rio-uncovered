@@ -109,7 +109,7 @@ export const article: Article = {
   relatedServices: [
     {
       label: "Conciergerie sur mesure",
-      href: "https://www.jeitinho.fr/trouver-un-jeitinho",
+      href: "https://jeitinho.fr/trouver-un-jeitinho",
       description: "En cas de besoin médical pendant votre séjour, notre équipe locale vous oriente vers la bonne adresse.",
     },
   ],

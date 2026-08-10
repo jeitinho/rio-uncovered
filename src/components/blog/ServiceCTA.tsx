@@ -10,7 +10,7 @@ export function ServiceCTA({ services }: { services: RelatedService[] }) {
         <em className="text-peach">Jeitinho</em>, votre concierge à Rio.
       </h2>
       <p className="mt-3 text-cream/80 max-w-2xl">
-        Ce blog vous inspire ? Notre équipe organise votre séjour sur mesure depuis <a href="https://www.jeitinho.fr" target="_blank" rel="noopener" className="underline decoration-peach underline-offset-4">jeitinho.fr</a>.
+        Ce blog vous inspire ? Notre équipe organise votre séjour sur mesure depuis <a href="https://jeitinho.fr" target="_blank" rel="noopener" className="underline decoration-peach underline-offset-4">jeitinho.fr</a>.
       </p>
       <div className="mt-6 grid gap-4 md:grid-cols-2">
         {services.map((s) => {

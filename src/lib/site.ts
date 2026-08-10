@@ -9,8 +9,8 @@ export const CONTACT_EMAIL = "blog@jeitinho.fr";
 export const INSTAGRAM_HANDLE = "@jeitinho.fr";
 export const INSTAGRAM_URL = "https://www.instagram.com/jeitinho.fr";
 
-export const CONCIERGERIE_URL = "https://www.jeitinho.fr";
-export const CONCIERGERIE_BOOK_URL = "https://www.jeitinho.fr/trouver-un-jeitinho";
+export const CONCIERGERIE_URL = "https://jeitinho.fr";
+export const CONCIERGERIE_BOOK_URL = "https://jeitinho.fr/trouver-un-jeitinho";
 
 /** Construit une URL absolue à partir d'un chemin relatif. */
 export function absoluteUrl(path: string): string {

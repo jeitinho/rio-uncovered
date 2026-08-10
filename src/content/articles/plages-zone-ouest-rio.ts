@@ -18,7 +18,7 @@ export const article: Article = {
   relatedServices: [
     {
       label: "Transferts Jeitinho",
-      href: "https://www.jeitinho.fr/trouver-un-jeitinho",
+      href: "https://jeitinho.fr/trouver-un-jeitinho",
       description: "Transferts privés sur mesure vers les plages et cascades de la Zone Ouest.",
     },
   ],

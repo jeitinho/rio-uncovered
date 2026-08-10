@@ -18,7 +18,7 @@ export const article: Article = {
   relatedServices: [
     {
       label: "Randonnées Jeitinho",
-      href: "https://www.jeitinho.fr/experiences",
+      href: "https://jeitinho.fr/experiences/dois-irmaos",
       description: "Dois Irmãos, forêt de Tijuca et sommets panoramiques avec un guide local.",
     },
   ],

@@ -18,7 +18,7 @@ export const article: Article = {
   relatedServices: [
     {
       label: "Expériences Jeitinho",
-      href: "https://www.jeitinho.fr/experiences",
+      href: "https://jeitinho.fr/experiences",
       description: "Accès privilégié aux meilleures rodas de samba, réservations et accompagnement local.",
     },
   ],

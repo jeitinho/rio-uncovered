@@ -80,7 +80,7 @@ export const article: Article = {
   relatedServices: [
     {
       label: "Conciergerie sur mesure",
-      href: "https://www.jeitinho.fr/trouver-un-jeitinho",
+      href: "https://jeitinho.fr/trouver-un-jeitinho",
       description: "Notre équipe locale connaît les vrais horaires du quartier où vous logez — un message suffit.",
     },
   ],

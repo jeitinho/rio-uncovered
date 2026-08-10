@@ -98,13 +98,13 @@ export const article: Article = {
   relatedServices: [
     {
       label: "Pack Connecté Brésil",
-      href: "https://www.jeitinho.fr",
+      href: "https://jeitinho.fr/services/arrivee-connectivite",
       description: "eSIM, création de compte PIX et assistance dès l'atterrissage — pour payer sans frais de distributeur.",
     },
 
     {
       label: "Conciergerie sur mesure",
-      href: "https://www.jeitinho.fr/trouver-un-jeitinho",
+      href: "https://jeitinho.fr/trouver-un-jeitinho",
       description: "Des conseils personnalisés pour gérer votre budget et vos moyens de paiement pendant tout le séjour.",
     },
   ],

@@ -18,7 +18,7 @@ export const article: Article = {
   relatedServices: [
     {
       label: "Assistance Jeitinho",
-      href: "https://www.jeitinho.fr/trouver-un-jeitinho",
+      href: "https://jeitinho.fr/trouver-un-jeitinho",
       description: "En cas de pépin sur place, on ouvre votre dossier d'assistance pour 10€ et on vous accompagne dans les démarches.",
     },
   ],

@@ -18,7 +18,7 @@ export const article: Article = {
   relatedServices: [
     {
       label: "Conciergerie sur mesure",
-      href: "https://www.jeitinho.fr/trouver-un-jeitinho",
+      href: "https://jeitinho.fr/trouver-un-jeitinho",
       description: "On construit votre itinéraire sur mesure, adapté à votre rythme et vos envies.",
     },
   ],
@@ -68,7 +68,7 @@ export const article: Article = {
     { type: "conseil", title: "Le conseil Jeitinho", text: "Ne visitez jamais une favela seul ou en improvisant. Avec un guide local reconnu, c'est une des expériences les plus marquantes d'un séjour à Rio — sans lui, ça reste hors de portée et pas respectueux des habitants." },
 
     { type: "h2", text: "Aller plus loin selon votre profil" },
-    { type: "p", text: "Pour un premier voyage qui coche tous les incontournables sans se compliquer la vie, notre pack <a href=\"https://www.jeitinho.fr/packs/rio-decouverte\">Rio Découverte</a> reprend l'essentiel de ce itinéraire clé en main. Pour une expérience plus intense, entre hélicoptère et excursions privées, direction le pack <a href=\"https://www.jeitinho.fr/packs/le-jeitinho\">Le Jeitinho</a>. Et pour l'immersion favela entre amis, le pack <a href=\"https://www.jeitinho.fr/packs/entre-amigos\">Entre Amigos</a> combine favela, baile funk et rooftop privatisé." },
+    { type: "p", text: "Pour un premier voyage qui coche tous les incontournables sans se compliquer la vie, notre pack <a href=\"https://jeitinho.fr/packs/rio-decouverte\">Rio Découverte</a> reprend l'essentiel de ce itinéraire clé en main. Pour une expérience plus intense, entre hélicoptère et excursions privées, direction le pack <a href=\"https://jeitinho.fr/packs/le-jeitinho\">Le Jeitinho</a>. Et pour l'immersion favela entre amis, le pack <a href=\"https://jeitinho.fr/packs/entre-amigos\">Entre Amigos</a> combine favela, baile funk et rooftop privatisé." },
 
     { type: "faq", items: [
       { q: "5 jours suffisent-ils pour bien découvrir Rio ?", a: "Oui, c'est le format idéal pour combiner les incontournables (Corcovado, Pain de Sucre, plages) avec des expériences plus fortes comme la forêt de Tijuca ou l'immersion en favela, sans se presser." },

@@ -69,7 +69,7 @@ export const article: Article = {
   relatedServices: [
     {
       label: "Conciergerie sur mesure",
-      href: "https://www.jeitinho.fr/trouver-un-jeitinho",
+      href: "https://jeitinho.fr/trouver-un-jeitinho",
       description: "On vous indique la lavanderia la plus proche de votre logement, self-service ou au kilo selon vos besoins.",
     },
   ],

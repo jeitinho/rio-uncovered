@@ -20,12 +20,12 @@ export const article: Article = {
   relatedServices: [
     {
       label: "City tour privé",
-      href: "https://www.jeitinho.fr/experiences",
+      href: "https://jeitinho.fr/experiences",
       description: "Lapa by night, samba et roda de choro avec un local qui connaît les bonnes adresses.",
     },
     {
       label: "Conciergerie sur mesure",
-      href: "https://www.jeitinho.fr/trouver-un-jeitinho",
+      href: "https://jeitinho.fr/trouver-un-jeitinho",
       description: "On vous réserve une table dans les meilleures gafieiras de Lapa, sans mauvaise surprise.",
     },
   ],

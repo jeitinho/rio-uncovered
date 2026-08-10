@@ -18,7 +18,7 @@ export const article: Article = {
   relatedServices: [
     {
       label: "Pack Connecté Brésil",
-      href: "https://www.jeitinho.fr",
+      href: "https://jeitinho.fr/services/arrivee-connectivite",
       description: "eSIM 16 Go, création de compte PIX, cours complet et assistance dès l'atterrissage.",
     },
   ],

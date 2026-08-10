@@ -84,7 +84,7 @@ export const article: Article = {
   relatedServices: [
     {
       label: "Assistance Jeitinho",
-      href: "https://www.jeitinho.fr/trouver-un-jeitinho",
+      href: "https://jeitinho.fr/trouver-un-jeitinho",
       description: "En cas de souci pendant votre séjour, notre équipe locale peut vous accompagner dans les démarches.",
     },
   ],

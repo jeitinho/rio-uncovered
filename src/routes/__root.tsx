@@ -116,7 +116,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           description: "Média francophone sur Rio de Janeiro : conseils, guides, interviews par des locaux.",
           url: "https://blog.jeitinho.fr",
           email: "blog@jeitinho.fr",
-          sameAs: ["https://www.instagram.com/jeitinho.fr", "https://www.jeitinho.fr"],
+          sameAs: ["https://www.instagram.com/jeitinho.fr", "https://jeitinho.fr"],
           areaServed: "Rio de Janeiro, Brésil",
           inLanguage: "fr",
         }),

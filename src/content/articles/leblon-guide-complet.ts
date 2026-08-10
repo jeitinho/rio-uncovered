@@ -20,12 +20,12 @@ export const article: Article = {
   relatedServices: [
     {
       label: "Conciergerie sur mesure",
-      href: "https://www.jeitinho.fr/trouver-un-jeitinho",
+      href: "https://jeitinho.fr/trouver-un-jeitinho",
       description: "On vous ouvre les portes de nos adresses favorites à Leblon.",
     },
     {
       label: "Expériences gastronomiques",
-      href: "https://www.jeitinho.fr/experiences",
+      href: "https://jeitinho.fr/experiences",
       description: "Réservez les meilleures tables de Leblon sans faire la queue.",
     },
   ],

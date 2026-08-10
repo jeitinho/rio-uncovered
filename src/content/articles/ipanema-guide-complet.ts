@@ -18,12 +18,12 @@ export const article: Article = {
   relatedServices: [
     {
       label: "Conciergerie sur mesure",
-      href: "https://www.jeitinho.fr/trouver-un-jeitinho",
+      href: "https://jeitinho.fr/trouver-un-jeitinho",
       description: "On vous ouvre les portes de nos adresses favorites à Ipanema.",
     },
     {
       label: "City tour privé",
-      href: "https://www.jeitinho.fr/experiences",
+      href: "https://jeitinho.fr/experiences",
       description: "Ipanema, Leblon, Lagoa — la Zona Sul en une matinée avec un local.",
     },
   ],

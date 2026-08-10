@@ -18,7 +18,7 @@ export const article: Article = {
   relatedServices: [
     {
       label: "Road trip Nordeste sur mesure",
-      href: "https://www.jeitinho.fr/experiences",
+      href: "https://jeitinho.fr/nordeste-road-trip",
       description: "Un voyage privé entièrement personnalisé, transport, hébergements et itinéraire inclus.",
     },
   ],

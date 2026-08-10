@@ -36,13 +36,13 @@ export const article: Article = {
   relatedServices: [
     {
       label: "Vivre une vraie Roda de Samba avec Jeitinho",
-      href: "https://www.jeitinho.fr/calendrier",
+      href: "https://jeitinho.fr/calendrier",
       description:
         "Rejoignez-nous pour une soirée authentique au cœur des meilleures rodas et pagodes de Rio, loin des pièges à touristes.",
     },
     {
       label: "Découvrir la vraie culture carioca",
-      href: "https://www.jeitinho.fr",
+      href: "https://jeitinho.fr",
       description:
         "Plages, quartiers historiques, musique et rencontres : nos expériences sur mesure pour vivre Rio comme un vrai habitant.",
     },

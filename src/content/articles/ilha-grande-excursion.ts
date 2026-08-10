@@ -18,7 +18,7 @@ export const article: Article = {
   relatedServices: [
     {
       label: "Transferts Jeitinho",
-      href: "https://www.jeitinho.fr/trouver-un-jeitinho",
+      href: "https://jeitinho.fr/experiences/ilha-grande",
       description: "Organisation complète de votre excursion à Ilha Grande, transferts inclus.",
     },
   ],

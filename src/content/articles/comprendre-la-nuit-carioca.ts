@@ -18,7 +18,7 @@ export const article: Article = {
   relatedServices: [
     {
       label: "Expériences Jeitinho",
-      href: "https://www.jeitinho.fr/experiences",
+      href: "https://jeitinho.fr/experiences",
       description: "Sorties, soirées samba et accès aux meilleures adresses de Rio, sans prise de tête.",
     },
   ],

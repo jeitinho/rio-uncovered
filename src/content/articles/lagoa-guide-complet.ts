@@ -20,12 +20,12 @@ export const article: Article = {
   relatedServices: [
     {
       label: "Conciergerie sur mesure",
-      href: "https://www.jeitinho.fr/trouver-un-jeitinho",
+      href: "https://jeitinho.fr/trouver-un-jeitinho",
       description: "On vous ouvre les portes de nos adresses favorites autour de la Lagoa.",
     },
     {
       label: "Expériences nature",
-      href: "https://www.jeitinho.fr/experiences",
+      href: "https://jeitinho.fr/experiences",
       description: "Pédalo, vélo et coucher de soleil sur la lagune avec un local.",
     },
   ],

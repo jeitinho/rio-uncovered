@@ -18,7 +18,7 @@ export const article: Article = {
   relatedServices: [
     {
       label: "City tour privé",
-      href: "https://www.jeitinho.fr/experiences",
+      href: "https://jeitinho.fr/experiences",
       description: "Découvrez les points de vue secrets de Rio avec un local qui connaît les meilleurs horaires.",
     },
   ],

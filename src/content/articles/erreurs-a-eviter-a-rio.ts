@@ -18,7 +18,7 @@ export const article: Article = {
   relatedServices: [
     {
       label: "Conciergerie sur mesure",
-      href: "https://www.jeitinho.fr/trouver-un-jeitinho",
+      href: "https://jeitinho.fr/trouver-un-jeitinho",
       description: "On vous accompagne pour éviter les pièges classiques et profiter pleinement de votre séjour.",
     },
   ],

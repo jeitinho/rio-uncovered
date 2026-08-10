@@ -30,13 +30,13 @@ export const article: Article = {
   relatedServices: [
     {
       label: "Une journée plage avec Jeitinho",
-      href: "https://www.jeitinho.fr/calendrier",
+      href: "https://jeitinho.fr/calendrier",
       description:
         "On vous emmène directement au bon Posto, à la bonne Barraca — comme si vous aviez déjà vos habitudes à Rio.",
     },
     {
       label: "Découvrir la vraie culture carioca",
-      href: "https://www.jeitinho.fr",
+      href: "https://jeitinho.fr",
       description:
         "Plages, quartiers, rencontres : nos expériences pour vivre Rio autrement.",
     },

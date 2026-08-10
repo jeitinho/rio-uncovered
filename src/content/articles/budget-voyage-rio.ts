@@ -18,12 +18,12 @@ export const article: Article = {
   relatedServices: [
     {
       label: "Conciergerie sur mesure",
-      href: "https://www.jeitinho.fr/trouver-un-jeitinho",
+      href: "https://jeitinho.fr/trouver-un-jeitinho",
       description: "On vous aide gratuitement à choisir un hébergement adapté à votre budget.",
     },
     {
       label: "Expériences Jeitinho",
-      href: "https://www.jeitinho.fr/experiences",
+      href: "https://jeitinho.fr/experiences",
       description: "Des expériences pour tous les budgets, du bon plan local au premium.",
     },
   ],

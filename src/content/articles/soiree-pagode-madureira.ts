@@ -19,13 +19,13 @@ export const article: Article = {
   relatedServices: [
     {
       label: "Une soirée locale avec Jeitinho",
-      href: "https://www.jeitinho.fr/calendrier",
+      href: "https://jeitinho.fr/calendrier",
       description:
         "On vous emmène là où vont les cariocas — pagode à Madureira, samba à Pedra do Sal, bar de quartier à Vila Isabel.",
     },
     {
       label: "Découvrir la vraie culture carioca",
-      href: "https://www.jeitinho.fr",
+      href: "https://jeitinho.fr",
       description:
         "Musique, quartiers, rencontres : nos expériences pour vivre Rio autrement.",
     },
