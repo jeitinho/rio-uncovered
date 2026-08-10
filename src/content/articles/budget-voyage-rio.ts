@@ -8,7 +8,7 @@ export const article: Article = {
   description: "Hébergement, restaurants, activités : notre guide complet pour bâtir un budget réaliste à Rio, du voyage économique au séjour premium.",
   category: "budget",
   tags: ["budget", "argent", "préparer son voyage", "Rio de Janeiro"],
-  date: "2026-07-11",
+  date: "2026-08-10",
   author: "equipe-jeitinho",
   hero,
   heroAlt: "Vue panoramique de Rio de Janeiro au coucher du soleil depuis le Corcovado",
@@ -35,15 +35,15 @@ export const article: Article = {
     { type: "p", text: "L'hébergement représente généralement le premier poste de dépense d'un séjour à Rio. Les tarifs varient surtout selon la période de l'année, le quartier et le type d'hébergement choisi." },
     { type: "h3", text: "Basse saison (avril à novembre, hors vacances scolaires)" },
     { type: "ul", items: [
-      "Entrée / standard : 250 à 450 R$ la nuit en Airbnb, 350 à 600 R$ en hôtel 3 étoiles.",
-      "Confort / supérieur : 450 à 800 R$ en Airbnb, 600 à 900 R$ en hôtel 3 étoiles.",
-      "Premium / luxe : à partir de 800 R$ en Airbnb, à partir de 900 R$ en hôtel.",
+      "Entrée / standard : 250 à 450 R$ la nuit en Airbnb à Copacabana, 300 à 550 R$ en hôtel 3 étoiles.",
+      "Confort / supérieur : 400 à 700 R$ en Airbnb (Ipanema/Leblon), 550 à 800 R$ en hôtel 3 étoiles.",
+      "Premium / luxe : à partir de 700 R$ en Airbnb, à partir de 800 R$ en hôtel.",
     ]},
     { type: "h3", text: "Haute saison (décembre à mars, Réveillon et Carnaval)" },
     { type: "ul", items: [
-      "Entrée / standard : 600 à 1 500 R$ en Airbnb, 700 à 1 200 R$ en hôtel 3 étoiles.",
-      "Confort / supérieur : 1 500 à 3 000 R$ en Airbnb, 1 200 à 2 000 R$ en hôtel 3 étoiles.",
-      "Premium / luxe : à partir de 3 000 R$ en Airbnb, à partir de 2 000 R$ en hôtel.",
+      "Entrée / standard : 600 à 1 500 R$ en Airbnb, 400 à 800 R$ en hôtel 3 étoiles (les nuits de Réveillon et Carnaval elles-mêmes dépassent largement ces fourchettes).",
+      "Confort / supérieur : 1 500 à 3 000 R$ en Airbnb, 800 à 1 500 R$ en hôtel 3 étoiles.",
+      "Premium / luxe : à partir de 3 000 R$ en Airbnb, à partir de 1 500 R$ en hôtel.",
     ]},
     { type: "conseil", title: "Le conseil Jeitinho", text: "Pour le Réveillon et le Carnaval, réservez idéalement entre 6 et 9 mois à l'avance pour bénéficier du meilleur choix et des meilleurs prix. Passé ce délai, les tarifs grimpent vite et les meilleures adresses partent en premier." },
 
@@ -63,12 +63,12 @@ export const article: Article = {
       "Réservez votre hébergement plusieurs mois à l'avance en haute saison pour éviter les prix gonflés de dernière minute.",
     ]},
 
-    { type: "h2", text: "Bien choisir son quartier pour maîtriser son budget" },
-    { type: "p", text: "Le choix du quartier a un impact direct sur votre budget global. <a href=\"/blog/copacabana-guide-complet\">Copacabana</a> offre un excellent rapport qualité-prix, tandis qu'<a href=\"/blog/ipanema-guide-complet\">Ipanema</a> et surtout <a href=\"/blog/leblon-guide-complet\">Leblon</a> sont plus onéreux. <a href=\"/blog/botafogo-guide-complet\">Botafogo</a> reste une valeur sûre pour un séjour économique sans sacrifier la qualité de vie." },
+    { type: "h2", text: "Bien choisir sa zone pour maîtriser son budget" },
+    { type: "p", text: "Le choix de la zone a un impact direct sur votre budget global. <a href=\"/blog/copacabana-guide-complet\">Copacabana</a> offre un excellent rapport qualité-prix, tandis qu'<a href=\"/blog/ipanema-guide-complet\">Ipanema</a> et surtout <a href=\"/blog/leblon-guide-complet\">Leblon</a> sont plus onéreux. <a href=\"/blog/botafogo-guide-complet\">Botafogo</a> reste une valeur sûre pour un séjour économique sans sacrifier la qualité de vie. Pour un comparatif complet, direction notre <a href=\"/blog/ou-loger-a-rio-comparatif-quartiers\">guide où loger à Rio</a>." },
 
     { type: "faq", items: [
       { q: "Quel est le budget minimum pour une semaine à Rio ?", a: "Comptez au minimum 1 500 € hors vol pour une semaine en voyageant de façon économique : hébergement simple, restaurants locaux et transports en commun." },
-      { q: "Le Réveillon et le Carnaval coûtent-ils plus cher ?", a: "Oui, nettement : les prix de l'hébergement peuvent tripler par rapport à la basse saison. Réservez au minimum 6 mois à l'avance pour ces périodes." },
+      { q: "Le Réveillon et le Carnaval coûtent-ils plus cher ?", a: "Oui, nettement : les prix de l'hébergement peuvent tripler par rapport à la basse saison, et les nuits de Réveillon et Carnaval elles-mêmes atteignent des sommets. Réservez au minimum 6 mois à l'avance pour ces périodes." },
       { q: "Vaut-il mieux changer de l'argent avant de partir ?", a: "Il est recommandé de changer une petite somme (200 à 500 €) à l'arrivée et d'utiliser le PIX pour l'essentiel de vos paiements quotidiens, plus avantageux et plus sûr." },
       { q: "Quelle est la plus grosse dépense d'un voyage à Rio ?", a: "L'hébergement, suivi par les restaurants si vous privilégiez les tables gastronomiques ou les rooftops plutôt que les adresses locales." },
     ]},

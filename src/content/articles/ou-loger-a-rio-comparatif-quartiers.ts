@@ -1,11 +1,22 @@
 import type { Article } from "../types";
 import hero from "@/assets/article-ou-loger-rio.jpg";
+import clsSalon from "@/assets/casa-los-santos-salon.jpg";
+import clsChambreVue from "@/assets/casa-los-santos-chambre-vue.jpg";
+import clsCoucherSoleil from "@/assets/casa-los-santos-coucher-soleil.jpg";
+import clsChambre from "@/assets/casa-los-santos-chambre.jpg";
+import ppgSalon from "@/assets/appart-ppg-salon.jpg";
+import ppgVueMontagne from "@/assets/appart-ppg-vue-montagne.jpg";
+import ppgBalcon from "@/assets/appart-ppg-balcon.jpg";
+import ppgVuePanoramique from "@/assets/appart-ppg-vue-panoramique.jpg";
+import ppgRooftopPiscine from "@/assets/appart-ppg-rooftop-piscine.jpg";
+import ppgTerrasse from "@/assets/appart-ppg-terrasse.jpg";
+import ppgVueOcean from "@/assets/appart-ppg-vue-ocean.jpg";
 
 export const article: Article = {
   slug: "ou-loger-a-rio-comparatif-quartiers",
   title: "Où loger à Rio : notre comparatif quartier par quartier",
   titleAccent: "comparatif",
-  description: "Copacabana, Ipanema, Leblon, Botafogo, Centro/Lapa, Barra da Tijuca : notre comparatif complet pour choisir où loger selon votre style de voyage.",
+  description: "Zona Sul, Centro, Barra da Tijuca : notre comparatif complet pour choisir où loger à Rio selon votre style de voyage.",
   category: "hebergements",
   tags: ["hébergement", "où loger", "quartiers", "Rio de Janeiro"],
   date: "2026-07-13",
@@ -17,61 +28,70 @@ export const article: Article = {
   popular: true,
   relatedServices: [
     {
-      label: "Conciergerie sur mesure",
-      href: "https://www.jeitinho.fr/trouver-un-jeitinho",
-      description: "On vous aide gratuitement à trouver l'hébergement adapté à votre style de voyage.",
+      label: "Nos hébergements partenaires",
+      href: "https://jeitinho.fr/services/hebergements",
+      description: "Casa Los Santos, appartements en Zona Sul... on vous aide à réserver le logement adapté à votre séjour.",
     },
   ],
   sections: [
     { type: "p", text: "Il n'existe pas un meilleur quartier pour loger à Rio. Il existe celui qui correspond à votre voyage. Voici notre comparatif complet pour vous aider à choisir en quelques minutes, selon votre budget, votre style de voyage et vos priorités." },
-    { type: "p", text: "Ce guide n'est pas une liste théorique. C'est ce qu'on dirait à un ami qui hésite : quel quartier pour quel profil de voyageur." },
+    { type: "p", text: "Ce guide n'est pas une liste théorique. C'est ce qu'on dirait à un ami qui hésite : quelle zone pour quel profil de voyageur." },
 
-    { type: "h2", text: "Je viens pour... quel quartier choisir" },
+    { type: "h2", text: "Je viens pour... quelle zone choisir" },
     { type: "ul", items: [
-      "Un premier voyage à Rio → <a href=\"/blog/copacabana-guide-complet\">Copacabana</a> : métro à proximité, activités Jeitinho, plages mythiques, ambiance animée.",
-      "Restaurants et vie locale → <a href=\"/blog/ipanema-guide-complet\">Ipanema</a> : gastronomie variée, bars et cafés, ambiance carioca, coucher de soleil à Arpoador.",
-      "Luxe et confort → Barra da Tijuca : hôtels haut de gamme, resorts et beach clubs, grandes plages, quartiers modernes et sécurisés.",
-      "Sorties et rooftops → <a href=\"/blog/botafogo-guide-complet\">Botafogo</a> : bars et rooftops, vie nocturne, ambiance jeune, superbe vue sur la baie.",
-      "Culture et patrimoine → Centro / <a href=\"/blog/lapa-guide-complet\">Lapa</a> : patrimoine historique, musées, architecture coloniale, Lapa by night.",
-      "Calme et haut de gamme → <a href=\"/blog/leblon-guide-complet\">Leblon</a> : ambiance chic et calme, quartier résidentiel, gastronomie raffinée, plage familiale.",
+      "Un premier voyage, les plages, l'essentiel de Rio → Zona Sul : Copacabana, Ipanema, Leblon, Botafogo, Lagoa, Jardim Botânico, Urca. Le cœur touristique et résidentiel, tout à portée de main.",
+      "La culture, l'histoire, une ambiance plus locale → Centro : Centro historique, Lapa, Santa Teresa, Glória, Catete. Musées, architecture coloniale, botecos brésiliens et Lapa by night.",
+      "Le luxe, le confort, une ambiance moderne → Barra da Tijuca : hôtels haut de gamme, restaurants et bars sophistiqués, grandes plages, quartier résidentiel et sécurisé.",
     ]},
-    { type: "conseil", title: "Le conseil Jeitinho", text: "Choisissez votre quartier selon votre style de voyage, pas seulement selon le prix. L'ambiance et le temps de trajet peuvent transformer votre expérience à Rio bien plus qu'une différence de quelques euros sur la nuitée." },
+    { type: "conseil", title: "Le conseil Jeitinho", text: "Choisissez votre zone selon votre style de voyage, pas seulement selon le prix. L'ambiance et le temps de trajet peuvent transformer votre expérience à Rio bien plus qu'une différence de quelques euros sur la nuitée." },
 
-    { type: "h2", text: "En un coup d'œil" },
-    { type: "ul", items: [
-      "Copacabana — budget moyen, plage 5 étoiles, restaurants 4 étoiles, vie nocturne 4 étoiles, métro disponible. Idéal premier voyage.",
-      "Ipanema — budget élevé, plage 5 étoiles, restaurants 5 étoiles, vie nocturne 4 étoiles, métro disponible. Idéal restaurants et vie locale.",
-      "Leblon — budget très élevé, plage 5 étoiles, restaurants 5 étoiles, vie nocturne 3 étoiles, métro disponible. Idéal calme et haut de gamme.",
-      "Botafogo — budget moyen, plage 2 étoiles, restaurants 5 étoiles, vie nocturne 5 étoiles, métro disponible. Excellent rapport qualité-prix.",
-      "Centro / Lapa — budget économique, plage 1 étoile, restaurants 4 étoiles, vie nocturne 5 étoiles, métro disponible. Idéal culture et patrimoine.",
-      "Barra da Tijuca — budget très élevé, plage 5 étoiles, restaurants 4 étoiles, vie nocturne 4 étoiles, métro non disponible dans toutes les zones. Idéal luxe et confort.",
-    ]},
+    { type: "h2", text: "Zona Sul : le cœur du séjour" },
+    { type: "p", text: "La Zona Sul regroupe les quartiers les plus connus de Rio, chacun avec sa propre ambiance. Retrouvez nos guides complets de <a href=\"/blog/copacabana-guide-complet\">Copacabana</a>, <a href=\"/blog/ipanema-guide-complet\">Ipanema</a>, <a href=\"/blog/leblon-guide-complet\">Leblon</a>, <a href=\"/blog/botafogo-guide-complet\">Botafogo</a>, <a href=\"/blog/lagoa-guide-complet\">Lagoa</a>, <a href=\"/blog/jardim-botanico-guide-complet\">Jardim Botânico</a> et <a href=\"/blog/urca-guide-complet\">Urca</a> pour approfondir chaque quartier." },
 
-    { type: "h2", text: "Pour quel type de voyageur" },
-    { type: "ul", items: [
-      "Couple → <a href=\"/blog/ipanema-guide-complet\">Ipanema</a>, pour l'équilibre entre ambiance, gastronomie et coucher de soleil.",
-      "Famille → <a href=\"/blog/leblon-guide-complet\">Leblon</a>, pour le calme et la plage familiale.",
-      "Groupe d'amis → <a href=\"/blog/copacabana-guide-complet\">Copacabana</a>, pour l'animation et le rapport qualité-prix.",
-      "Digital nomad → <a href=\"/blog/botafogo-guide-complet\">Botafogo</a>, pour le quotidien authentique et bien connecté.",
-      "Petit budget → Centro / Lapa, pour l'accès à la culture et aux prix les plus doux.",
-      "Road trip luxe et confort → Barra da Tijuca, pour l'espace et le calme résidentiel.",
-    ]},
+    { type: "h2", text: "Centro : culture et authenticité" },
+    { type: "p", text: "Moins touristique, plus vivant au quotidien. Retrouvez nos guides de <a href=\"/blog/lapa-guide-complet\">Lapa</a>, <a href=\"/blog/santa-teresa-guide-complet\">Santa Teresa</a>, <a href=\"/blog/gloria-guide-complet\">Glória</a> et <a href=\"/blog/catete-guide-complet\">Catete</a>." },
+
+    { type: "h2", text: "Barra da Tijuca : luxe et modernité" },
+    { type: "p", text: "Un Rio plus récent, pensé pour la voiture. Retrouvez notre guide complet de <a href=\"/blog/barra-da-tijuca-guide-complet\">Barra da Tijuca</a>." },
+
     { type: "bonasavoir", title: "Bon à savoir", text: "Les distances peuvent sembler courtes sur une carte, mais le trafic change tout à Rio. Deux quartiers voisins peuvent être séparés par 30 à 40 minutes de circulation aux heures de pointe. Anticipez toujours vos trajets en conséquence." },
+
+    { type: "h2", text: "Nos adresses partenaires" },
+    { type: "p", text: "En Zona Sul, nous travaillons avec quelques hébergements sélectionnés pour leur emplacement et leur qualité." },
+
+    { type: "h3", text: "Casa Los Santos, Vidigal" },
+    { type: "p", text: "Une maison avec vue imprenable sur l'océan, à Vidigal, entre plage et favela authentique. Idéal pour un séjour immersif sans sacrifier le confort." },
+    { type: "gallery", images: [
+      { src: clsSalon, alt: "Salon lumineux de Casa Los Santos avec vue sur l'océan au coucher du soleil" },
+      { src: clsChambreVue, alt: "Chambre de Casa Los Santos avec vue sur la baie" },
+      { src: clsCoucherSoleil, alt: "Coucher de soleil depuis Casa Los Santos à Vidigal" },
+      { src: clsChambre, alt: "Chambre confortable de Casa Los Santos" },
+    ]},
+
+    { type: "h3", text: "Appartement 2 chambres, PPG" },
+    { type: "p", text: "Un appartement spacieux entre Copacabana et Ipanema, avec rooftop privatif, piscine et vue panoramique sur la baie de Guanabara." },
+    { type: "gallery", images: [
+      { src: ppgSalon, alt: "Salon moderne de l'appartement PPG" },
+      { src: ppgVueMontagne, alt: "Vue sur les montagnes depuis l'appartement PPG" },
+      { src: ppgBalcon, alt: "Balcon de l'appartement PPG avec vue sur le quartier" },
+      { src: ppgVuePanoramique, alt: "Vue panoramique sur Rio depuis l'appartement PPG" },
+      { src: ppgRooftopPiscine, alt: "Rooftop avec piscine de l'appartement PPG au coucher du soleil" },
+      { src: ppgTerrasse, alt: "Terrasse du rooftop de l'appartement PPG" },
+      { src: ppgVueOcean, alt: "Vue sur l'océan depuis le rooftop de l'appartement PPG" },
+    ]},
+    { type: "conseil", title: "Le conseil Jeitinho", text: "Envie de séjourner dans l'une de ces adresses ? Contactez-nous directement, nous nous occupons de la réservation et de tout le reste de votre séjour." },
 
     { type: "h2", text: "Une option différente : séjourner dans une communauté" },
     { type: "p", text: "Dans la Zona Sul, il existe des communautés (favelas) comme Rocinha, Vidigal ou Santa Marta. Séjourner avec des habitants peut offrir une expérience authentique, enrichissante et souvent plus abordable, tout en soutenant l'économie locale. C'est une option à considérer pour les voyageurs en quête d'immersion, à condition de bien se renseigner sur l'hébergement choisi au préalable." },
     { type: "aeviter", title: "À éviter", text: "Ne réservez pas votre hébergement uniquement sur la base du prix affiché sans regarder sa localisation précise sur une carte. Un logement « proche de la plage » peut en réalité se trouver à 20 minutes de marche en montée, ce qui change complètement l'expérience quotidienne." },
 
-    { type: "h2", text: "Pour aller plus loin" },
-    { type: "p", text: "Retrouvez nos guides complets de chaque quartier : <a href=\"/blog/copacabana-guide-complet\">Copacabana</a>, <a href=\"/blog/ipanema-guide-complet\">Ipanema</a>, <a href=\"/blog/leblon-guide-complet\">Leblon</a>, <a href=\"/blog/botafogo-guide-complet\">Botafogo</a> et <a href=\"/blog/lapa-guide-complet\">Lapa</a>, ainsi que notre article sur le <a href=\"/blog/budget-voyage-rio\">budget à prévoir pour votre séjour</a>." },
-
     { type: "faq", items: [
-      { q: "Quel est le meilleur quartier pour un premier séjour à Rio ?", a: "Copacabana reste le choix le plus pratique : accès facile au métro, activités variées et proximité avec les principaux sites touristiques." },
-      { q: "Quel quartier privilégier avec un budget serré ?", a: "Centro et Lapa offrent les prix les plus accessibles, avec un accès direct à la culture et au patrimoine historique de Rio." },
+      { q: "Quelle est la meilleure zone pour un premier séjour à Rio ?", a: "La Zona Sul reste le choix le plus pratique : plages, activités, restaurants et transports, tout est concentré et facilement accessible." },
+      { q: "Quelle zone privilégier avec un budget serré ?", a: "Le Centro offre les prix les plus accessibles, avec un accès direct à la culture et au patrimoine historique de Rio." },
       { q: "Faut-il une voiture pour loger à Barra da Tijuca ?", a: "Oui, une voiture ou un Uber est quasiment indispensable à Barra da Tijuca, les distances y étant plus importantes qu'en Zona Sul." },
       { q: "Peut-on loger dans une favela en tant que touriste ?", a: "Oui, certaines communautés comme Vidigal ou Santa Marta proposent des hébergements chez l'habitant, offrant une expérience authentique et souvent économique." },
     ]},
 
-    { type: "p", text: "Le meilleur souvenir de Rio n'est pas seulement un lieu, mais une émotion. Choisissez votre quartier selon votre rythme, et vivez-le pleinement, quel que soit votre budget." },
+    { type: "p", text: "Le meilleur souvenir de Rio n'est pas seulement un lieu, mais une émotion. Choisissez votre zone selon votre rythme, et vivez-la pleinement, quel que soit votre budget." },
   ],
 };

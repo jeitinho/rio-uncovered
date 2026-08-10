@@ -17,9 +17,9 @@ export const article: Article = {
   popular: false,
   relatedServices: [
     {
-      label: "Conciergerie sur mesure",
+      label: "Assistance Jeitinho",
       href: "https://www.jeitinho.fr/trouver-un-jeitinho",
-      description: "On vous accompagne pour un séjour serein, avec des conseils locaux à jour.",
+      description: "En cas de pépin sur place, on ouvre votre dossier d'assistance pour 10€ et on vous accompagne dans les démarches.",
     },
   ],
   sections: [
@@ -31,11 +31,12 @@ export const article: Article = {
     { type: "conseil", title: "Le conseil Jeitinho", text: "Le meilleur indicateur de sécurité d'un quartier, c'est le nombre de gens dehors. À Rio, une rue vide un dimanche soir mérite plus d'attention qu'une rue bondée un jeudi à minuit. Fiez-vous à l'ambiance du lieu plus qu'à l'heure sur votre montre." },
 
     { type: "h2", text: "La Zona Sul, le cœur du séjour touristique" },
-    { type: "p", text: "Dans la Zona Sul, entre <a href=\"/blog/botafogo-guide-complet\">Botafogo</a> et <a href=\"/blog/leblon-guide-complet\">Leblon</a>, la plupart des visiteurs se sentent aussi à l'aise que dans n'importe quelle grande ville européenne animée. Il est courant de marcher seul le soir, de rentrer à pied jusqu'au métro ou d'aller courir sur l'Aterro do Flamengo tôt le matin. La différence avec l'Europe reste surtout dans la vigilance portée au téléphone dans la rue et à l'absence de bijoux voyants en extérieur." },
+    { type: "p", text: "La Zona Sul n'est pas homogène en matière de sécurité : le niveau de vigilance à adopter varie d'une rue à l'autre, pas seulement d'un quartier à l'autre. Sur les grands axes de <a href=\"/blog/botafogo-guide-complet\">Botafogo</a>, <a href=\"/blog/ipanema-guide-complet\">Ipanema</a> et <a href=\"/blog/leblon-guide-complet\">Leblon</a>, la plupart des visiteurs se sentent aussi à l'aise que dans n'importe quelle grande ville européenne animée : il est courant d'y marcher seul le soir ou de rentrer à pied jusqu'au métro. Mais dès qu'on s'éloigne de ces axes principaux, vers les rues plus calmes et moins éclairées, la prudence doit augmenter en conséquence, comme partout ailleurs." },
     { type: "bonasavoir", title: "Bon à savoir", text: "Les zones les plus fréquentées par les touristes (Copacabana, Ipanema, Leblon, Botafogo) bénéficient d'une présence policière renforcée, en particulier autour des points d'intérêt et sur les plages. La police touristique (DEAT) est dédiée spécifiquement à l'assistance aux visiteurs." },
 
     { type: "h2", text: "Comprendre plutôt qu'éviter" },
     { type: "p", text: "Il ne s'agit pas d'éviter Rio, ni de vivre repliée sur soi-même pendant le séjour. Il s'agit d'accepter que certaines zones demandent plus de préparation que d'autres, comme partout dans le monde. Les favelas, par exemple, ne sont pas des zones à éviter par principe : certaines, comme Santa Marta, se visitent très bien, mais toujours avec un guide local qui connaît vraiment le terrain, jamais en improvisant seul." },
+    { type: "p", text: "Ce qui surprend souvent les visiteurs, une fois sur place : dans une favela, il existe des règles, tacites mais bien réelles. Le tourisme y est aujourd'hui une économie à part entière, et personne n'a intérêt à ce qu'elle soit menacée. Voler, agresser ou importuner un visiteur y est très mal vu et lourdement sanctionné en interne. Ce sont des lieux de vie avec leurs propres codes, pas des zones de non-droit, ce qui peut sembler contre-intuitif vu de l'extérieur." },
     { type: "aeviter", title: "À éviter", text: "Ne vous aventurez jamais seul dans une communauté sans accompagnement local, même si l'entrée semble ouverte à tous. Ce n'est pas une question de danger systématique, mais de respect : ce sont des lieux de vie, pas des attractions touristiques à explorer sans guide." },
 
     { type: "h2", text: "Les réflexes du quotidien à adopter" },
@@ -49,12 +50,14 @@ export const article: Article = {
 
     { type: "h2", text: "Et si un incident survient malgré tout" },
     { type: "p", text: "Malgré toutes les précautions, un incident peut arriver, comme dans n'importe quelle grande ville du monde. Gardez toujours les numéros d'urgence à portée de main (190 pour la police, 192 pour le SAMU), et en cas de vol, ne poursuivez jamais la personne : mettez-vous en sécurité, bloquez vos cartes, et déclarez le vol à la police touristique." },
+    { type: "bonasavoir", title: "Bon à savoir", text: "La DEAT (police touristique) se trouve Rua Humberto de Campos, 315, à Leblon — tél. (21) 3399-7170. C'est l'interlocuteur officiel pour toute déclaration en tant que visiteur étranger." },
+    { type: "conseil", title: "Le conseil Jeitinho", text: "En cas de pépin sur place, contactez-nous : on ouvre un dossier d'assistance pour 10€ et on vous accompagne dans les démarches (déclaration, blocage de cartes, contacts utiles), en français." },
 
     { type: "faq", items: [
-      { q: "Rio est-elle plus dangereuse que d'autres grandes villes ?", a: "Certaines statistiques sont plus élevées qu'en Europe, mais la réalité vécue au quotidien dans la Zona Sul reste comparable à celle de nombreuses grandes métropoles, à condition d'adopter les mêmes réflexes de prudence." },
-      { q: "Peut-on se promener seul le soir à Rio ?", a: "Dans la Zona Sul, sur les axes fréquentés et éclairés, oui, c'est tout à fait courant. Restez attentif comme dans toute grande ville et privilégiez un VTC pour les trajets plus longs ou tardifs." },
-      { q: "Faut-il éviter complètement les favelas ?", a: "Non, certaines communautés se visitent très bien et offrent une expérience culturelle riche, mais toujours accompagné d'un guide local reconnu, jamais en autonomie sans connaissance du terrain." },
-      { q: "Que faire en cas de vol à Rio ?", a: "Mettez-vous en sécurité immédiatement, ne poursuivez jamais la personne, bloquez vos cartes bancaires et déclarez le vol à la police touristique (DEAT), spécialement dédiée à l'assistance aux visiteurs." },
+      { q: "Rio est-elle plus dangereuse que d'autres grandes villes ?", a: "Certaines statistiques sont plus élevées qu'en Europe, mais la réalité vécue au quotidien dans la Zona Sul reste comparable à celle de nombreuses grandes métropoles, à condition d'adopter les mêmes réflexes de prudence et de rester sur les axes fréquentés." },
+      { q: "Peut-on se promener seul le soir à Rio ?", a: "Sur les grands axes de la Zona Sul, fréquentés et éclairés, oui, c'est courant. Dès que les rues se font plus calmes, la prudence doit augmenter, comme dans toute grande ville." },
+      { q: "Faut-il éviter complètement les favelas ?", a: "Non, certaines communautés se visitent très bien et fonctionnent avec leurs propres règles, notamment autour du tourisme. Toujours accompagné d'un guide local reconnu, jamais en autonomie sans connaissance du terrain." },
+      { q: "Que faire en cas de vol à Rio ?", a: "Mettez-vous en sécurité immédiatement, ne poursuivez jamais la personne, bloquez vos cartes bancaires et déclarez le vol à la DEAT (police touristique), à Leblon, spécialement dédiée à l'assistance aux visiteurs." },
     ]},
 
     { type: "p", text: "Rio ne mérite pas la réputation de ville infréquentable qu'on lui prête parfois de loin. Avec des réflexes simples et un peu de préparation, la ville se révèle aussi accueillante que spectaculaire." },

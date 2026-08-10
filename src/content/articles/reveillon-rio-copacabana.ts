@@ -17,9 +17,9 @@ export const article: Article = {
   popular: true,
   relatedServices: [
     {
-      label: "Réveillon Copacabana Jeitinho",
-      href: "https://www.jeitinho.fr/experiences",
-      description: "Espace privatisé sur la plage, service premium et ambiance exceptionnelle pour votre réveillon.",
+      label: "Le Réveillon avec Jeitinho",
+      href: "https://www.jeitinho.fr/packs/reveillon",
+      description: "10 jours pour vivre Rio comme un local, du 26 décembre au 4 janvier. Vols depuis Paris, hébergement Zona Sul, accès privilégié au feu d'artifice avec espace privatif. À partir de 3 500 €.",
     },
   ],
   sections: [
@@ -28,14 +28,16 @@ export const article: Article = {
 
     { type: "h2", text: "Comprendre le réveillon de Copacabana" },
     { type: "p", text: "Chaque 31 décembre, la plage de <a href=\"/blog/copacabana-guide-complet\">Copacabana</a> se transforme en scène géante à ciel ouvert. Des millions de cariocas et de visiteurs du monde entier se rassemblent sur les quatre kilomètres de plage pour assister à un feu d'artifice tiré depuis des barges au large, généralement accompagné de concerts sur plusieurs scènes réparties le long du front de mer." },
+    { type: "p", text: "Depuis l'édition 2026, le feu d'artifice n'est plus seul en scène : Copacabana a inauguré un spectacle de 1 100 drones formant des figures lumineuses dans le ciel juste après la dernière fusée, une première historique pour le Brésil. Un moment fort de cette édition, que la ville prévoit de reconduire les années suivantes." },
     { type: "conseil", title: "Le conseil Jeitinho", text: "Commencez l'année là où tout le monde veut être. Réservez votre emplacement à l'avance : les meilleures zones face à la mer se remplissent dès le milieu de l'après-midi, bien avant le début officiel des festivités." },
 
     { type: "h2", text: "La tradition du blanc et d'Iemanjá" },
-    { type: "p", text: "Porter du blanc le soir du réveillon est une tradition profondément ancrée à Rio, en hommage à Iemanjá, déesse de la mer dans les religions afro-brésiliennes. De nombreux cariocas offrent également des fleurs à l'océan à minuit, en signe de vœux pour la nouvelle année. Sauter sept vagues en faisant un vœu à chaque saut est une autre coutume répandue sur la plage." },
+    { type: "p", text: "Porter du blanc le soir du réveillon est une tradition profondément ancrée à Rio, en hommage à Iemanjá, déesse de la mer dans les religions afro-brésiliennes. De nombreux cariocas offrent également des fleurs à l'océan à minuit, en signe de vœux pour la nouvelle année. Sauter sept vagues en faisant un vœu à chaque saut est une autre coutume répandue sur la plage, souvent suivie d'un dernier plongeon dans l'océan pour de bon." },
     { type: "bonasavoir", title: "Bon à savoir", text: "Au-delà de la tradition, le blanc reste aussi un choix pratique : il permet de se repérer plus facilement dans la foule immense, et beaucoup d'établissements et de soirées organisées appliquent un dress code blanc pour l'occasion." },
 
     { type: "h2", text: "Comment vivre la soirée sereinement" },
     { type: "p", text: "Face à l'affluence exceptionnelle de cette soirée, plusieurs options s'offrent aux visiteurs : profiter gratuitement de la plage en arrivant tôt pour trouver une bonne place, ou opter pour un espace privatisé avec service premium, apéritif et vue dégagée, loin de la densité de la foule au niveau du sable." },
+    { type: "p", text: "Une troisième option existe, moins connue : observer les feux depuis l'eau, à bord d'un bateau au large de la baie. La perspective change complètement, avec moins de foule et plus de recul sur l'ensemble du spectacle. Certains prolongent d'ailleurs la soirée avec une fête dans une villa juste après minuit, une fois la marée humaine de la plage retombée." },
     { type: "ul", items: [
       "Arrivez tôt sur la plage si vous optez pour l'accès gratuit, idéalement avant 18h pour les meilleures places.",
       "Prévoyez très peu d'affaires sur vous : téléphone, un peu d'argent, rien de précieux ni de superflu.",
