@@ -9,53 +9,28 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
-import { Route as RssDotxmlRouteImport } from './routes/rss[.]xml'
-import { Route as PartenairesRouteImport } from './routes/partenaires'
-import { Route as McpRouteImport } from './routes/mcp'
-import { Route as ManuelJeitinhoRouteImport } from './routes/manuel-jeitinho'
-import { Route as ContactRouteImport } from './routes/contact'
-import { Route as AProposRouteImport } from './routes/a-propos'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as BlogIndexRouteImport } from './routes/blog.index'
-import { Route as AuteursIndexRouteImport } from './routes/auteurs.index'
-import { Route as BlogRechercheRouteImport } from './routes/blog.recherche'
-import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
-import { Route as AuteursSlugRouteImport } from './routes/auteurs.$slug'
-import { Route as ApiPartenairesRouteImport } from './routes/api.partenaires'
-import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } from './routes/[.well-known]/oauth-protected-resource'
+import { Route as AProposRouteImport } from './routes/a-propos'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as ManuelJeitinhoRouteImport } from './routes/manuel-jeitinho'
+import { Route as McpRouteImport } from './routes/mcp'
+import { Route as PartenairesRouteImport } from './routes/partenaires'
+import { Route as RssDotxmlRouteImport } from './routes/rss[.]xml'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as Char91DotmcpChar93ListToolsRouteImport } from './routes/[.mcp]/list-tools'
-import { Route as BlogCategorieSlugRouteImport } from './routes/blog.categorie.$slug'
+import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } from './routes/[.well-known]/oauth-protected-resource'
+import { Route as ApiPartenairesRouteImport } from './routes/api.partenaires'
+import { Route as AuteursIndexRouteImport } from './routes/auteurs.index'
+import { Route as AuteursSlugRouteImport } from './routes/auteurs.$slug'
+import { Route as BlogIndexRouteImport } from './routes/blog.index'
+import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
+import { Route as BlogRechercheRouteImport } from './routes/blog.recherche'
 import { Route as Char91DotmcpChar93InvokeToolToolRouteImport } from './routes/[.mcp]/invoke-tool/$tool'
+import { Route as BlogCategorieSlugRouteImport } from './routes/blog.categorie.$slug'
 
-const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
-  id: '/sitemap.xml',
-  path: '/sitemap.xml',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const RssDotxmlRoute = RssDotxmlRouteImport.update({
-  id: '/rss.xml',
-  path: '/rss.xml',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PartenairesRoute = PartenairesRouteImport.update({
-  id: '/partenaires',
-  path: '/partenaires',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const McpRoute = McpRouteImport.update({
-  id: '/mcp',
-  path: '/mcp',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ManuelJeitinhoRoute = ManuelJeitinhoRouteImport.update({
-  id: '/manuel-jeitinho',
-  path: '/manuel-jeitinho',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ContactRoute = ContactRouteImport.update({
-  id: '/contact',
-  path: '/contact',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AProposRoute = AProposRouteImport.update({
@@ -63,14 +38,51 @@ const AProposRoute = AProposRouteImport.update({
   path: '/a-propos',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
-const BlogIndexRoute = BlogIndexRouteImport.update({
-  id: '/blog/',
-  path: '/blog/',
+const ManuelJeitinhoRoute = ManuelJeitinhoRouteImport.update({
+  id: '/manuel-jeitinho',
+  path: '/manuel-jeitinho',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const McpRoute = McpRouteImport.update({
+  id: '/mcp',
+  path: '/mcp',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PartenairesRoute = PartenairesRouteImport.update({
+  id: '/partenaires',
+  path: '/partenaires',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RssDotxmlRoute = RssDotxmlRouteImport.update({
+  id: '/rss.xml',
+  path: '/rss.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const Char91DotmcpChar93ListToolsRoute =
+  Char91DotmcpChar93ListToolsRouteImport.update({
+    id: '/.mcp/list-tools',
+    path: '/.mcp/list-tools',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const Char91DotwellKnownChar93OauthProtectedResourceRoute =
+  Char91DotwellKnownChar93OauthProtectedResourceRouteImport.update({
+    id: '/.well-known/oauth-protected-resource',
+    path: '/.well-known/oauth-protected-resource',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ApiPartenairesRoute = ApiPartenairesRouteImport.update({
+  id: '/api/partenaires',
+  path: '/api/partenaires',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AuteursIndexRoute = AuteursIndexRouteImport.update({
@@ -78,9 +90,14 @@ const AuteursIndexRoute = AuteursIndexRouteImport.update({
   path: '/auteurs/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const BlogRechercheRoute = BlogRechercheRouteImport.update({
-  id: '/blog/recherche',
-  path: '/blog/recherche',
+const AuteursSlugRoute = AuteursSlugRouteImport.update({
+  id: '/auteurs/$slug',
+  path: '/auteurs/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogIndexRoute = BlogIndexRouteImport.update({
+  id: '/blog/',
+  path: '/blog/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BlogSlugRoute = BlogSlugRouteImport.update({
@@ -88,31 +105,9 @@ const BlogSlugRoute = BlogSlugRouteImport.update({
   path: '/blog/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
-const AuteursSlugRoute = AuteursSlugRouteImport.update({
-  id: '/auteurs/$slug',
-  path: '/auteurs/$slug',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ApiPartenairesRoute = ApiPartenairesRouteImport.update({
-  id: '/api/partenaires',
-  path: '/api/partenaires',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const Char91DotwellKnownChar93OauthProtectedResourceRoute =
-  Char91DotwellKnownChar93OauthProtectedResourceRouteImport.update({
-    id: '/.well-known/oauth-protected-resource',
-    path: '/.well-known/oauth-protected-resource',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const Char91DotmcpChar93ListToolsRoute =
-  Char91DotmcpChar93ListToolsRouteImport.update({
-    id: '/.mcp/list-tools',
-    path: '/.mcp/list-tools',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const BlogCategorieSlugRoute = BlogCategorieSlugRouteImport.update({
-  id: '/blog/categorie/$slug',
-  path: '/blog/categorie/$slug',
+const BlogRechercheRoute = BlogRechercheRouteImport.update({
+  id: '/blog/recherche',
+  path: '/blog/recherche',
   getParentRoute: () => rootRouteImport,
 } as any)
 const Char91DotmcpChar93InvokeToolToolRoute =
@@ -121,6 +116,11 @@ const Char91DotmcpChar93InvokeToolToolRoute =
     path: '/.mcp/invoke-tool/$tool',
     getParentRoute: () => rootRouteImport,
   } as any)
+const BlogCategorieSlugRoute = BlogCategorieSlugRouteImport.update({
+  id: '/blog/categorie/$slug',
+  path: '/blog/categorie/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -269,46 +269,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/sitemap.xml': {
-      id: '/sitemap.xml'
-      path: '/sitemap.xml'
-      fullPath: '/sitemap.xml'
-      preLoaderRoute: typeof SitemapDotxmlRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/rss.xml': {
-      id: '/rss.xml'
-      path: '/rss.xml'
-      fullPath: '/rss.xml'
-      preLoaderRoute: typeof RssDotxmlRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/partenaires': {
-      id: '/partenaires'
-      path: '/partenaires'
-      fullPath: '/partenaires'
-      preLoaderRoute: typeof PartenairesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/mcp': {
-      id: '/mcp'
-      path: '/mcp'
-      fullPath: '/mcp'
-      preLoaderRoute: typeof McpRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/manuel-jeitinho': {
-      id: '/manuel-jeitinho'
-      path: '/manuel-jeitinho'
-      fullPath: '/manuel-jeitinho'
-      preLoaderRoute: typeof ManuelJeitinhoRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/contact': {
-      id: '/contact'
-      path: '/contact'
-      fullPath: '/contact'
-      preLoaderRoute: typeof ContactRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/a-propos': {
@@ -318,60 +283,46 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AProposRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/blog/': {
-      id: '/blog/'
-      path: '/blog'
-      fullPath: '/blog/'
-      preLoaderRoute: typeof BlogIndexRouteImport
+    '/manuel-jeitinho': {
+      id: '/manuel-jeitinho'
+      path: '/manuel-jeitinho'
+      fullPath: '/manuel-jeitinho'
+      preLoaderRoute: typeof ManuelJeitinhoRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/auteurs/': {
-      id: '/auteurs/'
-      path: '/auteurs'
-      fullPath: '/auteurs/'
-      preLoaderRoute: typeof AuteursIndexRouteImport
+    '/mcp': {
+      id: '/mcp'
+      path: '/mcp'
+      fullPath: '/mcp'
+      preLoaderRoute: typeof McpRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/blog/recherche': {
-      id: '/blog/recherche'
-      path: '/blog/recherche'
-      fullPath: '/blog/recherche'
-      preLoaderRoute: typeof BlogRechercheRouteImport
+    '/partenaires': {
+      id: '/partenaires'
+      path: '/partenaires'
+      fullPath: '/partenaires'
+      preLoaderRoute: typeof PartenairesRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/blog/$slug': {
-      id: '/blog/$slug'
-      path: '/blog/$slug'
-      fullPath: '/blog/$slug'
-      preLoaderRoute: typeof BlogSlugRouteImport
+    '/rss.xml': {
+      id: '/rss.xml'
+      path: '/rss.xml'
+      fullPath: '/rss.xml'
+      preLoaderRoute: typeof RssDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/auteurs/$slug': {
-      id: '/auteurs/$slug'
-      path: '/auteurs/$slug'
-      fullPath: '/auteurs/$slug'
-      preLoaderRoute: typeof AuteursSlugRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/api/partenaires': {
-      id: '/api/partenaires'
-      path: '/api/partenaires'
-      fullPath: '/api/partenaires'
-      preLoaderRoute: typeof ApiPartenairesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/.well-known/oauth-protected-resource': {
-      id: '/.well-known/oauth-protected-resource'
-      path: '/.well-known/oauth-protected-resource'
-      fullPath: '/.well-known/oauth-protected-resource'
-      preLoaderRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRouteImport
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/.mcp/list-tools': {
@@ -381,11 +332,53 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof Char91DotmcpChar93ListToolsRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/blog/categorie/$slug': {
-      id: '/blog/categorie/$slug'
-      path: '/blog/categorie/$slug'
-      fullPath: '/blog/categorie/$slug'
-      preLoaderRoute: typeof BlogCategorieSlugRouteImport
+    '/.well-known/oauth-protected-resource': {
+      id: '/.well-known/oauth-protected-resource'
+      path: '/.well-known/oauth-protected-resource'
+      fullPath: '/.well-known/oauth-protected-resource'
+      preLoaderRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/partenaires': {
+      id: '/api/partenaires'
+      path: '/api/partenaires'
+      fullPath: '/api/partenaires'
+      preLoaderRoute: typeof ApiPartenairesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/auteurs/': {
+      id: '/auteurs/'
+      path: '/auteurs'
+      fullPath: '/auteurs/'
+      preLoaderRoute: typeof AuteursIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/auteurs/$slug': {
+      id: '/auteurs/$slug'
+      path: '/auteurs/$slug'
+      fullPath: '/auteurs/$slug'
+      preLoaderRoute: typeof AuteursSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/': {
+      id: '/blog/'
+      path: '/blog'
+      fullPath: '/blog/'
+      preLoaderRoute: typeof BlogIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/$slug': {
+      id: '/blog/$slug'
+      path: '/blog/$slug'
+      fullPath: '/blog/$slug'
+      preLoaderRoute: typeof BlogSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/recherche': {
+      id: '/blog/recherche'
+      path: '/blog/recherche'
+      fullPath: '/blog/recherche'
+      preLoaderRoute: typeof BlogRechercheRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/.mcp/invoke-tool/$tool': {
@@ -393,6 +386,13 @@ declare module '@tanstack/react-router' {
       path: '/.mcp/invoke-tool/$tool'
       fullPath: '/.mcp/invoke-tool/$tool'
       preLoaderRoute: typeof Char91DotmcpChar93InvokeToolToolRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/categorie/$slug': {
+      id: '/blog/categorie/$slug'
+      path: '/blog/categorie/$slug'
+      fullPath: '/blog/categorie/$slug'
+      preLoaderRoute: typeof BlogCategorieSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
