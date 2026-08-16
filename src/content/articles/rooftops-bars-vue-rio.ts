@@ -3,12 +3,12 @@ import hero from "@/assets/article-rooftops-rio.jpg";
 
 export const article: Article = {
   slug: "rooftops-bars-vue-rio",
-  title: "Rooftops et bars avec vue : où boire un verre à Rio",
+  title: "Rooftops et bars : où boire un verre à Rio",
   titleAccent: "rooftops",
-  description: "Fairmont, YOO2, Terrazza 40, Mirante do Arvrão : notre sélection des meilleurs rooftops et bars avec vue pour un coucher de soleil inoubliable à Rio.",
+  description: "Du rooftop chic au boteco sans façade : notre sélection complète des meilleurs spots pour boire un verre à Rio, tous styles confondus.",
   category: "vie-nocturne",
   tags: ["rooftop", "bar", "coucher de soleil", "Rio de Janeiro"],
-  date: "2026-07-11",
+  date: "2026-06-20",
   author: "equipe-jeitinho",
   hero,
   heroAlt: "Cocktails sur une table de rooftop avec vue sur le coucher de soleil et le Pain de Sucre, Rio de Janeiro",
@@ -18,7 +18,7 @@ export const article: Article = {
   relatedServices: [
     {
       label: "Conciergerie sur mesure",
-      href: "https://jeitinho.fr/trouver-un-jeitinho",
+      href: "https://www.jeitinho.fr/trouver-un-jeitinho",
       description: "On vous réserve une table dans les meilleurs rooftops de Rio.",
     },
   ],
@@ -37,6 +37,8 @@ export const article: Article = {
     { type: "p", text: "Rooftop avec une vue spectaculaire sur le centre-ville et la baie. Ambiance bohème et exclusive. À tester : caipirinha, vin maison." },
     { type: "h3", text: "Selina Lapa — Lapa" },
     { type: "p", text: "Rooftop animé en plein cœur de Lapa. Vue sur les Arcos et le centre-ville. Idéal pour un sunset décontracté. À tester : caipiroska, bière locale." },
+    { type: "h3", text: "Skye Bar — Ipanema" },
+    { type: "p", text: "Rooftop de l'hôtel Fasano Ipanema, l'adresse la plus hype de la ville pour un coucher de soleil face à l'océan. Ambiance chic assumée, cocktails soignés. À tester : caipirinha au maracujá." },
     { type: "conseil", title: "Le conseil Jeitinho", text: "Arrivez avant le coucher du soleil pour avoir les meilleures places. Certains spots deviennent très fréquentés le week-end. Pensez à réserver quand c'est possible." },
 
     { type: "h2", text: "Bars authentiques et lieux incontournables" },
@@ -50,17 +52,24 @@ export const article: Article = {
     { type: "p", text: "Bar à vin nature et cocktails créatifs dans un cadre intimiste et branché, avec une musique pointue et une clientèle cool." },
     { type: "h3", text: "Cafofo — Santa Teresa" },
     { type: "p", text: "Niché sur les hauteurs de Santa Teresa, le Cafofo offre une vue spectaculaire et une ambiance artistique." },
+    { type: "h3", text: "Rio Scenarium — Lapa" },
+    { type: "p", text: "Maison à trois étages remplie d'antiquités, samba et forró live tous les soirs. Une institution de Lapa, autant pour le décor que pour la musique." },
+    { type: "h3", text: "Bar do David — Chapéu Mangueira" },
+    { type: "p", text: "Niché dans une favela au-dessus de Leme, feijoada réputée et vue imprenable sur l'océan. Repéré par des chefs internationaux, resté simple et local." },
+    { type: "h3", text: "Bip Bip — Copacabana" },
+    { type: "p", text: "Minuscule bar sans façade, samba et choro improvisés par des musiciens de passage. Zéro décorum, l'antithèse du rooftop branché." },
     { type: "bonasavoir", title: "Bon à savoir", text: "Les meilleurs moments pour profiter d'un rooftop : entre 17h et 18h30 pour éviter la foule, entre 18h30 et 19h30 pour la golden hour et les meilleures photos, et après 19h30 pour l'ambiance qui monte et les lieux qui s'illuminent." },
 
-    { type: "aeviter", title: "À éviter", text: "Une tenue correcte est appréciée dans la plupart des rooftops et bars branchés de Rio, en particulier dans les hôtels comme le Fairmont ou le Santa Teresa Hotel. Certains lieux ferment tard : vérifiez toujours les horaires avant de vous déplacer." },
+    { type: "aeviter", title: "À éviter", text: "Une tenue correcte est appréciée dans la plupart des rooftops et bars branchés de Rio, en particulier dans les hôtels comme le Fairmont, le Fasano ou le Santa Teresa Hotel. Certains lieux ferment tard : vérifiez toujours les horaires avant de vous déplacer." },
 
     { type: "h2", text: "Le mot du jour : vista" },
     { type: "p", text: "Vous entendrez souvent « Que vista incrível ! » (quelle vue incroyable !). À Rio, la vue fait souvent partie intégrante de l'expérience, autant que la carte des cocktails elle-même." },
 
     { type: "faq", items: [
-      { q: "Faut-il réserver pour un rooftop à Rio ?", a: "C'est fortement recommandé le week-end et pour les rooftops d'hôtels comme le Fairmont ou le Santa Teresa Hotel, particulièrement prisés au coucher du soleil." },
+      { q: "Faut-il réserver pour un rooftop à Rio ?", a: "C'est fortement recommandé le week-end et pour les rooftops d'hôtels comme le Fairmont, le Fasano ou le Santa Teresa Hotel, particulièrement prisés au coucher du soleil." },
       { q: "Quel rooftop offre la meilleure vue sur le Pain de Sucre ?", a: "Le YOO2 à Botafogo et le Rooftop Fairmont à Copacabana offrent tous deux une vue directe et spectaculaire sur le Pain de Sucre." },
       { q: "Les rooftops de Vidigal sont-ils accessibles sans voiture ?", a: "Un Uber ou un moto-taxi de communauté reste le moyen le plus simple pour rejoindre les rooftops de Vidigal, la zone étant en hauteur et peu desservie par les transports classiques." },
+      { q: "Où boire un verre loin de l'ambiance touristique ?", a: "Bip Bip à Copacabana ou Bar do David à Chapéu Mangueira offrent une expérience bien plus locale que les rooftops d'hôtels, avec une ambiance authentique et sans chichi." },
       { q: "Privilégier les espèces ou la carte dans ces établissements ?", a: "Privilégiez les espèces ou vérifiez si la carte est acceptée avant de commander, en particulier dans les bars plus locaux et moins touristiques." },
     ]},
 
