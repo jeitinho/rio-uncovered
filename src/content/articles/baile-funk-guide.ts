@@ -29,7 +29,7 @@ export const article: Article = {
   relatedServices: [
     {
       label: "Découvrir Rio avec Jeitinho",
-      href: "https://www.jeitinho.fr/trouver-un-jeitinho",
+      href: "https://jeitinho.fr/trouver-un-jeitinho",
       description:
         "Pour découvrir les expériences nocturnes de Rio avec quelqu'un qui connaît les codes locaux.",
     },

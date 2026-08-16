@@ -16,8 +16,8 @@ export const article: Article = {
   guide: true,
   popular: true,
   relatedServices: [
-    { label: "City tour privé", href: "https://www.jeitinho.fr/experiences", description: "On condense 25 idées en une journée sur mesure." },
-    { label: "Conciergerie", href: "https://www.jeitinho.fr/trouver-un-jeitinho", description: "Réservations, transferts, adresses : on s'occupe de tout." },
+    { label: "City tour privé", href: "https://jeitinho.fr/experiences", description: "On condense 25 idées en une journée sur mesure." },
+    { label: "Conciergerie", href: "https://jeitinho.fr/trouver-un-jeitinho", description: "Réservations, transferts, adresses : on s'occupe de tout." },
   ],
   sections: [
     { type: "p", text: "Il y a mille listes de « choses à faire à Rio », et la plupart se copient entre elles : Christ Rédempteur, Pain de Sucre, Escadaria Selarón. Vous les connaissez déjà, vous les trouverez partout ailleurs. Celle-ci est différente : c'est notre carnet, ce qu'on emmène voir à un ami qui a déjà fait le tour des classiques et qui veut voir le vrai Rio." },
@@ -25,7 +25,7 @@ export const article: Article = {
     { type: "h2", text: "Vie locale et nightlife authentique" },
     { type: "ol", items: [
       "Un verre à Arnaldo Quintela — petite rue de Botafogo qui s'anime le soir, bars sans chichi, clientèle locale.",
-      "Une soirée à Olegário Maciel — <a href=\"https://www.jeitinho.fr/experiences\">voir le calendrier Jeitinho</a> pour les prochaines dates.",
+      "Une soirée à Olegário Maciel — <a href=\"https://jeitinho.fr/experiences\">voir le calendrier Jeitinho</a> pour les prochaines dates.",
       "Un match au Maracanã — voir notre guide dédié pour bien préparer votre venue.",
       "Coucher de soleil à Arpoador — la vraie religion carioca, entre Ipanema et Copacabana.",
       "Pédalo sur la Lagoa Rodrigo de Freitas — vue sur le Corcovado depuis l'eau, activité que peu de touristes pensent à faire.",
@@ -51,7 +51,7 @@ export const article: Article = {
     { type: "h2", text: "Nature et grand air, loin de la foule" },
     { type: "ol", items: [
       "Randonnée Dois Irmãos — 40 minutes de montée, vue sur Ipanema et Vidigal, bien moins fréquentée que le Corcovado.",
-      "Après-midi à Ilha da Gigoia — <a href=\"https://www.jeitinho.fr/experiences\">voir l'expérience Jeitinho</a> pour visiter cet archipel flottant en pleine Barra da Tijuca.",
+      "Après-midi à Ilha da Gigoia — <a href=\"https://jeitinho.fr/experiences\">voir l'expérience Jeitinho</a> pour visiter cet archipel flottant en pleine Barra da Tijuca.",
       "Journée plage à Niterói — de l'autre côté de la baie, ambiance différente, moins de monde.",
       "Ilhas Cagarras — archipel visible depuis Ipanema, accessible en excursion bateau, réserve naturelle marine.",
       "Praia do Meio et Grumari — plages sauvages en Zona Oeste, zéro urbanisation, un Rio complètement différent de la Zona Sul.",

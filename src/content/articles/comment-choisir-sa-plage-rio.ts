@@ -28,7 +28,7 @@ export const article: Article = {
   relatedServices: [
     {
       label: "Conciergerie sur mesure",
-      href: "https://www.jeitinho.fr/trouver-un-jeitinho",
+      href: "https://jeitinho.fr/trouver-un-jeitinho",
       description:
         "On vous aide à choisir les bonnes plages et à organiser vos journées à Rio.",
     },
@@ -400,7 +400,45 @@ export const article: Article = {
     {
       type: "p",
       text:
-        "Le budget dépend énormément de la plage, de la barraca et de ce que vous consommez. Pour vous donner un ordre de grandeur, voici les prix que l’on retrouve couramment sur les plages de Rio. Ils peuvent varier selon le secteur, la saison, le jour et l’établissement.",
+        "Le budget dépend énormément de la plage, de la barraca et de ce que vous consommez. Pour vous donner un ordre de grandeur, voici les prix que l’on retrouve couramment sur les plages de la Zona Sul. Ils peuvent varier selon le secteur, la saison, le jour et l’établissement — et sont généralement un peu plus bas sur les plages de la Zona Oeste et de Niterói.",
+    },
+    {
+      type: "h3",
+      text: "Installation",
+    },
+    {
+      type: "ul",
+      items: [
+        "Chaise : 10 à 25 R$.",
+        "Parasol classique : 25 à 30 R$.",
+        "Grand parasol : 50 à 60 R$.",
+      ],
+    },
+    {
+      type: "h3",
+      text: "Boissons et en-cas",
+    },
+    {
+      type: "ul",
+      items: [
+        "Eau de coco : 10 à 15 R$.",
+        "Mate : 12 à 15 R$ selon la taille.",
+        "Açaí : 10 à 25 R$.",
+        "Sandwich naturel : 5 à 20 R$.",
+        "Biscoito Globo : 5 à 15 R$.",
+        "Brochettes (viande, poulet, crevette) : 15 à 30 R$.",
+      ],
+    },
+    {
+      type: "aeviter",
+      title: "À éviter absolument",
+      text:
+        "N’achetez pas de cigarettes ou dérivés auprès des vendeurs ambulants de plage : les tarifs y sont astronomiques et la qualité n’est pas garantie. Plus généralement, ne commandez jamais un produit dont le prix n’est pas clairement affiché — les établissements sérieux affichent toujours leurs tarifs.",
+    },
+    {
+      type: "p",
+      text:
+        "Pour aller plus loin, direction notre guide des <a href=\"/blog/plages-zone-ouest-rio\">plages de la Zone Ouest</a> ou notre guide des <a href=\"/blog/plages-niteroi\">plages de Niterói</a>, si vous voulez creuser ces deux secteurs plus en détail.",
     },
   ],
 };
