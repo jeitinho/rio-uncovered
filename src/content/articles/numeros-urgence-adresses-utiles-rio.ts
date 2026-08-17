@@ -12,7 +12,7 @@ export const article: Article = {
   date: "2026-07-20",
   author: "equipe-jeitinho",
   hero,
-  heroAlt: "Rue animée de Copacabana en journée",
+  heroAlt: "Poste de secours et ambulance sur la plage de Copacabana à Rio",
   sections: [
     {
       type: "p",
