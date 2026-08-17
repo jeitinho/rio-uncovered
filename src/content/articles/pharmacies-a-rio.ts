@@ -1,5 +1,5 @@
 import type { Article } from "../types";
-import hero from "@/assets/hero-blog.jpg";
+import hero from "@/assets/article-pharmacies-rio.jpg";
 // TODO: remplacer par une vraie photo de façade de pharmacie carioca (Droga Raia / Pacheco de nuit, enseigne verte allumée)
 
 export const article: Article = {

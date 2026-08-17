@@ -1,5 +1,5 @@
 import type { Article } from "../types";
-import hero from "@/assets/hero-blog.jpg";
+import hero from "@/assets/article-urgences-rio.jpg";
 // TODO: remplacer par une photo neutre (façade de commissariat ou plaque de rue)
 
 export const article: Article = {
@@ -12,7 +12,7 @@ export const article: Article = {
   date: "2026-07-20",
   author: "equipe-jeitinho",
   hero,
-  heroAlt: "Rue animée de Copacabana en journée",
+  heroAlt: "Poste de secours et ambulance sur la plage de Copacabana à Rio",
   sections: [
     {
       type: "p",
