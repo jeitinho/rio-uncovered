@@ -1,5 +1,5 @@
 import type { Article } from "../types";
-import hero from "@/assets/hero-blog.jpg";
+import hero from "@/assets/article-horaires-carioca.jpg";
 // TODO: remplacer par une photo de banca ou de pharmacie de nuit illuminée
 
 export const article: Article = {
