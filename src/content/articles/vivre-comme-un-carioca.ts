@@ -160,16 +160,6 @@ export const article: Article = {
 
     {
       type: "h2",
-      text: "Comprendre le jeitinho brasileiro",
-    },
-    {
-      type: "p",
-      text:
-        "Le « jeitinho » est une notion centrale de la culture brésilienne : la capacité à trouver une solution créative, souple, parfois informelle, à un problème qui semblait bloqué. Ce n'est ni de la triche ni du laxisme — c'est un art de la débrouille sociale, chaleureuse et pragmatique, qui explique en grande partie pourquoi rien ne se passe jamais tout à fait comme prévu à Rio, et pourquoi ça finit presque toujours par bien se passer quand même.",
-    },
-
-    {
-      type: "h2",
       text: "Le mot du jour : carioca",
     },
     {
@@ -200,11 +190,6 @@ export const article: Article = {
           q: "Qu'est-ce que le mot carioca signifie exactement ?",
           a:
             "Il désigne spécifiquement un habitant de la ville de Rio de Janeiro, à ne pas confondre avec « brasileiro » qui désigne un Brésilien en général.",
-        },
-        {
-          q: "Qu'est-ce que le jeitinho brasileiro ?",
-          a:
-            "C'est la capacité brésilienne à trouver une solution créative et souple à une situation bloquée, souvent avec le sourire. Une notion culturelle centrale, à l'origine du nom de notre agence.",
         },
         {
           q: "Est-il mal vu d'être en retard à Rio ?",

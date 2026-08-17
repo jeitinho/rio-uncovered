@@ -6,7 +6,7 @@ export const article: Article = {
   title: "Les marques brésiliennes iconiques à rapporter de Rio",
   titleAccent: "iconiques",
   description:
-    "Havaianas, Kenner, Farm Rio, Osklen, Reserva : notre guide complet des marques brésiliennes incontournables, où les trouver et comment repérer les vraies.",
+    "Havaianas, Kenner, Farm Rio, Reserva : notre guide complet des marques brésiliennes incontournables, où les trouver et comment repérer les vraies.",
   category: "activites",
   tags: [
     "shopping Rio de Janeiro",
@@ -92,12 +92,12 @@ export const article: Article = {
 
     {
       type: "h3",
-      text: "Osklen",
+      text: "Oakley",
     },
     {
       type: "p",
       text:
-        "Le lifestyle surf-chic brésilien. Matières techniques, coupes minimalistes et esprit outdoor haut de gamme, porté aussi bien sur la plage d'Ipanema qu'en ville. Plus cher que la moyenne des marques citées ici, mais réputé pour sa qualité de fabrication.",
+        "Une véritable culture au Brésil. Lunettes, sneakers, vêtements, sacs et accessoires, très populaires notamment sur les plages de la Zona Sul — pas une marque brésilienne d'origine, mais tellement adoptée localement qu'elle fait désormais partie du vestiaire carioca.",
     },
 
     {
@@ -146,7 +146,7 @@ export const article: Article = {
     {
       type: "p",
       text:
-        "Plus haut de gamme, avec une sélection resserrée sur le luxe et le premium brésilien : Osklen, Reserva et les collections les plus qualitatives de Farm Rio s'y trouvent facilement.",
+        "Plus haut de gamme, avec une sélection resserrée sur le premium : Reserva et les collections les plus qualitatives de Farm Rio s'y trouvent facilement.",
     },
     {
       type: "h3",
@@ -173,7 +173,7 @@ export const article: Article = {
       type: "bonasavoir",
       title: "Bon à savoir",
       text:
-        "Toutes ces marques sont authentiques et faciles à trouver dans les grands centres commerciaux. Les tailles peuvent différer du standard européen : pensez à essayer avant d'acheter. N'oubliez pas votre remboursement de TVA (Tax Free) pour les achats de plus de R$ 500 dans les boutiques participantes, à demander avant votre départ à l'aéroport.",
+        "Toutes ces marques sont authentiques et faciles à trouver dans les grands centres commerciaux. Les tailles peuvent différer du standard européen : pensez à essayer avant d'acheter. Un dispositif de remboursement de TVA (Tax Free) existe pour les achats significatifs dans les boutiques participantes : renseignez-vous en boutique sur les conditions et pensez à faire la démarche avant votre départ à l'aéroport.",
     },
 
     {
@@ -224,7 +224,7 @@ export const article: Article = {
         {
           q: "Peut-on faire un remboursement de TVA sur ces achats ?",
           a:
-            "Oui, pour les achats de plus de R$ 500 réalisés dans les boutiques participant au programme Tax Free, à condition de faire la démarche avant votre départ à l'aéroport.",
+            "Oui, pour les achats significatifs réalisés dans les boutiques participant au programme Tax Free — renseignez-vous en boutique sur le seuil et les conditions en vigueur, et faites la démarche avant votre départ à l'aéroport.",
         },
       ],
     },

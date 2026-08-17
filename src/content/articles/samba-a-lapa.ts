@@ -146,7 +146,7 @@ export const article: Article = {
       type: "aeviter",
       title: "À éviter",
       text:
-        "Certains lieux se déroulent en extérieur : prévoyez un anti-moustique, surtout pour les événements en soirée près de la lagune ou du canal, comme à Gigoia. Évitez également d'arriver les mains vides à une roda gratuite comme celle de la Pedra do Sal : un petit billet glissé dans le chapeau qui circule reste toujours apprécié.",
+        "Certains lieux se déroulent en extérieur : prévoyez un anti-moustique, surtout pour les événements en soirée près de la lagune ou du canal, comme à Gigoia.",
     },
 
     {

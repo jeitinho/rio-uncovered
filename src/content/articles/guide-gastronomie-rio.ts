@@ -171,7 +171,6 @@ export const article: Article = {
         "Couvert — souvent gratuit dans les restaurants populaires, mais parfois facturé (pain, olives) dans les adresses plus formelles : vérifiez avant de consommer.",
         "Taxa de serviço — les fameux 10% de service, non obligatoires, à demander de retirer si nécessaire.",
         "Rodízio — prix fixe par personne, boissons généralement en supplément.",
-        "Couvert artístico — un supplément parfois facturé quand il y a de la musique live : renseignez-vous en vous installant si un groupe joue sur place.",
       ],
     },
 
