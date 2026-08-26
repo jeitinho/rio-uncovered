@@ -4,16 +4,47 @@ import { SiteFooter } from "@/components/site/SiteFooter";
 import { CONTACT_EMAIL } from "@/lib/site";
 import { BookOpen, ArrowRight } from "lucide-react";
 
+const MANUEL_FAQ = [
+  {
+    q: "Quand sortira le Manuel Jeitinho ?",
+    a: "La date de sortie sera communiquée par email et sur ce blog.",
+  },
+  {
+    q: "Sous quel format sera-t-il proposé ?",
+    a: "Les formats disponibles seront précisés à la sortie.",
+  },
+  {
+    q: "Comment être prévenu·e en avant-première ?",
+    a: `Écrivez-nous à ${CONTACT_EMAIL} pour rejoindre la liste d'attente.`,
+  },
+];
+
 export const Route = createFileRoute("/manuel-jeitinho")({
   head: () => ({
     meta: [
       { title: "Le Manuel Jeitinho — Bientôt disponible" },
       { name: "description", content: "Le manuel de référence pour vivre Rio de Janeiro comme un carioca. En préparation par la rédaction Jeitinho." },
       { property: "og:title", content: "Le Manuel Jeitinho" },
+      { property: "og:description", content: "Le manuel de référence pour vivre Rio comme un carioca, en préparation par la rédaction Jeitinho : format, sommaire et date de sortie à venir." },
+      { property: "og:type", content: "website" },
       { property: "og:url", content: "/manuel-jeitinho" },
       { name: "robots", content: "noindex" },
     ],
     links: [{ rel: "canonical", href: "/manuel-jeitinho" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: MANUEL_FAQ.map((item) => ({
+            "@type": "Question",
+            name: item.q,
+            acceptedAnswer: { "@type": "Answer", text: item.a },
+          })),
+        }),
+      },
+    ],
   }),
   component: ManuelJeitinho,
 });
