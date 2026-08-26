@@ -11,6 +11,8 @@ export const Route = createFileRoute("/auteurs/")({
       { title: "Notre équipe — Les auteurs du blog Jeitinho" },
       { name: "description", content: "Découvrez l'équipe éditoriale de Jeitinho : locaux, expatriés et amoureux de Rio de Janeiro qui écrivent le média." },
       { property: "og:title", content: "Notre équipe — Jeitinho" },
+      { property: "og:description", content: "Locaux, expatriés et amoureux de Rio : découvrez les plumes qui signent les guides et récits du média Jeitinho." },
+      { property: "og:type", content: "website" },
       { property: "og:url", content: "/auteurs" },
     ],
     links: [{ rel: "canonical", href: "/auteurs" }],

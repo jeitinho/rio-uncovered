@@ -15,7 +15,10 @@ export const Route = createFileRoute("/blog/recherche")({
   head: () => ({
     meta: [
       { title: "Rechercher — Le Guide Jeitinho" },
-      { name: "description", content: "Recherchez dans nos guides sur Rio de Janeiro." },
+      { name: "description", content: "Cherchez parmi nos guides, conseils et récits sur Rio de Janeiro : quartiers, plages, gastronomie, sorties, budget et vie pratique." },
+      { property: "og:title", content: "Rechercher un guide — Jeitinho Blog" },
+      { property: "og:description", content: "Trouvez rapidement le bon guide sur Rio : quartiers, plages, gastronomie, sorties, budget et conseils pratiques rédigés par notre rédaction franco-brésilienne." },
+      { property: "og:url", content: "/blog/recherche" },
       { name: "robots", content: "noindex" },
     ],
     links: [{ rel: "canonical", href: "/blog/recherche" }],

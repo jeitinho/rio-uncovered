@@ -11,6 +11,8 @@ export const Route = createFileRoute("/contact")({
       { title: "Contact & partenariats — Jeitinho" },
       { name: "description", content: "Une idée d'article, une proposition d'interview, un partenariat ? Contactez la rédaction du média Jeitinho." },
       { property: "og:title", content: "Contact — Jeitinho Blog" },
+      { property: "og:description", content: "Idée d'article, interview, partenariat éditorial ou retour sur un guide : écrivez à la rédaction Jeitinho, on répond sous 48 heures." },
+      { property: "og:type", content: "website" },
       { property: "og:url", content: "/contact" },
     ],
     links: [{ rel: "canonical", href: "/contact" }],
