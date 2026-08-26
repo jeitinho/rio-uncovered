@@ -38,6 +38,22 @@ export const Route = createFileRoute("/blog/categorie/$slug")({
             inLanguage: "fr",
           }),
         },
+        ...(c.faq?.length
+          ? [
+              {
+                type: "application/ld+json",
+                children: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "FAQPage",
+                  mainEntity: c.faq.map((item) => ({
+                    "@type": "Question",
+                    name: item.q,
+                    acceptedAnswer: { "@type": "Answer", text: item.a },
+                  })),
+                }),
+              },
+            ]
+          : []),
       ],
     };
   },
