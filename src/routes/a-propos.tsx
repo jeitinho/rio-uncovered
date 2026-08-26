@@ -11,6 +11,8 @@ export const Route = createFileRoute("/a-propos")({
       { title: "À propos — Jeitinho, le média francophone sur Rio" },
       { name: "description", content: "Qui écrit Jeitinho ? Une rédaction franco-brésilienne à cheval entre Rio et Paris. Notre ligne éditoriale et notre équipe." },
       { property: "og:title", content: "À propos — Jeitinho" },
+      { property: "og:description", content: "Une rédaction franco-brésilienne entre Rio et Paris : notre histoire, notre ligne éditoriale et les personnes qui écrivent le média Jeitinho." },
+      { property: "og:type", content: "website" },
       { property: "og:url", content: "/a-propos" },
     ],
     links: [{ rel: "canonical", href: "/a-propos" }],
