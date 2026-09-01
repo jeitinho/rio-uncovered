@@ -75,7 +75,11 @@ export const article: Article = {
       "Palaphita Kitch (côté Lagoa) — cabane éclairée aux torches, cocktails créatifs, coucher de soleil garanti.",
       "Bar Astor — sur le front de mer, une des plus belles caipirinhas de la ville.",
       "Canastra — bar à vins naturels tenu par des Français-Cariocas, jazz certains soirs.",
+      "Boa Praça — très bonne ambiance en soirée, terrasse animée et clientèle de quartier.",
+      "Boteco Belmonte — terrasse avec une vue incroyable sur la plage d'Ipanema et le Morro Dois Irmãos, parfait au coucher du soleil.",
+      "Nosso Ipanema — cocktails, DJ et ambiance chic pour commencer la soirée.",
     ]},
+
 
     { type: "h2", text: "Shopping : la vraie Rio créative" },
     { type: "p", text: "Ipanema est le quartier des créateurs brésiliens. Ce n'est pas des chaînes globales qu'on vient chercher ici." },
