@@ -83,7 +83,13 @@ export const article: Article = {
       "20h — Dîner rue Voluntários da Pátria puis sortie chez Comuna.",
     ]},
 
+    { type: "gallery", images: [
+      { src: galerie1, alt: "Baie de Botafogo avec le Pain de Sucre en arrière-plan", caption: "La baie de Botafogo et le Pain de Sucre, vue de tous les jours." },
+      { src: galerie2, alt: "Rue animée de Botafogo avec ses bars et restaurants", caption: "Les rues du quartier, où sortent les cariocas en semaine." },
+    ]},
+
     { type: "faq", items: [
+
       { q: "Botafogo est-il un bon quartier pour loger ?", a: "Oui, c'est un excellent compromis entre budget maîtrisé, vie de quartier authentique et bonne connexion en métro vers Ipanema, Copacabana et le centre-ville." },
       { q: "Peut-on se baigner à Botafogo ?", a: "Non, l'eau de la baie est impropre à la baignade. Il faut se rendre à Copacabana ou Urca pour nager." },
       { q: "Comment se déplacer depuis Botafogo ?", a: "Le quartier est desservi par le métro (ligne 1), ce qui en fait l'un des points de connexion les plus pratiques de la Zona Sul." },
