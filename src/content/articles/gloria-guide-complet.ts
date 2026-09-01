@@ -69,6 +69,11 @@ export const article: Article = {
       "15h — Poursuite vers Flamengo ou Catete, à quelques minutes à pied.",
     ]},
 
+    { type: "gallery", images: [
+      { src: galerie1, alt: "L'église Nossa Senhora da Glória do Outeiro sur sa colline", caption: "L'église de la Glória, perchée sur son morne." },
+      { src: galerie2, alt: "Rues et façades anciennes du quartier de Glória", caption: "Les façades du vieux Glória, entre marina et centre-ville." },
+    ]},
+
     { type: "faq", items: [
       { q: "Glória vaut-il le détour pour un court séjour ?", a: "Oui, si vous avez déjà vu les incontournables de la Zona Sul et cherchez une expérience plus authentique et moins fréquentée par les touristes, avec une forte valeur patrimoniale." },
       { q: "Glória est-il un bon quartier pour loger ?", a: "C'est possible et souvent plus abordable qu'ailleurs, avec un bon accès au métro, mais l'offre d'hébergement et de restauration reste plus limitée qu'à Flamengo ou dans la Zona Sul." },

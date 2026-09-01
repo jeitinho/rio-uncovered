@@ -74,6 +74,11 @@ export const article: Article = {
       "18h — Coucher de soleil depuis un mirador avant de redescendre vers Lapa.",
     ]},
 
+    { type: "gallery", images: [
+      { src: galerie1, alt: "Le bondinho jaune de Santa Teresa dans une rue pavée", caption: "Le bondinho, toujours en service dans les rues pavées." },
+      { src: galerie2, alt: "Maisons coloniales colorées de Santa Teresa", caption: "Les demeures coloniales du quartier des artistes." },
+    ]},
+
     { type: "faq", items: [
       { q: "Santa Teresa est-il sûr pour les touristes ?", a: "En journée et sur les axes principaux, oui, c'est un quartier globalement sûr et très fréquenté par les visiteurs. La prudence est de mise le soir, comme dans la plupart des quartiers de collines à Rio." },
       { q: "Peut-on loger à Santa Teresa ?", a: "Oui, le quartier compte plusieurs pousadas et maisons d'hôtes de charme, souvent installées dans d'anciennes demeures coloniales, avec vue sur la baie." },

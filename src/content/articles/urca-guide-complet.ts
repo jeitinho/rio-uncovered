@@ -68,6 +68,11 @@ export const article: Article = {
       "20h30 — Dîner à la Garota da Urca ou poursuite vers Botafogo.",
     ]},
 
+    { type: "gallery", images: [
+      { src: galerie1, alt: "Le mur d'Urca (Mureta da Urca) face à la baie", caption: "La Mureta da Urca, l'apéro le plus carioca qui soit." },
+      { src: galerie2, alt: "Le Pain de Sucre vu depuis le quartier d'Urca", caption: "Le Pain de Sucre, voisin de palier du quartier." },
+    ]},
+
     { type: "faq", items: [
       { q: "Faut-il réserver le Pain de Sucre à l'avance ?", a: "Oui, fortement recommandé en haute saison (décembre à février) pour éviter l'attente, via le site officiel du téléphérique." },
       { q: "Urca est-il un bon quartier pour loger ?", a: "C'est un quartier très calme avec peu d'hébergements, davantage adapté à une visite qu'à un séjour prolongé, sauf si vous cherchez explicitement la tranquillité loin de l'agitation touristique." },

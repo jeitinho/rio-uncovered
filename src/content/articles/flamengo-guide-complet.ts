@@ -70,6 +70,11 @@ export const article: Article = {
       "18h — Coucher de soleil vue Pain de Sucre depuis le parc.",
     ]},
 
+    { type: "gallery", images: [
+      { src: galerie1, alt: "L'Aterro do Flamengo et sa pelouse face à la baie", caption: "Le parc de l'Aterro, poumon vert du quartier." },
+      { src: galerie2, alt: "Front de mer de Flamengo avec vue sur le Pain de Sucre", caption: "La baie de Guanabara vue depuis Flamengo." },
+    ]},
+
     { type: "faq", items: [
       { q: "Flamengo est-il un bon quartier pour loger ?", a: "Oui, c'est un choix pertinent pour un budget maîtrisé avec un accès facile au métro, au parc et au centre historique, même s'il ne compte pas de plage de baignade." },
       { q: "Le parc du Flamengo est-il sûr ?", a: "En journée, oui, il est très fréquenté par les familles et les sportifs. Le soir, restez sur les zones les plus animées et éclairées." },

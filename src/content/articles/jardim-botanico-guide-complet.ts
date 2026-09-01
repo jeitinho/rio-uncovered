@@ -75,6 +75,11 @@ export const article: Article = {
       "17h — Départ vers le Corcovado pour le coucher de soleil, si le programme le permet.",
     ]},
 
+    { type: "gallery", images: [
+      { src: galerie1, alt: "Allée de palmiers impériaux du Jardin botanique de Rio", caption: "L'allée des palmiers impériaux, signature du Jardin botanique." },
+      { src: galerie2, alt: "Serre et végétation tropicale du Jardim Botânico", caption: "Serres et végétation tropicale, à l'ombre du Corcovado." },
+    ]},
+
     { type: "faq", items: [
       { q: "Combien de temps prévoir pour le Jardin botanique ?", a: "Comptez deux heures minimum, davantage si vous êtes passionné de botanique ou si vous participez à une visite guidée thématique." },
       { q: "Le Jardim Botânico est-il un bon quartier pour loger ?", a: "Oui pour un séjour calme et vert, notamment en famille, mais l'offre hôtelière y est plus limitée qu'à Ipanema ou Copacabana, avec surtout des locations d'appartements." },
