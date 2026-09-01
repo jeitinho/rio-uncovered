@@ -76,7 +76,13 @@ export const article: Article = {
       "21h — Dîner rue Dias Ferreira, réservation obligatoire.",
     ]},
 
+    { type: "gallery", images: [
+      { src: galerie1, alt: "Plage de Leblon avec la Pedra da Gávea en arrière-plan", caption: "La plage de Leblon, plus calme que sa voisine Ipanema." },
+      { src: galerie2, alt: "Rue résidentielle de Leblon avec ses terrasses de café", caption: "Les rues du quartier, entre terrasses et boutiques discrètes." },
+    ]},
+
     { type: "faq", items: [
+
       { q: "Leblon ou Ipanema : lequel choisir pour loger ?", a: "Leblon est plus calme, plus cher et plus résidentiel. Ipanema offre plus d'animation et un meilleur accès aux transports. Pour un séjour tranquille en couple ou en famille avec un budget confortable, Leblon est idéal." },
       { q: "Leblon est-il adapté aux familles ?", a: "Oui, c'est probablement le quartier le plus familial de la Zona Sul, avec une plage plus calme et des infrastructures pensées pour les enfants." },
       { q: "Quel est le budget moyen à Leblon ?", a: "C'est l'un des quartiers les plus chers de Rio, aussi bien pour l'hébergement que pour la restauration. Comptez un budget supérieur de 20 à 40% par rapport à Ipanema pour un dîner équivalent." },
