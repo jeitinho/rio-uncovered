@@ -2,6 +2,8 @@ import type { Article } from "../types";
 import hero from "@/assets/quartier-botafogo.jpg";
 import galerie1 from "@/assets/botafogo-1.jpg";
 import galerie2 from "@/assets/botafogo-2.jpg";
+import mirante from "@/assets/mirante-dona-marta-CvhGCndx.jpg";
+
 
 export const article: Article = {
   slug: "botafogo-guide-complet",
