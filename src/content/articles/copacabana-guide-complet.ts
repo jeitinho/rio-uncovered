@@ -74,6 +74,15 @@ export const article: Article = {
       "Mud Bigode — bar caché façon speakeasy, ambiance intimiste.",
       "Terraço do Copacabana Palace — pour un drink avec vue à l'occasion d'une soirée spéciale.",
     ]},
+    { type: "h3", text: "Les quiosques de plage, l'apéro carioca par excellence" },
+    { type: "ul", items: [
+      "Quiosque Nativoo — l'un des plus agréables du front de mer, bonne cuisine de plage et service soigné.",
+      "Quiosque Fuego — ambiance chaleureuse en fin de journée, idéal pour un verre les pieds dans le sable.",
+      "Quiosque da Skol et les quiosques Brahma — la bière pression bien glacée face à la mer, sans chichi et à prix carioca.",
+      "Baixo Copa — pour une ambiance pub local, plus animée en soirée, à deux rues de la plage.",
+    ]},
+    { type: "bonasavoir", title: "Pavão-Pavãozinho (PPG) : uniquement accompagné", text: "La communauté de Pavão-Pavãozinho, qui surplombe Copacabana entre le quartier et Ipanema, abrite de bonnes adresses locales, dont un bar-point de vue qui offre une perspective totalement différente sur la plage. La visite doit impérativement se faire accompagnée d'un guide local qui connaît le terrain et la situation du jour — jamais seul, et jamais improvisé." },
+
 
     { type: "h2", text: "Que voir autour de Copacabana" },
     { type: "p", text: "Le Forte de Copacabana, à l'extrémité sud de la plage, offre l'un des plus beaux points de vue sur la baie et abrite un petit musée militaire. De là, une promenade à pied mène vers Arpoador puis <a href=\"/blog/ipanema-guide-complet\">Ipanema</a>. Vers le nord, le tunnel Velho ou une courte course en voiture permettent de rejoindre <a href=\"/blog/urca-guide-complet\">Urca</a> et le Pain de Sucre, incontournables pour le coucher de soleil." },
