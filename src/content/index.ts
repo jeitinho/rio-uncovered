@@ -14,6 +14,7 @@ import { article as jardim } from "./articles/jardim-botanico-guide-complet";
 import { article as barra } from "./articles/barra-da-tijuca-guide-complet";
 import { article as santaTeresa } from "./articles/santa-teresa-guide-complet";
 import { article as urca } from "./articles/urca-guide-complet";
+import { article as joa } from "./articles/joa-guide-complet";
 
 import { article as rio25 } from "./articles/25-meilleures-choses-a-faire-rio";
 import { article as carnaval } from "./articles/preparer-carnaval-rio";
@@ -63,6 +64,7 @@ import { article as horaires } from "./articles/horaires-a-la-carioca";
 import { article as postos } from "./articles/les-postos"; // <-- CORRIGÉ : suppression du .ts
 import { article as sambaRioDeJaneiro } from "./articles/samba-rio-de-janeiro";
 import { article as funkCariocaRio } from "./articles/funk-carioca-rio-de-janeiro";
+import { article as favelas } from "./articles/guide-favelas-rocinha-vidigal-ppg";
 
 export const ARTICLES: Article[] = [
   pagode,
@@ -98,6 +100,7 @@ export const ARTICLES: Article[] = [
   postos,
   sambaRioDeJaneiro,
   funkCariocaRio,
+  favelas,
 
   ipanema,
   copacabana,
@@ -112,6 +115,7 @@ export const ARTICLES: Article[] = [
   barra,
   santaTeresa,
   urca,
+  joa,
 
   rio25,
   carnaval,
