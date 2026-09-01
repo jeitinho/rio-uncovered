@@ -67,10 +67,16 @@ export const article: Article = {
 
     { type: "h2", text: "Sortir le soir" },
     { type: "p", text: "Botafogo est devenu ces dernières années l'un des quartiers de sortie préférés des jeunes cariocas, avec une offre plus abordable et moins touristique que Lapa ou la Zona Sul balnéaire." },
+    { type: "h3", text: "Arnaldo Quintela, la rue qui ne dort jamais" },
+    { type: "p", text: "C'est LA rue incontournable de Botafogo pour sortir : une forte concentration de bars, de restaurants, de caves à vin et de bars à cocktails, où les cariocas se retrouvent tous les soirs de la semaine, verre à la main sur le trottoir." },
     { type: "ul", items: [
+      "Vian Cocktail Bar — cocktails haut de gamme, l'une des meilleures cartes du quartier.",
+      "Winehouse — grande sélection de vins du monde, ambiance décontractée.",
+      "Boteco Colarinho — véritable boteco carioca, chope bien tiré et petiscos généreux.",
       "Comuna — espace culturel et bar hybride, programmation musicale éclectique.",
       "Buenas Chicas — bar animé, cocktails créatifs, ambiance conviviale entre amis.",
     ]},
+
 
     { type: "h2", text: "Une journée parfaite à Botafogo" },
     { type: "ol", items: [
