@@ -64,6 +64,12 @@ export const article: Article = {
     { type: "p", text: "Le quartier est historiquement lié au club de football Botafogo, l'un des quatre grands clubs de Rio. Assister à un match dans une ambiance populaire est une expérience à part entière pour les amateurs de football." },
     { type: "h3", text: "Le Mirante do Pasmado" },
     { type: "p", text: "Petit belvédère accessible en voiture ou à pied depuis le quartier, offrant une vue exceptionnelle sur la baie de Botafogo et le Pain de Sucre, particulièrement photogénique au coucher du soleil." },
+    { type: "h3", text: "La Pista Cláudio Coutinho" },
+    { type: "p", text: "Ce parcours entre mer et forêt, au pied du Pain de Sucre (départ Praia Vermelha, côté <a href=\"/blog/urca-guide-complet\">Urca</a>), est idéal pour courir ou marcher le matin, avec une vue permanente sur la baie et les rochers." },
+    { type: "h3", text: "La communauté Santa Marta" },
+    { type: "p", text: "L'une des communautés (favelas) les plus célèbres de Rio, où Michael Jackson a tourné le clip « They Don't Care About Us » en 1996. Une visite accompagnée d'un guide local est vivement recommandée pour découvrir ce point de vue exceptionnel sur la baie — jamais seul, jamais improvisé." },
+    { type: "image", src: mirante, alt: "Point de vue du Mirante Dona Marta sur la baie de Guanabara et le Pain de Sucre, Rio de Janeiro", caption: "La vue sur la baie depuis les hauteurs de Dona Marta." },
+
 
     { type: "h2", text: "Sortir le soir" },
     { type: "p", text: "Botafogo est devenu ces dernières années l'un des quartiers de sortie préférés des jeunes cariocas, avec une offre plus abordable et moins touristique que Lapa ou la Zona Sul balnéaire." },
