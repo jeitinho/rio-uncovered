@@ -110,20 +110,18 @@ const ESTABLISHMENT_RULES: Array<{ terms: string[]; href: string; internal: bool
   { terms: ["Bar do Oswaldo"], href: gmaps("Bar do Oswaldo Estrada do Joá Rio de Janeiro"), internal: false },
   { terms: ["Concha Doce"], href: gmaps("Concha Doce Estrada do Joá Rio de Janeiro"), internal: false },
   { terms: ["Praia da Joatinga"], href: gmaps("Praia da Joatinga Rio de Janeiro"), internal: false },
-  // Rocinha / Vidigal / PPG
-  { terms: ["Mirante Rocinha"], href: gmaps("Mirante Rocinha Estrada da Gávea Rio de Janeiro"), internal: false },
-  { terms: ["Amarelinho"], href: gmaps("Amarelinho bar Rocinha Rio de Janeiro"), internal: false },
-  { terms: ["Boteco da Praça"], href: gmaps("Boteco da Praça Rocinha Rio de Janeiro"), internal: false },
-  { terms: ["Trapiá Bar e Restaurante"], href: gmaps("Trapiá Bar e Restaurante Rocinha Rio de Janeiro"), internal: false },
-  { terms: ["Via Ápia Rio Rooftop"], href: gmaps("Via Ápia Rooftop Rocinha Rio de Janeiro"), internal: false },
+  // PPG (Pavão-Pavãozinho)
+  { terms: ["Bar Panelada"], href: gmaps("Bar Panelada Pavão-Pavãozinho Rio de Janeiro"), internal: false },
+  { terms: ["Bar Encontro Nordestino"], href: gmaps("Bar Encontro Nordestino Pavão-Pavãozinho Rio de Janeiro"), internal: false },
+  { terms: ["Bar do Jardim"], href: gmaps("Bar do Jardim Pavão-Pavãozinho Rio de Janeiro"), internal: false },
+  // Rocinha
+  { terms: ["Mirante da Rocinha"], href: gmaps("Mirante da Rocinha Rio de Janeiro"), internal: false },
+  { terms: ["Novo Visual"], href: gmaps("Novo Visual Rocinha Rio de Janeiro"), internal: false },
+  { terms: ["Salinha Bar"], href: gmaps("Salinha Bar Rocinha Rio de Janeiro"), internal: false },
+  // Vidigal
+  { terms: ["Mirante do Arvrão"], href: gmaps("Mirante do Arvrão Vidigal Rio de Janeiro"), internal: false },
+  { terms: ["Visão"], href: gmaps("Visão bar Vidigal Rio de Janeiro"), internal: false },
   { terms: ["Bar da Laje"], href: gmaps("Bar da Laje Vidigal Rio de Janeiro"), internal: false },
-  { terms: ["Alto Vidigal"], href: gmaps("Alto Vidigal Rio de Janeiro"), internal: false },
-  { terms: ["Restaurante Sabor Carioca"], href: gmaps("Sabor Carioca restaurante Vidigal Rio de Janeiro"), internal: false },
-  { terms: ["Flor do Vidigal"], href: gmaps("Flor do Vidigal Rio de Janeiro"), internal: false },
-  { terms: ["Brisolão"], href: gmaps("Brisolão bar Pavão-Pavãozinho Rio de Janeiro"), internal: false },
-  { terms: ["Restaurante Pão e Vida"], href: gmaps("Pão e Vida restaurante Pavão-Pavãozinho Rio de Janeiro"), internal: false },
-  { terms: ["Panela da Comunidade"], href: gmaps("Panela da Comunidade Pavão-Pavãozinho Rio de Janeiro"), internal: false },
-  { terms: ["Pizzaria Mais Sabor"], href: gmaps("Pizzaria Mais Sabor Pavão-Pavãozinho Rio de Janeiro"), internal: false },
 ];
 
 // Ordered — most specific first (multi-word before single-word).
