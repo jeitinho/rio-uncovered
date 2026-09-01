@@ -1,5 +1,7 @@
 import type { Article } from "../types";
 import hero from "@/assets/article-ipanema.jpg";
+import posto9 from "@/assets/posto-9.jpg";
+
 
 export const article: Article = {
   slug: "ipanema-guide-complet",
@@ -40,13 +42,18 @@ export const article: Article = {
     { type: "p", text: "La plage d'Ipanema est divisée en zones marquées par les postos de sauveteurs (postes 7 à 10). Chaque poste attire une foule différente. Ce n'est pas anecdotique : vous asseoir devant le mauvais peut ruiner votre après-midi ou vous ouvrir la ville." },
     { type: "h3", text: "Posto 7 — Arpoador" },
     { type: "p", text: "Familles, surfeurs, coucher de soleil. C'est ici qu'on applaudit le soleil quand il tombe derrière Dois Irmãos — une tradition, pas une performance touristique." },
+    { type: "h3", text: "Posto 7 — le spot des surfeurs débutants" },
+    { type: "p", text: "Le secteur du Posto 7, côté Arpoador, est l'un des meilleurs endroits de la Zona Sul pour débuter ou progresser en surf, avec plusieurs écoles proposant des cours." },
     { type: "h3", text: "Posto 8 — sportifs et familles" },
     { type: "p", text: "Beach-volley, futevôlei, ambiance saine. Idéal si vous voyagez en famille ou si vous avez envie d'observer les cariocas dans leur pratique la plus sérieuse : le sport de plage." },
     { type: "h3", text: "Posto 9 — le cœur social" },
     { type: "p", text: "Le posto le plus vibrant. Musique, jeunesse cool, artistes. Si vous voulez sentir Ipanema, c'est ici. Le mieux : arriver vers 15h30, rester jusqu'au coucher du soleil." },
+    { type: "image", src: posto9, alt: "Le Posto 9 sur la plage d'Ipanema en fin d'après-midi, Rio de Janeiro", caption: "Le Posto 9, cœur social de la plage d'Ipanema." },
     { type: "h3", text: "Posto 10 — chic et calme" },
     { type: "p", text: "Frontière avec Leblon. Plus tranquille, plus familial haut de gamme. Bon plan si vous fuyez la foule." },
+    { type: "bonasavoir", title: "L'altinha, l'institution du sable", text: "Vous verrez partout des groupes jouer à l'altinha, un jeu où l'on jongle avec le pied, la tête, les épaules ou la poitrine sans jamais utiliser les mains — une véritable institution à la plage à Rio." },
     { type: "aeviter", title: "À éviter", text: "Ne laissez rien sur votre serviette quand vous allez à l'eau. Les vols opportunistes existent, comme partout. Un local n'emporte à la plage que le strict nécessaire — pas de sac, pas de bijoux, pas de téléphone visible." },
+
 
     { type: "h2", text: "Où manger — nos vraies adresses" },
     { type: "h3", text: "Petits-déjeuners et brunchs" },
@@ -66,7 +73,12 @@ export const article: Article = {
       "Oro — étoilé, cuisine créative brésilienne, expérience.",
       "Venga! — petits plats espagnols, ambiance conviviale et sonore.",
       "Barsa — un vrai bar-restaurant carioca, pour un fim de tarde qui glisse en dîner.",
+      "Pulë — cuisine française raffinée, l'une des meilleures tables françaises d'Ipanema.",
+      "Arp — cuisine contemporaine et vue exceptionnelle sur Arpoador.",
+      "Temakeria & Cia — japonais frais et rapide, parfait après la plage.",
+      "Balcão — cuisine de comptoir moderne, l'un de nos coups de cœur du quartier.",
     ]},
+
     { type: "bonasavoir", title: "Bon à savoir", text: "À Rio, on dîne tard. Avant 20h30, la plupart des bons restaurants sont vides. Après 21h30, ils sont pleins. Réservez ou décalez." },
 
     { type: "h2", text: "Boire un verre : les vrais lieux" },
@@ -75,7 +87,11 @@ export const article: Article = {
       "Palaphita Kitch (côté Lagoa) — cabane éclairée aux torches, cocktails créatifs, coucher de soleil garanti.",
       "Bar Astor — sur le front de mer, une des plus belles caipirinhas de la ville.",
       "Canastra — bar à vins naturels tenu par des Français-Cariocas, jazz certains soirs.",
+      "Boa Praça — très bonne ambiance en soirée, terrasse animée et clientèle de quartier.",
+      "Boteco Belmonte — terrasse avec une vue incroyable sur la plage d'Ipanema et le Morro Dois Irmãos, parfait au coucher du soleil.",
+      "Nosso Ipanema — cocktails, DJ et ambiance chic pour commencer la soirée.",
     ]},
+
 
     { type: "h2", text: "Shopping : la vraie Rio créative" },
     { type: "p", text: "Ipanema est le quartier des créateurs brésiliens. Ce n'est pas des chaînes globales qu'on vient chercher ici." },

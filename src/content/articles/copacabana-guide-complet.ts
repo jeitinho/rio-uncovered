@@ -65,7 +65,16 @@ export const article: Article = {
       "Restaurante do Copacabana Palace (Cipriani / Pérgula) — pour un déjeuner d'exception face à la mer.",
       "Marius Degustare — buffet de fruits de mer à volonté, une institution pour les amateurs de poisson.",
     ]},
+    { type: "h3", text: "Nos adresses fraîches 2026" },
+    { type: "ul", items: [
+      "The Bakers — le meilleur spot pour un petit-déjeuner, un brunch ou un café : pâtisseries et pain de vraie qualité.",
+      "Parlá! Trattoria — excellente cuisine italienne, pâtes fraîches et belle carte des vins.",
+      "Chicharrón — cuisine péruvienne, l'une des meilleures adresses du genre à Copacabana (ceviches, tacos).",
+      "Yaya Comidaria — cuisine brésilienne revisitée, produits frais, l'un de nos coups de cœur.",
+      "Stalos — restaurant-pizzeria ouvert 24h/24 et 7j/7, pratique à toute heure.",
+    ]},
     { type: "bonasavoir", title: "Bon à savoir", text: "Les kiosques de plage (barracas) valent le détour pour une eau de coco ou un chope, mais négociez le prix des en-cas avant de commander, surtout aux heures de forte affluence." },
+
 
     { type: "h2", text: "Boire un verre et sortir" },
     { type: "p", text: "Copacabana n'est plus la reine de la nightlife carioca — ce titre appartient à <a href=\"/blog/lapa-guide-complet\">Lapa</a> — mais le quartier garde quelques adresses solides pour une soirée en douceur." },
@@ -74,6 +83,15 @@ export const article: Article = {
       "Mud Bigode — bar caché façon speakeasy, ambiance intimiste.",
       "Terraço do Copacabana Palace — pour un drink avec vue à l'occasion d'une soirée spéciale.",
     ]},
+    { type: "h3", text: "Les quiosques de plage, l'apéro carioca par excellence" },
+    { type: "ul", items: [
+      "Quiosque Nativoo — l'un des plus agréables du front de mer, bonne cuisine de plage et service soigné.",
+      "Quiosque Fuego — ambiance chaleureuse en fin de journée, idéal pour un verre les pieds dans le sable.",
+      "Quiosque da Skol et les quiosques Brahma — la bière pression bien glacée face à la mer, sans chichi et à prix carioca.",
+      "Baixo Copa — pour une ambiance pub local, plus animée en soirée, à deux rues de la plage.",
+    ]},
+    { type: "bonasavoir", title: "Pavão-Pavãozinho (PPG) : uniquement accompagné", text: "La communauté de Pavão-Pavãozinho, qui surplombe Copacabana entre le quartier et Ipanema, abrite de bonnes adresses locales, dont un bar-point de vue qui offre une perspective totalement différente sur la plage. La visite doit impérativement se faire accompagnée d'un guide local qui connaît le terrain et la situation du jour — jamais seul, et jamais improvisé." },
+
 
     { type: "h2", text: "Que voir autour de Copacabana" },
     { type: "p", text: "Le Forte de Copacabana, à l'extrémité sud de la plage, offre l'un des plus beaux points de vue sur la baie et abrite un petit musée militaire. De là, une promenade à pied mène vers Arpoador puis <a href=\"/blog/ipanema-guide-complet\">Ipanema</a>. Vers le nord, le tunnel Velho ou une courte course en voiture permettent de rejoindre <a href=\"/blog/urca-guide-complet\">Urca</a> et le Pain de Sucre, incontournables pour le coucher de soleil." },
@@ -89,7 +107,14 @@ export const article: Article = {
       "20h30 — Dîner et sanduíche de Cervantes pour l'expérience carioca ultime.",
     ]},
 
+    { type: "gallery", images: [
+      { src: galerie1, alt: "La calçada en mosaïque de Copacabana au petit matin", caption: "La calçada de Copacabana au petit matin, avant la foule." },
+      { src: galerie2, alt: "Vue sur la plage de Copacabana depuis le Forte de Copacabana", caption: "Vue sur la plage depuis le Forte de Copacabana." },
+    ]},
+
     { type: "faq", items: [
+      { q: "Que signifie « Posto » ?", a: "Les plages de Rio sont découpées en postos (postes de secours numérotés). Les Cariocas s'en servent comme points de rendez-vous : vous entendrez souvent « On se retrouve au Posto 5 »." },
+
       { q: "Copacabana ou Ipanema : où loger ?", a: "Copacabana offre un meilleur rapport qualité-prix et une vie de quartier plus authentique et populaire. Ipanema et Leblon sont plus chics et plus chers. Le choix dépend de votre budget et du style de séjour recherché." },
       { q: "Copacabana est-elle sûre ?", a: "Oui, en journée le quartier est très fréquenté et globalement sûr. La nuit, restez sur l'avenue Atlântica et les rues éclairées et évitez d'exhiber des objets de valeur." },
       { q: "Combien de temps pour visiter Copacabana ?", a: "Une demi-journée suffit pour la plage et la calçada, mais comptez une journée complète si vous voulez inclure le Forte de Copacabana et une balade jusqu'à Urca." },

@@ -41,14 +41,23 @@ export const article: Article = {
     { type: "h2", text: "La plage : plus tranquille qu'à Ipanema" },
     { type: "p", text: "La plage de Leblon prolonge celle d'Ipanema mais reste plus familiale et moins agitée. Le posto 11 et 12 marquent la frontière avec Ipanema, tandis que l'extrémité proche du canal accueille traditionnellement les familles avec jeunes enfants, grâce à une petite aire de jeux et des sanitaires bien entretenus." },
     { type: "p", text: "Contrairement à d'autres plages de la Zona Sul, Leblon attire moins les grands groupes bruyants et davantage les habitants du quartier qui viennent nager avant le travail ou faire du sport en fin de journée." },
+    { type: "h3", text: "Le Mirante do Leblon" },
+    { type: "p", text: "Ce belvédère, à l'extrémité ouest de la plage, est considéré comme l'un des plus beaux points de vue de la Zona Sul : incontournable au coucher du soleil, quand la Pedra da Gávea et Dois Irmãos virent à l'orange." },
     { type: "aeviter", title: "À éviter", text: "Évitez de vous garer en double file ou de laisser un véhicule de location visible avec des affaires à l'intérieur : la pression immobilière élevée du quartier n'empêche pas les vols opportunistes sur les voitures, un classique partout à Rio." },
 
+
     { type: "h2", text: "Où manger — la capitale gastronomique de Rio" },
+    { type: "h3", text: "La table du moment" },
+    { type: "ul", items: [
+      "Madame Olympe — la maison de Claude Troisgros et de la cheffe Jéssica Trindade a décroché sa première étoile au Guide Michelin en 2026 (source : guide.michelin.com, Brazil Journal, Forbes Brasil). C'est aujourd'hui l'une des meilleures tables de tout Rio : réservez très en avance.",
+    ]},
     { type: "h3", text: "La rue Dias Ferreira, épicentre culinaire" },
     { type: "ul", items: [
       "Zuka — cuisine contemporaine brésilienne, une institution depuis plus de vingt ans.",
       "Sushi Leblon — référence japonaise haut de gamme, réservation indispensable le week-end.",
       "Braseiro da Gávea (à la frontière du quartier) — pour un boteco animé, moins formel.",
+      "Giuseppe Grill — la viande dans les règles de l'art, un classique incontournable du quartier.",
+      "Nola — cuisine méditerranéenne moderne, cadre lumineux et carte bien pensée.",
     ]},
     { type: "h3", text: "Brunchs et cafés" },
     { type: "ul", items: [
@@ -59,7 +68,15 @@ export const article: Article = {
     { type: "ul", items: [
       "Emporio Jardim — épicerie fine et petite restauration, parfait pour un déjeuner rapide de qualité entre deux boutiques.",
     ]},
+    { type: "h3", text: "Boire un verre : les bars du quartier" },
+    { type: "ul", items: [
+      "Jobi — institution du quartier depuis 1956, ambiance décontractée et profondément carioca.",
+      "Bracarense — bar de quartier très apprécié des locaux, petiscos et chope bien tiré.",
+      "Brewteco Leblon — bières artisanales brésiliennes, terrasse animée en fin de journée.",
+      "Balcão 201 — petit bistrot-bar à l'atmosphère française, sur la Rua Dias Ferreira.",
+    ]},
     { type: "bonasavoir", title: "Bon à savoir", text: "La rue Dias Ferreira se transforme le soir en véritable défilé : beaucoup de restaurants n'ont pas de vitrine sur rue mais valent largement le détour. Réservez systématiquement le vendredi et le samedi soir." },
+
 
     { type: "h2", text: "Shopping et vie de quartier" },
     { type: "p", text: "Leblon abrite le centre commercial Shopping Leblon, l'un des plus haut de gamme de la ville, avec vue sur la lagune depuis son toit-terrasse. Le samedi matin, la Feira Orgânica (marché bio) installée sur la Praça Antero de Quental attire les habitants du quartier venus faire leurs courses de la semaine." },
@@ -76,7 +93,13 @@ export const article: Article = {
       "21h — Dîner rue Dias Ferreira, réservation obligatoire.",
     ]},
 
+    { type: "gallery", images: [
+      { src: galerie1, alt: "Plage de Leblon avec la Pedra da Gávea en arrière-plan", caption: "La plage de Leblon, plus calme que sa voisine Ipanema." },
+      { src: galerie2, alt: "Rue résidentielle de Leblon avec ses terrasses de café", caption: "Les rues du quartier, entre terrasses et boutiques discrètes." },
+    ]},
+
     { type: "faq", items: [
+
       { q: "Leblon ou Ipanema : lequel choisir pour loger ?", a: "Leblon est plus calme, plus cher et plus résidentiel. Ipanema offre plus d'animation et un meilleur accès aux transports. Pour un séjour tranquille en couple ou en famille avec un budget confortable, Leblon est idéal." },
       { q: "Leblon est-il adapté aux familles ?", a: "Oui, c'est probablement le quartier le plus familial de la Zona Sul, avec une plage plus calme et des infrastructures pensées pour les enfants." },
       { q: "Quel est le budget moyen à Leblon ?", a: "C'est l'un des quartiers les plus chers de Rio, aussi bien pour l'hébergement que pour la restauration. Comptez un budget supérieur de 20 à 40% par rapport à Ipanema pour un dîner équivalent." },

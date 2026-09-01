@@ -68,6 +68,11 @@ export const article: Article = {
       "20h — Dîner au Braseiro da Gávea ou poursuite vers Leblon.",
     ]},
 
+    { type: "gallery", images: [
+      { src: galerie1, alt: "La lagune Rodrigo de Freitas avec le Corcovado en arrière-plan", caption: "La lagune Rodrigo de Freitas et le Corcovado en toile de fond." },
+      { src: galerie2, alt: "Piste cyclable et kiosques autour de la lagune", caption: "Les 7,5 km de piste qui font le tour du plan d'eau." },
+    ]},
+
     { type: "faq", items: [
       { q: "Peut-on se baigner dans la lagune ?", a: "Non, la baignade n'est pas recommandée, l'eau étant davantage dédiée aux activités nautiques encadrées comme l'aviron ou le stand-up paddle qu'à la baignade libre." },
       { q: "Combien de temps pour faire le tour de la lagune ?", a: "Environ 1h30 à pied ou 30 à 40 minutes à vélo pour les 7,5 kilomètres de la boucle complète." },

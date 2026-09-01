@@ -2,6 +2,8 @@ import type { Article } from "../types";
 import hero from "@/assets/quartier-botafogo.jpg";
 import galerie1 from "@/assets/botafogo-1.jpg";
 import galerie2 from "@/assets/botafogo-2.jpg";
+import mirante from "@/assets/mirante-dona-marta-CvhGCndx.jpg";
+
 
 export const article: Article = {
   slug: "botafogo-guide-complet",
@@ -54,7 +56,10 @@ export const article: Article = {
     { type: "ul", items: [
       "Balcão — restaurant-comptoir de fruits de mer, simple et généreux.",
       "Emporio Pax — bar de quartier convivial, coin idéal pour un chope entre amis.",
+      "Ferro e Farinha — l'une des meilleures pizzas de Rio, pâte napolitaine et fournée au feu de bois.",
+      "Haru Sushi — excellent japonais de quartier, poisson d'une grande fraîcheur.",
     ]},
+
     { type: "bonasavoir", title: "Bon à savoir", text: "La rua Voluntários da Pátria et ses environs concentrent une scène gastronomique en pleine expansion, souvent plus abordable qu'à Ipanema ou Leblon pour un niveau de qualité comparable." },
 
     { type: "h2", text: "Que voir et que faire" },
@@ -64,13 +69,25 @@ export const article: Article = {
     { type: "p", text: "Le quartier est historiquement lié au club de football Botafogo, l'un des quatre grands clubs de Rio. Assister à un match dans une ambiance populaire est une expérience à part entière pour les amateurs de football." },
     { type: "h3", text: "Le Mirante do Pasmado" },
     { type: "p", text: "Petit belvédère accessible en voiture ou à pied depuis le quartier, offrant une vue exceptionnelle sur la baie de Botafogo et le Pain de Sucre, particulièrement photogénique au coucher du soleil." },
+    { type: "h3", text: "La Pista Cláudio Coutinho" },
+    { type: "p", text: "Ce parcours entre mer et forêt, au pied du Pain de Sucre (départ Praia Vermelha, côté <a href=\"/blog/urca-guide-complet\">Urca</a>), est idéal pour courir ou marcher le matin, avec une vue permanente sur la baie et les rochers." },
+    { type: "h3", text: "La communauté Santa Marta" },
+    { type: "p", text: "L'une des communautés (favelas) les plus célèbres de Rio, où Michael Jackson a tourné le clip « They Don't Care About Us » en 1996. Une visite accompagnée d'un guide local est vivement recommandée pour découvrir ce point de vue exceptionnel sur la baie — jamais seul, jamais improvisé." },
+    { type: "image", src: mirante, alt: "Point de vue du Mirante Dona Marta sur la baie de Guanabara et le Pain de Sucre, Rio de Janeiro", caption: "La vue sur la baie depuis les hauteurs de Dona Marta." },
+
 
     { type: "h2", text: "Sortir le soir" },
     { type: "p", text: "Botafogo est devenu ces dernières années l'un des quartiers de sortie préférés des jeunes cariocas, avec une offre plus abordable et moins touristique que Lapa ou la Zona Sul balnéaire." },
+    { type: "h3", text: "Arnaldo Quintela, la rue qui ne dort jamais" },
+    { type: "p", text: "C'est LA rue incontournable de Botafogo pour sortir : une forte concentration de bars, de restaurants, de caves à vin et de bars à cocktails, où les cariocas se retrouvent tous les soirs de la semaine, verre à la main sur le trottoir." },
     { type: "ul", items: [
+      "Vian Cocktail Bar — cocktails haut de gamme, l'une des meilleures cartes du quartier.",
+      "Winehouse — grande sélection de vins du monde, ambiance décontractée.",
+      "Boteco Colarinho — véritable boteco carioca, chope bien tiré et petiscos généreux.",
       "Comuna — espace culturel et bar hybride, programmation musicale éclectique.",
       "Buenas Chicas — bar animé, cocktails créatifs, ambiance conviviale entre amis.",
     ]},
+
 
     { type: "h2", text: "Une journée parfaite à Botafogo" },
     { type: "ol", items: [
@@ -83,7 +100,13 @@ export const article: Article = {
       "20h — Dîner rue Voluntários da Pátria puis sortie chez Comuna.",
     ]},
 
+    { type: "gallery", images: [
+      { src: galerie1, alt: "Baie de Botafogo avec le Pain de Sucre en arrière-plan", caption: "La baie de Botafogo et le Pain de Sucre, vue de tous les jours." },
+      { src: galerie2, alt: "Rue animée de Botafogo avec ses bars et restaurants", caption: "Les rues du quartier, où sortent les cariocas en semaine." },
+    ]},
+
     { type: "faq", items: [
+
       { q: "Botafogo est-il un bon quartier pour loger ?", a: "Oui, c'est un excellent compromis entre budget maîtrisé, vie de quartier authentique et bonne connexion en métro vers Ipanema, Copacabana et le centre-ville." },
       { q: "Peut-on se baigner à Botafogo ?", a: "Non, l'eau de la baie est impropre à la baignade. Il faut se rendre à Copacabana ou Urca pour nager." },
       { q: "Comment se déplacer depuis Botafogo ?", a: "Le quartier est desservi par le métro (ligne 1), ce qui en fait l'un des points de connexion les plus pratiques de la Zona Sul." },

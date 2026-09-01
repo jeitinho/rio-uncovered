@@ -75,6 +75,11 @@ export const article: Article = {
       "18h30 — Coucher de soleil et dîner de fruits de mer face à l'océan.",
     ]},
 
+    { type: "gallery", images: [
+      { src: galerie1, alt: "Longue plage de Barra da Tijuca vue depuis la côte", caption: "Les kilomètres de sable de Barra, sans fin." },
+      { src: galerie2, alt: "Front de mer moderne de Barra da Tijuca", caption: "Le front de mer moderne, une autre idée de Rio." },
+    ]},
+
     { type: "faq", items: [
       { q: "Barra da Tijuca est-elle loin de la Zona Sul ?", a: "Comptez entre 30 et 50 minutes en voiture depuis Ipanema ou Copacabana selon le trafic, davantage aux heures de pointe. Le métro dessert désormais également le quartier." },
       { q: "Barra est-elle adaptée à un premier séjour à Rio ?", a: "Elle convient surtout aux familles cherchant confort moderne et espace, mais manque de l'ambiance de quartier et du patrimoine historique de la Zona Sul, essentiels pour une première découverte de la ville." },

@@ -76,6 +76,11 @@ export const article: Article = {
       "00h30 — Poursuite de la soirée au Circo Voador ou dans la rue, au rythme des groupes de samba improvisés.",
     ]},
 
+    { type: "gallery", images: [
+      { src: galerie1, alt: "Les Arcos da Lapa illuminés le soir", caption: "Les Arcos da Lapa, point de ralliement des nuits cariocas." },
+      { src: galerie2, alt: "Escadaria Selarón et ses carreaux colorés", caption: "L'Escadaria Selarón, à deux pas des Arcos." },
+    ]},
+
     { type: "faq", items: [
       { q: "Quel est le meilleur soir pour sortir à Lapa ?", a: "Le vendredi et le samedi soir concentrent l'essentiel de l'animation, avec musique live dans la plupart des établissements et une foule dense dans les rues." },
       { q: "Lapa est-il sûr le soir ?", a: "Le quartier est très fréquenté et globalement sûr sur les axes principaux et animés, mais demande davantage de vigilance que la Zona Sul, notamment dans les rues moins éclairées. Privilégiez les groupes et évitez de vous isoler." },

@@ -68,6 +68,11 @@ export const article: Article = {
       "15h — Poursuite vers Glória ou Flamengo, à quelques minutes à pied.",
     ]},
 
+    { type: "gallery", images: [
+      { src: galerie1, alt: "Le Palácio do Catete et ses jardins", caption: "Le Palácio do Catete et son parc, cœur du quartier." },
+      { src: galerie2, alt: "Rue commerçante animée de Catete", caption: "La rue do Catete, populaire et vivante toute la journée." },
+    ]},
+
     { type: "faq", items: [
       { q: "Catete est-il un quartier touristique ?", a: "Non, c'est justement son intérêt : peu de touristes s'y aventurent, ce qui en fait une immersion authentique dans le quotidien carioca, à quelques minutes seulement de la Zona Sul." },
       { q: "Catete est-il un bon quartier pour loger ?", a: "Oui pour les voyageurs cherchant un budget serré et une vie de quartier authentique, avec un bon accès métro. L'offre hôtelière reste toutefois plus limitée qu'ailleurs." },
