@@ -89,7 +89,14 @@ export const article: Article = {
       "20h30 — Dîner et sanduíche de Cervantes pour l'expérience carioca ultime.",
     ]},
 
+    { type: "gallery", images: [
+      { src: galerie1, alt: "La calçada en mosaïque de Copacabana au petit matin", caption: "La calçada de Copacabana au petit matin, avant la foule." },
+      { src: galerie2, alt: "Vue sur la plage de Copacabana depuis le Forte de Copacabana", caption: "Vue sur la plage depuis le Forte de Copacabana." },
+    ]},
+
     { type: "faq", items: [
+      { q: "Que signifie « Posto » ?", a: "Les plages de Rio sont découpées en postos (postes de secours numérotés). Les Cariocas s'en servent comme points de rendez-vous : vous entendrez souvent « On se retrouve au Posto 5 »." },
+
       { q: "Copacabana ou Ipanema : où loger ?", a: "Copacabana offre un meilleur rapport qualité-prix et une vie de quartier plus authentique et populaire. Ipanema et Leblon sont plus chics et plus chers. Le choix dépend de votre budget et du style de séjour recherché." },
       { q: "Copacabana est-elle sûre ?", a: "Oui, en journée le quartier est très fréquenté et globalement sûr. La nuit, restez sur l'avenue Atlântica et les rues éclairées et évitez d'exhiber des objets de valeur." },
       { q: "Combien de temps pour visiter Copacabana ?", a: "Une demi-journée suffit pour la plage et la calçada, mais comptez une journée complète si vous voulez inclure le Forte de Copacabana et une balade jusqu'à Urca." },
