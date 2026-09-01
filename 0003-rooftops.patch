@@ -1,0 +1,67 @@
+From dc9d2e115ccedece7ef1f179bd0705b014aef37e Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Tue, 1 Sep 2026 20:09:21 +0000
+Subject: [PATCH 3/8] =?UTF-8?q?Corrige=20noms=20et=20quartiers=20d'=C3=A9t?=
+ =?UTF-8?q?ablissements=20dans=20rooftops-bars-vue-rio?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+- Terrazza 40 (Leblon, introuvable) remplacé par Sky Leme (Novotel Leme, rooftop réel plusieurs fois primé)
+- Le Quintal / Raval : "Olégario" n'est pas un quartier mais l'Avenida Olegário Maciel, à Barra da Tijuca -> quartier corrigé, nom exact "Quintal da Barra"
+- YOO2 Botafogo : retrait des détails invérifiables ("32e étage", "piscine à débordement")
+- Skye Bar (nom d'un rooftop de São Paulo, pas de Rio) -> Fasano Rooftop Pool Lounge / "Bar da Piscina", le vrai rooftop du Fasano Ipanema
+- Cafofo : Santa Teresa -> Botafogo (adresse réelle R. Nelson Mandela), description ajustée en conséquence
+
+Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_013TKLSxqCqBQWydSFeWoqRj
+---
+ src/content/articles/rooftops-bars-vue-rio.ts | 22 +++++++++----------
+ 1 file changed, 11 insertions(+), 11 deletions(-)
+
+diff --git a/src/content/articles/rooftops-bars-vue-rio.ts b/src/content/articles/rooftops-bars-vue-rio.ts
+index 1c8e048..035b30d 100644
+--- a/src/content/articles/rooftops-bars-vue-rio.ts
++++ b/src/content/articles/rooftops-bars-vue-rio.ts
+@@ -30,15 +30,15 @@ export const article: Article = {
+     { type: "h3", text: "Rooftop Fairmont — Copacabana" },
+     { type: "p", text: "Élégance et raffinement au sommet du Fairmont Rio. Vue imprenable sur Copacabana et le Pain de Sucre. Parfait pour un apéritif chic. À tester : signature cocktails." },
+     { type: "h3", text: "YOO2 Rio de Janeiro — Botafogo" },
+-    { type: "p", text: "Rooftop moderne au 32ème étage avec piscine à débordement et vue panoramique sur la baie de Botafogo et le Pain de Sucre. À tester : gin tonica, poke bowl." },
+-    { type: "h3", text: "Terrazza 40 — Leblon" },
+-    { type: "p", text: "Rooftop italien avec vue sur Ipanema et le Morro Dois Irmãos. Cuisine méditerranéenne et cocktails créatifs. À tester : negroni, spritz." },
++    { type: "p", text: "Rooftop de cet hôtel design de Botafogo, avec vue panoramique sur la baie de Guanabara, le Pain de Sucre et le Corcovado. À tester : gin tonica, poke bowl." },
++    { type: "h3", text: "Sky Leme — Leme" },
++    { type: "p", text: "Rooftop du Novotel Rio de Janeiro Leme, élu à plusieurs reprises meilleur rooftop de la ville. Vue à 360° sur la plage du Leme, Copacabana et le Pain de Sucre. À tester : cocktails signature, DJ sets en fin de semaine." },
+     { type: "h3", text: "Santa Teresa Hotel — Santa Teresa" },
+     { type: "p", text: "Rooftop avec une vue spectaculaire sur le centre-ville et la baie. Ambiance bohème et exclusive. À tester : caipirinha, vin maison." },
+     { type: "h3", text: "Selina Lapa — Lapa" },
+     { type: "p", text: "Rooftop animé en plein cœur de Lapa. Vue sur les Arcos et le centre-ville. Idéal pour un sunset décontracté. À tester : caipiroska, bière locale." },
+-    { type: "h3", text: "Skye Bar — Ipanema" },
+-    { type: "p", text: "Rooftop de l'hôtel Fasano Ipanema, l'adresse la plus hype de la ville pour un coucher de soleil face à l'océan. Ambiance chic assumée, cocktails soignés. À tester : caipirinha au maracujá." },
++    { type: "h3", text: "Fasano Rooftop Pool Lounge — Ipanema" },
++    { type: "p", text: "Le « Bar da Piscina » de l'hôtel Fasano Rio, l'adresse la plus hype de la ville pour un coucher de soleil face à l'océan, avec sa piscine à débordement suspendue au-dessus de la plage d'Ipanema. Ambiance chic assumée, cocktails soignés. À tester : caipirinha au maracujá." },
+     { type: "conseil", title: "Le conseil Jeitinho", text: "Arrivez avant le coucher du soleil pour avoir les meilleures places. Certains spots deviennent très fréquentés le week-end. Pensez à réserver quand c'est possible." },
+ 
+     { type: "h2", text: "Bars authentiques et lieux incontournables" },
+@@ -46,12 +46,12 @@ export const article: Article = {
+     { type: "p", text: "Le spot le plus iconique de Vidigal pour admirer le coucher de soleil. Vue panoramique sur Ipanema, Leblon, les Dois Irmãos et la Pedra da Gávea. À tester : caipirinha, bière gelée." },
+     { type: "h3", text: "Bar da Laje — Vidigal" },
+     { type: "p", text: "Construit sur une dalle rocheuse, ce bar unique offre une ambiance jeune, de la musique et une vue de folie sur la plage et le Morro Dois Irmãos." },
+-    { type: "h3", text: "Le Quintal — Olégario" },
+-    { type: "p", text: "Bar de quartier au charme fou, patio arboré et esprit bohème. Parfait pour boire un verre entre amis." },
+-    { type: "h3", text: "Raval — Olégario" },
+-    { type: "p", text: "Bar à vin nature et cocktails créatifs dans un cadre intimiste et branché, avec une musique pointue et une clientèle cool." },
+-    { type: "h3", text: "Cafofo — Santa Teresa" },
+-    { type: "p", text: "Niché sur les hauteurs de Santa Teresa, le Cafofo offre une vue spectaculaire et une ambiance artistique." },
++    { type: "h3", text: "Quintal da Barra — Barra da Tijuca" },
++    { type: "p", text: "Sur l'animée Avenida Olegário Maciel, ce bar de quartier au charme fou avec patio arboré et esprit bohème est devenu un point de ralliement du secteur. Parfait pour boire un verre entre amis." },
++    { type: "h3", text: "Raval — Barra da Tijuca" },
++    { type: "p", text: "Toujours sur l'Olegário, un bar à vin nature et cocktails créatifs dans un cadre intimiste et branché, avec une musique pointue et une clientèle cool." },
++    { type: "h3", text: "Cafofo Pub — Botafogo" },
++    { type: "p", text: "Petit pub convivial de Botafogo, prisé pour ses bières artisanales et son ambiance décontractée entre amis, loin des adresses les plus touristiques." },
+     { type: "h3", text: "Rio Scenarium — Lapa" },
+     { type: "p", text: "Maison à trois étages remplie d'antiquités, samba et forró live tous les soirs. Une institution de Lapa, autant pour le décor que pour la musique." },
+     { type: "h3", text: "Bar do David — Chapéu Mangueira" },
+-- 
+2.43.0

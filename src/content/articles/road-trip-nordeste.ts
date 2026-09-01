@@ -38,7 +38,7 @@ export const article: Article = {
     { type: "h3", text: "Aracaju, Sergipe" },
     { type: "p", text: "Capitale à taille humaine, entre mer et qualité de vie, avec une excellente infrastructure et une cuisine savoureuse." },
     { type: "h3", text: "São Cristóvão, Sergipe" },
-    { type: "p", text: "Ville historique classée par l'UNESCO, avec ses musées et ses traditions vivantes dans un cadre colonial préservé." },
+    { type: "p", text: "Ville historique dont la Praça São Francisco est classée Patrimoine mondial de l'UNESCO, avec ses musées et ses traditions vivantes dans un cadre colonial préservé." },
     { type: "h3", text: "Xingó, Sergipe" },
     { type: "p", text: "Les canyons majestueux du fleuve São Francisco, à découvrir en catamaran ou bateau, avec des paysages à couper le souffle." },
     { type: "h3", text: "Japaratinga, Alagoas" },

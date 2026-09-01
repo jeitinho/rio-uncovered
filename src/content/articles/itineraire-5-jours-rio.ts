@@ -48,7 +48,7 @@ export const article: Article = {
 
     { type: "h2", text: "Jour 3 — Forêt de Tijuca, entre nature et sensations" },
     { type: "ol", items: [
-      "Matin — Tour de la forêt de Tijuca, la plus grande forêt urbaine du monde : cascades, points de vue, nature dense en pleine ville.",
+      "Matin — Tour de la forêt de Tijuca, l'une des plus grandes forêts urbaines entièrement reboisées au monde : cascades, points de vue, nature dense en pleine ville.",
       "Après-midi — Pour les amateurs de sensations fortes : vol en parapente depuis Pedra Bonita, avec atterrissage sur la plage de São Conrado.",
       "Soir — Retour tranquille, dîner selon la zone où vous logez.",
     ]},

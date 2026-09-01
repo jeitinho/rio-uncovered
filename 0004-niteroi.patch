@@ -1,0 +1,33 @@
+From 7542818125248862d4617d1ad895efb7910bb652 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Tue, 1 Sep 2026 20:09:57 +0000
+Subject: [PATCH 4/8] Corrige une affirmation inexacte dans plages-niteroi
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Le Parque da Cidade de Niterói (env. 15 hectares) n'est pas "le plus grand parc urbain d'Amérique latine" - ce titre est associé au Parque da Cidade de Brasília, un site bien plus vaste. Remplacé par une description factuelle : point de décollage de vol libre réputé avec vue panoramique.
+
+Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_013TKLSxqCqBQWydSFeWoqRj
+---
+ src/content/articles/plages-niteroi.ts | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/src/content/articles/plages-niteroi.ts b/src/content/articles/plages-niteroi.ts
+index 92a9623..ae04479 100644
+--- a/src/content/articles/plages-niteroi.ts
++++ b/src/content/articles/plages-niteroi.ts
+@@ -48,8 +48,8 @@ export const article: Article = {
+     { type: "p", text: "Icône architecturale de Niterói signée Oscar Niemeyer, avec une vue panoramique incroyable sur la baie de Guanabara." },
+     { type: "h3", text: "Le Fort de Santa Cruz" },
+     { type: "p", text: "Fort historique du XVIe siècle, avec un sentier et une vue magnifique sur l'entrée de la baie." },
+-    { type: "h3", text: "Le Parc de la Cidade" },
+-    { type: "p", text: "Le plus grand parc urbain d'Amérique latine, parfait pour une pause nature avec une belle vue sur la ville et la baie." },
++    { type: "h3", text: "Le Parque da Cidade" },
++    { type: "p", text: "Perché sur les hauteurs de Niterói, c'est le point de décollage du vol libre le plus réputé de la région, avec une vue panoramique spectaculaire sur la ville et la baie — même sans sauter, la vue depuis la rampe vaut le déplacement." },
+     { type: "h3", text: "Le coucher de soleil à Boa Viagem" },
+     { type: "p", text: "L'un des plus beaux couchers de soleil sur la baie, à ne surtout pas manquer en fin de journée." },
+     { type: "bonasavoir", title: "Bon à savoir", text: "Le charme de Santa Rosa, quartier bohème de Niterói avec bars, restaurants et ambiance locale, complète parfaitement une journée dédiée aux plages et à la culture." },
+-- 
+2.43.0

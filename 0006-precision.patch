@@ -1,0 +1,47 @@
+From c72c0574b24d0880a94f0beae9d7fe83cc633a47 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Tue, 1 Sep 2026 20:12:43 +0000
+Subject: [PATCH 6/8] =?UTF-8?q?Pr=C3=A9cise=20deux=20affirmations=20dans?=
+ =?UTF-8?q?=20road-trip-nordeste=20et=20itineraire-5-jours-rio?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+- road-trip-nordeste : à São Cristóvão, c'est la Praça São Francisco qui est classée UNESCO, pas "la ville" en général
+- itineraire-5-jours-rio : la forêt de Tijuca n'est pas "la plus grande forêt urbaine du monde" (ce titre revient au Parque Estadual da Pedra Branca, également à Rio, ~3x plus grand) - reformulé en "l'une des plus grandes forêts urbaines entièrement reboisées au monde", qui est le vrai record qu'elle détient
+
+Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_013TKLSxqCqBQWydSFeWoqRj
+---
+ src/content/articles/itineraire-5-jours-rio.ts | 2 +-
+ src/content/articles/road-trip-nordeste.ts     | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/src/content/articles/itineraire-5-jours-rio.ts b/src/content/articles/itineraire-5-jours-rio.ts
+index a853d91..f6b8062 100644
+--- a/src/content/articles/itineraire-5-jours-rio.ts
++++ b/src/content/articles/itineraire-5-jours-rio.ts
+@@ -48,7 +48,7 @@ export const article: Article = {
+ 
+     { type: "h2", text: "Jour 3 — Forêt de Tijuca, entre nature et sensations" },
+     { type: "ol", items: [
+-      "Matin — Tour de la forêt de Tijuca, la plus grande forêt urbaine du monde : cascades, points de vue, nature dense en pleine ville.",
++      "Matin — Tour de la forêt de Tijuca, l'une des plus grandes forêts urbaines entièrement reboisées au monde : cascades, points de vue, nature dense en pleine ville.",
+       "Après-midi — Pour les amateurs de sensations fortes : vol en parapente depuis Pedra Bonita, avec atterrissage sur la plage de São Conrado.",
+       "Soir — Retour tranquille, dîner selon la zone où vous logez.",
+     ]},
+diff --git a/src/content/articles/road-trip-nordeste.ts b/src/content/articles/road-trip-nordeste.ts
+index 2a3963a..061224c 100644
+--- a/src/content/articles/road-trip-nordeste.ts
++++ b/src/content/articles/road-trip-nordeste.ts
+@@ -38,7 +38,7 @@ export const article: Article = {
+     { type: "h3", text: "Aracaju, Sergipe" },
+     { type: "p", text: "Capitale à taille humaine, entre mer et qualité de vie, avec une excellente infrastructure et une cuisine savoureuse." },
+     { type: "h3", text: "São Cristóvão, Sergipe" },
+-    { type: "p", text: "Ville historique classée par l'UNESCO, avec ses musées et ses traditions vivantes dans un cadre colonial préservé." },
++    { type: "p", text: "Ville historique dont la Praça São Francisco est classée Patrimoine mondial de l'UNESCO, avec ses musées et ses traditions vivantes dans un cadre colonial préservé." },
+      { type: "h3", text: "Xingó, Sergipe" },
+     { type: "p", text: "Les canyons majestueux du fleuve São Francisco, à découvrir en catamaran ou bateau, avec des paysages à couper le souffle." },
+     { type: "h3", text: "Japaratinga, Alagoas" },
+-- 
+2.43.0

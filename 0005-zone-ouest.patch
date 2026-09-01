@@ -1,0 +1,63 @@
+From 36225f4d2234d069c5865aceb65b5922eb7c3947 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Tue, 1 Sep 2026 20:11:55 +0000
+Subject: [PATCH 5/8] =?UTF-8?q?Corrige=20des=20erreurs=20g=C3=A9ographique?=
+ =?UTF-8?q?s=20dans=20plages-zone-ouest-rio?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+- Cachoeira do Horto (en réalité en Zona Sul, près du Jardim Botânico) et Poço do Céu (en réalité à Resende, à 170 km, dans la Serrinha do Alambari) n'ont rien à faire dans un guide des cascades de la Zone Ouest -> remplacées par Cachoeira de Mucuíba (Vargem Grande) et Cachoeira do Barata (Realengo), toutes deux réelles et situées dans le Parque Estadual da Pedra Branca
+- Cachoeira da Penha : nom associé uniquement à une cascade de Paraty (à 250 km), aucune trace d'une cascade de ce nom en Zona Oeste -> remplacée par Cachoeira do Camorim (Núcleo Camorim), également dans le Parque Estadual da Pedra Branca
+- "Morro do Pão de Açúcar (Zona Oeste)" : le Pain de Sucre est en Zona Sul (Urca), pas en Zone Ouest -> remplacé par le Pico da Pedra Branca, point culminant réel de la ville
+
+Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_013TKLSxqCqBQWydSFeWoqRj
+---
+ src/content/articles/plages-zone-ouest-rio.ts | 18 +++++++++---------
+ 1 file changed, 9 insertions(+), 9 deletions(-)
+
+diff --git a/src/content/articles/plages-zone-ouest-rio.ts b/src/content/articles/plages-zone-ouest-rio.ts
+index 869d85a..feb50a0 100644
+--- a/src/content/articles/plages-zone-ouest-rio.ts
++++ b/src/content/articles/plages-zone-ouest-rio.ts
+@@ -40,12 +40,12 @@ export const article: Article = {
+     { type: "conseil", title: "Le conseil Jeitinho", text: "Pour profiter pleinement de la Zone Ouest, partez tôt le matin et restez jusqu'au coucher du soleil. Moins de monde, plus de nature et une lumière incroyable pour les photos." },
+ 
+     { type: "h2", text: "Les cascades de la Zone Ouest" },
+-    { type: "h3", text: "Cachoeira do Horto" },
+-    { type: "p", text: "La plus célèbre et la plus accessible, avec des bassins naturels parfaits pour se baigner en famille." },
+-    { type: "h3", text: "Cachoeira da Penha" },
+-    { type: "p", text: "Plus sauvage, avec un cadre magnifique en pleine forêt. Nécessite une randonnée modérée mais la baignade y est possible." },
+-    { type: "h3", text: "Poço do Céu" },
+-    { type: "p", text: "Eau cristalline et grande piscine naturelle, accessible après une courte randonnée." },
++    { type: "h3", text: "Cachoeira de Mucuíba — Vargem Grande" },
++    { type: "p", text: "Dans le Parque Estadual da Pedra Branca, un système de trois bassins naturels en cascade dans la forêt. La plus accessible et la plus familiale des cascades de la Zone Ouest." },
++    { type: "h3", text: "Cachoeira do Camorim — Núcleo Camorim" },
++    { type: "p", text: "Plus sauvage, avec un cadre magnifique en pleine forêt du Parque Estadual da Pedra Branca. Nécessite une randonnée modérée (environ 1h30, sentier avec quelques passages raides) mais la baignade y est possible." },
++    { type: "h3", text: "Cachoeira do Barata — Realengo" },
++    { type: "p", text: "Eau cristalline et bassin naturel dans le même parc, accessible par le côté de Realengo, après une randonnée en forêt." },
+     { type: "h3", text: "Piscina do Secreto" },
+     { type: "p", text: "Piscine naturelle entre les rochers, eau cristalline et ambiance secrète. Randonnée courte mais très suave (glissante), prudence recommandée." },
+     { type: "aeviter", title: "À éviter" },
+@@ -62,15 +62,15 @@ export const article: Article = {
+      { type: "h2", text: "À ne pas manquer" },
+     { type: "ul", items: [
+       "Surf à Grumari, parfait pour les surfeurs de tous niveaux.",
+-      "Randonnée au Morro do Pão de Açúcar (Zona Oeste), vue panoramique spectaculaire sur la région.",
+-      "Baignade à la Cachoeira do Horto, un classique rafraîchissant en pleine forêt.",
++      "Randonnée au Pico da Pedra Branca, le point culminant de la ville de Rio, vue panoramique spectaculaire sur toute la région.",
++      "Baignade à la Cachoeira de Mucuíba, un classique rafraîchissant en pleine forêt.",
+       "Coucher de soleil à Macumba, l'un des plus beaux de Rio.",
+       "Snorkeling à la Piscina do Secreto, eaux cristallines et vie marine au rendez-vous.",
+     ]},
+ 
+     { type: "faq", items: [
+       { q: "La Zone Ouest est-elle loin de la Zona Sul ?", a: "Comptez entre 30 minutes et une heure en voiture depuis Ipanema ou Copacabana selon la plage ou la cascade visée et le trafic du moment." },
+-      { q: "Faut-il un guide pour visiter les cascades ?", a: "Ce n'est pas obligatoire pour les plus accessibles comme la Cachoeira do Horto, mais recommandé pour les sites plus isolés comme le Poço do Céu." },
++      { q: "Faut-il un guide pour visiter les cascades ?", a: "Ce n'est pas obligatoire pour les plus accessibles comme la Cachoeira de Mucuíba, mais recommandé pour les sites plus isolés comme la Cachoeira do Camorim." },
+       { q: "Peut-on combiner plage et cascade dans la même journée ?", a: "Oui, avec un véhicule privé ou un chauffeur, il est tout à fait possible de combiner une matinée plage et une après-midi cascade dans la Zone Ouest." },
+       { q: "Les plages de la Zone Ouest sont-elles surveillées ?", a: "Certaines le sont, mais moins densément que la Zona Sul. Respectez les zones de baignade recommandées et restez prudent en l'absence de sauveteurs visibles." },
+     ]},
+-- 
+2.43.0

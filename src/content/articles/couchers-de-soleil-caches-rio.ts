@@ -53,9 +53,9 @@ export const article: Article = {
 
     { type: "h2", text: "Nos kiosques préférés" },
     { type: "ul", items: [
-      "Clássico Beach Club — Copacabana.",
+      "Clássico Beach Club — Urca.",
       "Sel d'Ipanema — Ipanema.",
-      "Espaço Aloha — Barra da Tijuca.",
+      "Aloha Rio — Barra da Tijuca.",
       "Rasta Beach — Leme.",
     ]},
 
