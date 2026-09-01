@@ -41,7 +41,10 @@ export const article: Article = {
     { type: "h2", text: "La plage : plus tranquille qu'à Ipanema" },
     { type: "p", text: "La plage de Leblon prolonge celle d'Ipanema mais reste plus familiale et moins agitée. Le posto 11 et 12 marquent la frontière avec Ipanema, tandis que l'extrémité proche du canal accueille traditionnellement les familles avec jeunes enfants, grâce à une petite aire de jeux et des sanitaires bien entretenus." },
     { type: "p", text: "Contrairement à d'autres plages de la Zona Sul, Leblon attire moins les grands groupes bruyants et davantage les habitants du quartier qui viennent nager avant le travail ou faire du sport en fin de journée." },
+    { type: "h3", text: "Le Mirante do Leblon" },
+    { type: "p", text: "Ce belvédère, à l'extrémité ouest de la plage, est considéré comme l'un des plus beaux points de vue de la Zona Sul : incontournable au coucher du soleil, quand la Pedra da Gávea et Dois Irmãos virent à l'orange." },
     { type: "aeviter", title: "À éviter", text: "Évitez de vous garer en double file ou de laisser un véhicule de location visible avec des affaires à l'intérieur : la pression immobilière élevée du quartier n'empêche pas les vols opportunistes sur les voitures, un classique partout à Rio." },
+
 
     { type: "h2", text: "Où manger — la capitale gastronomique de Rio" },
     { type: "h3", text: "La table du moment" },
