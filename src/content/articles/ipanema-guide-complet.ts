@@ -40,13 +40,18 @@ export const article: Article = {
     { type: "p", text: "La plage d'Ipanema est divisée en zones marquées par les postos de sauveteurs (postes 7 à 10). Chaque poste attire une foule différente. Ce n'est pas anecdotique : vous asseoir devant le mauvais peut ruiner votre après-midi ou vous ouvrir la ville." },
     { type: "h3", text: "Posto 7 — Arpoador" },
     { type: "p", text: "Familles, surfeurs, coucher de soleil. C'est ici qu'on applaudit le soleil quand il tombe derrière Dois Irmãos — une tradition, pas une performance touristique." },
+    { type: "h3", text: "Posto 7 — le spot des surfeurs débutants" },
+    { type: "p", text: "Le secteur du Posto 7, côté Arpoador, est l'un des meilleurs endroits de la Zona Sul pour débuter ou progresser en surf, avec plusieurs écoles proposant des cours." },
     { type: "h3", text: "Posto 8 — sportifs et familles" },
     { type: "p", text: "Beach-volley, futevôlei, ambiance saine. Idéal si vous voyagez en famille ou si vous avez envie d'observer les cariocas dans leur pratique la plus sérieuse : le sport de plage." },
     { type: "h3", text: "Posto 9 — le cœur social" },
     { type: "p", text: "Le posto le plus vibrant. Musique, jeunesse cool, artistes. Si vous voulez sentir Ipanema, c'est ici. Le mieux : arriver vers 15h30, rester jusqu'au coucher du soleil." },
+    { type: "image", src: posto9, alt: "Le Posto 9 sur la plage d'Ipanema en fin d'après-midi, Rio de Janeiro", caption: "Le Posto 9, cœur social de la plage d'Ipanema." },
     { type: "h3", text: "Posto 10 — chic et calme" },
     { type: "p", text: "Frontière avec Leblon. Plus tranquille, plus familial haut de gamme. Bon plan si vous fuyez la foule." },
+    { type: "bonasavoir", title: "L'altinha, l'institution du sable", text: "Vous verrez partout des groupes jouer à l'altinha, un jeu où l'on jongle avec le pied, la tête, les épaules ou la poitrine sans jamais utiliser les mains — une véritable institution à la plage à Rio." },
     { type: "aeviter", title: "À éviter", text: "Ne laissez rien sur votre serviette quand vous allez à l'eau. Les vols opportunistes existent, comme partout. Un local n'emporte à la plage que le strict nécessaire — pas de sac, pas de bijoux, pas de téléphone visible." },
+
 
     { type: "h2", text: "Où manger — nos vraies adresses" },
     { type: "h3", text: "Petits-déjeuners et brunchs" },
