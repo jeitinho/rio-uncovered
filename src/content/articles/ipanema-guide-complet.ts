@@ -66,7 +66,12 @@ export const article: Article = {
       "Oro — étoilé, cuisine créative brésilienne, expérience.",
       "Venga! — petits plats espagnols, ambiance conviviale et sonore.",
       "Barsa — un vrai bar-restaurant carioca, pour un fim de tarde qui glisse en dîner.",
+      "Pulë — cuisine française raffinée, l'une des meilleures tables françaises d'Ipanema.",
+      "Arp — cuisine contemporaine et vue exceptionnelle sur Arpoador.",
+      "Temakeria & Cia — japonais frais et rapide, parfait après la plage.",
+      "Balcão — cuisine de comptoir moderne, l'un de nos coups de cœur du quartier.",
     ]},
+
     { type: "bonasavoir", title: "Bon à savoir", text: "À Rio, on dîne tard. Avant 20h30, la plupart des bons restaurants sont vides. Après 21h30, ils sont pleins. Réservez ou décalez." },
 
     { type: "h2", text: "Boire un verre : les vrais lieux" },
