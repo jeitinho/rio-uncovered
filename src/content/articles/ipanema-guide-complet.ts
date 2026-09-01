@@ -1,5 +1,7 @@
 import type { Article } from "../types";
 import hero from "@/assets/article-ipanema.jpg";
+import posto9 from "@/assets/posto-9.jpg";
+
 
 export const article: Article = {
   slug: "ipanema-guide-complet",
