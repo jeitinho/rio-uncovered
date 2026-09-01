@@ -1,0 +1,296 @@
+From d8624625a43d936dca254f0ebb33aafb3d0b41a5 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Tue, 1 Sep 2026 17:15:44 +0000
+Subject: [PATCH 2/2] =?UTF-8?q?Ajout=20article=20Rocinha/Vidigal/PPG=20+?=
+ =?UTF-8?q?=20auto-liens=20Google=20Maps=20pour=20les=20=C3=A9tablissement?=
+ =?UTF-8?q?s?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+- Nouvel article "Rocinha, Vidigal, PPG : où manger et boire un verre
+  dans les favelas de Rio", catégorie activites (hors quartiers).
+  Où manger/boire par communauté, cadrage sécurité "toujours accompagné
+  d'un guide", rappel sourcé de l'opération policière à Vidigal
+  (avril 2026), FAQ. Auteure : Nawal (habite Vidigal).
+- src/lib/interlink.ts : nouveau système ESTABLISHMENT_RULES qui
+  transforme automatiquement le nom de ~90 établissements déjà cités
+  dans les 13 quartiers + Joá + le nouvel article favelas en lien
+  cliquable vers leur fiche Google Maps, sans toucher au texte des
+  articles. Ajout de Rocinha/Vidigal/PPG/Cantagalo comme liens internes
+  vers le nouvel article, avec clé de dédoublonnage dédiée pour que les
+  trois puissent se lier indépendamment dans une même phrase.
+- Enregistrement de l'article dans le registre (src/content/index.ts).
+---
+ .../guide-favelas-rocinha-vidigal-ppg.ts      |  84 +++++++++++
+ src/content/index.ts                          |   2 +
+ src/lib/interlink.ts                          | 136 +++++++++++++++++-
+ 3 files changed, 219 insertions(+), 3 deletions(-)
+ create mode 100644 src/content/articles/guide-favelas-rocinha-vidigal-ppg.ts
+
+diff --git a/src/content/articles/guide-favelas-rocinha-vidigal-ppg.ts b/src/content/articles/guide-favelas-rocinha-vidigal-ppg.ts
+new file mode 100644
+index 0000000..e7dceeb
+--- /dev/null
++++ b/src/content/articles/guide-favelas-rocinha-vidigal-ppg.ts
+@@ -0,0 +1,84 @@
++import type { Article } from "../types";
++import hero from "@/assets/appart-ppg-vue-panoramique.jpg";
++
++export const article: Article = {
++  slug: "guide-favelas-rocinha-vidigal-ppg",
++  title: "Rocinha, Vidigal, PPG : où manger et boire un verre dans les favelas de Rio",
++  titleAccent: "manger et boire",
++  description: "Notre guide pour découvrir Rocinha, Vidigal et Pavão-Pavãozinho (PPG) autrement : bars, restaurants et mirantes locaux, toujours accompagnés d'un guide.",
++  category: "activites",
++  tags: ["favela", "Rocinha", "Vidigal", "PPG", "Pavão-Pavãozinho", "où manger", "où boire", "sécurité"],
++  date: "2026-09-01",
++  author: "nawal",
++  hero,
++  heroAlt: "Vue panoramique depuis les hauteurs de Pavão-Pavãozinho (PPG), toits de la favela au premier plan et baie de Guanabara en arrière-plan",
++  featured: false,
++  guide: true,
++  popular: false,
++  relatedServices: [
++    {
++      label: "Immersion favela avec un guide local",
++      href: "https://jeitinho.fr/experiences/favelas-immersion-culturelle",
++      description: "On vous emmène à Rocinha, Vidigal ou PPG avec un guide qui y a grandi.",
++    },
++    {
++      label: "Conciergerie sur mesure",
++      href: "https://jeitinho.fr/trouver-un-jeitinho",
++      description: "Pour organiser votre visite au bon moment, avec les bonnes personnes.",
++    },
++  ],
++  sections: [
++    { type: "p", text: "Rocinha, Vidigal et Pavão-Pavãozinho (PPG) sont trois communautés (favelas) de la Zona Sul, chacune avec son histoire, son relief et son ambiance. On y trouve aussi certaines des meilleures vues gratuites de Rio, et une poignée de bars et restaurants tenus par des habitants, loin des adresses à touristes de la plage." },
++    { type: "p", text: "Ce guide n'est pas un itinéraire à suivre seul. C'est une présentation de ce que ces trois quartiers ont à offrir, pour savoir quoi demander à votre guide le jour venu." },
++
++    { type: "h2", text: "La règle numéro un : jamais seul, toujours avec un guide" },
++    { type: "p", text: "Ce ne sont pas des zones à éviter par principe : le tourisme y est aujourd'hui une économie à part entière, organisée, avec ses propres codes. Mais ce sont des territoires où la situation peut changer d'un jour à l'autre, et où seul un guide local qui y vit ou y a grandi sait lire ce qui se passe sur le moment." },
++    { type: "conseil", title: "Le conseil Jeitinho", text: "Ne montez jamais à Rocinha, Vidigal ou PPG seul ou via une visite improvisée trouvée sur place. Passez par un guide local reconnu, qui connaît le terrain et adapte l'itinéraire à la situation du jour." },
++    { type: "aeviter", title: "À éviter", text: "En avril 2026, une opération de police contre un groupe criminel a temporairement bloqué des touristes venus voir le lever du soleil au mirante Dois Irmãos, au-dessus de Vidigal. Personne n'a été blessé et la situation a été résolue en quelques heures, mais l'épisode rappelle que même les zones les plus fréquentées par les visiteurs peuvent connaître des opérations soudaines — une raison de plus de vous fier à un guide qui saura comment réagir plutôt que d'improviser." },
++
++    { type: "h2", text: "Rocinha, la plus grande favela du Brésil" },
++    { type: "p", text: "Adossée au Morro Dois Irmãos entre São Conrado et Gávea, Rocinha compte plusieurs dizaines de milliers d'habitants et fonctionne presque comme une ville dans la ville, avec ses propres commerces, ses banques et son marché. Elle fait partie des communautés intégrées au programme officiel de tourisme « Na Favela Turismo », avec des guides enregistrés et des parcours suivis en temps réel pour la sécurité des visiteurs." },
++    { type: "ul", items: [
++      "Mirante Rocinha — vue panoramique sur la ville depuis l'Estrada da Gávea, ambiance musique live, ouvert en continu.",
++      "Amarelinho — l'une des plus anciennes adresses de la favela, chope glacée et côtes grillées.",
++      "Boteco da Praça — spot animé de la Pracinha da RS, réputé pour son caldo de mocotó et ses caipirinhas.",
++      "Trapiá Bar e Restaurante — self-service le midi, bar ouvert jour et nuit, musique sertaneja en semaine.",
++      "Via Ápia Rio Rooftop — terrasse en hauteur, l'une des adresses mises en avant lors du Circuito Favela Gourmet, l'événement gastronomique annuel qui réunit les meilleures tables de Rocinha, Vidigal et PPG.",
++    ]},
++    { type: "bonasavoir", title: "Bon à savoir", text: "Le tissu commercial de Rocinha est dense et vivant en journée comme en soirée — c'est en partie ce qui en fait une communauté plus simple à visiter que d'autres, en dehors des grands axes." },
++
++    { type: "h2", text: "Vidigal, entre plage et sommet" },
++    { type: "p", text: "Coincée entre la plage de Leblon et le pied du Morro Dois Irmãos, Vidigal est la plus « gentrifiée » des trois communautés : depuis une quinzaine d'années, hostels, bars branchés et expatriés s'y sont installés aux côtés des habitants historiques, attirés par une vue sur l'océan que peu de quartiers de la ville peuvent offrir." },
++    { type: "ul", items: [
++      "Bar da Laje — la terrasse la plus connue de Vidigal, vue à 180° sur la côte, prisée au coucher du soleil.",
++      "Alto Vidigal — club perché tout en haut de la favela, soirées reggae et funk, réputé pour ses levers de soleil.",
++      "Restaurante Sabor Carioca — cuisine brésilienne familiale, portions généreuses, prix locaux.",
++      "Flor do Vidigal — une des adresses du Circuito Favela Gourmet, cuisine de quartier.",
++    ]},
++    { type: "bonasavoir", title: "Bon à savoir", text: "C'est au mirante Dois Irmãos, en surplomb de Vidigal, que se rassemblent les visiteurs pour le lever du soleil — un des plus beaux points de vue de Rio, mais aussi celui qui demande le plus de discipline : on y va uniquement encadré, jamais en solo au petit matin." },
++
++    { type: "h2", text: "PPG (Pavão-Pavãozinho-Cantagalo), entre Copacabana et Ipanema" },
++    { type: "p", text: "Le complexe de Pavão-Pavãozinho et Cantagalo — que tout le monde appelle PPG — surplombe directement Copacabana et Ipanema, avec des vues qui s'étendent jusqu'à la lagune Rodrigo de Freitas et le Corcovado. Comme Rocinha et Vidigal, il fait désormais partie de la route officielle du tourisme carioca, avec des sentiers balisés et le Museu da Favela." },
++    { type: "ul", items: [
++      "Brisolão — bar-mirante emblématique pour le coucher de soleil, vue sur la lagune et les montagnes.",
++      "Restaurante Pão e Vida — cuisine simple et copieuse, adresse de quartier.",
++      "Panela da Comunidade — cuisine communautaire, l'une des adresses portées par des initiatives locales.",
++      "Pizzaria Mais Sabor — pour une pizza avant de redescendre vers la plage.",
++    ]},
++    { type: "bonasavoir", title: "Bon à savoir", text: "PPG est probablement la communauté la plus pratique à combiner avec une journée classique à Copacabana ou Ipanema : on peut y monter en fin d'après-midi et être de retour sur la plage à temps pour le dîner. Un trajet en moto-taxi entre PPG et Vidigal coûte environ 25 R$ — toujours en demandant le tarif avant de monter." },
++
++    { type: "h2", text: "Comment organiser la visite" },
++    { type: "p", text: "Dans les trois cas, le format qui fonctionne le mieux est le même : une visite de l'après-midi ou de fin de journée, avec un guide qui a grandi sur place, en enchaînant un ou deux points de vue et une pause dans un bar ou un restaurant local — plutôt qu'une simple visite éclair en groupe." },
++    { type: "p", text: "Nos guides recommandés à Rocinha, Vidigal et PPG connaissent leur communauté de l'intérieur : ils savent quel bar est calme un mardi soir, quel mirante regarder au bon moment, et surtout, ils savent quand il vaut mieux reporter une visite d'un jour ou modifier l'itinéraire." },
++
++    { type: "faq", items: [
++      { q: "Peut-on visiter Rocinha, Vidigal ou PPG sans guide ?", a: "Ce n'est pas recommandé. Ce sont des territoires vivants dont la situation peut évoluer rapidement ; un guide local reconnu sait où aller, à quel moment, et comment réagir en cas d'imprévu." },
++      { q: "Quelle est la différence entre Rocinha, Vidigal et PPG ?", a: "Rocinha est la plus grande favela du Brésil, presque une ville dans la ville, entre São Conrado et Gávea. Vidigal, au pied du Morro Dois Irmãos entre Leblon et São Conrado, est la plus touristique et gentrifiée des trois. PPG (Pavão-Pavãozinho-Cantagalo) surplombe directement Copacabana et Ipanema." },
++      { q: "Est-ce dangereux de manger ou boire un verre dans une favela ?", a: "Avec un guide local et en suivant ses conseils, ce sont des sorties qui se passent très bien : le tourisme y est une économie à part entière que personne n'a intérêt à menacer. Le risque vient surtout de l'improvisation en solo, pas de la visite en elle-même." },
++      { q: "Peut-on assister au coucher ou au lever de soleil depuis ces favelas ?", a: "Oui, ce sont d'ailleurs certains des plus beaux points de vue de Rio — le Brisolão à PPG pour le coucher de soleil, le mirante Dois Irmãos au-dessus de Vidigal pour le lever du soleil. Toujours accompagné, surtout tôt le matin." },
++      { q: "Existe-t-il un itinéraire gastronomique officiel dans ces favelas ?", a: "Oui : le Circuito Favela Gourmet réunit chaque année une sélection de restaurants et bars de Rocinha, Vidigal et PPG à prix accessibles. En dehors de cet événement, les mêmes adresses restent ouvertes toute l'année." },
++    ]},
++
++    { type: "p", text: "Rocinha, Vidigal et PPG ne se résument pas à un point de vue Instagram : ce sont des quartiers vivants, avec leur économie, leurs bars et leur cuisine — à condition de les aborder comme on aborde n'importe quel quartier qu'on ne connaît pas encore : avec quelqu'un qui le connaît, lui." },
++  ],
++};
+diff --git a/src/content/index.ts b/src/content/index.ts
+index 17db0cb..f59a2b1 100644
+--- a/src/content/index.ts
++++ b/src/content/index.ts
+@@ -64,6 +64,7 @@ import { article as horaires } from "./articles/horaires-a-la-carioca";
+ import { article as postos } from "./articles/les-postos"; // <-- CORRIGÉ : suppression du .ts
+ import { article as sambaRioDeJaneiro } from "./articles/samba-rio-de-janeiro";
+ import { article as funkCariocaRio } from "./articles/funk-carioca-rio-de-janeiro";
++import { article as favelas } from "./articles/guide-favelas-rocinha-vidigal-ppg";
+
+ export const ARTICLES: Article[] = [
+   pagode,
+@@ -99,6 +100,7 @@ export const ARTICLES: Article[] = [
+   postos,
+   sambaRioDeJaneiro,
+   funkCariocaRio,
++  favelas,
+
+   ipanema,
+   copacabana,
+diff --git a/src/lib/interlink.ts b/src/lib/interlink.ts
+index fb27dba..9d4d8cb 100644
+--- a/src/lib/interlink.ts
++++ b/src/lib/interlink.ts
+@@ -4,8 +4,137 @@
+
+ type Rule = { pattern: RegExp; href: string; internal: boolean; key: string };
+
++/** Construit un lien de recherche Google Maps pour un établissement (nom + repère de quartier). */
++function gmaps(query: string): string {
++  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
++}
++
++// Établissements cités dans les articles — lien direct vers leur fiche Google Maps.
++// Placé AVANT les règles de quartiers/expériences ci-dessous : un nom d'établissement
++// (ex. « Nosso Ipanema », « Bar Urca », « Copacabana Palace ») doit être capturé en
++// entier avant que la règle générique du quartier (« Ipanema », « Urca », « Copacabana »)
++// ne s'applique à une sous-chaîne. Certains noms génériques partagés par deux adresses
++// réellement différentes (ex. « Balcão » à Ipanema vs à Botafogo) sont volontairement
++// omis pour ne pas créer de lien erroné.
++const ESTABLISHMENT_RULES: Array<{ terms: string[]; href: string; internal: boolean }> = [
++  // Ipanema
++  { terms: ["Talho Capixaba"], href: gmaps("Talho Capixaba Ipanema Rio de Janeiro"), internal: false },
++  { terms: ["Casa Camolese"], href: gmaps("Casa Camolese Ipanema Rio de Janeiro"), internal: false },
++  { terms: ["Zazá Bistrô Tropical"], href: gmaps("Zazá Bistrô Tropical Ipanema Rio de Janeiro"), internal: false },
++  { terms: ["Frontera"], href: gmaps("Frontera Ipanema Rio de Janeiro"), internal: false },
++  { terms: ["CT Boucherie"], href: gmaps("CT Boucherie Ipanema Rio de Janeiro"), internal: false },
++  { terms: ["Venga!"], href: gmaps("Venga Ipanema Rio de Janeiro"), internal: false },
++  { terms: ["Barsa"], href: gmaps("Barsa Ipanema Rio de Janeiro"), internal: false },
++  { terms: ["Pulë"], href: gmaps("Pulë restaurante Ipanema Rio de Janeiro"), internal: false },
++  { terms: ["Temakeria & Cia"], href: gmaps("Temakeria & Cia Ipanema Rio de Janeiro"), internal: false },
++  { terms: ["Bar Astor"], href: gmaps("Bar Astor Ipanema Rio de Janeiro"), internal: false },
++  { terms: ["Canastra"], href: gmaps("Canastra bar Ipanema Rio de Janeiro"), internal: false },
++  { terms: ["Boa Praça"], href: gmaps("Boa Praça Ipanema Rio de Janeiro"), internal: false },
++  { terms: ["Boteco Belmonte"], href: gmaps("Boteco Belmonte Ipanema Rio de Janeiro"), internal: false },
++  { terms: ["Nosso Ipanema"], href: gmaps("Nosso Ipanema bar Rio de Janeiro"), internal: false },
++  { terms: ["Hippie Fair"], href: gmaps("Feira Hippie de Ipanema Praça General Osório Rio de Janeiro"), internal: false },
++  // Copacabana
++  { terms: ["Cervantes"], href: gmaps("Cervantes sanduíches Copacabana Rio de Janeiro"), internal: false },
++  { terms: ["Bar Lagoa"], href: gmaps("Bar Lagoa Rio de Janeiro"), internal: false },
++  { terms: ["Amir"], href: gmaps("Amir restaurante libanês Copacabana Rio de Janeiro"), internal: false },
++  { terms: ["Miam Miam"], href: gmaps("Miam Miam Botafogo Rio de Janeiro"), internal: false },
++  { terms: ["Marius Degustare"], href: gmaps("Marius Degustare Copacabana Rio de Janeiro"), internal: false },
++  { terms: ["The Bakers"], href: gmaps("The Bakers Copacabana Rio de Janeiro"), internal: false },
++  { terms: ["Parlá! Trattoria"], href: gmaps("Parlá Trattoria Copacabana Rio de Janeiro"), internal: false },
++  { terms: ["Chicharrón"], href: gmaps("Chicharrón restaurante peruano Copacabana Rio de Janeiro"), internal: false },
++  { terms: ["Yaya Comidaria"], href: gmaps("Yaya Comidaria Copacabana Rio de Janeiro"), internal: false },
++  { terms: ["Stalos"], href: gmaps("Stalos Copacabana Rio de Janeiro"), internal: false },
++  { terms: ["Sirena"], href: gmaps("Sirena bar de plage Copacabana Rio de Janeiro"), internal: false },
++  { terms: ["Mud Bigode"], href: gmaps("Mud Bigode bar Copacabana Rio de Janeiro"), internal: false },
++  { terms: ["Copacabana Palace"], href: gmaps("Copacabana Palace Rio de Janeiro"), internal: false },
++  { terms: ["Quiosque Nativoo"], href: gmaps("Quiosque Nativoo Copacabana Rio de Janeiro"), internal: false },
++  { terms: ["Quiosque Fuego"], href: gmaps("Quiosque Fuego Copacabana Rio de Janeiro"), internal: false },
++  // Leblon / Jardim Botânico
++  { terms: ["Madame Olympe", "Olympe"], href: gmaps("Madame Olympe restaurante Rio de Janeiro"), internal: false },
++  { terms: ["Zuka"], href: gmaps("Zuka restaurante Leblon Rio de Janeiro"), internal: false },
++  { terms: ["Sushi Leblon"], href: gmaps("Sushi Leblon Rio de Janeiro"), internal: false },
++  { terms: ["Giuseppe Grill"], href: gmaps("Giuseppe Grill Leblon Rio de Janeiro"), internal: false },
++  { terms: ["Nola"], href: gmaps("Nola restaurante Leblon Rio de Janeiro"), internal: false },
++  { terms: ["Cafeína"], href: gmaps("Cafeína Leblon Rio de Janeiro"), internal: false },
++  { terms: ["Emporio Jardim"], href: gmaps("Emporio Jardim Leblon Rio de Janeiro"), internal: false },
++  { terms: ["Jobi"], href: gmaps("Jobi bar Leblon Rio de Janeiro"), internal: false },
++  { terms: ["Bracarense"], href: gmaps("Bracarense bar Leblon Rio de Janeiro"), internal: false },
++  { terms: ["Brewteco Leblon"], href: gmaps("Brewteco Leblon Rio de Janeiro"), internal: false },
++  { terms: ["Balcão 201"], href: gmaps("Balcão 201 Leblon Rio de Janeiro"), internal: false },
++  { terms: ["Guimas"], href: gmaps("Guimas restaurante Jardim Botânico Rio de Janeiro"), internal: false },
++  { terms: ["Espaço BR"], href: gmaps("Espaço BR Jardim Botânico Rio de Janeiro"), internal: false },
++  { terms: ["Instituto Moreira Salles"], href: gmaps("Instituto Moreira Salles Rio de Janeiro"), internal: false },
++  // Botafogo
++  { terms: ["Aconchego Carioca"], href: gmaps("Aconchego Carioca Botafogo Rio de Janeiro"), internal: false },
++  { terms: ["Meza Bar"], href: gmaps("Meza Bar Botafogo Rio de Janeiro"), internal: false },
++  { terms: ["Emporio Pax"], href: gmaps("Emporio Pax Botafogo Rio de Janeiro"), internal: false },
++  { terms: ["Ferro e Farinha"], href: gmaps("Ferro e Farinha Botafogo Rio de Janeiro"), internal: false },
++  { terms: ["Haru Sushi"], href: gmaps("Haru Sushi Botafogo Rio de Janeiro"), internal: false },
++  { terms: ["Vian Cocktail Bar"], href: gmaps("Vian Cocktail Bar Botafogo Rio de Janeiro"), internal: false },
++  { terms: ["Winehouse"], href: gmaps("Winehouse bar Botafogo Rio de Janeiro"), internal: false },
++  { terms: ["Boteco Colarinho"], href: gmaps("Boteco Colarinho Botafogo Rio de Janeiro"), internal: false },
++  { terms: ["Comuna"], href: gmaps("Comuna Botafogo Rio de Janeiro"), internal: false },
++  { terms: ["Buenas Chicas"], href: gmaps("Buenas Chicas bar Botafogo Rio de Janeiro"), internal: false },
++  // Flamengo / Glória / Catete
++  { terms: ["Café Lamas", "Lamas"], href: gmaps("Lamas restaurante Flamengo Rio de Janeiro"), internal: false },
++  { terms: ["Adega Portugalia"], href: gmaps("Adega Portugália Flamengo Rio de Janeiro"), internal: false },
++  { terms: ["Marina da Glória"], href: gmaps("Marina da Glória Rio de Janeiro"), internal: false },
++  { terms: ["Cais do Oriente"], href: gmaps("Cais do Oriente Centro Rio de Janeiro"), internal: false },
++  { terms: ["Estrelas da Babilônia"], href: gmaps("Estrelas da Babilônia restaurante Catete Rio de Janeiro"), internal: false },
++  { terms: ["Boteco Casual"], href: gmaps("Boteco Casual Catete Rio de Janeiro"), internal: false },
++  // Lapa / Santa Teresa
++  { terms: ["Rio Scenarium"], href: gmaps("Rio Scenarium Lapa Rio de Janeiro"), internal: false },
++  { terms: ["Carioca da Gema"], href: gmaps("Carioca da Gema Lapa Rio de Janeiro"), internal: false },
++  { terms: ["Circo Voador"], href: gmaps("Circo Voador Lapa Rio de Janeiro"), internal: false },
++  { terms: ["Fundição Progresso"], href: gmaps("Fundição Progresso Lapa Rio de Janeiro"), internal: false },
++  { terms: ["Nova Capela"], href: gmaps("Nova Capela Lapa Rio de Janeiro"), internal: false },
++  { terms: ["Adega Portugália"], href: gmaps("Adega Portugália Lapa Rio de Janeiro"), internal: false },
++  { terms: ["Bar do Mineiro"], href: gmaps("Bar do Mineiro Santa Teresa Rio de Janeiro"), internal: false },
++  { terms: ["Aprazível"], href: gmaps("Aprazível Santa Teresa Rio de Janeiro"), internal: false },
++  { terms: ["Espírito Santa"], href: gmaps("Espírito Santa restaurante Santa Teresa Rio de Janeiro"), internal: false },
++  { terms: ["Café do Alto"], href: gmaps("Café do Alto Santa Teresa Rio de Janeiro"), internal: false },
++  // Lagoa
++  { terms: ["Palaphita Kitch"], href: gmaps("Palaphita Kitch Lagoa Rio de Janeiro"), internal: false },
++  { terms: ["Braseiro da Gávea"], href: gmaps("Braseiro da Gávea Rio de Janeiro"), internal: false },
++  // Barra da Tijuca
++  { terms: ["Quadrifoglio Barra"], href: gmaps("Quadrifoglio Barra da Tijuca Rio de Janeiro"), internal: false },
++  { terms: ["Prima Bruschetteria"], href: gmaps("Prima Bruschetteria Barra da Tijuca Rio de Janeiro"), internal: false },
++  { terms: ["Estrela do Mar"], href: gmaps("Estrela do Mar restaurante Barra da Tijuca Rio de Janeiro"), internal: false },
++  { terms: ["BarraShopping"], href: gmaps("BarraShopping Rio de Janeiro"), internal: false },
++  { terms: ["Píer Barra"], href: gmaps("Píer Barra Rio de Janeiro"), internal: false },
++  // Urca
++  { terms: ["Bar Urca"], href: gmaps("Bar Urca Rio de Janeiro"), internal: false },
++  { terms: ["Garota da Urca"], href: gmaps("Garota da Urca Rio de Janeiro"), internal: false },
++  { terms: ["Círculo Militar da Urca"], href: gmaps("Círculo Militar da Urca Rio de Janeiro"), internal: false },
++  // Joá
++  { terms: ["Bar do Oswaldo"], href: gmaps("Bar do Oswaldo Estrada do Joá Rio de Janeiro"), internal: false },
++  { terms: ["Concha Doce"], href: gmaps("Concha Doce Estrada do Joá Rio de Janeiro"), internal: false },
++  { terms: ["Praia da Joatinga"], href: gmaps("Praia da Joatinga Rio de Janeiro"), internal: false },
++  // Rocinha / Vidigal / PPG
++  { terms: ["Mirante Rocinha"], href: gmaps("Mirante Rocinha Estrada da Gávea Rio de Janeiro"), internal: false },
++  { terms: ["Amarelinho"], href: gmaps("Amarelinho bar Rocinha Rio de Janeiro"), internal: false },
++  { terms: ["Boteco da Praça"], href: gmaps("Boteco da Praça Rocinha Rio de Janeiro"), internal: false },
++  { terms: ["Trapiá Bar e Restaurante"], href: gmaps("Trapiá Bar e Restaurante Rocinha Rio de Janeiro"), internal: false },
++  { terms: ["Via Ápia Rio Rooftop"], href: gmaps("Via Ápia Rooftop Rocinha Rio de Janeiro"), internal: false },
++  { terms: ["Bar da Laje"], href: gmaps("Bar da Laje Vidigal Rio de Janeiro"), internal: false },
++  { terms: ["Alto Vidigal"], href: gmaps("Alto Vidigal Rio de Janeiro"), internal: false },
++  { terms: ["Restaurante Sabor Carioca"], href: gmaps("Sabor Carioca restaurante Vidigal Rio de Janeiro"), internal: false },
++  { terms: ["Flor do Vidigal"], href: gmaps("Flor do Vidigal Rio de Janeiro"), internal: false },
++  { terms: ["Brisolão"], href: gmaps("Brisolão bar Pavão-Pavãozinho Rio de Janeiro"), internal: false },
++  { terms: ["Restaurante Pão e Vida"], href: gmaps("Pão e Vida restaurante Pavão-Pavãozinho Rio de Janeiro"), internal: false },
++  { terms: ["Panela da Comunidade"], href: gmaps("Panela da Comunidade Pavão-Pavãozinho Rio de Janeiro"), internal: false },
++  { terms: ["Pizzaria Mais Sabor"], href: gmaps("Pizzaria Mais Sabor Pavão-Pavãozinho Rio de Janeiro"), internal: false },
++];
++
+ // Ordered — most specific first (multi-word before single-word).
+-const RAW_RULES: Array<{ terms: string[]; href: string; internal: boolean }> = [
++const RAW_RULES: Array<{ terms: string[]; href: string; internal: boolean; key?: string }> = [
++  // Internal — favelas / communautés. Rocinha, Vidigal et PPG pointent vers le même
++  // article mais sont des lieux distincts : clé dédiée pour que chacun puisse se lier
++  // indépendamment même si les trois sont cités dans la même phrase (Cantagalo fait
++  // partie du même complexe que PPG, donc regroupé sous la même clé que lui).
++  { terms: ["Pavão-Pavãozinho", "Pavao-Pavaozinho", "PPG", "Cantagalo"], href: "/blog/guide-favelas-rocinha-vidigal-ppg", internal: true, key: "favela-ppg" },
++  { terms: ["Rocinha"], href: "/blog/guide-favelas-rocinha-vidigal-ppg", internal: true, key: "favela-rocinha" },
++  { terms: ["Vidigal"], href: "/blog/guide-favelas-rocinha-vidigal-ppg", internal: true, key: "favela-vidigal" },
+   // Internal — quartiers (guides complets)
+   { terms: ["Jardim Botânico", "Jardim Botanico"], href: "/blog/jardim-botanico-guide-complet", internal: true },
+   { terms: ["Barra da Tijuca"], href: "/blog/barra-da-tijuca-guide-complet", internal: true },
+@@ -45,9 +174,10 @@ function escapeRegExp(s: string): string {
+   return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+ }
+
+-const RULES: Rule[] = RAW_RULES.flatMap(({ terms, href, internal }) =>
++// Établissements d'abord (les plus spécifiques), puis quartiers/expériences.
++const RULES: Rule[] = [...ESTABLISHMENT_RULES, ...RAW_RULES].flatMap(({ terms, href, internal, key }) =>
+   terms.map((term) => ({
+-    key: href,
++    key: key ?? href,
+     href,
+     internal,
+     // \b doesn't play well with accented chars; use lookarounds on letter chars.
