@@ -6,7 +6,7 @@ export const article: Article = {
   title: "Favelas & Communautés : Rocinha, Vidigal, PPG",
   titleAccent: "Trois communautés, trois ambiances",
   description: "Guide du Manuel Jeitinho : trois adresses par communauté — une cuisine authentique et des points de vue que peu de visiteurs connaissent.",
-  category: "activites",
+  category: "gastronomie",
   tags: ["favela", "Rocinha", "Vidigal", "PPG", "Pavão-Pavãozinho", "où manger", "où boire", "communauté"],
   date: "2026-09-01",
   author: "nawal",
