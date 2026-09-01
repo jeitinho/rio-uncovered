@@ -65,7 +65,16 @@ export const article: Article = {
       "Restaurante do Copacabana Palace (Cipriani / Pérgula) — pour un déjeuner d'exception face à la mer.",
       "Marius Degustare — buffet de fruits de mer à volonté, une institution pour les amateurs de poisson.",
     ]},
+    { type: "h3", text: "Nos adresses fraîches 2026" },
+    { type: "ul", items: [
+      "The Bakers — le meilleur spot pour un petit-déjeuner, un brunch ou un café : pâtisseries et pain de vraie qualité.",
+      "Parlá! Trattoria — excellente cuisine italienne, pâtes fraîches et belle carte des vins.",
+      "Chicharrón — cuisine péruvienne, l'une des meilleures adresses du genre à Copacabana (ceviches, tacos).",
+      "Yaya Comidaria — cuisine brésilienne revisitée, produits frais, l'un de nos coups de cœur.",
+      "Stalos — restaurant-pizzeria ouvert 24h/24 et 7j/7, pratique à toute heure.",
+    ]},
     { type: "bonasavoir", title: "Bon à savoir", text: "Les kiosques de plage (barracas) valent le détour pour une eau de coco ou un chope, mais négociez le prix des en-cas avant de commander, surtout aux heures de forte affluence." },
+
 
     { type: "h2", text: "Boire un verre et sortir" },
     { type: "p", text: "Copacabana n'est plus la reine de la nightlife carioca — ce titre appartient à <a href=\"/blog/lapa-guide-complet\">Lapa</a> — mais le quartier garde quelques adresses solides pour une soirée en douceur." },
