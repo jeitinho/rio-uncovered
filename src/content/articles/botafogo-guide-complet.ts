@@ -54,7 +54,10 @@ export const article: Article = {
     { type: "ul", items: [
       "Balcão — restaurant-comptoir de fruits de mer, simple et généreux.",
       "Emporio Pax — bar de quartier convivial, coin idéal pour un chope entre amis.",
+      "Ferro e Farinha — l'une des meilleures pizzas de Rio, pâte napolitaine et fournée au feu de bois.",
+      "Haru Sushi — excellent japonais de quartier, poisson d'une grande fraîcheur.",
     ]},
+
     { type: "bonasavoir", title: "Bon à savoir", text: "La rua Voluntários da Pátria et ses environs concentrent une scène gastronomique en pleine expansion, souvent plus abordable qu'à Ipanema ou Leblon pour un niveau de qualité comparable." },
 
     { type: "h2", text: "Que voir et que faire" },
