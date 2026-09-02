@@ -31,7 +31,7 @@ export const article: Article = {
       "Pédalo sur la Lagoa Rodrigo de Freitas — vue sur le Corcovado depuis l'eau, activité que peu de touristes pensent à faire.",
       "Street food au Centro — les vendeurs de rue du quartier historique, loin des restaurants touristiques.",
       "Feira do Lavradio — marché aux puces mensuel dans Lapa, antiquités et ambiance bohème.",
-      "Baile Charme à Madureira — tous les samedis dès 22h sous le Viaduto Negrão de Lima, le plus grand baile charme du Brésil, patrimoine culturel de Rio depuis 2013.",
+      "Baile Charme à Madureira — tous les samedis dès 22h sous le Viaduto Negrão de Lima, le plus grand baile charme du Brésil, reconnu patrimoine culturel immatériel de l'État de Rio de Janeiro depuis 2019.",
       "Feira Hippie d'Ipanema — chaque dimanche, artisanat brésilien, ambiance dominicale familiale.",
       "Travessa do Comércio — ruelle pavée du Centro historique, bars after-work fréquentés par les cariocas, pas les touristes.",
       "Mercadão de Madureira — marché populaire monumental en Zona Norte, immersion totale dans le Rio du quotidien.",

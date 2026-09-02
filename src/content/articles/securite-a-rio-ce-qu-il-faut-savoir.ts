@@ -50,7 +50,7 @@ export const article: Article = {
 
     { type: "h2", text: "Et si un incident survient malgré tout" },
     { type: "p", text: "Malgré toutes les précautions, un incident peut arriver, comme dans n'importe quelle grande ville du monde. Gardez toujours les numéros d'urgence à portée de main (190 pour la police, 192 pour le SAMU), et en cas de vol, ne poursuivez jamais la personne : mettez-vous en sécurité, bloquez vos cartes, et déclarez le vol à la police touristique." },
-    { type: "bonasavoir", title: "Bon à savoir", text: "La DEAT (police touristique) se trouve Rua Humberto de Campos, 315, à Leblon — tél. (21) 3399-7170. C'est l'interlocuteur officiel pour toute déclaration en tant que visiteur étranger." },
+    { type: "bonasavoir", title: "Bon à savoir", text: "La DEAT (police touristique) se trouve Av. Afrânio de Melo Franco, 159, à Leblon — tél. +55 21 2332-2429. C'est l'interlocuteur officiel pour toute déclaration en tant que visiteur étranger." },
     { type: "conseil", title: "Le conseil Jeitinho", text: "En cas de pépin sur place, contactez-nous : on ouvre un dossier d'assistance pour 10€ et on vous accompagne dans les démarches (déclaration, blocage de cartes, contacts utiles), en français." },
 
     { type: "faq", items: [
