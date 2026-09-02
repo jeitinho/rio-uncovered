@@ -31,12 +31,12 @@ export const article: Article = {
     { type: "h2", text: "Police touristique (DEAT)" },
     {
       type: "p",
-      text: "La Delegacia Especial de Apoio ao Turismo est le commissariat dédié aux touristes — c'est là qu'il faut déposer plainte en cas de vol de téléphone, passeport ou portefeuille. Av. Afrânio de Melo Franco, 159, Leblon — +55 21 2332-2924.",
+      text: "La Delegacia Especial de Apoio ao Turismo est le commissariat dédié aux touristes — c'est là qu'il faut déposer plainte en cas de vol de téléphone, passeport ou portefeuille. Av. Afrânio de Melo Franco, 159, Leblon — +55 21 2332-2429.",
     },
     { type: "h2", text: "Consulat de France" },
     {
       type: "p",
-      text: "Pour un passeport perdu, un document d'urgence, une assistance consulaire ou reprendre contact avec la famille : Avenida Presidente Antônio Carlos, 58, Centro — +55 21 3823-9200 — bresil.diplomatie.gouv.fr.",
+      text: "Pour un passeport perdu, un document d'urgence, une assistance consulaire ou reprendre contact avec la famille : Avenida Presidente Antônio Carlos, 58, Centro. Le standard téléphonique est désormais centralisé (+55 11 3351-7043, ou +33 2 14 16 20 33 depuis l'étranger) ; pour une urgence en dehors des horaires d'ouverture (perte ou vol de passeport, hospitalisation, décès), une cellule de crise est joignable au +55 21 9 8121-2628 — br.diplomatie.gouv.fr.",
     },
     { type: "h2", text: "En cas de problème de santé" },
     {
