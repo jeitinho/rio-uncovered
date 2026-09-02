@@ -25,13 +25,13 @@ export const article: Article = {
         "Zona Sul — l'enseigne historique de la Zona Sul, un peu plus chère mais très bien fournie, produits importés compris",
         "Pão de Açúcar — grande chaîne nationale, bon compromis prix/choix, souvent avec un rayon traiteur correct",
         "Hortifruti — spécialisé fruits, légumes et produits frais, qualité au-dessus de la moyenne, prix en conséquence",
-        "Mundial — plus abordable, très présent dans les quartiers résidentiels, et l'une des rares enseignes où l'on trouve du poulet halal",
+        "Mundial — plus abordable, très présent dans les quartiers résidentiels, orientée clientèle locale",
       ],
     },
     {
       type: "bonasavoir",
       title: "Mundial : prévoyez votre moyen de paiement",
-      text: "Mundial est l'une des rares chaînes où l'on trouve du poulet halal, mais l'enseigne n'accepte pas les cartes bancaires étrangères. Il faut payer en espèces, avec une carte bancaire brésilienne ou en PIX. Pensez-y avant de remplir votre caddie : voir notre article <a href=\"/blog/retirer-argent-distributeurs-rio\">retirer de l'argent à Rio</a>.",
+      text: "Chez Mundial, l'acceptation des cartes bancaires étrangères est moins systématique que dans les grandes chaînes comme Zona Sul ou Pão de Açúcar. Ayez du PIX ou des espèces en solution de secours. Pensez-y avant de remplir votre caddie : voir notre article <a href=\"/blog/retirer-argent-distributeurs-rio\">retirer de l'argent à Rio</a>.",
     },
 
     { type: "h2", text: "Les quitandas et petits marchés de quartier" },
@@ -73,7 +73,7 @@ export const article: Article = {
         },
         {
           q: "Peut-on payer par carte étrangère dans les supermarchés ?",
-          a: "Oui, sans problème dans toutes les grandes chaînes. Choisissez toujours l'option « crédit » même avec une carte de débit française.",
+          a: "Oui, sans problème dans les grandes chaînes comme Zona Sul, Pão de Açúcar ou Hortifruti. Choisissez toujours l'option « crédit » même avec une carte de débit française. Chez Mundial, gardez une solution de secours (PIX ou espèces), l'acceptation y est moins systématique.",
         },
         {
           q: "Les feiras sont-elles adaptées aux touristes ?",
