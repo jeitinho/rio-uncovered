@@ -57,7 +57,7 @@ export const article: Article = {
     {
       type: "p",
       text:
-        "L'icône absolue du Brésil. Les tongs les plus célèbres du monde, nées à Rio dans les années 1960, avec des collections exclusives introuvables hors du pays et la possibilité de personnalisation dans certaines boutiques (initiales, motifs, semelles sur mesure). Un souvenir incontournable, mais aussi le plus facile à trouver n'importe où — l'intérêt est surtout dans les modèles limités.",
+        "L'icône absolue du Brésil. Les tongs les plus célèbres du monde, créées en 1962 par l'entreprise Alpargatas à São Paulo, avec des collections exclusives introuvables hors du pays et la possibilité de personnalisation dans certaines boutiques (initiales, motifs, semelles sur mesure). Un souvenir incontournable, mais aussi le plus facile à trouver n'importe où — l'intérêt est surtout dans les modèles limités.",
     },
 
     {

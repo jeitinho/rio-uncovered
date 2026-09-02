@@ -180,7 +180,7 @@ export const article: Article = {
       items: [
         "Saara et Uruguaiana — métro Uruguaiana, ligne 1, en plein Centro. À visiter en semaine, en journée, jamais seul après la fermeture des boutiques.",
         "Marché de Copacabana — sur le calçadão, entre les Postos 4 et 5, accessible à pied depuis n'importe quel point de la plage.",
-        "Feira de Madureira — métro Madureira, ligne 2. Prévoyez un Uber pour le retour en soirée plutôt que le métro si vous restez tard.",
+        "Feira de Madureira — pas de métro direct dans le secteur : la zone est desservie par le train SuperVia (gare de Madureira, branches Deodoro/Japeri/Santa Cruz), mais Uber reste la solution la plus simple, à l'aller comme pour le retour en soirée.",
       ],
     },
 
