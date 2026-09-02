@@ -1,50 +1,20 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
-import { CONTACT_EMAIL } from "@/lib/site";
-import { BookOpen, ArrowRight } from "lucide-react";
-
-const MANUEL_FAQ = [
-  {
-    q: "Quand sortira le Manuel Jeitinho ?",
-    a: "La date de sortie sera communiquée par email et sur ce blog.",
-  },
-  {
-    q: "Sous quel format sera-t-il proposé ?",
-    a: "Les formats disponibles seront précisés à la sortie.",
-  },
-  {
-    q: "Comment être prévenu·e en avant-première ?",
-    a: `Écrivez-nous à ${CONTACT_EMAIL} pour rejoindre la liste d'attente.`,
-  },
-];
+import { MANUEL_URL } from "@/lib/site";
+import { ArrowRight, BookOpen } from "lucide-react";
 
 export const Route = createFileRoute("/manuel-jeitinho")({
   head: () => ({
     meta: [
-      { title: "Le Manuel Jeitinho — Bientôt disponible" },
-      { name: "description", content: "Le manuel de référence pour vivre Rio de Janeiro comme un carioca. En préparation par la rédaction Jeitinho." },
-      { property: "og:title", content: "Le Manuel Jeitinho" },
-      { property: "og:description", content: "Le manuel de référence pour vivre Rio comme un carioca, en préparation par la rédaction Jeitinho : format, sommaire et date de sortie à venir." },
+      { title: "Le Manuel Jeitinho — Guide numérique pour vivre Rio" },
+      { name: "description", content: "Le Manuel Jeitinho est un guide numérique pour préparer et vivre son séjour à Rio de Janeiro. Prix : 30€. Disponible sur jeitinho.fr." },
+      { property: "og:title", content: "Le Manuel Jeitinho — Guide numérique pour vivre Rio" },
+      { property: "og:description", content: "Le guide numérique pour préparer et vivre son séjour à Rio de Janeiro. 30€ — disponible sur jeitinho.fr." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/manuel-jeitinho" },
-      { name: "robots", content: "noindex" },
     ],
     links: [{ rel: "canonical", href: "/manuel-jeitinho" }],
-    scripts: [
-      {
-        type: "application/ld+json",
-        children: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          mainEntity: MANUEL_FAQ.map((item) => ({
-            "@type": "Question",
-            name: item.q,
-            acceptedAnswer: { "@type": "Answer", text: item.a },
-          })),
-        }),
-      },
-    ],
   }),
   component: ManuelJeitinho,
 });
@@ -55,93 +25,69 @@ function ManuelJeitinho() {
       <SiteHeader />
       <main className="flex-1">
         {/* HERO */}
-        <section className="border-b border-border/60 bg-cream-deep/40">
+        <section className="bg-ink text-cream">
           <div className="mx-auto max-w-5xl px-5 md:px-8 py-24 md:py-32">
-            <p className="tracked-caps text-[10px] text-terracotta inline-flex items-center gap-2">
-              <BookOpen className="h-3.5 w-3.5" /> En préparation
+            <p className="tracked-caps text-[10px] text-peach inline-flex items-center gap-2">
+              <BookOpen className="h-3.5 w-3.5" /> Guide numérique
             </p>
-            <h1 className="mt-5 text-5xl md:text-7xl leading-[1.05]">
-              Le <em>Manuel Jeitinho</em>.
+            <h1 className="mt-5 text-5xl md:text-7xl leading-[1.05] text-cream">
+              Le <em className="italic font-light text-peach">Manuel Jeitinho</em>.
             </h1>
-            <p className="mt-6 max-w-2xl text-lg text-muted-foreground leading-relaxed">
-              Le manuel de référence pour vivre Rio de Janeiro comme un carioca. Bientôt disponible.
+            <p className="mt-6 max-w-2xl text-lg text-cream/85 leading-relaxed">
+              Le guide numérique de référence pour préparer son séjour à Rio de Janeiro et vivre la ville comme un carioca. Conçu par l'équipe Jeitinho.
             </p>
-          </div>
-        </section>
-
-        {/* PRÉSENTATION */}
-        <section className="mx-auto max-w-3xl px-5 md:px-8 py-20">
-          <p className="tracked-caps text-[10px] text-terracotta">Présentation</p>
-          <h2 className="mt-3 text-3xl md:text-4xl">Qu'est-ce que le <em>Manuel Jeitinho ?</em></h2>
-          <p className="mt-6 text-lg text-foreground/85 leading-relaxed">
-            La rédaction prépare une édition longue, condensée et sans concession : la synthèse de plusieurs années d'expérience sur le terrain à Rio. Les détails éditoriaux, le format et la date de sortie seront communiqués prochainement.
-          </p>
-        </section>
-
-        {/* AVANTAGES — placeholders structurels non-fictifs */}
-        <section className="border-y border-border/60 bg-cream-deep/30">
-          <div className="mx-auto max-w-5xl px-5 md:px-8 py-20">
-            <p className="tracked-caps text-[10px] text-terracotta">Ce que contiendra le manuel</p>
-            <h2 className="mt-3 text-3xl md:text-4xl">Les <em>bénéfices</em>.</h2>
-            <p className="mt-6 max-w-2xl text-muted-foreground">
-              Le sommaire détaillé sera publié à la sortie du manuel. Inscrivez-vous par email pour être prévenu·e en avant-première.
-            </p>
-          </div>
-        </section>
-
-        {/* APERÇU */}
-        <section className="mx-auto max-w-3xl px-5 md:px-8 py-20">
-          <p className="tracked-caps text-[10px] text-terracotta">Aperçu</p>
-          <h2 className="mt-3 text-3xl md:text-4xl">Un <em>extrait</em> à venir.</h2>
-          <p className="mt-6 text-muted-foreground leading-relaxed">
-            Un chapitre d'exemple sera publié ici en libre accès dès qu'il sera prêt.
-          </p>
-        </section>
-
-        {/* FAQ */}
-        <section className="border-y border-border/60 bg-cream-deep/30">
-          <div className="mx-auto max-w-3xl px-5 md:px-8 py-20">
-            <p className="tracked-caps text-[10px] text-terracotta">Questions fréquentes</p>
-            <h2 className="mt-3 text-3xl md:text-4xl">FAQ.</h2>
-            <div className="mt-8 divide-y divide-border">
-              <div className="py-5">
-                <p className="font-serif text-lg">Quand sortira le Manuel Jeitinho ?</p>
-                <p className="mt-2 text-muted-foreground">La date de sortie sera communiquée par email et sur ce blog.</p>
-              </div>
-              <div className="py-5">
-                <p className="font-serif text-lg">Sous quel format sera-t-il proposé ?</p>
-                <p className="mt-2 text-muted-foreground">Les formats disponibles seront précisés à la sortie.</p>
-              </div>
-              <div className="py-5">
-                <p className="font-serif text-lg">Comment être prévenu·e en avant-première ?</p>
-                <p className="mt-2 text-muted-foreground">
-                  Écrivez-nous à <a href={`mailto:${CONTACT_EMAIL}`} className="text-terracotta underline decoration-terracotta/40 underline-offset-4">{CONTACT_EMAIL}</a> pour rejoindre la liste d'attente.
-                </p>
-              </div>
+            <div className="mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-5">
+              <a
+                href={MANUEL_URL}
+                target="_blank"
+                rel="noopener"
+                className="inline-flex items-center gap-2 rounded-[3px] bg-peach px-7 py-4 tracked-caps text-xs text-ink hover:opacity-90 transition-opacity"
+              >
+                Acheter le Manuel — 30€ <ArrowRight className="h-3 w-3" />
+              </a>
+              <p className="text-cream/70 text-sm">
+                Accès immédiat après l'achat.
+              </p>
             </div>
           </div>
         </section>
 
-        {/* CTA */}
-        <section className="mx-auto max-w-3xl px-5 md:px-8 py-24">
-          <div className="rounded-[3px] bg-ink text-cream p-10 md:p-12 text-center">
-            <p className="tracked-caps text-[10px] text-peach">Rester informé·e</p>
-            <h2 className="mt-4 text-3xl md:text-4xl text-cream">
-              Soyez prévenu·e <em className="text-peach">en avant-première</em>.
-            </h2>
-            <p className="mt-4 text-cream/80">
-              Un simple email suffit — on vous écrit quand le manuel sort.
+        {/* PRÉSENTATION */}
+        <section className="mx-auto max-w-3xl px-5 md:px-8 py-20 md:py-28">
+          <p className="tracked-caps text-[10px] text-terracotta">Présentation</p>
+          <h2 className="mt-3 text-3xl md:text-4xl">Un guide pour <em>préparer et vivre</em> Rio.</h2>
+          <div className="mt-8 space-y-5 text-lg text-foreground/85 leading-relaxed">
+            <p>
+              Le Manuel Jeitinho condense plusieurs années d'expérience sur le terrain en un guide numérique pratique. Son objectif : vous aider à arriver à Rio avec le bon état d'esprit, les bonnes adresses et les bons réflexes.
             </p>
+            <p>
+              Que vous partiez pour une première semaine ou que vous envisagiez de passer plus de temps dans la ville, le manuel vous accompagne dans les grandes étapes — avant le départ, à l'arrivée, et au quotidien.
+            </p>
+          </div>
+        </section>
+
+        {/* PRIX / CTA */}
+        <section className="border-y border-border/60 bg-cream-deep/30">
+          <div className="mx-auto max-w-3xl px-5 md:px-8 py-20 text-center">
+            <p className="tracked-caps text-[10px] text-terracotta">Prix</p>
+            <p className="mt-4 text-5xl md:text-6xl font-light">30€</p>
+            <p className="mt-3 text-muted-foreground">Guide numérique, accès immédiat.</p>
             <a
-              href={`mailto:${CONTACT_EMAIL}?subject=Manuel%20Jeitinho%20—%20Liste%20d'attente`}
-              className="mt-8 inline-flex items-center gap-2 rounded-[3px] bg-peach px-7 py-4 tracked-caps text-xs text-ink hover:opacity-90 transition-opacity"
+              href={MANUEL_URL}
+              target="_blank"
+              rel="noopener"
+              className="mt-8 inline-flex items-center gap-2 rounded-[3px] bg-primary px-7 py-4 tracked-caps text-xs text-primary-foreground hover:bg-terracotta-deep transition-colors"
             >
-              Écrire à {CONTACT_EMAIL} <ArrowRight className="h-3 w-3" />
+              Acheter le Manuel — 30€ <ArrowRight className="h-3 w-3" />
             </a>
           </div>
-          <p className="mt-8 text-center">
-            <Link to="/blog" className="tracked-caps text-xs text-terracotta">← Retour au blog</Link>
-          </p>
+        </section>
+
+        {/* RETOUR */}
+        <section className="mx-auto max-w-3xl px-5 md:px-8 py-16 text-center">
+          <Link to="/blog" className="tracked-caps text-xs text-terracotta hover:text-terracotta-deep transition-colors">
+            ← Retour aux articles
+          </Link>
         </section>
       </main>
       <SiteFooter />
