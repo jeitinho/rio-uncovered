@@ -222,9 +222,9 @@ function escapeRegExp(s: string): string {
 }
 
 // Établissements d'abord (les plus spécifiques), puis quartiers/expériences.
-const RULES: Rule[] = [...ESTABLISHMENT_RULES, ...RAW_RULES].flatMap(({ terms, href, internal, key }) =>
+const RULES: Rule[] = [...ESTABLISHMENT_RULES, ...RAW_RULES].flatMap(({ terms, href, internal }) =>
   terms.map((term) => ({
-    key: key ?? href,
+    key: href,
     href,
     internal,
     // \b doesn't play well with accented chars; use lookarounds on letter chars.
