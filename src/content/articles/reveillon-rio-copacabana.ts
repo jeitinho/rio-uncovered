@@ -28,7 +28,7 @@ export const article: Article = {
 
     { type: "h2", text: "Comprendre le réveillon de Copacabana" },
     { type: "p", text: "Chaque 31 décembre, la plage de <a href=\"/blog/copacabana-guide-complet\">Copacabana</a> se transforme en scène géante à ciel ouvert. Des millions de cariocas et de visiteurs du monde entier se rassemblent sur les quatre kilomètres de plage pour assister à un feu d'artifice tiré depuis des barges au large, généralement accompagné de concerts sur plusieurs scènes réparties le long du front de mer." },
-    { type: "p", text: "Depuis l'édition 2026, le feu d'artifice n'est plus seul en scène : Copacabana a inauguré un spectacle de 1 100 drones formant des figures lumineuses dans le ciel juste après la dernière fusée, une première historique pour le Brésil. Un moment fort de cette édition, que la ville prévoit de reconduire les années suivantes." },
+    { type: "p", text: "Depuis l'édition 2026, le feu d'artifice n'est plus seul en scène : Copacabana a inauguré le plus grand spectacle de drones jamais organisé au Brésil, avec environ 1 200 drones formant des figures lumineuses dans le ciel juste après la dernière fusée (source : mairie de Rio, prefeitura.rio). Un moment fort de cette édition, que la ville prévoit de reconduire les années suivantes." },
     { type: "conseil", title: "Le conseil Jeitinho", text: "Commencez l'année là où tout le monde veut être. Réservez votre emplacement à l'avance : les meilleures zones face à la mer se remplissent dès le milieu de l'après-midi, bien avant le début officiel des festivités." },
 
     { type: "h2", text: "La tradition du blanc et d'Iemanjá" },

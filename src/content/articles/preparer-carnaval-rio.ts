@@ -35,7 +35,7 @@ export const article: Article = {
     ]},
 
     { type: "h3", text: "2. Le Sambodrome — le spectacle des écoles de samba" },
-    { type: "p", text: "Deux nuits (dimanche et lundi) où les 12 grandes écoles défilent chacune 80 minutes. C'est un show de niveau olympique. Places à partir de 30 € (secteurs 12/13, populaires), jusqu'à 500 € (camarotes, vue centrale). Réservez au moins 3 mois à l'avance." },
+    { type: "p", text: "Depuis 2027, le Grupo Especial se déroule sur trois nuits (dimanche, lundi et mardi) plutôt que deux : quatre des douze grandes écoles défilent chaque soir. C'est un show de niveau olympique. Places à partir de 30 € (secteurs 12/13, populaires), jusqu'à 500 € et plus (camarotes premium, vue centrale). Réservez au moins 3 mois à l'avance." },
     { type: "conseil", title: "Le conseil Jeitinho", text: "Le meilleur rapport qualité-prix : le secteur 9 (Frisas). Vue frontale, ambiance, prix corrects. Évitez le secteur 13 si vous voulez vraiment voir : trop éloigné." },
 
     { type: "h3", text: "3. Les camarotes — le Carnaval version VIP" },
@@ -61,7 +61,7 @@ export const article: Article = {
     { type: "bonasavoir", title: "Bon à savoir", text: "Il fait très chaud (30-40°C) et humide. Casquette, crème solaire, hydratation. Un bloco de 4 heures sous le soleil, c'est physique." },
 
     { type: "faq", items: [
-      { q: "Quand aura lieu le Carnaval de Rio 2027 ?", a: "Du vendredi 5 février au mercredi des Cendres 10 février 2027. Le Sambodrome a lieu dimanche 7 et lundi 8." },
+      { q: "Quand aura lieu le Carnaval de Rio 2027 ?", a: "Du vendredi 5 février au mercredi des Cendres 10 février 2027. Le Sambodrome (Grupo Especial) se déroule sur trois nuits : dimanche 7, lundi 8 et mardi 9 février, à raison de quatre écoles par soir." },
       { q: "Faut-il parler portugais ?", a: "Non, la Zona Sul est très habituée aux étrangers. Quelques mots basiques (obrigado, tudo bem) suffisent pour la chaleur des interactions." },
       { q: "Peut-on aller au Carnaval avec des enfants ?", a: "Oui, plusieurs blocos sont explicitement familiaux (le matin, dans la Zona Sul). Le Sambodrome est possible à partir de 8-10 ans, avec pauses." },
       { q: "Combien coûte le Carnaval au total ?", a: "Pour 8 nuits à deux, milieu de gamme, avec Sambodrome (secteur 9) : compter 3 000 à 4 500 € par personne hors vol." },
