@@ -31,8 +31,8 @@ export const article: Article = {
     {
       type: "ul",
       items: [
-        "UPA Copacabana — Av. Princesa Isabel, 270, Copacabana — +55 21 2548-4576",
-        "UPA Botafogo — Rua General Polidoro, 72, Botafogo — +55 21 2542-8350",
+        "UPA Copacabana — Rua Siqueira Campos, 129, Copacabana — +55 21 2333-9287",
+        "UPA Botafogo — Rua São Clemente (esquina Rua Nelson Mandela), Botafogo — +55 21 2334-4011",
       ],
     },
     { type: "h2", text: "Les hôpitaux privés de la Zona Sul" },
@@ -43,15 +43,15 @@ export const article: Article = {
     {
       type: "ul",
       items: [
-        "Copa Star — Rua Figueiredo de Magalhães, 700, Copacabana — +55 21 2546-5000, urgences 24h/24",
-        "Hospital Copa D'Or — Rua Figueiredo de Magalhães, 875, Copacabana — +55 21 2546-9000, urgences toutes spécialités",
-        "Clínica São Vicente — Rua João Borges, 204, Gávea — +55 21 2528-7600, urgences privées 24h/24",
+        "Copa Star — Rua Figueiredo de Magalhães, 700, Copacabana — +55 21 3445-2800, urgences 24h/24",
+        "Hospital Copa D'Or — Rua Figueiredo de Magalhães, 875, Copacabana — +55 21 2545-3600, urgences toutes spécialités",
+        "Clínica São Vicente — Rua João Borges, 204, Gávea — +55 21 2529-4422, urgences privées 24h/24",
       ],
     },
     {
       type: "bonasavoir",
       title: "Bon à savoir",
-      text: "Il existe aussi un hôpital public de référence en Zona Sul, l'Hospital Municipal Miguel Couto (Av. Bartolomeu Mitre, 1108, Leblon — +55 21 3207-4555), avec des urgences 24h/24. La prise en charge y est gratuite mais les délais d'attente peuvent être plus longs qu'en clinique privée.",
+      text: "Il existe aussi un hôpital public de référence en Zona Sul, l'Hospital Municipal Miguel Couto (Rua Mário Ribeiro, 117, Lagoa/Leblon — +55 21 3111-3711), avec des urgences 24h/24. La prise en charge y est gratuite mais les délais d'attente peuvent être plus longs qu'en clinique privée.",
     },
     { type: "h2", text: "Trouver un médecin francophone à Rio" },
     {
