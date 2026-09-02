@@ -66,6 +66,26 @@ import { article as sambaRioDeJaneiro } from "./articles/samba-rio-de-janeiro";
 import { article as funkCariocaRio } from "./articles/funk-carioca-rio-de-janeiro";
 import { article as favelas } from "./articles/guide-favelas-rocinha-vidigal-ppg";
 
+// NOUVEAU — nouveaux articles équipe jeitinho (septembre 2026)
+import { article as footballCarioca } from "./articles/football-carioca-torcidas-rio";
+import { article as pedraDaGavea } from "./articles/randonnee-pedra-da-gavea";
+import { article as pedraBonita } from "./articles/pedra-bonita-parapente-rio";
+import { article as florestaTijuca } from "./articles/floresta-da-tijuca-rio";
+import { article as voyagerSeule } from "./articles/voyager-seule-a-rio";
+import { article as rioEnFamille } from "./articles/rio-en-famille-avec-enfants";
+import { article as airbnbOuHotel } from "./articles/airbnb-ou-hotel-a-rio";
+import { article as logerCarnaval } from "./articles/loger-a-rio-pour-le-carnaval";
+import { article as sambodromo } from "./articles/billets-sambodromo-rio";
+import { article as blocos } from "./articles/blocos-de-rue-carnaval-rio";
+import { article as petropolis } from "./articles/excursion-petropolis-rio";
+import { article as buzios } from "./articles/excursion-buzios-rio";
+import { article as paraty } from "./articles/excursion-paraty-rio";
+import { article as rio3Jours } from "./articles/rio-en-3-jours";
+import { article as rio10Jours } from "./articles/rio-en-10-jours-excursions";
+import { article as rockInRio } from "./articles/rock-in-rio-guide";
+import { article as calendrierEvenements } from "./articles/calendrier-evenements-rio";
+import { article as prainhaGrumari } from "./articles/prainha-grumari-plages-sauvages-rio";
+
 export const ARTICLES: Article[] = [
   pagode,
   baileFunk,
@@ -128,6 +148,25 @@ export const ARTICLES: Article[] = [
   hebergements,
   itineraire,
   reveillon,
+
+  footballCarioca,
+  pedraDaGavea,
+  pedraBonita,
+  florestaTijuca,
+  voyagerSeule,
+  rioEnFamille,
+  airbnbOuHotel,
+  logerCarnaval,
+  sambodromo,
+  blocos,
+  petropolis,
+  buzios,
+  paraty,
+  rio3Jours,
+  rio10Jours,
+  rockInRio,
+  calendrierEvenements,
+  prainhaGrumari,
 ];
 
 export function getAllArticles(): Article[] {
