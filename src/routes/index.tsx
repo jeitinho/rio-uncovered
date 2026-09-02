@@ -8,6 +8,7 @@ import { CategoryCard } from "@/components/blog/CategoryCard";
 import { BlogSearch } from "@/components/blog/BlogSearch";
 import { Newsletter } from "@/components/blog/Newsletter";
 import { CATEGORIES } from "@/content/categories";
+import { MANUEL_URL } from "@/lib/site";
 import { ArrowRight, BookOpen, MessageCircle, Users } from "lucide-react";
 
 export const Route = createFileRoute("/")({
@@ -72,6 +73,31 @@ function Home() {
               <p className="mt-2 text-muted-foreground leading-relaxed">{r.text}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* MANUEL BANNER */}
+      <section className="bg-ink text-cream">
+        <div className="mx-auto max-w-7xl px-5 md:px-8 py-12 md:py-16 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+          <div>
+            <p className="tracked-caps text-[10px] text-peach inline-flex items-center gap-2">
+              <BookOpen className="h-3.5 w-3.5" /> Guide numérique
+            </p>
+            <h2 className="mt-3 text-2xl md:text-3xl text-cream">
+              Le <em className="italic font-light text-peach">Manuel Jeitinho</em> — 30€
+            </h2>
+            <p className="mt-2 max-w-xl text-cream/80 leading-relaxed">
+              Le guide numérique pour préparer et vivre votre séjour à Rio de Janeiro.
+            </p>
+          </div>
+          <a
+            href={MANUEL_URL}
+            target="_blank"
+            rel="noopener"
+            className="inline-flex items-center gap-2 rounded-[3px] bg-peach px-6 py-3.5 tracked-caps text-[11px] text-ink hover:opacity-90 transition-opacity shrink-0"
+          >
+            Acheter le Manuel — 30€ <ArrowRight className="h-3 w-3" />
+          </a>
         </div>
       </section>
 

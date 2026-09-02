@@ -7,6 +7,7 @@ import { CONCIERGERIE_BOOK_URL } from "@/lib/site";
 
 const NAV = [
   { to: "/", label: "Accueil" },
+  { to: "/manuel-jeitinho", label: "Manuel" },
   { to: "/a-propos", label: "À propos" },
   { to: "/contact", label: "Contact" },
 ] as const;
@@ -124,6 +125,16 @@ export function SiteHeader() {
               </div>
             )}
           </div>
+
+          <Link
+            to="/manuel-jeitinho"
+            className="tracked-caps text-[13px] text-foreground/80 hover:text-terracotta transition-colors"
+            activeProps={{
+              className: "tracked-caps text-[13px] text-terracotta",
+            }}
+          >
+            Manuel
+          </Link>
 
           <Link
             to="/a-propos"
