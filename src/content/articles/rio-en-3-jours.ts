@@ -66,6 +66,8 @@ export const article: Article = {
     { type: "h2", text: "Et si 3 jours, ce n'est vraiment pas assez" },
     { type: "p", text: "C'est souvent le cas : Rio se dévoile lentement, et 3 jours suffisent à donner envie d'y rester plus longtemps. Pour aller plus loin sans improviser, notre <a href=\"/blog/itineraire-5-jours-rio\">itinéraire 5 jours</a> ajoute la forêt de Tijuca et Barra da Tijuca, et <a href=\"/blog/rio-en-10-jours-excursions\">Rio en 10 jours</a> ouvre sur les excursions aux alentours. Si vous préférez qu'on s'occupe de tout, notre <a href=\"https://jeitinho.fr/trouver-un-jeitinho\">conciergerie sur mesure</a> construit un itinéraire adapté à votre créneau, même très court." },
 
+    { type: "p", text: "Pour suivre un programme déjà calé, <a href=\"https://jeitinho.fr/manuel?ref=blog\">le Manuel JEITINHO</a> propose des itinéraires prêts à l'emploi sur 3, 5 et 7 jours." },
+
     { type: "faq", items: [
       { q: "3 jours suffisent-ils pour découvrir Rio ?", a: "Pour un premier aperçu, oui : en priorisant un des deux monuments emblématiques, les plages de la Zona Sul, Santa Teresa/Lapa et une expérience forte comme la favela, vous repartez avec l'essentiel de la ville." },
       { q: "Faut-il choisir entre le Corcovado et le Pain de Sucre ?", a: "Idéalement non, faites les deux sur deux jours différents plutôt que le même jour : chacun demande du temps (ascension, file, vue) et les enchaîner presse trop le programme." },

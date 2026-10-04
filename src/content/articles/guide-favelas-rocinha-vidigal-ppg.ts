@@ -74,6 +74,8 @@ export const article: Article = {
     { type: "h2", text: "Accès" },
     { type: "p", text: "Le PPG se rejoint à pied depuis Copacabana ou Ipanema ; le Bondinho gratuit monte jusqu'à la 5e station, au sommet. Pour Rocinha et Vidigal, compte environ R$10 en moto-taxi depuis l'entrée de la communauté." },
 
+    { type: "p", text: "Pour aller plus loin, <a href=\"https://jeitinho.fr/manuel?ref=blog\">le Manuel JEITINHO</a> consacre une partie au contexte des favelas à connaître avant toute visite." },
+
     { type: "faq", items: [
       { q: "Peut-on visiter Rocinha, Vidigal ou PPG sans guide ?", a: "Ce n'est pas recommandé. Ce sont des territoires vivants dont la situation peut évoluer rapidement ; un guide local reconnu sait où aller, à quel moment, et comment réagir en cas d'imprévu." },
       { q: "Quelle est la différence entre Rocinha, Vidigal et PPG ?", a: "Rocinha est la plus grande favela du Brésil, presque une ville dans la ville, entre São Conrado et Gávea. Vidigal, au pied du Morro Dois Irmãos entre Leblon et São Conrado, est la plus gentrifiée des trois. PPG (Pavão-Pavãozinho-Cantagalo) surplombe directement Copacabana et Ipanema." },

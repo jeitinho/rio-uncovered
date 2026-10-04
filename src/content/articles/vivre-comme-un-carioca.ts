@@ -169,6 +169,11 @@ export const article: Article = {
     },
 
     {
+      type: "p",
+      text: "Pour comprendre la ville avant d'y poser le pied, <a href=\"https://jeitinho.fr/manuel?ref=blog\">le Manuel JEITINHO</a> rassemble les codes, les quartiers et les bonnes adresses de l'équipe Jeitinho.",
+    },
+
+    {
       type: "faq",
       items: [
         {

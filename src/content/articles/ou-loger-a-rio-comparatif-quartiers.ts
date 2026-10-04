@@ -85,6 +85,8 @@ export const article: Article = {
     { type: "p", text: "Dans la Zona Sul, il existe des communautés (favelas) comme Rocinha, Vidigal ou Santa Marta. Séjourner avec des habitants peut offrir une expérience authentique, enrichissante et souvent plus abordable, tout en soutenant l'économie locale. C'est une option à considérer pour les voyageurs en quête d'immersion, à condition de bien se renseigner sur l'hébergement choisi au préalable." },
     { type: "aeviter", title: "À éviter", text: "Ne réservez pas votre hébergement uniquement sur la base du prix affiché sans regarder sa localisation précise sur une carte. Un logement « proche de la plage » peut en réalité se trouver à 20 minutes de marche en montée, ce qui change complètement l'expérience quotidienne." },
 
+    { type: "p", text: "Pour affiner votre choix, <a href=\"https://jeitinho.fr/manuel?ref=blog\">le Manuel JEITINHO</a> passe en revue les quartiers un par un, avec leurs atouts et leurs pièges." },
+
     { type: "faq", items: [
       { q: "Quelle est la meilleure zone pour un premier séjour à Rio ?", a: "La Zona Sul reste le choix le plus pratique : plages, activités, restaurants et transports, tout est concentré et facilement accessible." },
       { q: "Quelle zone privilégier avec un budget serré ?", a: "Le Centro offre les prix les plus accessibles, avec un accès direct à la culture et au patrimoine historique de Rio." },

@@ -214,6 +214,11 @@ export const article: Article = {
     },
 
     {
+      type: "p",
+      text: "Une fois vos dates choisies, <a href=\"https://jeitinho.fr/manuel?ref=blog\">le Manuel JEITINHO</a> vous aide à préparer votre voyage étape par étape, du choix du quartier à celui de la plage.",
+    },
+
+    {
       type: "faq",
       items: [
         {

@@ -70,6 +70,8 @@ export const article: Article = {
     { type: "h2", text: "Aller plus loin selon votre profil" },
     { type: "p", text: "Pour un premier voyage qui coche tous les incontournables sans se compliquer la vie, notre pack <a href=\"https://jeitinho.fr/packs/rio-decouverte\">Rio Découverte</a> reprend l'essentiel de ce itinéraire clé en main. Pour une expérience plus intense, entre hélicoptère et excursions privées, direction le pack <a href=\"https://jeitinho.fr/packs/le-jeitinho\">Le Jeitinho</a>. Et pour l'immersion favela entre amis, le pack <a href=\"https://jeitinho.fr/packs/entre-amigos\">Entre Amigos</a> combine favela, baile funk et rooftop privatisé." },
 
+    { type: "p", text: "Pour partir avec un programme déjà calé, <a href=\"https://jeitinho.fr/manuel?ref=blog\">le Manuel JEITINHO</a> propose des itinéraires prêts à l'emploi sur 3, 5 et 7 jours." },
+
     { type: "faq", items: [
       { q: "5 jours suffisent-ils pour bien découvrir Rio ?", a: "Oui, c'est le format idéal pour combiner les incontournables (Corcovado, Pain de Sucre, plages) avec des expériences plus fortes comme la forêt de Tijuca ou l'immersion en favela, sans se presser." },
       { q: "Dans quel ordre visiter Corcovado et Pain de Sucre ?", a: "Réservez le Corcovado tôt le matin pour éviter la foule, puis enchaînez sur Praia Vermelha et le Pain de Sucre en fin d'après-midi pour profiter du coucher de soleil." },

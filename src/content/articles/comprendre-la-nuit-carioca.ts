@@ -173,6 +173,11 @@ export const article: Article = {
     },
 
     {
+      type: "p",
+      text: "Pour choisir vos soirées en connaissance de cause, <a href=\"https://jeitinho.fr/manuel?ref=blog\">le Manuel JEITINHO</a> consacre une partie entière à la nuit à Rio.",
+    },
+
+    {
       type: "faq",
       items: [
         {

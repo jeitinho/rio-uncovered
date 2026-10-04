@@ -57,6 +57,8 @@ export const article: Article = {
       "Aproximação — paiement sans contact.",
     ]},
 
+    { type: "p", text: "Pour arriver préparé, <a href=\"https://jeitinho.fr/manuel?ref=blog\">le Manuel JEITINHO</a> regroupe dans ses infos pratiques et ses checklists ce qu'il faut régler avant de partir." },
+
     { type: "faq", items: [
       { q: "Faut-il un compte bancaire brésilien pour utiliser le PIX ?", a: "Non, des applications comme Wanderwallet permettent de créer un compte compatible PIX en tant qu'étranger, sans compte bancaire local." },
       { q: "Le PIX est-il vraiment gratuit ?", a: "Oui, pour les particuliers, la quasi-totalité des transactions PIX sont gratuites, ce qui en fait une alternative bien plus économique que les frais de carte internationale." },

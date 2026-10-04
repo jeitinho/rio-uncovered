@@ -54,6 +54,8 @@ export const article: Article = {
     { type: "h2", text: "Pour les conseils pratiques" },
     { type: "p", text: "Ce guide se concentre sur les écarts culturels. Pour les questions pratiques du quotidien, retrouvez nos guides dédiés : <a href=\"/blog/payer-au-bresil-pix\">le PIX et les paiements</a>, <a href=\"/blog/se-deplacer-a-rio\">se déplacer à Rio</a>, et <a href=\"/blog/securite-a-rio-ce-qu-il-faut-savoir\">la sécurité à Rio</a>." },
 
+    { type: "p", text: "Pour éviter les pièges dès l'arrivée, <a href=\"https://jeitinho.fr/manuel?ref=blog\">le Manuel JEITINHO</a> rassemble les codes et les bons réflexes à connaître avant de poser le pied à Rio." },
+
     { type: "faq", items: [
       { q: "Le contact physique fréquent est-il vraiment normal partout au Brésil ?", a: "Oui, c'est une norme sociale largement répandue, y compris entre personnes qui se connaissent peu. Ce n'est pas propre à Rio, mais à la culture brésilienne dans son ensemble." },
       { q: "Comment savoir si un Brésilien dit vraiment non ?", a: "Un refus direct est rare socialement. Un « vou ver », un silence ou un sourire évasif valent souvent un non poli. Avec l'habitude, ces nuances se repèrent facilement." },

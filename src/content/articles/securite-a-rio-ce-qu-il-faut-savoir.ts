@@ -53,6 +53,8 @@ export const article: Article = {
     { type: "bonasavoir", title: "Bon à savoir", text: "La DEAT (police touristique) se trouve Av. Afrânio de Melo Franco, 159, à Leblon — tél. +55 21 2332-2429. C'est l'interlocuteur officiel pour toute déclaration en tant que visiteur étranger." },
     { type: "conseil", title: "Le conseil Jeitinho", text: "En cas de pépin sur place, contactez-nous : on ouvre un dossier d'assistance pour 10€ et on vous accompagne dans les démarches (déclaration, blocage de cartes, contacts utiles), en français." },
 
+    { type: "p", text: "Pour arriver avec les bons réflexes dès le premier jour, <a href=\"https://jeitinho.fr/manuel?ref=blog\">le Manuel JEITINHO</a> détaille les pièges à éviter et le contexte de chaque quartier." },
+
     { type: "faq", items: [
       { q: "Rio est-elle plus dangereuse que d'autres grandes villes ?", a: "Certaines statistiques sont plus élevées qu'en Europe, mais la réalité vécue au quotidien dans la Zona Sul reste comparable à celle de nombreuses grandes métropoles, à condition d'adopter les mêmes réflexes de prudence et de rester sur les axes fréquentés." },
       { q: "Peut-on se promener seul le soir à Rio ?", a: "Sur les grands axes de la Zona Sul, fréquentés et éclairés, oui, c'est courant. Dès que les rues se font plus calmes, la prudence doit augmenter, comme dans toute grande ville." },

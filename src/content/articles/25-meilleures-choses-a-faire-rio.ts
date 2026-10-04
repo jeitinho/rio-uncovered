@@ -65,6 +65,8 @@ export const article: Article = {
     { type: "p", text: "Rio s'organise en trois zones : Zona Sul (plages, vie nocturne), Centro (histoire, culture), Zona Norte et Zona Oeste (pépites hors radar de cette liste). Grouper vos activités par zone évite trois heures de déplacement par jour." },
     { type: "bonasavoir", title: "Bon à savoir", text: "Le trafic à Rio peut multiplier par trois vos temps de trajet en semaine, entre 17h et 20h. Prévoyez large ou décalez, en particulier pour rejoindre la Zona Norte ou la Zona Oeste." },
 
+    { type: "p", text: "Pour organiser ces activités sans perdre de temps, <a href=\"https://jeitinho.fr/manuel?ref=blog\">le Manuel JEITINHO</a> réunit expériences, excursions et itinéraires prêts à l'emploi." },
+
     { type: "faq", items: [
       { q: "Combien de jours pour explorer ces pépites en plus des incontournables ?", a: "Comptez au moins 2-3 jours supplémentaires au-delà d'un premier séjour classique pour découvrir sérieusement ces lieux moins fréquentés." },
       { q: "Ces lieux sont-ils sûrs pour les touristes ?", a: "Oui dans l'ensemble, mais certains (Zona Norte, marchés populaires) gagnent à être visités avec un guide local la première fois, surtout pour les événements nocturnes." },

@@ -487,6 +487,11 @@ export const article: Article = {
     },
 
     {
+      type: "p",
+      text: "Pour tout préparer au même endroit, <a href=\"https://jeitinho.fr/manuel?ref=blog\">le Manuel JEITINHO</a> réunit les infos pratiques, les checklists et des itinéraires prêts à l'emploi.",
+    },
+
+    {
       type: "h2",
       text: "FAQ — Préparer son voyage à Rio",
     },

@@ -78,6 +78,8 @@ export const article: Article = {
     { type: "aeviter", title: "À éviter", text: "N'improvisez pas les transferts entre chaque étape à la dernière minute, surtout pour la boucle Paraty-Ilha Grande qui combine route et bateau. Un chauffeur ou une conciergerie qui organise l'ensemble du parcours évite les mauvaises surprises d'horaires, en particulier pour les traversées en bateau." },
     { type: "bonasavoir", title: "Bon à savoir", text: "Pensez à voyager léger pour la partie excursions : un sac de cabine ou un sac à dos suffit largement pour quelques nuits, et c'est nettement plus pratique pour les traversées en bateau vers Ilha Grande ou les ruelles pavées de Paraty et Búzios." },
 
+    { type: "p", text: "Pour préparer à la fois la partie Rio et les escapades, <a href=\"https://jeitinho.fr/manuel?ref=blog\">le Manuel JEITINHO</a> réunit itinéraires, quartiers et excursions, jusqu'au Nordeste." },
+
     { type: "faq", items: [
       { q: "Faut-il réserver les excursions à l'avance pour un séjour de 10 jours ?", a: "C'est recommandé, surtout en haute saison, pour les hébergements à Paraty, Ilha Grande et Búzios ainsi que pour les transferts. La ville de Rio elle-même se gère plus facilement au jour le jour." },
       { q: "Peut-on combiner Paraty, Ilha Grande, Búzios et Petrópolis en 10 jours ?", a: "C'est possible mais peu recommandé : cela multiplie les trajets et laisse peu de temps réel sur chaque site. Mieux vaut choisir une combinaison cohérente géographiquement, comme la boucle Paraty-Ilha Grande ou le duo Búzios-Petrópolis." },

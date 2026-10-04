@@ -52,6 +52,8 @@ export const article: Article = {
 
     { type: "aeviter", title: "À éviter", text: "Évitez de héler un taxi non identifié dans la rue en pleine nuit dans les zones peu fréquentées. Privilégiez toujours Uber, l'application Taxi.Rio, ou un chauffeur recommandé pour les trajets nocturnes." },
 
+    { type: "p", text: "Pour aller plus loin, <a href=\"https://jeitinho.fr/manuel?ref=blog\">le Manuel JEITINHO</a> consacre une partie entière à comprendre la ville et à s'y déplacer." },
+
     { type: "faq", items: [
       { q: "Quel est le moyen de transport le moins cher à Rio ?", a: "L'Uber moto reste le moins cher pour un trajet seul et sans bagage, suivi de près par le métro pour les trajets couverts par le réseau." },
       { q: "Le métro dessert-il les plages de la Zona Sul ?", a: "Oui, il dessert directement Copacabana, Ipanema (station Nossa Senhora da Paz), Botafogo et Flamengo, ce qui en fait un excellent moyen pour explorer ces quartiers." },

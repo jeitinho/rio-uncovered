@@ -66,6 +66,8 @@ export const article: Article = {
     { type: "h2", text: "Bien choisir sa zone pour maîtriser son budget" },
     { type: "p", text: "Le choix de la zone a un impact direct sur votre budget global. <a href=\"/blog/copacabana-guide-complet\">Copacabana</a> offre un excellent rapport qualité-prix, tandis qu'<a href=\"/blog/ipanema-guide-complet\">Ipanema</a> et surtout <a href=\"/blog/leblon-guide-complet\">Leblon</a> sont plus onéreux. <a href=\"/blog/botafogo-guide-complet\">Botafogo</a> reste une valeur sûre pour un séjour économique sans sacrifier la qualité de vie. Pour un comparatif complet, direction notre <a href=\"/blog/ou-loger-a-rio-comparatif-quartiers\">guide où loger à Rio</a>." },
 
+    { type: "p", text: "Pour préparer chaque poste de dépense, <a href=\"https://jeitinho.fr/manuel?ref=blog\">le Manuel JEITINHO</a> détaille les prix et les astuces quartier par quartier." },
+
     { type: "faq", items: [
       { q: "Quel est le budget minimum pour une semaine à Rio ?", a: "Comptez au minimum 1 500 € hors vol pour une semaine en voyageant de façon économique : hébergement simple, restaurants locaux et transports en commun." },
       { q: "Le Réveillon et le Carnaval coûtent-ils plus cher ?", a: "Oui, nettement : les prix de l'hébergement peuvent tripler par rapport à la basse saison, et les nuits de Réveillon et Carnaval elles-mêmes atteignent des sommets. Réservez au minimum 6 mois à l'avance pour ces périodes." },
