@@ -5,9 +5,10 @@ import logo from "@/assets/jeitinho-logo.png";
 import { getCategoriesByPillar } from "@/content/categories";
 import { CONCIERGERIE_BOOK_URL } from "@/lib/site";
 
-const NAV = [
-  { to: "/", label: "Accueil" },
-  { to: "/manuel-jeitinho", label: "Manuel" },
+// Mobile : Accueil, puis Explorer (articles), puis le reste — même ordre que sur desktop.
+const NAV_BEFORE_EXPLORER = [{ to: "/", label: "Accueil" }] as const;
+const NAV_AFTER_EXPLORER = [
+  { to: "/manuel-jeitinho", label: "Le Manuel" },
   { to: "/a-propos", label: "À propos" },
   { to: "/contact", label: "Contact" },
 ] as const;
@@ -133,7 +134,7 @@ export function SiteHeader() {
               className: "tracked-caps text-[13px] text-terracotta",
             }}
           >
-            Manuel
+            Le Manuel
           </Link>
 
           <Link
@@ -189,7 +190,7 @@ export function SiteHeader() {
 
           <nav className="flex flex-col px-5 py-4 gap-2">
 
-            {NAV.map((item) => (
+            {NAV_BEFORE_EXPLORER.map((item) => (
               <Link
                 key={item.to}
                 to={item.to}
@@ -237,6 +238,17 @@ export function SiteHeader() {
                 ))}
               </div>
             )}
+
+            {NAV_AFTER_EXPLORER.map((item) => (
+              <Link
+                key={item.to}
+                to={item.to}
+                onClick={() => setOpen(false)}
+                className="tracked-caps text-sm py-3 border-b border-border/40"
+              >
+                {item.label}
+              </Link>
+            ))}
 
             <a
               href={CONCIERGERIE_BOOK_URL}
