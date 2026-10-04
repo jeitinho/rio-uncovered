@@ -12,6 +12,7 @@ export const INSTAGRAM_URL = "https://www.instagram.com/jeitinho.fr";
 export const CONCIERGERIE_URL = "https://jeitinho.fr";
 export const CONCIERGERIE_BOOK_URL = "https://jeitinho.fr/trouver-un-jeitinho";
 export const MANUEL_URL = "https://jeitinho.fr/manuel?ref=blog";
+export const MANUEL_READER_URL = "https://manuel.jeitinho.fr";
 
 /** Construit une URL absolue à partir d'un chemin relatif. */
 export function absoluteUrl(path: string): string {
