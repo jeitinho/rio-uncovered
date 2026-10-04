@@ -11,6 +11,7 @@ import { TableOfContents } from "@/components/blog/TableOfContents";
 import { ArticleBody } from "@/components/blog/ArticleBody";
 import { ArticleCard } from "@/components/blog/ArticleCard";
 import { ServiceCTA } from "@/components/blog/ServiceCTA";
+import { ManuelCTA } from "@/components/blog/ManuelCTA";
 import { ShareBar } from "@/components/blog/ShareBar";
 import { ArrowLeft, ArrowRight, User } from "lucide-react";
 
@@ -172,6 +173,8 @@ function ArticlePage() {
             {article.relatedServices && (
               <ServiceCTA services={article.relatedServices} />
             )}
+
+            <ManuelCTA />
 
             {/* Bloc auteur */}
             <Link
