@@ -187,6 +187,10 @@ export function PartnerForm({ onSuccess }: Props) {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
+          // Payload complet (sans les fichiers bruts) : utilisé pour créer le
+          // partenaire dans le manager via la RPC submit_partner_application.
+          ...payload,
+          // Champs à plat + résumé traduit : utilisés pour l'email Resend.
           etablissement: payload.establishmentName,
           responsable: payload.contactName,
           email: payload.email,

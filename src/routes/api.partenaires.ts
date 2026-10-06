@@ -13,12 +13,21 @@ import { createFileRoute } from "@tanstack/react-router";
 import { render } from "@react-email/components";
 import { template as candidaturePartenaire } from "@/emails/candidature-partenaire";
 
+// Supabase du manager (sxzdabtarlgozixcbzus) : clé publishable (anon), pas un
+// secret — voir la convention équivalente dans jeitinho-hub/src/lib/auth/supabase-auth.ts.
+const SUPABASE_URL = "https://sxzdabtarlgozixcbzus.supabase.co";
+const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_lCRfloaagzEBNlbvdspIcA_VCQfL6Cn";
+
 type PartnerMedia = {
   filename: string;
   contentType: string;
   base64: string; // sans le préfixe "data:...;base64,"
 };
 
+// Sous-ensemble de PartnerApplication (src/content/partenaires/types.ts)
+// effectivement lu par la RPC submit_partner_application — le reste du
+// formulaire est conservé dans la colonne `application` (jsonb) côté RPC,
+// qui reçoit le payload complet tel quel.
 type PartnerPayload = {
   etablissement: string;
   responsable: string;
@@ -27,7 +36,22 @@ type PartnerPayload = {
   summary?: Array<{ label: string; value: string }>;
   message?: string;
   medias?: PartnerMedia[];
+  [key: string]: unknown;
 };
+
+async function submitPartnerApplication(payload: PartnerPayload) {
+  const { medias, etablissement, responsable, telephone, summary, ...application } = payload;
+  const response = await fetch(`${SUPABASE_URL}/rest/v1/rpc/submit_partner_application`, {
+    method: "POST",
+    headers: {
+      apikey: SUPABASE_PUBLISHABLE_KEY,
+      Authorization: `Bearer ${SUPABASE_PUBLISHABLE_KEY}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ p: application }),
+  });
+  if (!response.ok) throw new Error(await response.text());
+}
 
 export const Route = createFileRoute("/api/partenaires")({
   server: {
@@ -49,6 +73,12 @@ export const Route = createFileRoute("/api/partenaires")({
             status: 400,
             headers: { "Content-Type": "application/json" },
           });
+        }
+
+        try {
+          await submitPartnerApplication(payload);
+        } catch (error) {
+          console.error("submit_partner_application a échoué, e-mail conservé :", error);
         }
 
         // Rendu du même composant React Email que côté jeitinho.fr
