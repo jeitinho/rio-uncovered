@@ -13,6 +13,7 @@ import { ArticleCard } from "@/components/blog/ArticleCard";
 import { ServiceCTA } from "@/components/blog/ServiceCTA";
 import { ManuelCTA } from "@/components/blog/ManuelCTA";
 import { ShareBar } from "@/components/blog/ShareBar";
+import { WhatsAppGroupCTA } from "@/components/blog/WhatsAppGroupCTA";
 import { ArrowLeft, ArrowRight, User } from "lucide-react";
 
 export const Route = createFileRoute("/blog/$slug")({
@@ -202,6 +203,8 @@ function ArticlePage() {
                 Par {author.name}
               </p>
             </div>
+
+            <WhatsAppGroupCTA />
 
             {(prev || next) && (
               <div className="mt-10 grid gap-4 sm:grid-cols-2">
