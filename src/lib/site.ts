@@ -14,6 +14,10 @@ export const CONCIERGERIE_BOOK_URL = "https://jeitinho.fr/trouver-un-jeitinho";
 export const MANUEL_URL = "https://jeitinho.fr/manuel?ref=blog";
 export const MANUEL_READER_URL = "https://manuel.jeitinho.fr";
 
+/** Lien d'invitation du groupe WhatsApp « Le Jeitinho de Rio » (entraide francophone à Rio).
+ *  Vide = le bloc d'invitation ne s'affiche pas. */
+export const WHATSAPP_GROUP_URL = "LIEN_A_COLLER";
+
 /** Construit une URL absolue à partir d'un chemin relatif. */
 export function absoluteUrl(path: string): string {
   if (/^https?:\/\//.test(path)) return path;
