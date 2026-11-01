@@ -40,16 +40,20 @@ function list(where: string, fr: string[], tr: unknown) {
 
 for (const locale of LOCALES) {
   const dir = join(ROOT, "translations", locale);
-  if (!existsSync(join(dir, "index.ts"))) continue;
-  const { meta } = (await import(join(dir, "index.ts"))) as { meta: Record<string, Any> };
-  const bodies = new Set(readdirSync(dir).filter((f) => f !== "index.ts").map((f) => f.replace(/\.ts$/, "")));
-  for (const slug of bodies) if (!meta[slug]) err(`${locale}/${slug}`, "fichier de sections sans entrée meta");
+  if (!existsSync(dir)) continue;
+  const files = readdirSync(dir).filter((f) => f.endsWith(".ts"));
+  const meta: Record<string, Any> = {};
+  for (const f of files.filter((f) => f.endsWith(".meta.ts"))) {
+    meta[f.replace(/\.meta\.ts$/, "")] = ((await import(join(dir, f))) as { meta: Any }).meta;
+  }
+  const bodies = new Set(files.filter((f) => !f.endsWith(".meta.ts")).map((f) => f.replace(/\.ts$/, "")));
+  for (const slug of bodies) if (!meta[slug]) err(`${locale}/${slug}`, "fichier de sections sans fichier .meta.ts");
 
   for (const [slug, m] of Object.entries(meta)) {
     const where = `${locale}/${slug}`;
     const frPath = join(ROOT, "articles", `${slug}.ts`);
     if (!existsSync(frPath)) { err(where, "aucun article français avec ce slug"); continue; }
-    if (!bodies.has(slug)) { err(where, "entrée meta sans fichier de sections"); continue; }
+    if (!bodies.has(slug)) { err(where, "fichier .meta.ts sans fichier de sections"); continue; }
     const { article: fr } = (await import(frPath)) as { article: Any };
     const { sections } = (await import(join(dir, `${slug}.ts`))) as { sections: Any[] };
 

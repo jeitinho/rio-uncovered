@@ -5,8 +5,8 @@ Un dossier par langue (`en`, `es`, `pt`, `it`, `de`, `ru`). L'article français
 auteur… Une traduction ne contient que le texte.
 
 ```
-translations/<langue>/index.ts    export const meta = { "<slug>": { title, titleAccent?, description, heroAlt, relatedServices? }, … }
-translations/<langue>/<slug>.ts   export const sections: SectionTranslation[] = [ … ]   // même ordre que l'original
+translations/<langue>/<slug>.meta.ts  export const meta: ArticleMetaTranslation = { title, titleAccent?, description, heroAlt, relatedServices? }
+translations/<langue>/<slug>.ts       export const sections: SectionTranslation[] = [ … ]   // même ordre que l'original
 ```
 
 - Squelette à traduire : `bun scripts/extract-article.ts <slug>`

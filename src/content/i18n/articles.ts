@@ -3,14 +3,13 @@
 // L'article français (src/content/articles/<slug>.ts) reste la source de vérité :
 // images, date, catégorie, tags, auteur… Une traduction ne porte que le texte.
 //
-//   src/content/translations/<locale>/index.ts   → `meta` : titre, chapô, alt du visuel… de
-//                                                    chaque article traduit (chargé d'emblée,
-//                                                    sert aux listes, à la recherche, au SEO)
-//   src/content/translations/<locale>/<slug>.ts  → `sections` : le corps, section par section,
-//                                                    dans le même ordre que l'original
-//                                                    (chargé à la demande, page article seulement)
+//   src/content/translations/<locale>/<slug>.meta.ts → `meta` : titre, chapô, alt du visuel…
+//                                                       (chargé d'emblée : listes, recherche, SEO)
+//   src/content/translations/<locale>/<slug>.ts      → `sections` : le corps, section par section,
+//                                                       dans le même ordre que l'original
+//                                                       (chargé à la demande, page article seulement)
 //
-// Un article n'existe dans une langue que s'il a une entrée `meta` ET un fichier `sections`
+// Un article n'existe dans une langue que s'il a ses deux fichiers
 // (contrôlé par scripts/check-translations.ts).
 import type { Article, Section } from "@/content/types";
 import { slugifyHeading } from "@/content/types";
@@ -41,19 +40,20 @@ export type SectionTranslation =
   | { type: "image"; alt: string; caption?: string }
   | { type: "gallery"; images: { alt: string; caption?: string }[] };
 
-const metaModules = import.meta.glob<Record<string, ArticleMetaTranslation>>("../translations/*/index.ts", {
+const metaModules = import.meta.glob<ArticleMetaTranslation>("../translations/*/*.meta.ts", {
   eager: true,
   import: "meta",
 });
 const sectionModules = import.meta.glob<SectionTranslation[]>(
-  ["../translations/*/*.ts", "!../translations/*/index.ts"],
+  ["../translations/*/*.ts", "!../translations/*/*.meta.ts"],
   { import: "sections" },
 );
 
 const META: Partial<Record<NonDefaultLocale, Record<string, ArticleMetaTranslation>>> = {};
 for (const [path, meta] of Object.entries(metaModules)) {
-  const locale = path.split("/").at(-2) as NonDefaultLocale;
-  if ((LOCALES as readonly string[]).includes(locale)) META[locale] = meta;
+  const [locale, file] = path.split("/").slice(-2) as [NonDefaultLocale, string];
+  if (!(LOCALES as readonly string[]).includes(locale)) continue;
+  (META[locale] ??= {})[file.replace(/\.meta\.ts$/, "")] = meta;
 }
 
 function sectionPath(locale: NonDefaultLocale, slug: string) {
