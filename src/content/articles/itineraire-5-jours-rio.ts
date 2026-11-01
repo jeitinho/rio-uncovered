@@ -64,11 +64,11 @@ export const article: Article = {
     ]},
 
     { type: "h2", text: "Jour 5 — Immersion dans une favela" },
-    { type: "p", text: "Une journée complète dans une favela, toujours accompagné d'un guide local qui connaît vraiment le terrain. Rencontres, culture locale, point de vue different sur Rio — loin des clichés, au plus près du quotidien carioca." },
+    { type: "p", text: "Une journée complète dans une favela, toujours accompagné d'un guide local qui connaît vraiment le terrain. Rencontres, culture locale, point de vue différent sur Rio — loin des clichés, au plus près du quotidien carioca." },
     { type: "conseil", title: "Le conseil Jeitinho", text: "Ne visitez jamais une favela seul ou en improvisant. Avec un guide local reconnu, c'est une des expériences les plus marquantes d'un séjour à Rio — sans lui, ça reste hors de portée et pas respectueux des habitants." },
 
     { type: "h2", text: "Aller plus loin selon votre profil" },
-    { type: "p", text: "Pour un premier voyage qui coche tous les incontournables sans se compliquer la vie, notre pack <a href=\"https://jeitinho.fr/packs/rio-decouverte\">Rio Découverte</a> reprend l'essentiel de ce itinéraire clé en main. Pour une expérience plus intense, entre hélicoptère et excursions privées, direction le pack <a href=\"https://jeitinho.fr/packs/le-jeitinho\">Le Jeitinho</a>. Et pour l'immersion favela entre amis, le pack <a href=\"https://jeitinho.fr/packs/entre-amigos\">Entre Amigos</a> combine favela, baile funk et rooftop privatisé." },
+    { type: "p", text: "Pour un premier voyage qui coche tous les incontournables sans se compliquer la vie, notre pack <a href=\"https://jeitinho.fr/packs/rio-decouverte\">Rio Découverte</a> reprend l'essentiel de cet itinéraire clé en main. Pour une expérience plus intense, entre hélicoptère et excursions privées, direction le pack <a href=\"https://jeitinho.fr/packs/le-jeitinho\">Le Jeitinho</a>. Et pour l'immersion favela entre amis, le pack <a href=\"https://jeitinho.fr/packs/entre-amigos\">Entre Amigos</a> combine favela, baile funk et rooftop privatisé." },
 
     { type: "p", text: "Pour partir avec un programme déjà calé, <a href=\"https://jeitinho.fr/manuel?ref=blog\">le Manuel JEITINHO</a> propose des itinéraires prêts à l'emploi sur 3, 5 et 7 jours." },
 

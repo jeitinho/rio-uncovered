@@ -337,7 +337,7 @@ export const article: Article = {
       type: "conseil",
       title: "Le conseil Jeitinho",
       text:
-        "Même avec un accent parfaitible, essayez. Un « bom dia » ou un « obrigado » en portugais crée souvent une interaction beaucoup plus chaleureuse qu'une conversation commencée directement en anglais.",
+        "Même avec un accent perfectible, essayez. Un « bom dia » ou un « obrigado » en portugais crée souvent une interaction beaucoup plus chaleureuse qu'une conversation commencée directement en anglais.",
     },
 
     {
