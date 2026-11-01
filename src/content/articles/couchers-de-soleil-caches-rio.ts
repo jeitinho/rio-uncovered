@@ -32,7 +32,7 @@ export const article: Article = {
     { type: "h3", text: "Brisolão (Pavão-Pavãozinho)" },
     { type: "p", text: "Tout en haut de la communauté, vue spectaculaire sur la Lagoa Rodrigo de Freitas, le Christ Rédempteur, Rocinha et Vidigal." },
     { type: "h3", text: "Mirante do Leblon" },
-    { type: "p", text: "Accessible par le haut de Vidigal, panorama exceptionnel sur Leblon, Ipanema et les Dois Irmãos." },
+    { type: "p", text: "Au bout de la plage de Leblon, au début de l'avenida Niemeyer : panorama exceptionnel sur Leblon, Ipanema et les Dois Irmãos." },
     { type: "h3", text: "Mureta da Urca" },
     { type: "p", text: "Une bière à la main face au Pain de Sucre, un rituel carioca incontournable en fin de journée." },
     { type: "h3", text: "Parque das Ruínas — Santa Teresa" },
@@ -68,13 +68,13 @@ export const article: Article = {
     ]},
     { type: "aeviter", title: "À éviter", text: "Le Mirante Dona Marta, bien que spectaculaire, est préférable à visiter en journée plutôt qu'au lever ou coucher du soleil, moments où l'affluence et la faible luminosité peuvent poser des enjeux de sécurité en zone isolée. Renseignez-vous localement avant de vous y rendre seul." },
 
-    { type: "h2", text: "Le mot du jour : por do sol" },
+    { type: "h2", text: "Le mot du jour : pôr do sol" },
     { type: "p", text: "Ce mot portugais signifie « coucher de soleil », le moment préféré des cariocas. C'est aussi souvent le moment où l'on se dit « on est bien à Rio »." },
 
     { type: "faq", items: [
       { q: "Quel est le meilleur mirador gratuit de Rio ?", a: "Le Parque das Ruínas à Santa Teresa offre l'une des plus belles vues gratuites sur le centre-ville et la baie, sans file d'attente contrairement aux sites payants." },
       { q: "Faut-il un guide pour accéder aux miradors de Vidigal ?", a: "Ce n'est pas obligatoire pour les plus accessibles, mais recommandé pour une première visite afin de bien s'orienter dans la communauté." },
-      { q: "Où trouver des toilettes gratuites près de ces points de vue ?", a: "Les stations de métro, les centres commerciaux et la plupart des kiosques de plage disposent de toilettes, généralement pour un coût symbolique de 3 à 6 R$." },
+      { q: "Où trouver des toilettes près de ces points de vue ?", a: "Les stations de métro, les centres commerciaux et la plupart des kiosques de plage disposent de toilettes, généralement pour un coût symbolique de 3 à 6 R$." },
       { q: "Quel est le meilleur moment pour les photos à Rio ?", a: "Entre 7h et 9h le matin, ou après 17h en fin de journée : la lumière rasante offre les plus belles teintes sur les paysages cariocas." },
     ]},
 

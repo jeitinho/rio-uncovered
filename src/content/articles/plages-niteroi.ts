@@ -40,7 +40,7 @@ export const article: Article = {
     { type: "h3", text: "Praia de Piratininga" },
     { type: "p", text: "Grande plage sauvage et ventée, idéale pour les sports nautiques et les amateurs de nature." },
     { type: "h3", text: "Praia de Itacoatiara" },
-    { type: "p", text: "Considérée comme l'une des plus belles plages de Rio de Janeiro. Vagues fortes et paysages spectaculaires, ambiance sportive et naturiste, particulièrement prisée des surfeurs." },
+    { type: "p", text: "Considérée comme l'une des plus belles plages de l'État de Rio de Janeiro. Vagues fortes et paysages spectaculaires, ambiance sportive et nature, particulièrement prisée des surfeurs." },
     { type: "aeviter", title: "À éviter", text: "Certaines plages de Niterói, notamment Itacoatiara et Piratininga, sont plus sauvages et moins surveillées que celles de la Zona Sul de Rio. Restez attentif à vos affaires et respectez les zones de baignade recommandées." },
 
     { type: "h2", text: "Les points d'intérêt à combiner" },
