@@ -1,8 +1,12 @@
 import { useEffect, useState } from "react";
+import { useDict } from "@/i18n/t";
+
+const TITLE = { fr: "Sommaire", en: "Contents", es: "Índice", pt: "Sumário", it: "Indice", de: "Inhalt", ru: "Содержание" };
 
 interface TocItem { id: string; text: string; level: 2 | 3 }
 
 export function TableOfContents({ items }: { items: TocItem[] }) {
+  const title = useDict(TITLE);
   const [active, setActive] = useState<string>("");
 
   useEffect(() => {
@@ -22,8 +26,8 @@ export function TableOfContents({ items }: { items: TocItem[] }) {
   if (items.length === 0) return null;
 
   return (
-    <nav aria-label="Sommaire" className="sticky top-24">
-      <p className="tracked-caps text-[10px] text-terracotta">Sommaire</p>
+    <nav aria-label={title} className="sticky top-24">
+      <p className="tracked-caps text-[10px] text-terracotta">{title}</p>
       <ul className="mt-3 space-y-1.5 text-sm">
         {items.map((it) => (
           <li key={it.id} className={it.level === 3 ? "pl-4" : ""}>

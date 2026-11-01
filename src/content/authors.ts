@@ -78,9 +78,9 @@ export const AUTHORS: Author[] = [
     name: "Rafael",
     role: "Fondateur & directeur éditorial",
     language: "fr/pt",
-    bio: "Fondateur de Jeitinho — entrepreneur franco-brésilien, producteur d'événements et guide francophone.",
+    bio: "Fondateur de Jeitinho — entrepreneur franco-brésilien, producteur d'événements et guide multilingue.",
     longBio:
-      "Fondateur de Jeitinho, Rafael est un entrepreneur franco-brésilien, producteur d'événements, guide francophone et concierge spécialisé sur Rio de Janeiro. Il partage son temps entre Rio de Janeiro (six mois par an) et Paris (six mois par an), accompagne les voyageurs avant, pendant et après leur séjour, et dirige la ligne éditoriale du média.",
+      "Fondateur de Jeitinho, Rafael est un entrepreneur franco-brésilien, producteur d'événements, guide multilingue et concierge spécialisé sur Rio de Janeiro. Il partage son temps entre Rio de Janeiro (six mois par an) et Paris (six mois par an), accompagne les voyageurs avant, pendant et après leur séjour, et dirige la ligne éditoriale du média.",
     location: "Rio de Janeiro / Paris",
     photo: rafaelPhoto,
     social: { website: "https://jeitinho.fr" },

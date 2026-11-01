@@ -4,10 +4,25 @@ import { ConseilJeitinho, AEviter, BonASavoir } from "./Callouts";
 import { FAQ } from "./FAQ";
 import { RichText } from "./RichText";
 import { autoLink } from "@/lib/interlink";
+import { localizeHtmlLinks } from "@/lib/localize-links";
+import { useLocale, type Locale } from "@/i18n/locale";
+
+const QUOTES: Record<Locale, [string, string]> = {
+  fr: ["« ", " »"],
+  en: ["“", "”"],
+  es: ["«", "»"],
+  pt: ["“", "”"],
+  it: ["«", "»"],
+  de: ["„", "“"],
+  ru: ["«", "»"],
+};
 
 export function ArticleBody({ sections, currentSlug }: { sections: Section[]; currentSlug?: string }) {
+  const locale = useLocale();
   const exclude = currentSlug ? `/blog/${currentSlug}` : undefined;
-  const link = (t: string) => autoLink(t, exclude);
+  // Liens automatiques (calculés sur les chemins français), puis réécrits vers la langue du lecteur.
+  const link = (t: string) => localizeHtmlLinks(autoLink(t, exclude), locale);
+  const [open, close] = QUOTES[locale];
   return (
     <div className="prose-jeitinho">
       {sections.map((s, i) => {
@@ -38,7 +53,7 @@ export function ArticleBody({ sections, currentSlug }: { sections: Section[]; cu
           case "quote":
             return (
               <blockquote key={i} className="my-8 border-l-2 border-terracotta pl-6 italic text-foreground/90">
-                <RichText content={link(`« ${s.text} »`)} />
+                <RichText content={link(`${open}${s.text}${close}`)} />
                 {s.author && <footer className="mt-2 text-xs not-italic tracked-caps text-muted-foreground">— {s.author}</footer>}
               </blockquote>
             );

@@ -1,11 +1,23 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import { useDict } from "@/i18n/t";
+
+const TITLE = {
+  fr: ["Questions ", "fréquentes"],
+  en: ["Frequently asked ", "questions"],
+  es: ["Preguntas ", "frecuentes"],
+  pt: ["Perguntas ", "frequentes"],
+  it: ["Domande ", "frequenti"],
+  de: ["Häufige ", "Fragen"],
+  ru: ["Частые ", "вопросы"],
+};
 
 export function FAQ({ items }: { items: { q: string; a: string }[] }) {
   const [open, setOpen] = useState<number | null>(0);
+  const title = useDict(TITLE);
   return (
     <section className="my-12">
-      <h2 className="text-3xl">Questions <em>fréquentes</em></h2>
+      <h2 className="text-3xl">{title[0]}<em>{title[1]}</em></h2>
       <div className="mt-6 divide-y divide-border">
         {items.map((it, i) => {
           const isOpen = open === i;

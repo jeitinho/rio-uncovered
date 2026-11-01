@@ -1,8 +1,14 @@
 import { MessageCircle } from "lucide-react";
 import { WHATSAPP_GROUP_URL } from "@/lib/site";
+import { useLocale } from "@/i18n/locale";
 
-/** Invitation au groupe WhatsApp d'entraide, en bas de chaque article. */
+/**
+ * Invitation au groupe WhatsApp d'entraide, en bas de chaque article.
+ * Le groupe est francophone : l'encart n'apparaît que sur les pages en français.
+ */
 export function WhatsAppGroupCTA() {
+  const locale = useLocale();
+  if (locale !== "fr") return null;
   if (!/^https:\/\/chat\.whatsapp\.com\/\S+/.test(WHATSAPP_GROUP_URL)) return null;
   return (
     <section className="mt-12 rounded-[3px] border border-border bg-cream-deep/60 p-6 md:p-8">

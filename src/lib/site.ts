@@ -3,7 +3,7 @@
 
 export const SITE_URL = "https://blog.jeitinho.fr";
 export const SITE_NAME = "Jeitinho Blog";
-export const SITE_TAGLINE = "Le média francophone sur Rio de Janeiro";
+export const SITE_TAGLINE = "Le média sur Rio de Janeiro, en sept langues";
 
 export const CONTACT_EMAIL = "blog@jeitinho.fr";
 export const INSTAGRAM_HANDLE = "@jeitinho.fr";

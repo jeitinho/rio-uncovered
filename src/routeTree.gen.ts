@@ -9,33 +9,29 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
-import { Route as RssDotxmlRouteImport } from './routes/rss[.]xml'
-import { Route as PartenairesRouteImport } from './routes/partenaires'
 import { Route as McpRouteImport } from './routes/mcp'
-import { Route as ManuelJeitinhoRouteImport } from './routes/manuel-jeitinho'
-import { Route as ContactRouteImport } from './routes/contact'
-import { Route as AProposRouteImport } from './routes/a-propos'
-import { Route as IndexRouteImport } from './routes/index'
-import { Route as BlogIndexRouteImport } from './routes/blog.index'
-import { Route as AuteursIndexRouteImport } from './routes/auteurs.index'
-import { Route as BlogRechercheRouteImport } from './routes/blog.recherche'
-import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
-import { Route as AuteursSlugRouteImport } from './routes/auteurs.$slug'
-import { Route as ApiPartenairesRouteImport } from './routes/api.partenaires'
-import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } from './routes/[.well-known]/oauth-protected-resource'
+import { Route as PartenairesRouteImport } from './routes/partenaires'
+import { Route as RssDotxmlRouteImport } from './routes/rss[.]xml'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as Char123LocaleChar125RouteImport } from './routes/{-$locale}'
 import { Route as Char91DotmcpChar93ListToolsRouteImport } from './routes/[.mcp]/list-tools'
-import { Route as BlogCategorieSlugRouteImport } from './routes/blog.categorie.$slug'
+import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } from './routes/[.well-known]/oauth-protected-resource'
+import { Route as ApiPartenairesRouteImport } from './routes/api.partenaires'
+import { Route as Char123LocaleChar125IndexRouteImport } from './routes/{-$locale}/index'
+import { Route as Char123LocaleChar125AProposRouteImport } from './routes/{-$locale}/a-propos'
+import { Route as Char123LocaleChar125ContactRouteImport } from './routes/{-$locale}/contact'
+import { Route as Char123LocaleChar125ManuelJeitinhoRouteImport } from './routes/{-$locale}/manuel-jeitinho'
 import { Route as Char91DotmcpChar93InvokeToolToolRouteImport } from './routes/[.mcp]/invoke-tool/$tool'
+import { Route as Char123LocaleChar125AuteursIndexRouteImport } from './routes/{-$locale}/auteurs.index'
+import { Route as Char123LocaleChar125AuteursSlugRouteImport } from './routes/{-$locale}/auteurs.$slug'
+import { Route as Char123LocaleChar125BlogIndexRouteImport } from './routes/{-$locale}/blog.index'
+import { Route as Char123LocaleChar125BlogSlugRouteImport } from './routes/{-$locale}/blog.$slug'
+import { Route as Char123LocaleChar125BlogRechercheRouteImport } from './routes/{-$locale}/blog.recherche'
+import { Route as Char123LocaleChar125BlogCategorieSlugRouteImport } from './routes/{-$locale}/blog.categorie.$slug'
 
-const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
-  id: '/sitemap.xml',
-  path: '/sitemap.xml',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const RssDotxmlRoute = RssDotxmlRouteImport.update({
-  id: '/rss.xml',
-  path: '/rss.xml',
+const McpRoute = McpRouteImport.update({
+  id: '/mcp',
+  path: '/mcp',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PartenairesRoute = PartenairesRouteImport.update({
@@ -43,110 +39,127 @@ const PartenairesRoute = PartenairesRouteImport.update({
   path: '/partenaires',
   getParentRoute: () => rootRouteImport,
 } as any)
-const McpRoute = McpRouteImport.update({
-  id: '/mcp',
-  path: '/mcp',
+const RssDotxmlRoute = RssDotxmlRouteImport.update({
+  id: '/rss.xml',
+  path: '/rss.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ManuelJeitinhoRoute = ManuelJeitinhoRouteImport.update({
-  id: '/manuel-jeitinho',
-  path: '/manuel-jeitinho',
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ContactRoute = ContactRouteImport.update({
-  id: '/contact',
-  path: '/contact',
+const Char123LocaleChar125Route = Char123LocaleChar125RouteImport.update({
+  id: '/{-$locale}',
+  path: '/{-$locale}',
   getParentRoute: () => rootRouteImport,
 } as any)
-const AProposRoute = AProposRouteImport.update({
-  id: '/a-propos',
-  path: '/a-propos',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const BlogIndexRoute = BlogIndexRouteImport.update({
-  id: '/blog/',
-  path: '/blog/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AuteursIndexRoute = AuteursIndexRouteImport.update({
-  id: '/auteurs/',
-  path: '/auteurs/',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const BlogRechercheRoute = BlogRechercheRouteImport.update({
-  id: '/blog/recherche',
-  path: '/blog/recherche',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const BlogSlugRoute = BlogSlugRouteImport.update({
-  id: '/blog/$slug',
-  path: '/blog/$slug',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AuteursSlugRoute = AuteursSlugRouteImport.update({
-  id: '/auteurs/$slug',
-  path: '/auteurs/$slug',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ApiPartenairesRoute = ApiPartenairesRouteImport.update({
-  id: '/api/partenaires',
-  path: '/api/partenaires',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const Char91DotwellKnownChar93OauthProtectedResourceRoute =
-  Char91DotwellKnownChar93OauthProtectedResourceRouteImport.update({
-    id: '/.well-known/oauth-protected-resource',
-    path: '/.well-known/oauth-protected-resource',
-    getParentRoute: () => rootRouteImport,
-  } as any)
 const Char91DotmcpChar93ListToolsRoute =
   Char91DotmcpChar93ListToolsRouteImport.update({
     id: '/.mcp/list-tools',
     path: '/.mcp/list-tools',
     getParentRoute: () => rootRouteImport,
   } as any)
-const BlogCategorieSlugRoute = BlogCategorieSlugRouteImport.update({
-  id: '/blog/categorie/$slug',
-  path: '/blog/categorie/$slug',
+const Char91DotwellKnownChar93OauthProtectedResourceRoute =
+  Char91DotwellKnownChar93OauthProtectedResourceRouteImport.update({
+    id: '/.well-known/oauth-protected-resource',
+    path: '/.well-known/oauth-protected-resource',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ApiPartenairesRoute = ApiPartenairesRouteImport.update({
+  id: '/api/partenaires',
+  path: '/api/partenaires',
   getParentRoute: () => rootRouteImport,
 } as any)
+const Char123LocaleChar125IndexRoute =
+  Char123LocaleChar125IndexRouteImport.update({
+    id: '/',
+    path: '/',
+    getParentRoute: () => Char123LocaleChar125Route,
+  } as any)
+const Char123LocaleChar125AProposRoute =
+  Char123LocaleChar125AProposRouteImport.update({
+    id: '/a-propos',
+    path: '/a-propos',
+    getParentRoute: () => Char123LocaleChar125Route,
+  } as any)
+const Char123LocaleChar125ContactRoute =
+  Char123LocaleChar125ContactRouteImport.update({
+    id: '/contact',
+    path: '/contact',
+    getParentRoute: () => Char123LocaleChar125Route,
+  } as any)
+const Char123LocaleChar125ManuelJeitinhoRoute =
+  Char123LocaleChar125ManuelJeitinhoRouteImport.update({
+    id: '/manuel-jeitinho',
+    path: '/manuel-jeitinho',
+    getParentRoute: () => Char123LocaleChar125Route,
+  } as any)
 const Char91DotmcpChar93InvokeToolToolRoute =
   Char91DotmcpChar93InvokeToolToolRouteImport.update({
     id: '/.mcp/invoke-tool/$tool',
     path: '/.mcp/invoke-tool/$tool',
     getParentRoute: () => rootRouteImport,
   } as any)
+const Char123LocaleChar125AuteursIndexRoute =
+  Char123LocaleChar125AuteursIndexRouteImport.update({
+    id: '/auteurs/',
+    path: '/auteurs/',
+    getParentRoute: () => Char123LocaleChar125Route,
+  } as any)
+const Char123LocaleChar125AuteursSlugRoute =
+  Char123LocaleChar125AuteursSlugRouteImport.update({
+    id: '/auteurs/$slug',
+    path: '/auteurs/$slug',
+    getParentRoute: () => Char123LocaleChar125Route,
+  } as any)
+const Char123LocaleChar125BlogIndexRoute =
+  Char123LocaleChar125BlogIndexRouteImport.update({
+    id: '/blog/',
+    path: '/blog/',
+    getParentRoute: () => Char123LocaleChar125Route,
+  } as any)
+const Char123LocaleChar125BlogSlugRoute =
+  Char123LocaleChar125BlogSlugRouteImport.update({
+    id: '/blog/$slug',
+    path: '/blog/$slug',
+    getParentRoute: () => Char123LocaleChar125Route,
+  } as any)
+const Char123LocaleChar125BlogRechercheRoute =
+  Char123LocaleChar125BlogRechercheRouteImport.update({
+    id: '/blog/recherche',
+    path: '/blog/recherche',
+    getParentRoute: () => Char123LocaleChar125Route,
+  } as any)
+const Char123LocaleChar125BlogCategorieSlugRoute =
+  Char123LocaleChar125BlogCategorieSlugRouteImport.update({
+    id: '/blog/categorie/$slug',
+    path: '/blog/categorie/$slug',
+    getParentRoute: () => Char123LocaleChar125Route,
+  } as any)
 
 export interface FileRoutesByFullPath {
-  '/': typeof IndexRoute
-  '/a-propos': typeof AProposRoute
-  '/contact': typeof ContactRoute
-  '/manuel-jeitinho': typeof ManuelJeitinhoRoute
   '/mcp': typeof McpRoute
   '/partenaires': typeof PartenairesRoute
   '/rss.xml': typeof RssDotxmlRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/{-$locale}': typeof Char123LocaleChar125RouteWithChildren
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/api/partenaires': typeof ApiPartenairesRoute
-  '/auteurs/$slug': typeof AuteursSlugRoute
-  '/blog/$slug': typeof BlogSlugRoute
-  '/blog/recherche': typeof BlogRechercheRoute
-  '/auteurs/': typeof AuteursIndexRoute
-  '/blog/': typeof BlogIndexRoute
+  '/{-$locale}/a-propos': typeof Char123LocaleChar125AProposRoute
+  '/{-$locale}/contact': typeof Char123LocaleChar125ContactRoute
+  '/{-$locale}/manuel-jeitinho': typeof Char123LocaleChar125ManuelJeitinhoRoute
+  '/{-$locale}/': typeof Char123LocaleChar125IndexRoute
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
-  '/blog/categorie/$slug': typeof BlogCategorieSlugRoute
+  '/{-$locale}/auteurs/$slug': typeof Char123LocaleChar125AuteursSlugRoute
+  '/{-$locale}/blog/$slug': typeof Char123LocaleChar125BlogSlugRoute
+  '/{-$locale}/blog/recherche': typeof Char123LocaleChar125BlogRechercheRoute
+  '/{-$locale}/auteurs/': typeof Char123LocaleChar125AuteursIndexRoute
+  '/{-$locale}/blog/': typeof Char123LocaleChar125BlogIndexRoute
+  '/{-$locale}/blog/categorie/$slug': typeof Char123LocaleChar125BlogCategorieSlugRoute
 }
 export interface FileRoutesByTo {
-  '/': typeof IndexRoute
-  '/a-propos': typeof AProposRoute
-  '/contact': typeof ContactRoute
-  '/manuel-jeitinho': typeof ManuelJeitinhoRoute
   '/mcp': typeof McpRoute
   '/partenaires': typeof PartenairesRoute
   '/rss.xml': typeof RssDotxmlRoute
@@ -154,62 +167,64 @@ export interface FileRoutesByTo {
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/api/partenaires': typeof ApiPartenairesRoute
-  '/auteurs/$slug': typeof AuteursSlugRoute
-  '/blog/$slug': typeof BlogSlugRoute
-  '/blog/recherche': typeof BlogRechercheRoute
-  '/auteurs': typeof AuteursIndexRoute
-  '/blog': typeof BlogIndexRoute
+  '/{-$locale}/a-propos': typeof Char123LocaleChar125AProposRoute
+  '/{-$locale}/contact': typeof Char123LocaleChar125ContactRoute
+  '/{-$locale}/manuel-jeitinho': typeof Char123LocaleChar125ManuelJeitinhoRoute
+  '/{-$locale}': typeof Char123LocaleChar125IndexRoute
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
-  '/blog/categorie/$slug': typeof BlogCategorieSlugRoute
+  '/{-$locale}/auteurs/$slug': typeof Char123LocaleChar125AuteursSlugRoute
+  '/{-$locale}/blog/$slug': typeof Char123LocaleChar125BlogSlugRoute
+  '/{-$locale}/blog/recherche': typeof Char123LocaleChar125BlogRechercheRoute
+  '/{-$locale}/auteurs': typeof Char123LocaleChar125AuteursIndexRoute
+  '/{-$locale}/blog': typeof Char123LocaleChar125BlogIndexRoute
+  '/{-$locale}/blog/categorie/$slug': typeof Char123LocaleChar125BlogCategorieSlugRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
-  '/': typeof IndexRoute
-  '/a-propos': typeof AProposRoute
-  '/contact': typeof ContactRoute
-  '/manuel-jeitinho': typeof ManuelJeitinhoRoute
   '/mcp': typeof McpRoute
   '/partenaires': typeof PartenairesRoute
   '/rss.xml': typeof RssDotxmlRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/{-$locale}': typeof Char123LocaleChar125RouteWithChildren
   '/.mcp/list-tools': typeof Char91DotmcpChar93ListToolsRoute
   '/.well-known/oauth-protected-resource': typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   '/api/partenaires': typeof ApiPartenairesRoute
-  '/auteurs/$slug': typeof AuteursSlugRoute
-  '/blog/$slug': typeof BlogSlugRoute
-  '/blog/recherche': typeof BlogRechercheRoute
-  '/auteurs/': typeof AuteursIndexRoute
-  '/blog/': typeof BlogIndexRoute
+  '/{-$locale}/a-propos': typeof Char123LocaleChar125AProposRoute
+  '/{-$locale}/contact': typeof Char123LocaleChar125ContactRoute
+  '/{-$locale}/manuel-jeitinho': typeof Char123LocaleChar125ManuelJeitinhoRoute
+  '/{-$locale}/': typeof Char123LocaleChar125IndexRoute
   '/.mcp/invoke-tool/$tool': typeof Char91DotmcpChar93InvokeToolToolRoute
-  '/blog/categorie/$slug': typeof BlogCategorieSlugRoute
+  '/{-$locale}/auteurs/$slug': typeof Char123LocaleChar125AuteursSlugRoute
+  '/{-$locale}/blog/$slug': typeof Char123LocaleChar125BlogSlugRoute
+  '/{-$locale}/blog/recherche': typeof Char123LocaleChar125BlogRechercheRoute
+  '/{-$locale}/auteurs/': typeof Char123LocaleChar125AuteursIndexRoute
+  '/{-$locale}/blog/': typeof Char123LocaleChar125BlogIndexRoute
+  '/{-$locale}/blog/categorie/$slug': typeof Char123LocaleChar125BlogCategorieSlugRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
-    | '/'
-    | '/a-propos'
-    | '/contact'
-    | '/manuel-jeitinho'
     | '/mcp'
     | '/partenaires'
     | '/rss.xml'
     | '/sitemap.xml'
+    | '/{-$locale}'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
     | '/api/partenaires'
-    | '/auteurs/$slug'
-    | '/blog/$slug'
-    | '/blog/recherche'
-    | '/auteurs/'
-    | '/blog/'
+    | '/{-$locale}/a-propos'
+    | '/{-$locale}/contact'
+    | '/{-$locale}/manuel-jeitinho'
+    | '/{-$locale}/'
     | '/.mcp/invoke-tool/$tool'
-    | '/blog/categorie/$slug'
+    | '/{-$locale}/auteurs/$slug'
+    | '/{-$locale}/blog/$slug'
+    | '/{-$locale}/blog/recherche'
+    | '/{-$locale}/auteurs/'
+    | '/{-$locale}/blog/'
+    | '/{-$locale}/blog/categorie/$slug'
   fileRoutesByTo: FileRoutesByTo
   to:
-    | '/'
-    | '/a-propos'
-    | '/contact'
-    | '/manuel-jeitinho'
     | '/mcp'
     | '/partenaires'
     | '/rss.xml'
@@ -217,70 +232,59 @@ export interface FileRouteTypes {
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
     | '/api/partenaires'
-    | '/auteurs/$slug'
-    | '/blog/$slug'
-    | '/blog/recherche'
-    | '/auteurs'
-    | '/blog'
+    | '/{-$locale}/a-propos'
+    | '/{-$locale}/contact'
+    | '/{-$locale}/manuel-jeitinho'
+    | '/{-$locale}'
     | '/.mcp/invoke-tool/$tool'
-    | '/blog/categorie/$slug'
+    | '/{-$locale}/auteurs/$slug'
+    | '/{-$locale}/blog/$slug'
+    | '/{-$locale}/blog/recherche'
+    | '/{-$locale}/auteurs'
+    | '/{-$locale}/blog'
+    | '/{-$locale}/blog/categorie/$slug'
   id:
     | '__root__'
-    | '/'
-    | '/a-propos'
-    | '/contact'
-    | '/manuel-jeitinho'
     | '/mcp'
     | '/partenaires'
     | '/rss.xml'
     | '/sitemap.xml'
+    | '/{-$locale}'
     | '/.mcp/list-tools'
     | '/.well-known/oauth-protected-resource'
     | '/api/partenaires'
-    | '/auteurs/$slug'
-    | '/blog/$slug'
-    | '/blog/recherche'
-    | '/auteurs/'
-    | '/blog/'
+    | '/{-$locale}/a-propos'
+    | '/{-$locale}/contact'
+    | '/{-$locale}/manuel-jeitinho'
+    | '/{-$locale}/'
     | '/.mcp/invoke-tool/$tool'
-    | '/blog/categorie/$slug'
+    | '/{-$locale}/auteurs/$slug'
+    | '/{-$locale}/blog/$slug'
+    | '/{-$locale}/blog/recherche'
+    | '/{-$locale}/auteurs/'
+    | '/{-$locale}/blog/'
+    | '/{-$locale}/blog/categorie/$slug'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
-  IndexRoute: typeof IndexRoute
-  AProposRoute: typeof AProposRoute
-  ContactRoute: typeof ContactRoute
-  ManuelJeitinhoRoute: typeof ManuelJeitinhoRoute
   McpRoute: typeof McpRoute
   PartenairesRoute: typeof PartenairesRoute
   RssDotxmlRoute: typeof RssDotxmlRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  Char123LocaleChar125Route: typeof Char123LocaleChar125RouteWithChildren
   Char91DotmcpChar93ListToolsRoute: typeof Char91DotmcpChar93ListToolsRoute
   Char91DotwellKnownChar93OauthProtectedResourceRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRoute
   ApiPartenairesRoute: typeof ApiPartenairesRoute
-  AuteursSlugRoute: typeof AuteursSlugRoute
-  BlogSlugRoute: typeof BlogSlugRoute
-  BlogRechercheRoute: typeof BlogRechercheRoute
-  AuteursIndexRoute: typeof AuteursIndexRoute
-  BlogIndexRoute: typeof BlogIndexRoute
   Char91DotmcpChar93InvokeToolToolRoute: typeof Char91DotmcpChar93InvokeToolToolRoute
-  BlogCategorieSlugRoute: typeof BlogCategorieSlugRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/sitemap.xml': {
-      id: '/sitemap.xml'
-      path: '/sitemap.xml'
-      fullPath: '/sitemap.xml'
-      preLoaderRoute: typeof SitemapDotxmlRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/rss.xml': {
-      id: '/rss.xml'
-      path: '/rss.xml'
-      fullPath: '/rss.xml'
-      preLoaderRoute: typeof RssDotxmlRouteImport
+    '/mcp': {
+      id: '/mcp'
+      path: '/mcp'
+      fullPath: '/mcp'
+      preLoaderRoute: typeof McpRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/partenaires': {
@@ -290,88 +294,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PartenairesRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/mcp': {
-      id: '/mcp'
-      path: '/mcp'
-      fullPath: '/mcp'
-      preLoaderRoute: typeof McpRouteImport
+    '/rss.xml': {
+      id: '/rss.xml'
+      path: '/rss.xml'
+      fullPath: '/rss.xml'
+      preLoaderRoute: typeof RssDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/manuel-jeitinho': {
-      id: '/manuel-jeitinho'
-      path: '/manuel-jeitinho'
-      fullPath: '/manuel-jeitinho'
-      preLoaderRoute: typeof ManuelJeitinhoRouteImport
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/contact': {
-      id: '/contact'
-      path: '/contact'
-      fullPath: '/contact'
-      preLoaderRoute: typeof ContactRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/a-propos': {
-      id: '/a-propos'
-      path: '/a-propos'
-      fullPath: '/a-propos'
-      preLoaderRoute: typeof AProposRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/blog/': {
-      id: '/blog/'
-      path: '/blog'
-      fullPath: '/blog/'
-      preLoaderRoute: typeof BlogIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/auteurs/': {
-      id: '/auteurs/'
-      path: '/auteurs'
-      fullPath: '/auteurs/'
-      preLoaderRoute: typeof AuteursIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/blog/recherche': {
-      id: '/blog/recherche'
-      path: '/blog/recherche'
-      fullPath: '/blog/recherche'
-      preLoaderRoute: typeof BlogRechercheRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/blog/$slug': {
-      id: '/blog/$slug'
-      path: '/blog/$slug'
-      fullPath: '/blog/$slug'
-      preLoaderRoute: typeof BlogSlugRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/auteurs/$slug': {
-      id: '/auteurs/$slug'
-      path: '/auteurs/$slug'
-      fullPath: '/auteurs/$slug'
-      preLoaderRoute: typeof AuteursSlugRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/api/partenaires': {
-      id: '/api/partenaires'
-      path: '/api/partenaires'
-      fullPath: '/api/partenaires'
-      preLoaderRoute: typeof ApiPartenairesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/.well-known/oauth-protected-resource': {
-      id: '/.well-known/oauth-protected-resource'
-      path: '/.well-known/oauth-protected-resource'
-      fullPath: '/.well-known/oauth-protected-resource'
-      preLoaderRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRouteImport
+    '/{-$locale}': {
+      id: '/{-$locale}'
+      path: '/{-$locale}'
+      fullPath: '/{-$locale}'
+      preLoaderRoute: typeof Char123LocaleChar125RouteImport
       parentRoute: typeof rootRouteImport
     }
     '/.mcp/list-tools': {
@@ -381,12 +322,47 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof Char91DotmcpChar93ListToolsRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/blog/categorie/$slug': {
-      id: '/blog/categorie/$slug'
-      path: '/blog/categorie/$slug'
-      fullPath: '/blog/categorie/$slug'
-      preLoaderRoute: typeof BlogCategorieSlugRouteImport
+    '/.well-known/oauth-protected-resource': {
+      id: '/.well-known/oauth-protected-resource'
+      path: '/.well-known/oauth-protected-resource'
+      fullPath: '/.well-known/oauth-protected-resource'
+      preLoaderRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRouteImport
       parentRoute: typeof rootRouteImport
+    }
+    '/api/partenaires': {
+      id: '/api/partenaires'
+      path: '/api/partenaires'
+      fullPath: '/api/partenaires'
+      preLoaderRoute: typeof ApiPartenairesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/{-$locale}/': {
+      id: '/{-$locale}/'
+      path: '/'
+      fullPath: '/{-$locale}/'
+      preLoaderRoute: typeof Char123LocaleChar125IndexRouteImport
+      parentRoute: typeof Char123LocaleChar125Route
+    }
+    '/{-$locale}/a-propos': {
+      id: '/{-$locale}/a-propos'
+      path: '/a-propos'
+      fullPath: '/{-$locale}/a-propos'
+      preLoaderRoute: typeof Char123LocaleChar125AProposRouteImport
+      parentRoute: typeof Char123LocaleChar125Route
+    }
+    '/{-$locale}/contact': {
+      id: '/{-$locale}/contact'
+      path: '/contact'
+      fullPath: '/{-$locale}/contact'
+      preLoaderRoute: typeof Char123LocaleChar125ContactRouteImport
+      parentRoute: typeof Char123LocaleChar125Route
+    }
+    '/{-$locale}/manuel-jeitinho': {
+      id: '/{-$locale}/manuel-jeitinho'
+      path: '/manuel-jeitinho'
+      fullPath: '/{-$locale}/manuel-jeitinho'
+      preLoaderRoute: typeof Char123LocaleChar125ManuelJeitinhoRouteImport
+      parentRoute: typeof Char123LocaleChar125Route
     }
     '/.mcp/invoke-tool/$tool': {
       id: '/.mcp/invoke-tool/$tool'
@@ -395,29 +371,94 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof Char91DotmcpChar93InvokeToolToolRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/{-$locale}/auteurs/': {
+      id: '/{-$locale}/auteurs/'
+      path: '/auteurs'
+      fullPath: '/{-$locale}/auteurs/'
+      preLoaderRoute: typeof Char123LocaleChar125AuteursIndexRouteImport
+      parentRoute: typeof Char123LocaleChar125Route
+    }
+    '/{-$locale}/auteurs/$slug': {
+      id: '/{-$locale}/auteurs/$slug'
+      path: '/auteurs/$slug'
+      fullPath: '/{-$locale}/auteurs/$slug'
+      preLoaderRoute: typeof Char123LocaleChar125AuteursSlugRouteImport
+      parentRoute: typeof Char123LocaleChar125Route
+    }
+    '/{-$locale}/blog/': {
+      id: '/{-$locale}/blog/'
+      path: '/blog'
+      fullPath: '/{-$locale}/blog/'
+      preLoaderRoute: typeof Char123LocaleChar125BlogIndexRouteImport
+      parentRoute: typeof Char123LocaleChar125Route
+    }
+    '/{-$locale}/blog/$slug': {
+      id: '/{-$locale}/blog/$slug'
+      path: '/blog/$slug'
+      fullPath: '/{-$locale}/blog/$slug'
+      preLoaderRoute: typeof Char123LocaleChar125BlogSlugRouteImport
+      parentRoute: typeof Char123LocaleChar125Route
+    }
+    '/{-$locale}/blog/recherche': {
+      id: '/{-$locale}/blog/recherche'
+      path: '/blog/recherche'
+      fullPath: '/{-$locale}/blog/recherche'
+      preLoaderRoute: typeof Char123LocaleChar125BlogRechercheRouteImport
+      parentRoute: typeof Char123LocaleChar125Route
+    }
+    '/{-$locale}/blog/categorie/$slug': {
+      id: '/{-$locale}/blog/categorie/$slug'
+      path: '/blog/categorie/$slug'
+      fullPath: '/{-$locale}/blog/categorie/$slug'
+      preLoaderRoute: typeof Char123LocaleChar125BlogCategorieSlugRouteImport
+      parentRoute: typeof Char123LocaleChar125Route
+    }
   }
 }
 
+interface Char123LocaleChar125RouteChildren {
+  Char123LocaleChar125AProposRoute: typeof Char123LocaleChar125AProposRoute
+  Char123LocaleChar125ContactRoute: typeof Char123LocaleChar125ContactRoute
+  Char123LocaleChar125ManuelJeitinhoRoute: typeof Char123LocaleChar125ManuelJeitinhoRoute
+  Char123LocaleChar125IndexRoute: typeof Char123LocaleChar125IndexRoute
+  Char123LocaleChar125AuteursSlugRoute: typeof Char123LocaleChar125AuteursSlugRoute
+  Char123LocaleChar125BlogSlugRoute: typeof Char123LocaleChar125BlogSlugRoute
+  Char123LocaleChar125BlogRechercheRoute: typeof Char123LocaleChar125BlogRechercheRoute
+  Char123LocaleChar125AuteursIndexRoute: typeof Char123LocaleChar125AuteursIndexRoute
+  Char123LocaleChar125BlogIndexRoute: typeof Char123LocaleChar125BlogIndexRoute
+  Char123LocaleChar125BlogCategorieSlugRoute: typeof Char123LocaleChar125BlogCategorieSlugRoute
+}
+
+const Char123LocaleChar125RouteChildren: Char123LocaleChar125RouteChildren = {
+  Char123LocaleChar125AProposRoute: Char123LocaleChar125AProposRoute,
+  Char123LocaleChar125ContactRoute: Char123LocaleChar125ContactRoute,
+  Char123LocaleChar125ManuelJeitinhoRoute:
+    Char123LocaleChar125ManuelJeitinhoRoute,
+  Char123LocaleChar125IndexRoute: Char123LocaleChar125IndexRoute,
+  Char123LocaleChar125AuteursSlugRoute: Char123LocaleChar125AuteursSlugRoute,
+  Char123LocaleChar125BlogSlugRoute: Char123LocaleChar125BlogSlugRoute,
+  Char123LocaleChar125BlogRechercheRoute:
+    Char123LocaleChar125BlogRechercheRoute,
+  Char123LocaleChar125AuteursIndexRoute: Char123LocaleChar125AuteursIndexRoute,
+  Char123LocaleChar125BlogIndexRoute: Char123LocaleChar125BlogIndexRoute,
+  Char123LocaleChar125BlogCategorieSlugRoute:
+    Char123LocaleChar125BlogCategorieSlugRoute,
+}
+
+const Char123LocaleChar125RouteWithChildren =
+  Char123LocaleChar125Route._addFileChildren(Char123LocaleChar125RouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
-  IndexRoute: IndexRoute,
-  AProposRoute: AProposRoute,
-  ContactRoute: ContactRoute,
-  ManuelJeitinhoRoute: ManuelJeitinhoRoute,
   McpRoute: McpRoute,
   PartenairesRoute: PartenairesRoute,
   RssDotxmlRoute: RssDotxmlRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
+  Char123LocaleChar125Route: Char123LocaleChar125RouteWithChildren,
   Char91DotmcpChar93ListToolsRoute: Char91DotmcpChar93ListToolsRoute,
   Char91DotwellKnownChar93OauthProtectedResourceRoute:
     Char91DotwellKnownChar93OauthProtectedResourceRoute,
   ApiPartenairesRoute: ApiPartenairesRoute,
-  AuteursSlugRoute: AuteursSlugRoute,
-  BlogSlugRoute: BlogSlugRoute,
-  BlogRechercheRoute: BlogRechercheRoute,
-  AuteursIndexRoute: AuteursIndexRoute,
-  BlogIndexRoute: BlogIndexRoute,
   Char91DotmcpChar93InvokeToolToolRoute: Char91DotmcpChar93InvokeToolToolRoute,
-  BlogCategorieSlugRoute: BlogCategorieSlugRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

@@ -32,7 +32,7 @@ export const Route = createFileRoute("/rss.xml")({
   <channel>
     <title>Le Guide Jeitinho</title>
     <link>${absoluteUrl("/blog")}</link>
-    <description>Le guide francophone de référence sur Rio de Janeiro.</description>
+    <description>Le guide de référence sur Rio de Janeiro, écrit par des locaux.</description>
     <language>fr</language>${items}
   </channel>
 </rss>`;
