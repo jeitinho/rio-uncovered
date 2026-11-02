@@ -44,7 +44,7 @@ export const article: Article = {
 
     { type: "h2", text: "Que voir et que faire" },
     { type: "h3", text: "Le bondinho" },
-    { type: "p", text: "Le tramway historique traverse les arches de Lapa avant de grimper vers le quartier. C'est gratuit et c'est l'une des expériences les plus photographiées de la ville, mais prévoyez de l'attente aux heures de pointe touristique." },
+    { type: "p", text: "Le tramway historique traverse les arches de Lapa avant de grimper vers le quartier. Le trajet est payant pour les visiteurs (les habitants voyagent gratuitement) et c'est l'une des expériences les plus photographiées de la ville : prévoyez de l'attente aux heures de pointe touristique." },
     { type: "h3", text: "Le Parque das Ruínas" },
     { type: "p", text: "Ancienne demeure de la mécène Laurinda Santos Lobo, transformée en ruine architecturale ouverte au public, avec l'une des plus belles vues panoramiques sur le centre-ville et la baie. Gratuit, souvent méconnu des touristes pressés." },
     { type: "h3", text: "Le Museu Chácara do Céu" },

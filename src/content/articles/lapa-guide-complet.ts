@@ -69,7 +69,7 @@ export const article: Article = {
 
     { type: "h2", text: "Une soirée parfaite à Lapa" },
     { type: "ol", items: [
-      "18h — Balade de jour à l'escadaria Selarón avant la foule du soir.",
+      "17h30 — Balade à l'escadaria Selarón avant la foule du soir.",
       "19h30 — Dîner chez Nova Capela ou Adega Portugália.",
       "21h30 — Premier verre en terrasse près des Arcos da Lapa.",
       "22h30 — Entrée dans une gafieira, Rio Scenarium ou Carioca da Gema selon l'ambiance recherchée.",
