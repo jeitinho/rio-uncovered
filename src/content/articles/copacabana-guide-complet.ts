@@ -48,7 +48,7 @@ export const article: Article = {
     { type: "p", text: "L'extrémité nord, plus calme, prisée des familles du quartier et des seniors. Peu de touristes, ambiance de voisinage." },
     { type: "h3", text: "Postos 2 à 4 — le cœur touristique" },
     { type: "p", text: "La zone la plus dense en hôtels, kiosques et vendeurs ambulants. Vivante, bruyante, mais c'est ici que bat le pouls touristique du quartier." },
-    { type: "h3", text: "Posto 5 e 6 — vers le fort" },
+    { type: "h3", text: "Postos 5 et 6 — vers le fort" },
     { type: "p", text: "Plus résidentiel, plus tranquille, proche du Forte de Copacabana où l'on peut prendre un café face à l'océan dans un cadre historique." },
     { type: "aeviter", title: "À éviter", text: "Ne laissez jamais vos affaires sans surveillance, même deux minutes, et évitez de porter des bijoux visibles sur l'avenue Atlântica la nuit. Le quartier est globalement sûr en journée, mais reste une zone très fréquentée où les vols à l'arraché existent, comme dans toute grande ville touristique." },
 

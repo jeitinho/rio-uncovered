@@ -57,7 +57,7 @@ export const article: Article = {
     { type: "h3", text: "Le Jockey Club Brasileiro" },
     { type: "p", text: "L'hippodrome historique de Rio, situé en bordure de la lagune, organise régulièrement des courses hippiques ouvertes au public, avec vue sur le Corcovado en arrière-plan — une expérience atypique loin des sentiers touristiques classiques." },
     { type: "h3", text: "Les illuminations de Noël" },
-    { type: "p", text: "Chaque année, un immense sapin flottant illuminé est installé sur la lagune pour les fêtes de fin d'année, devenant l'un des symboles visuels les plus connus du Rio de décembre." },
+    { type: "p", text: "Traditionnellement, un immense sapin flottant illuminé est installé sur la lagune pour les fêtes de fin d'année, devenant l'un des symboles visuels les plus connus du Rio de décembre." },
 
     { type: "h2", text: "Une demi-journée parfaite autour de la Lagoa" },
     { type: "ol", items: [

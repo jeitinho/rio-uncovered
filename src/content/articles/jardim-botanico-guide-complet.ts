@@ -35,7 +35,7 @@ export const article: Article = {
 
     { type: "h2", text: "Comprendre le Jardim Botânico en cinq minutes" },
     { type: "p", text: "Le quartier s'étend entre la lagune Rodrigo de Freitas et les contreforts de la forêt de Tijuca, adossé à la Pedra da Gávea qui domine tout l'horizon. Sa faible densité, ses rues arborées et l'absence de grands axes de circulation en font l'un des quartiers résidentiels les plus recherchés de la ville, en particulier par les familles avec enfants et les expatriés en poste durable." },
-    { type: "p", text: "Le Jardin botanique lui-même, fondé en 1808, s'étend sur 54 hectares et abrite plus de 6 500 espèces végétales, dont la célèbre allée de palmiers impériaux plantée à l'origine du site. C'est aussi ici que se trouve le siège du Instituto Moreira Salles, référence culturelle incontournable." },
+    { type: "p", text: "Le Jardin botanique lui-même, fondé en 1808, s'étend sur 54 hectares et abrite plus de 6 500 espèces végétales, dont la célèbre allée de palmiers impériaux plantée à l'origine du site. À deux pas, côté Gávea, se trouve l'Instituto Moreira Salles, référence culturelle incontournable." },
     { type: "conseil", title: "Le conseil Jeitinho", text: "Visitez le Jardin botanique tôt le matin, à l'ouverture : la lumière rasante sur l'allée des palmiers impériaux et la fraîcheur encore présente rendent la visite bien plus agréable qu'en pleine chaleur de l'après-midi." },
 
     { type: "h2", text: "Le Jardin botanique : ce qu'il ne faut pas manquer" },
@@ -52,7 +52,7 @@ export const article: Article = {
     ]},
     { type: "h3", text: "Cafés et brunchs" },
     { type: "ul", items: [
-      "Instituto Moreira Salles (café interne) — pause déjeuner dans un cadre culturel exceptionnel, jardin dessiné par Burle Marx.",
+      "Instituto Moreira Salles (café interne, côté Gávea) — pause déjeuner dans un cadre culturel exceptionnel, jardin dessiné par Burle Marx.",
       "Padaria local sur la rua Jardim Botânico — pour un petit-déjeuner simple avant la visite du jardin.",
     ]},
     { type: "bonasavoir", title: "Bon à savoir", text: "Le quartier est prisé par une clientèle plus âgée et plus aisée : les restaurants y sont globalement plus chers qu'à Botafogo mais offrent un cadre plus intimiste que ceux d'Ipanema ou Leblon." },
@@ -61,7 +61,7 @@ export const article: Article = {
     { type: "h3", text: "L'Instituto Moreira Salles" },
     { type: "p", text: "Cette fondation culturelle installée dans une ancienne demeure privée organise des expositions de photographie et d'art de très haute qualité, dans un jardin paysager conçu par Roberto Burle Marx, souvent méconnu des visiteurs pressés." },
     { type: "h3", text: "Point de départ vers le Corcovado" },
-    { type: "p", text: "Le quartier constitue également l'un des points d'accès pour l'ascension en train à crémaillère vers le Christ Rédempteur, la gare de départ se trouvant à quelques minutes." },
+    { type: "p", text: "Le quartier est aussi une base pratique pour monter au Christ Rédempteur : la gare du train à crémaillère, au Cosme Velho, n'est qu'à une quinzaine de minutes en voiture." },
     { type: "h3", text: "La lagune Rodrigo de Freitas" },
     { type: "p", text: "Bordant le quartier, la lagune offre une piste continue pour la course à pied, le vélo ou le pédalo, avec la Pedra da Gávea et le Corcovado en toile de fond." },
 
@@ -83,7 +83,7 @@ export const article: Article = {
     { type: "faq", items: [
       { q: "Combien de temps prévoir pour le Jardin botanique ?", a: "Comptez deux heures minimum, davantage si vous êtes passionné de botanique ou si vous participez à une visite guidée thématique." },
       { q: "Le Jardim Botânico est-il un bon quartier pour loger ?", a: "Oui pour un séjour calme et vert, notamment en famille, mais l'offre hôtelière y est plus limitée qu'à Ipanema ou Copacabana, avec surtout des locations d'appartements." },
-      { q: "Peut-on combiner Jardim Botânico et Corcovado le même jour ?", a: "Oui, le quartier est l'un des points de départ pratiques du train à crémaillère vers le Christ Rédempteur, à réserver en ligne à l'avance." },
+      { q: "Peut-on combiner Jardim Botânico et Corcovado le même jour ?", a: "Oui, la gare du train à crémaillère vers le Christ Rédempteur, au Cosme Velho, n'est qu'à une quinzaine de minutes en voiture ; réservez le train en ligne à l'avance." },
       { q: "Le jardin est-il adapté aux enfants ?", a: "Oui, les allées sont larges et ombragées, et la rencontre avec les singes-écureuils en liberté ravit généralement les plus jeunes." },
     ]},
 

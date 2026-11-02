@@ -39,7 +39,7 @@ export const article: Article = {
     { type: "conseil", title: "Le conseil Jeitinho", text: "Faites l'aller-retour à pied entre Ipanema et Leblon en longeant la plage : la vue sur la Pedra da Gávea qui surplombe le quartier est l'une des plus spectaculaires de la ville, surtout en fin d'après-midi quand la roche prend une teinte dorée." },
 
     { type: "h2", text: "La plage : plus tranquille qu'à Ipanema" },
-    { type: "p", text: "La plage de Leblon prolonge celle d'Ipanema mais reste plus familiale et moins agitée. Le posto 11 et 12 marquent la frontière avec Ipanema, tandis que l'extrémité proche du canal accueille traditionnellement les familles avec jeunes enfants, grâce à une petite aire de jeux et des sanitaires bien entretenus." },
+    { type: "p", text: "La plage de Leblon prolonge celle d'Ipanema mais reste plus familiale et moins agitée. Elle est jalonnée par les postos 11 et 12, et l'un de ses tronçons, surnommé « Baixo Bebê », accueille traditionnellement les familles avec jeunes enfants, grâce à une petite aire de jeux et des sanitaires bien entretenus." },
     { type: "p", text: "Contrairement à d'autres plages de la Zona Sul, Leblon attire moins les grands groupes bruyants et davantage les habitants du quartier qui viennent nager avant le travail ou faire du sport en fin de journée." },
     { type: "h3", text: "Le Mirante do Leblon" },
     { type: "p", text: "Ce belvédère, à l'extrémité ouest de la plage, est considéré comme l'un des plus beaux points de vue de la Zona Sul : incontournable au coucher du soleil, quand la Pedra da Gávea et Dois Irmãos virent à l'orange." },
@@ -103,7 +103,7 @@ export const article: Article = {
       { q: "Leblon ou Ipanema : lequel choisir pour loger ?", a: "Leblon est plus calme, plus cher et plus résidentiel. Ipanema offre plus d'animation et un meilleur accès aux transports. Pour un séjour tranquille en couple ou en famille avec un budget confortable, Leblon est idéal." },
       { q: "Leblon est-il adapté aux familles ?", a: "Oui, c'est probablement le quartier le plus familial de la Zona Sul, avec une plage plus calme et des infrastructures pensées pour les enfants." },
       { q: "Quel est le budget moyen à Leblon ?", a: "C'est l'un des quartiers les plus chers de Rio, aussi bien pour l'hébergement que pour la restauration. Comptez un budget supérieur de 20 à 40% par rapport à Ipanema pour un dîner équivalent." },
-      { q: "Comment se déplacer entre Leblon et le reste de la ville ?", a: "Il n'y a pas de station de métro directement à Leblon ; le plus simple est de prendre un taxi, une application de VTC, ou de marcher depuis la station Nossa Senhora da Paz à Ipanema." },
+      { q: "Comment se déplacer entre Leblon et le reste de la ville ?", a: "Leblon est desservi par la ligne 4 du métro (stations Jardim de Alah et Antero de Quental), en continuité avec la ligne 1 vers Ipanema, Copacabana et le centre. Taxis et applications de VTC complètent l'offre, notamment le soir." },
     ]},
 
     { type: "p", text: "Leblon ne cherche pas à impressionner, il se contente d'être excellent, discrètement. C'est peut-être là sa plus grande élégance." },
