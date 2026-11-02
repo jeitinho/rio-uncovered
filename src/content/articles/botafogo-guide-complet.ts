@@ -43,7 +43,7 @@ export const article: Article = {
     { type: "h2", text: "Le front de mer et la baie" },
     { type: "p", text: "La baie de Botafogo, bordée par l'Aterro do Flamengo qui la relie au parc du même nom, est un lieu de promenade et de sport à ciel ouvert : joggeurs, cyclistes et familles s'y croisent du matin au soir, avec en toile de fond la silhouette du Pain de Sucre qui se reflète dans l'eau calme, surtout au coucher du soleil." },
     { type: "p", text: "Contrairement aux plages de la Zona Sul, on ne se baigne pas ici : l'eau de la baie est trop polluée pour la baignade. Mais c'est un excellent endroit pour le vélo, le pique-nique ou simplement s'asseoir sur la pelouse en admirant la vue." },
-    { type: "aeviter", title: "À éviter", text: "Ne vous baignez pas dans la baie de Botafogo, l'eau y est impropre à la baignade contrairement aux plages océaniques de la Zona Sul. Pour nager, direction Copacabana ou Urca." },
+    { type: "aeviter", title: "À éviter", text: "Ne vous baignez pas dans la baie de Botafogo, l'eau y est impropre à la baignade contrairement aux plages océaniques de la Zona Sul. Pour nager, direction Copacabana ou la Praia Vermelha, à Urca." },
 
     { type: "h2", text: "Où manger — nos vraies adresses" },
     { type: "h3", text: "Rua Voluntários da Pátria, l'axe gourmand" },
@@ -108,7 +108,7 @@ export const article: Article = {
     { type: "faq", items: [
 
       { q: "Botafogo est-il un bon quartier pour loger ?", a: "Oui, c'est un excellent compromis entre budget maîtrisé, vie de quartier authentique et bonne connexion en métro vers Ipanema, Copacabana et le centre-ville." },
-      { q: "Peut-on se baigner à Botafogo ?", a: "Non, l'eau de la baie est impropre à la baignade. Il faut se rendre à Copacabana ou Urca pour nager." },
+      { q: "Peut-on se baigner à Botafogo ?", a: "Non, l'eau de la baie est impropre à la baignade. Il faut se rendre à Copacabana ou à la Praia Vermelha (Urca) pour nager." },
       { q: "Comment se déplacer depuis Botafogo ?", a: "Le quartier est desservi par le métro (ligne 1), ce qui en fait l'un des points de connexion les plus pratiques de la Zona Sul." },
       { q: "Botafogo est-il adapté aux familles ?", a: "Oui, le quartier est calme en journée avec de bons espaces verts, même s'il n'a pas de plage de baignade directement accessible." },
     ]},

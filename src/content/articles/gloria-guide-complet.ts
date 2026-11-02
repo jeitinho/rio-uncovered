@@ -48,7 +48,7 @@ export const article: Article = {
     { type: "h3", text: "La Marina da Glória" },
     { type: "p", text: "Promenade agréable en bord d'eau, avec vue sur le Pain de Sucre et Niterói de l'autre côté de la baie. C'est également un point de départ pour certaines excursions en bateau dans la baie de Guanabara." },
     { type: "h3", text: "Le Museu Carmen Miranda" },
-    { type: "p", text: "Petit musée dédié à l'icône brésilienne, avec costumes, photographies et souvenirs retraçant la carrière de la chanteuse qui a incarné l'image du Brésil à Hollywood dans les années 1940." },
+    { type: "p", text: "Installé tout près, dans le parc du Flamengo, ce petit musée est dédié à l'icône brésilienne, avec costumes, photographies et souvenirs retraçant la carrière de la chanteuse qui a incarné l'image du Brésil à Hollywood dans les années 1940. Vérifiez qu'il est ouvert avant d'y aller : il a connu de longues périodes de fermeture." },
     { type: "aeviter", title: "À éviter", text: "Le quartier est calme en journée mais peu fréquenté le soir. Évitez de vous y attarder seul après la tombée de la nuit, en particulier dans les rues résidentielles en pente, moins éclairées et moins passantes que dans la Zona Sul." },
 
     { type: "h2", text: "Où manger — nos vraies adresses" },

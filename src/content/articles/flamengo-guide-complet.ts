@@ -36,18 +36,18 @@ export const article: Article = {
     { type: "h2", text: "Comprendre Flamengo en cinq minutes" },
     { type: "p", text: "Flamengo s'étend entre <a href=\"/blog/botafogo-guide-complet\">Botafogo</a> au sud et <a href=\"/blog/gloria-guide-complet\">Glória</a> au nord, le long de la baie de Guanabara. Le quartier est structuré autour de deux axes : la rue du Catete, artère commerçante animée, et l'immense parc de l'Aterro do Flamengo qui longe toute la baie jusqu'au centre-ville." },
     { type: "p", text: "Ce parc, aménagé dans les années 1960 sur des terrains gagnés sur la mer lors de la destruction d'une colline voisine, reste l'un des chefs-d'œuvre paysagers du Brésil, mêlant pelouses, terrains de sport, musées et pistes cyclables sur plusieurs kilomètres." },
-    { type: "conseil", title: "Le conseil Jeitinho", text: "Venez à l'Aterro do Flamengo un dimanche matin : la voie rapide qui longe le parc est fermée à la circulation motorisée jusqu'à midi, transformée en immense piste pour joggeurs, cyclistes et familles. C'est l'un des meilleurs moments pour sentir le rythme dominical carioca." },
+    { type: "conseil", title: "Le conseil Jeitinho", text: "Venez à l'Aterro do Flamengo un dimanche matin : la voie rapide qui longe le parc est fermée à la circulation motorisée le dimanche et les jours fériés, en journée, transformée en immense piste pour joggeurs, cyclistes et familles. C'est l'un des meilleurs moments pour sentir le rythme dominical carioca." },
 
     { type: "h2", text: "Le parc du Flamengo : le poumon vert de Rio" },
-    { type: "p", text: "L'Aterro do Flamengo s'étend sur plus de trois kilomètres entre Botafogo et le centre-ville, offrant vues sur la baie de Guanabara, le Pain de Sucre et, côté terre, les collines de Santa Teresa. On y trouve des terrains de football et de volley en libre accès, des aires de jeux, et un espace dédié au vol libre où l'on peut voir atterrir les parapentistes venus de la Pedra Bonita." },
+    { type: "p", text: "L'Aterro do Flamengo s'étend sur plus de trois kilomètres entre Botafogo et le centre-ville, offrant vues sur la baie de Guanabara, le Pain de Sucre et, côté terre, les collines de Santa Teresa. On y trouve des terrains de football et de volley en libre accès, des aires de jeux, et de vastes pelouses où les familles cariocas pique-niquent le week-end." },
     { type: "p", text: "Le Museu de Arte Moderna (MAM), à l'entrée du parc côté centre-ville, est l'un des musées d'art moderne les plus importants d'Amérique latine, dans un bâtiment emblématique signé Affonso Eduardo Reidy." },
     { type: "aeviter", title: "À éviter", text: "Évitez de vous promener seul dans les parties les moins fréquentées du parc après la tombée de la nuit. En journée, la fréquentation dense assure une sécurité globale, mais comme tout grand espace vert ouvert, la vigilance de base reste de mise le soir." },
 
     { type: "h2", text: "Où manger — nos vraies adresses" },
     { type: "ul", items: [
-      "Lamas — institution centenaire de la rue du Catete, ouverte jusqu'à tard, cuisine brésilienne classique et généreuse.",
+      "Café Lamas — institution fondée en 1874, rue Marquês de Abrantes, ouverte jusqu'à tard, cuisine brésilienne classique et généreuse.",
       "Adega Portugalia (annexe Flamengo) — petiscos portugais et ambiance de quartier sans prétention.",
-      "Café Lamas — pour un petit-déjeuner ou un café dans un cadre historique du quartier.",
+      "Les padarias de la rue Marquês de Abrantes — pour un petit-déjeuner simple avant d'aller au parc.",
     ]},
     { type: "bonasavoir", title: "Bon à savoir", text: "Flamengo est l'un des meilleurs quartiers de Rio pour manger correctement à petit budget : les prix restent nettement inférieurs à ceux d'Ipanema ou de Leblon pour une cuisine tout aussi authentique." },
 
@@ -61,10 +61,10 @@ export const article: Article = {
 
     { type: "h2", text: "Une journée parfaite à Flamengo" },
     { type: "ol", items: [
-      "8h — Petit-déjeuner au Café Lamas, rue du Catete.",
+      "8h — Petit-déjeuner dans une padaria de la rue Marquês de Abrantes.",
       "9h30 — Visite du Palácio do Catete et de son jardin.",
       "11h — Balade dans l'Aterro do Flamengo, à pied ou à vélo.",
-      "12h30 — Déjeuner chez Lamas ou Adega Portugalia.",
+      "12h30 — Déjeuner au Café Lamas ou à l'Adega Portugalia.",
       "14h30 — Visite du Museu de Arte Moderna.",
       "16h30 — Détente sur les pelouses du parc face à la baie.",
       "18h — Coucher de soleil vue Pain de Sucre depuis le parc.",
@@ -79,7 +79,7 @@ export const article: Article = {
       { q: "Flamengo est-il un bon quartier pour loger ?", a: "Oui, c'est un choix pertinent pour un budget maîtrisé avec un accès facile au métro, au parc et au centre historique, même s'il ne compte pas de plage de baignade." },
       { q: "Le parc du Flamengo est-il sûr ?", a: "En journée, oui, il est très fréquenté par les familles et les sportifs. Le soir, restez sur les zones les plus animées et éclairées." },
       { q: "Comment se déplacer depuis Flamengo ?", a: "Le quartier est bien desservi par le métro (ligne 1), avec un accès direct vers le centre-ville, Botafogo et la Zona Sul." },
-      { q: "Que faire un dimanche à Flamengo ?", a: "Profitez de la fermeture dominicale de la voie rapide de l'Aterro à la circulation, l'un des meilleurs moments pour marcher, courir ou faire du vélo dans le parc." },
+      { q: "Que faire un dimanche à Flamengo ?", a: "Profitez de la fermeture dominicale (en journée) de la voie rapide de l'Aterro à la circulation, l'un des meilleurs moments pour marcher, courir ou faire du vélo dans le parc." },
     ]},
 
     { type: "p", text: "Flamengo n'a pas la carte postale des plages de la Zona Sul, mais il offre quelque chose de plus rare à Rio : un vrai poumon vert au bord de l'eau, où les cariocas de tous les milieux se retrouvent, dimanche après dimanche, dans une gratuité et une simplicité qui font tout le charme du quartier." },

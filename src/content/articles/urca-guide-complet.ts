@@ -35,7 +35,7 @@ export const article: Article = {
 
     { type: "h2", text: "Comprendre Urca en cinq minutes" },
     { type: "p", text: "Urca occupe une presqu'île gagnée sur la baie au début du XXe siècle, à partir des matériaux d'excavation utilisés pour aplanir des collines du centre-ville. Le quartier est resté volontairement à taille humaine : hauteur des immeubles limitée, faible densité, rues calmes bordées de villas Art déco des années 1920-1940." },
-    { type: "p", text: "Le Pain de Sucre (Pão de Açúcar), point de départ du téléphérique le plus célèbre du Brésil, se trouve à l'extrémité du quartier. Mais Urca ne se résume pas à cette ascension : c'est aussi une praia dos Urubus modeste où les cariocas viennent pique-niquer face à la baie, et un campus militaire naval qui occupe une bonne partie du territoire." },
+    { type: "p", text: "Le Pain de Sucre (Pão de Açúcar), point de départ du téléphérique le plus célèbre du Brésil, se trouve à l'extrémité du quartier. Mais Urca ne se résume pas à cette ascension : c'est aussi la petite Praia da Urca, où les cariocas viennent pique-niquer face à la baie, la Praia Vermelha au pied du Pain de Sucre, et des installations militaires qui occupent une bonne partie du territoire." },
     { type: "conseil", title: "Le conseil Jeitinho", text: "Montez au Pain de Sucre en fin d'après-midi, une heure avant le coucher du soleil : la lumière dorée sur la baie de Guanabara et le passage progressif à la vue nocturne illuminée de la ville valent largement d'éviter la cohue de la mi-journée." },
 
     { type: "h2", text: "Le Pain de Sucre : ce qu'il faut savoir avant d'y aller" },
@@ -51,7 +51,7 @@ export const article: Article = {
     { type: "ul", items: [
       "Bar Urca — institution locale où l'on commande ses petiscos au comptoir pour les manger assis sur le muret face à la baie, coucher de soleil garanti.",
       "Garota da Urca — cuisine brésilienne simple et généreuse, terrasse conviviale.",
-      "Círculo Militar da Urca — club historique ouvert au public pour le déjeuner, cadre atypique en bord de mer.",
+      "Círculo Militar da Praia Vermelha — club historique ouvert au public pour le déjeuner, cadre atypique en bord de mer.",
     ]},
     { type: "bonasavoir", title: "Bon à savoir", text: "Le Bar Urca est un rituel carioca à part entière : on achète à emporter et on s'installe sur le muret du front de mer avec les habitants du quartier. Arrivez vers 17h30 pour une bonne place avant le coucher de soleil." },
 
@@ -77,7 +77,7 @@ export const article: Article = {
       { q: "Faut-il réserver le Pain de Sucre à l'avance ?", a: "Oui, fortement recommandé en haute saison (décembre à février) pour éviter l'attente, via le site officiel du téléphérique." },
       { q: "Urca est-il un bon quartier pour loger ?", a: "C'est un quartier très calme avec peu d'hébergements, davantage adapté à une visite qu'à un séjour prolongé, sauf si vous cherchez explicitement la tranquillité loin de l'agitation touristique." },
       { q: "Combien de temps prévoir pour le Pain de Sucre ?", a: "Comptez deux à trois heures pour l'ascension complète avec les deux niveaux, en intégrant le temps d'attente pour les billets et le téléphérique." },
-      { q: "Peut-on se baigner à Urca ?", a: "La plage est petite et peu profonde, davantage adaptée à la détente qu'à la baignade. Pour nager, mieux vaut se rendre à Copacabana ou Botafogo." },
+      { q: "Peut-on se baigner à Urca ?", a: "La plage est petite et peu profonde, davantage adaptée à la détente qu'à la baignade. Pour nager, mieux vaut aller à la Praia Vermelha, de l'autre côté du quartier au pied du Pain de Sucre, ou à Copacabana." },
     ]},
 
     { type: "p", text: "Urca prouve qu'à Rio, les quartiers les plus discrets cachent souvent les plus beaux moments. Un coucher de soleil sur la baie de Guanabara, un chope sur un muret, et la ville entière semble ralentir." },
