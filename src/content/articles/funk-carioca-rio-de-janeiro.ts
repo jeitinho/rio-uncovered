@@ -172,7 +172,7 @@ export const article: Article = {
       items: [
         {
           q: "Qu'est-ce qu'un Baile Funk à Rio ?",
-          a: "Un baile funk est une grande fête populaire née dans les favelas et quartiers populaires de Rio, où la musique funk est diffusée sur d'imposants systèmes de sonorisation (pasto/paredão) avec d'importantes basses.",
+          a: "Un baile funk est une grande fête populaire née dans les favelas et quartiers populaires de Rio, où la musique funk est diffusée sur d'imposants systèmes de sonorisation (les paredões) avec d'importantes basses.",
         },
         {
           q: "Qu'est-ce que le Passinho ?",
