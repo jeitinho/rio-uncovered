@@ -36,7 +36,7 @@ export const article: Article = {
 
     { type: "h2", text: "Les plages à ne pas manquer" },
     { type: "h3", text: "Praia de Lopes Mendes" },
-    { type: "p", text: "Considérée comme l'une des plus belles plages du Brésil. Sable blanc fin, eau cristalline et vagues idéales pour le bodyboard. Accessible après une randonnée d'environ 1h30 depuis la Vila do Abraão, ou en bateau depuis le village." },
+    { type: "p", text: "Considérée comme l'une des plus belles plages du Brésil. Sable blanc fin, eau cristalline et vagues idéales pour le bodyboard. Accessible après une randonnée de 2h30 à 3h depuis la Vila do Abraão, ou en bateau jusqu'à la Praia do Pouso puis une vingtaine de minutes de marche." },
     { type: "h3", text: "Praia Preta" },
     { type: "p", text: "Plage plus proche du village, facilement accessible à pied, idéale pour une baignade tranquille en fin de journée sans randonnée nécessaire." },
     { type: "h3", text: "Lagoa Azul" },
@@ -60,7 +60,7 @@ export const article: Article = {
       { q: "Combien de temps prend le trajet depuis Rio jusqu'à Ilha Grande ?", a: "Comptez environ 2h30 de route jusqu'au point d'embarquement, puis 30 minutes à 1h30 de bateau selon le port de départ choisi." },
       { q: "Faut-il rester plusieurs jours à Ilha Grande ?", a: "C'est fortement recommandé : une excursion d'une journée limite fortement le temps disponible sur place compte tenu du trajet. Une à deux nuits permettent une découverte bien plus complète." },
       { q: "Y a-t-il des voitures sur l'île ?", a: "Non, aucune circulation automobile n'est autorisée sur Ilha Grande. Tous les déplacements se font à pied ou en bateau, ce qui contribue à la tranquillité et à la préservation du lieu." },
-      { q: "Quelle est la plage la plus connue d'Ilha Grande ?", a: "Praia de Lopes Mendes, considérée comme l'une des plus belles plages du Brésil, accessible par une randonnée d'environ 1h30 ou en bateau depuis la Vila do Abraão." },
+      { q: "Quelle est la plage la plus connue d'Ilha Grande ?", a: "Praia de Lopes Mendes, considérée comme l'une des plus belles plages du Brésil, accessible par une randonnée de 2h30 à 3h depuis la Vila do Abraão, ou en bateau jusqu'à la Praia do Pouso suivi d'une vingtaine de minutes de marche." },
     ]},
 
     { type: "p", text: "Ilha Grande offre un contraste total avec l'agitation de Rio : nature préservée, plages désertes et rythme ralenti. Une parenthèse indispensable pour qui cherche à se reconnecter le temps de quelques jours." },
