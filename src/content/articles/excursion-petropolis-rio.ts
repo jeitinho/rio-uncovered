@@ -31,7 +31,7 @@ export const article: Article = {
     { type: "bonasavoir", title: "Bon à savoir", text: "Perchée à plus de 800 mètres d'altitude, Petrópolis affiche des températures nettement plus fraîches qu'à Rio, souvent plusieurs degrés en dessous. C'est une excursion particulièrement agréable en plein été carioca, quand la chaleur et l'humidité de la ville deviennent pesantes." },
 
     { type: "h2", text: "Comment se rendre à Petrópolis depuis Rio" },
-    { type: "p", text: "En voiture, comptez environ une heure de trajet par la BR-040, une route de montagne sinueuse mais bien tracée. En bus, des compagnies comme Únique Fácil relient la gare routière Novo Rio (Rodoviária Novo Rio) à la rodoviária de Petrópolis, avec des départs réguliers tout au long de la journée ; le trajet dure généralement entre 1h30 et 1h45. Vérifiez les horaires à jour directement à la gare routière ou auprès de la compagnie, car ils évoluent régulièrement." },
+    { type: "p", text: "En voiture, comptez environ une heure de trajet par la BR-040, une route de montagne sinueuse mais bien tracée. En bus, des compagnies comme Única Fácil relient la gare routière Novo Rio (Rodoviária Novo Rio) à la rodoviária de Petrópolis, avec des départs réguliers tout au long de la journée ; le trajet dure généralement entre 1h30 et 1h45. Vérifiez les horaires à jour directement à la gare routière ou auprès de la compagnie, car ils évoluent régulièrement." },
     { type: "conseil", title: "Le conseil Jeitinho", text: "Un chauffeur privé reste la solution la plus confortable pour une excursion à la journée : vous gagnez du temps sur le trajet aller, vous n'êtes pas dépendant des horaires de bus au retour, et vous pouvez enchaîner les sites sans perdre de temps entre chaque arrêt." },
 
     { type: "h2", text: "Le Museu Imperial, ancien palais d'été" },
@@ -45,11 +45,11 @@ export const article: Article = {
     { type: "p", text: "Petrópolis fut aussi la résidence d'été du pionnier de l'aviation Santos Dumont. Sa maison, surnommée « A Encantada », se visite dans le centre historique et surprend par son architecture atypique et ses aménagements ingénieux, à l'image du personnage. Une étape courte mais appréciée, à ajouter au programme si le temps le permet." },
 
     { type: "h2", text: "Organiser sa journée" },
-    { type: "p", text: "Une excursion à la journée à Petrópolis est tout à fait réaliste : en partant tôt de Rio, vous êtes sur place en fin de matinée et pouvez enchaîner Museu Imperial, cathédrale, centre historique et maison de Santos Dumont avant de reprendre la route en fin d'après-midi. C'est un rythme confortable qui laisse aussi le temps de flâner dans les rues du centre, bordées de maisons coloniales, ou de s'arrêter dans l'une des brasseries locales, la région étant réputée pour sa production de bière artisanale." },
+    { type: "p", text: "Une excursion à la journée à Petrópolis est tout à fait réaliste : en partant tôt de Rio, vous êtes sur place en fin de matinée et pouvez enchaîner Museu Imperial, cathédrale, centre historique et maison de Santos Dumont avant de reprendre la route en fin d'après-midi. C'est un rythme confortable qui laisse aussi le temps de flâner dans les rues du centre, bordées de demeures du XIXe siècle, ou de s'arrêter dans l'une des brasseries locales, la région étant réputée pour sa production de bière artisanale." },
     { type: "ul", items: [
       "Museu Imperial : le cœur historique de la visite, à prévoir en priorité.",
       "Cathédrale São Pedro de Alcântara : quelques minutes à pied du musée.",
-      "Centre historique et ses maisons coloniales, pour flâner sans itinéraire précis.",
+      "Centre historique et ses demeures du XIXe siècle, pour flâner sans itinéraire précis.",
       "Maison de Santos Dumont, une étape courte et originale.",
       "Une pause dans une brasserie artisanale locale, spécialité de la région.",
     ]},
@@ -65,6 +65,6 @@ export const article: Article = {
       { q: "Fait-il plus frais à Petrópolis qu'à Rio ?", a: "Oui, la ville est perchée à plus de 800 mètres d'altitude et affiche des températures nettement plus fraîches qu'à Rio, ce qui en fait une excursion agréable en pleine chaleur estivale." },
     ]},
 
-    { type: "p", text: "Entre palais impérial, cathédrale et maisons coloniales, Petrópolis offre une facette de Rio et de son histoire que la plage ne raconte pas. Une journée suffit pour en saisir l'essentiel, et repartir avec une vision plus complète du Brésil impérial." },
+    { type: "p", text: "Entre palais impérial, cathédrale et demeures du XIXe siècle, Petrópolis offre une facette de Rio et de son histoire que la plage ne raconte pas. Une journée suffit pour en saisir l'essentiel, et repartir avec une vision plus complète du Brésil impérial." },
   ],
 };

@@ -44,7 +44,7 @@ export const article: Article = {
 
     { type: "h2", text: "Cascades et forêt atlantique autour de Paraty" },
     { type: "p", text: "Paraty est encerclée par la Mata Atlântica, l'une des forêts tropicales les plus riches en biodiversité au monde, et par le Parque Nacional da Serra da Bocaina, qui s'étend jusqu'aux montagnes environnantes. De nombreuses cachoeiras (cascades) sont accessibles en une demi-journée d'excursion depuis le centre-ville, certaines avec des piscines naturelles où l'on peut se baigner." },
-    { type: "p", text: "Le village de Trindade, à environ une heure de route, combine plages sauvages, sentiers en forêt et piscines naturelles entre les rochers, et constitue une excursion à part entière pour qui dispose d'une journée supplémentaire." },
+    { type: "p", text: "Le village de Trindade, à environ 40 minutes de route, combine plages sauvages, sentiers en forêt et piscines naturelles entre les rochers, et constitue une excursion à part entière pour qui dispose d'une journée supplémentaire." },
 
     { type: "h2", text: "Excursions en bateau dans la baie de Paraty" },
     { type: "p", text: "La baie de Paraty compte de nombreuses îles et criques accessibles en bateau, souvent à bord des saveiros, ces voiliers traditionnels en bois typiques de la région. Les sorties en bateau à la journée permettent de faire escale sur plusieurs plages et de nager en mer calme, loin de l'agitation du centre-ville. Les tarifs varient selon la durée et le nombre d'escales : renseignez-vous directement sur place ou auprès d'un chauffeur local pour comparer les formules du jour." },
