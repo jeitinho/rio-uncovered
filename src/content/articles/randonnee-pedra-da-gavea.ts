@@ -74,7 +74,7 @@ export const article: Article = {
     { type: "h2", text: "La Carrasqueira : le passage à corde fixe qui change tout" },
     {
       type: "p",
-      text: "C'est la partie qui distingue vraiment la Pedra da Gávea de toutes les autres randonnées de Rio : la Carrasqueira, une paroi rocheuse d'une trentaine de mètres à franchir juste avant le sommet. Le passage se fait à l'aide de chaînes fixées dans la roche et de planches de bois installées aux endroits les plus exposés, sur un terrain où l'on grimpe autant qu'on marche.",
+      text: "C'est la partie qui distingue vraiment la Pedra da Gávea de toutes les autres randonnées de Rio : la Carrasqueira, une paroi rocheuse d'une trentaine de mètres à franchir juste avant le sommet. Le passage se fait en escalade sur la roche nue, sans équipement fixe : ce sont les guides qui y installent une corde pour assurer leurs clients, sur un terrain où l'on grimpe autant qu'on marche.",
     },
     {
       type: "p",
@@ -181,7 +181,7 @@ export const article: Article = {
         },
         {
           q: "Qu'est-ce que la Carrasqueira ?",
-          a: "C'est le passage le plus délicat de la randonnée : une paroi rocheuse d'environ 30 mètres à franchir juste avant le sommet, équipée de chaînes fixes et de planches de bois, avec une exposition réelle en cas de chute.",
+          a: "C'est le passage le plus délicat de la randonnée : une paroi rocheuse d'environ 30 mètres à franchir juste avant le sommet, en escalade et sans équipement fixe (les guides installent une corde d'assurance), avec une exposition réelle en cas de chute.",
         },
         {
           q: "Cette randonnée est-elle dangereuse ?",
