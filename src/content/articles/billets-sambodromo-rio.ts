@@ -41,7 +41,7 @@ export const article: Article = {
     { type: "h2", text: "Le défilé des écoles du Groupe Spécial" },
     {
       type: "p",
-      text: "Le Groupe Spécial (Grupo Especial) réunit les meilleures écoles de samba de Rio, celles qu'on voit à la télévision du monde entier. Leur défilé se déroule sur deux à trois nuits consécutives selon les années, généralement le dimanche et le lundi du Carnaval (parfois complétées par une troisième nuit), chaque école disposant d'environ 65 à 70 minutes pour dérouler son thème devant un jury. C'est l'événement le plus demandé, le plus cher et le plus spectaculaire du Sambódromo — et celui auquel pense la plupart des visiteurs quand on parle de « billets pour le Carnaval ».",
+      text: "Le Groupe Spécial (Grupo Especial) réunit les meilleures écoles de samba de Rio, celles qu'on voit à la télévision du monde entier. Depuis 2025, leur défilé se déroule sur trois nuits consécutives — le dimanche, le lundi et le mardi du Carnaval —, à raison de quatre écoles par soir, chaque école disposant d'environ 65 à 70 minutes pour dérouler son thème devant un jury. C'est l'événement le plus demandé, le plus cher et le plus spectaculaire du Sambódromo — et celui auquel pensent la plupart des visiteurs quand on parle de « billets pour le Carnaval ».",
     },
     {
       type: "p",
@@ -87,7 +87,7 @@ export const article: Article = {
     { type: "h2", text: "Quelle nuit choisir ?" },
     {
       type: "p",
-      text: "Toutes les nuits ne se valent pas. Les deux (ou trois) nuits du Grupo Especial sont les plus demandées, les plus chères et les plus impressionnantes : c'est là que défilent les grandes écoles historiques, avec les budgets et la préparation les plus importants. C'est aussi la soirée la plus longue — comptez que le défilé s'étend souvent jusqu'au petit matin.",
+      text: "Toutes les nuits ne se valent pas. Les trois nuits du Grupo Especial sont les plus demandées, les plus chères et les plus impressionnantes : c'est là que défilent les grandes écoles historiques, avec les budgets et la préparation les plus importants. C'est aussi la soirée la plus longue — comptez que le défilé s'étend souvent jusqu'au petit matin.",
     },
     {
       type: "p",
@@ -126,7 +126,7 @@ export const article: Article = {
         "Prévoyez de tenir la nuit entière : mangez avant d'arriver, hydratez-vous, et ne comptez pas forcément dormir avant le lendemain après-midi.",
         "Habillez-vous léger mais couvrant un minimum : les nuits de février-mars restent chaudes et humides, mais l'attente peut être longue.",
         "Prévoyez du liquide et vos documents dans une pochette sécurisée — la foule est dense aux abords et à la sortie.",
-        "Repérez votre secteur et son accès à l'avance : le Sambódromo se rejoint principalement en métro (station Praça Onze), l'accès en voiture est déconseillé.",
+        "Repérez votre secteur et son accès à l'avance : le Sambódromo se rejoint principalement en métro (station Praça Onze pour les secteurs impairs, Central do Brasil pour les secteurs pairs), l'accès en voiture est déconseillé.",
         "La sortie en fin de nuit peut être aussi longue que l'entrée : prévoyez de la marge avant tout vol ou transfert le lendemain matin.",
       ],
     },
@@ -147,7 +147,7 @@ export const article: Article = {
       items: [
         {
           q: "Où se trouve le Sambódromo de Rio ?",
-          a: "Le Sambódromo da Marquês de Sapucaí se trouve dans le centre de Rio, entre les quartiers de Praça Onze et Cidade Nova. Il se rejoint facilement en métro, station Praça Onze.",
+          a: "Le Sambódromo da Marquês de Sapucaí se trouve dans le centre de Rio, entre les quartiers de Praça Onze et Cidade Nova. Il se rejoint facilement en métro : station Praça Onze pour les secteurs impairs, Central do Brasil pour les secteurs pairs.",
         },
         {
           q: "Quelle est la différence entre arquibancada, frisa, cadeira et camarote ?",
@@ -163,7 +163,7 @@ export const article: Article = {
         },
         {
           q: "Quelle nuit du Sambódromo choisir ?",
-          a: "Les nuits du Grupo Especial (dimanche et lundi, parfois une troisième nuit selon les années) réunissent les plus grandes écoles et sont les plus demandées. Le défilé des champions, le week-end suivant, offre une ambiance très correcte pour un budget et une affluence moindres.",
+          a: "Les nuits du Grupo Especial (dimanche, lundi et mardi depuis 2025) réunissent les plus grandes écoles et sont les plus demandées. Le défilé des champions, le week-end suivant, offre une ambiance très correcte pour un budget et une affluence moindres.",
         },
         {
           q: "Combien de temps dure une nuit de défilé ?",
