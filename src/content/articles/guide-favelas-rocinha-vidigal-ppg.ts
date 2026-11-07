@@ -4,7 +4,7 @@ import hero from "@/assets/appart-ppg-vue-panoramique.jpg";
 export const article: Article = {
   slug: "guide-favelas-rocinha-vidigal-ppg",
   title: "Favelas & Communautés : Rocinha, Vidigal, PPG",
-  titleAccent: "Trois communautés, trois ambiances",
+  titleAccent: "Communautés",
   description: "Guide du Manuel Jeitinho : trois adresses par communauté — une cuisine authentique et des points de vue que peu de visiteurs connaissent.",
   category: "gastronomie",
   tags: ["favela", "Rocinha", "Vidigal", "PPG", "Pavão-Pavãozinho", "où manger", "où boire", "communauté"],
