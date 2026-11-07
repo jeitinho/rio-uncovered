@@ -31,7 +31,7 @@ export const article: Article = {
     { type: "h2", text: "Comment trouver le programme des blocos" },
     { type: "p", text: "Le programme change chaque année et les horaires bougent parfois à la dernière minute (pluie, sécurité, changement de parcours). Trois réflexes fiables :" },
     { type: "ul", items: [
-      "L'application officielle « Blocos do Rio », publiée par la mairie de Rio (Riotur) : elle liste les blocos par jour, par quartier et par horaire, avec la carte des parcours.",
+      "Le programme officiel publié par la mairie de Rio (Riotur), souvent décliné en application mobile : il liste les blocos par jour, par quartier et par horaire, avec les parcours.",
       "Le site officiel du Carnaval de rue de la mairie (riotur.rio), qui publie le calendrier complet à l'approche de l'événement.",
       "Les comptes Instagram des blocos eux-mêmes et les groupes de quartier — utile pour les changements de dernière minute.",
     ]},
@@ -42,7 +42,7 @@ export const article: Article = {
     { type: "ul", items: [
       "Cordão da Bola Preta — le bloco le plus ancien de Rio (plus d'un siècle d'existence), dans le Centro. C'est historiquement l'un des plus fréquentés du Carnaval de rue, toutes générations confondues.",
       "Simpatia É Quase Amor — le grand bloco d'Ipanema, généralement le dimanche, dans une ambiance plus « Zona Sul ».",
-      "Monobloco — un bloco de percussion réputé pour sa musicalité, très suivi dans la Zona Sul.",
+      "Monobloco — un bloco de percussion réputé pour sa musicalité, qui clôt traditionnellement la saison le dimanche suivant le Carnaval, dans le Centro.",
       "Les grands blocos historiques du centre-ville — le Centro concentre chaque année plusieurs des plus gros cortèges du Carnaval de rue, souvent en fin de matinée le week-end.",
     ]},
     { type: "bonasavoir", title: "Bon à savoir", text: "Les blocos les plus connus attirent une foule très dense, surtout en fin de matinée le week-end. Pour une ambiance plus intime, les blocos de quartier moins médiatisés — repérables via l'appli plutôt que par leur notoriété — offrent souvent une bien meilleure expérience." },
@@ -70,7 +70,7 @@ export const article: Article = {
 
     { type: "faq", items: [
       { q: "Faut-il payer pour suivre un bloco ?", a: "Non, les blocos de rue sont entièrement gratuits et ouverts à tous, contrairement au défilé payant du Sambódromo." },
-      { q: "Comment savoir quels blocos ont lieu un jour donné ?", a: "L'application officielle Blocos do Rio de la mairie (Riotur) et le site riotur.rio publient le calendrier complet, quartier par quartier, avec les horaires de concentration et de départ." },
+      { q: "Comment savoir quels blocos ont lieu un jour donné ?", a: "Le programme officiel de la mairie (Riotur), publié notamment sur le site riotur.rio, donne le calendrier complet, quartier par quartier, avec les horaires de concentration et de départ." },
       { q: "Les blocos sont-ils adaptés aux enfants ?", a: "Certains, oui — plusieurs blocos ont lieu en matinée dans la Zona Sul avec une ambiance familiale. Évitez en revanche les plus grands mégablocos du Centro avec de jeunes enfants : la densité de foule y est difficile à gérer." },
       { q: "Que faire si on se fait voler quelque chose pendant un bloco ?", a: "Mettez-vous en sécurité, ne poursuivez jamais la personne, bloquez vos cartes bancaires immédiatement et déclarez le vol à la police touristique (DEAT) — voir notre guide sécurité pour les démarches complètes." },
     ]},
