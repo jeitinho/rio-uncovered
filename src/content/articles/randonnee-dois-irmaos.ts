@@ -31,7 +31,7 @@ export const article: Article = {
     { type: "conseil", title: "Le conseil Jeitinho", text: "Partez idéalement en fin d'après-midi pour arriver au sommet avant le coucher du soleil : la lumière dorée sur Ipanema et Leblon à cette heure-là est absolument spectaculaire, bien plus qu'en pleine journée." },
 
     { type: "h2", text: "Le sentier : niveau et durée" },
-    { type: "p", text: "L'accès se fait par la communauté de Vidigal, en passant par le Mirante do Leblon avant de rejoindre le sentier principal. Comptez environ 1h à 1h30 de montée depuis l'entrée du sentier, pour un dénivelé modéré mais soutenu par endroits. Aucune expérience technique particulière n'est nécessaire, mais une bonne condition physique est recommandée." },
+    { type: "p", text: "L'accès se fait par la communauté de Vidigal : depuis l'avenue Niemeyer, on monte en moto-taxi ou en van jusqu'en haut du quartier, où commence le sentier. Comptez ensuite environ 45 minutes à 1h de montée, soit 1h à 1h30 si vous montez à pied depuis le bas de Vidigal, pour un dénivelé modéré mais soutenu par endroits. Aucune expérience technique particulière n'est nécessaire, mais une bonne condition physique est recommandée." },
     { type: "bonasavoir", title: "Bon à savoir", text: "Le sentier traverse en partie la communauté de Vidigal avant de rejoindre la nature. C'est l'occasion de découvrir un Rio différent, loin des clichés, à condition de rester respectueux et idéalement accompagné d'un guide local pour une première visite." },
 
     { type: "h2", text: "Comment organiser sa randonnée" },
@@ -39,7 +39,7 @@ export const article: Article = {
       "Privilégiez un guide local ou une excursion organisée pour une première visite, notamment pour l'accès via Vidigal.",
       "Portez des chaussures de randonnée adaptées, le sentier étant parfois glissant après la pluie.",
       "Emportez de l'eau, aucun point de ravitaillement n'étant disponible sur le parcours.",
-      "Prévoyez un sac léger, la montée étant assez physique sur la dernière portion.",
+      "Prévoyez un sac léger, la montée étant assez physique sur la dernière portion, et une lampe frontale si vous redescendez après le coucher du soleil.",
     ]},
     { type: "aeviter", title: "À éviter", text: "Ne partez jamais seul sur ce sentier sans connaissance préalable du terrain, en particulier pour l'accès via la communauté de Vidigal. Un guide local garantit une expérience sereine et respectueuse du quartier traversé." },
 
@@ -51,16 +51,16 @@ export const article: Article = {
 
     { type: "h2", text: "Une fin d'après-midi type" },
     { type: "ol", items: [
-      "15h30 — Arrivée à Vidigal et début de la montée.",
-      "16h30 — Passage par le Mirante do Leblon.",
-      "17h — Poursuite jusqu'au sentier des Dois Irmãos.",
-      "18h — Sommet et coucher de soleil sur Ipanema et Leblon.",
-      "19h30 — Redescente et verre au Mirante do Arvrão ou au Bar da Laje.",
+      "15h30 — Arrivée au pied de Vidigal, puis moto-taxi ou van jusqu'en haut de la communauté.",
+      "16h — Départ du sentier des Dois Irmãos.",
+      "17h — Arrivée au sommet, avec de la marge avant le coucher du soleil.",
+      "Vers 18h — Coucher de soleil sur Ipanema et Leblon (plus tôt en hiver : vérifiez l'heure exacte le jour même).",
+      "Ensuite — Redescente à la lampe frontale, puis verre au Mirante do Arvrão ou au Bar da Laje.",
     ]},
 
     { type: "faq", items: [
       { q: "Faut-il un guide pour randonner aux Dois Irmãos ?", a: "Ce n'est pas obligatoire mais fortement recommandé, notamment pour l'accès via la communauté de Vidigal, afin de garantir une expérience sereine et respectueuse du quartier." },
-      { q: "Combien de temps dure la randonnée aux Dois Irmãos ?", a: "Comptez environ 1h à 1h30 de montée, pour un dénivelé modéré ne nécessitant pas d'expérience technique particulière." },
+      { q: "Combien de temps dure la randonnée aux Dois Irmãos ?", a: "Comptez environ 45 minutes à 1h de montée depuis le haut de Vidigal (1h à 1h30 depuis le bas du quartier), pour un dénivelé modéré ne nécessitant pas d'expérience technique particulière." },
       { q: "Quel est le meilleur moment pour randonner aux Dois Irmãos ?", a: "La fin d'après-midi, pour arriver au sommet avant le coucher du soleil et profiter de la lumière dorée sur Ipanema et Leblon." },
       { q: "Peut-on combiner cette randonnée avec un dîner à Vidigal ?", a: "Oui, plusieurs bars et rooftops de Vidigal, comme le Mirante do Arvrão, permettent de prolonger la soirée après la randonnée avec une vue tout aussi impressionnante." },
     ]},
