@@ -78,7 +78,7 @@ export const article: Article = {
     {
       type: "p",
       text:
-        "Institution depuis plus de 20 ans, nichée dans une ruelle discrète en plein cœur de Lapa. Samba de roda authentique, ambiance de rue et public fidèle, entre habitués et curieux de passage. Un classique de tous les jours, dès 21h.",
+        "Institution depuis plus de 20 ans, nichée dans une ruelle discrète en plein cœur de Lapa. Samba de roda authentique, ambiance de rue et public fidèle, entre habitués et curieux de passage. Un classique avec de la musique plusieurs soirs par semaine, en général dès 21h : vérifiez l'agenda du jour.",
     },
 
     {
@@ -88,7 +88,7 @@ export const article: Article = {
     {
       type: "p",
       text:
-        "Référence du pagode carioca, dans une ambiance de quartier bien plus intime que Beco do Rato. Musiciens talentueux et énergie garantie jusqu'au petit matin. Tous les jours, dès 22h.",
+        "Référence du pagode carioca, dans une ambiance de quartier bien plus intime que Beco do Rato. Musiciens talentueux et énergie garantie jusqu'au petit matin. Plusieurs soirs par semaine, souvent dès 22h : vérifiez l'agenda du jour.",
     },
 
     {
