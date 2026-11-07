@@ -35,8 +35,8 @@ export const article: Article = {
     ]},
 
     { type: "h3", text: "2. Le Sambodrome — le spectacle des écoles de samba" },
-    { type: "p", text: "Depuis 2027, le Grupo Especial se déroule sur trois nuits (dimanche, lundi et mardi) plutôt que deux : quatre des douze grandes écoles défilent chaque soir. C'est un show de niveau olympique. Places à partir de 30 € (secteurs 12/13, populaires), jusqu'à 500 € et plus (camarotes premium, vue centrale). Réservez au moins 3 mois à l'avance." },
-    { type: "conseil", title: "Le conseil Jeitinho", text: "Le meilleur rapport qualité-prix : le secteur 9 (Frisas). Vue frontale, ambiance, prix corrects. Évitez le secteur 13 si vous voulez vraiment voir : trop éloigné." },
+    { type: "p", text: "Depuis 2025, le Grupo Especial se déroule sur trois nuits (dimanche, lundi et mardi) plutôt que deux : quatre des douze grandes écoles défilent chaque soir. C'est un show de niveau olympique. Places à partir de 30 € (secteurs 12/13, populaires), jusqu'à 500 € et plus (camarotes premium, vue centrale). Réservez au moins 3 mois à l'avance." },
+    { type: "conseil", title: "Le conseil Jeitinho", text: "Le meilleur rapport qualité-prix : le secteur 9, au centre de l'avenue, avec places numérotées. Vue frontale, ambiance, prix corrects. Évitez le secteur 13 si vous voulez vraiment voir : trop éloigné." },
 
     { type: "h3", text: "3. Les camarotes — le Carnaval version VIP" },
     { type: "p", text: "Camarote da Brahma, Nº1, Allegria : des espaces open bar avec vue sur le Sambodrome, DJs, célébrités. À partir de 400 € par nuit et par personne. Pour qui veut un Carnaval « festival » plus qu'« observation »." },
@@ -47,9 +47,9 @@ export const article: Article = {
     { type: "h2", text: "Se déplacer pendant le Carnaval" },
     { type: "ul", items: [
       "Uber : disponible mais surtaxé (parfois x3). Prévoyez.",
-      "Métro : fonctionne 24/24 pendant le Carnaval — c'est votre meilleur ami.",
+      "Métro : fonctionne en continu pendant les grandes nuits du Carnaval (vérifiez les horaires annoncés) — c'est votre meilleur ami.",
       "Blocos : allez-y à pied si possible ; les rues sont fermées.",
-      "Sambodrome : uniquement en métro (station Praça Onze). Prévoir 45 min avant l'entrée.",
+      "Sambodrome : le plus simple est le métro — station Praça Onze pour les secteurs impairs, Central do Brasil pour les secteurs pairs. Prévoir 45 min avant l'entrée.",
     ]},
     { type: "aeviter", title: "À éviter", text: "Voiture de location. Circulation impossible, parkings introuvables, risque de vandalisme. Uber + métro + marche couvrent 100 % des besoins." },
 
