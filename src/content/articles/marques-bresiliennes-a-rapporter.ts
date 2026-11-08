@@ -166,14 +166,14 @@ export const article: Article = {
     {
       type: "p",
       text:
-        "Le combo 100% carioca : des lunettes de soleil, un maillot de Flamengo et des Kenner aux pieds. De quoi être prêt pour n'importe quel rôle carioca, de la plage à la soirée entre amis — voir notre guide du <a href=\"/blog/guide-maracana\">Maracanã</a> pour comprendre pourquoi le maillot compte autant ici.",
+        "Le combo 100% carioca : des lunettes de soleil, un maillot de Flamengo et des Kenner aux pieds. De quoi être prêt pour n'importe quel rolê carioca, de la plage à la soirée entre amis — voir notre guide du <a href=\"/blog/guide-maracana\">Maracanã</a> pour comprendre pourquoi le maillot compte autant ici.",
     },
 
     {
       type: "bonasavoir",
       title: "Bon à savoir",
       text:
-        "Toutes ces marques sont authentiques et faciles à trouver dans les grands centres commerciaux. Les tailles peuvent différer du standard européen : pensez à essayer avant d'acheter. Un dispositif de remboursement de TVA (Tax Free) existe pour les achats significatifs dans les boutiques participantes : renseignez-vous en boutique sur les conditions et pensez à faire la démarche avant votre départ à l'aéroport.",
+        "Toutes ces marques sont authentiques et faciles à trouver dans les grands centres commerciaux. Les tailles peuvent différer du standard européen : pensez à essayer avant d'acheter. Contrairement à l'Europe, le Brésil n'a pas de système de détaxe généralisé pour les touristes étrangers : ne comptez pas sur un remboursement de taxes à l'aéroport, et si une boutique vous parle d'un dispositif « tax free », demandez-en précisément les conditions avant d'acheter.",
     },
 
     {
@@ -224,7 +224,7 @@ export const article: Article = {
         {
           q: "Peut-on faire un remboursement de TVA sur ces achats ?",
           a:
-            "Oui, pour les achats significatifs réalisés dans les boutiques participant au programme Tax Free — renseignez-vous en boutique sur le seuil et les conditions en vigueur, et faites la démarche avant votre départ à l'aéroport.",
+            "Ne comptez pas dessus : le Brésil n'a pas de système de détaxe généralisé pour les touristes comme en Europe. Si une boutique mentionne un dispositif « tax free », demandez-en précisément les conditions avant d'acheter.",
         },
       ],
     },
