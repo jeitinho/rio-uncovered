@@ -66,7 +66,7 @@ export const article: Article = {
     {
       type: "p",
       text:
-        "Fluminense est le plus ancien des quatre, fondé en 1908 dans le quartier chic de Laranjeiras. Vasco da Gama naît en 1898 comme club d'aviron avant de développer sa section football, porté par la communauté portugaise du quartier de São Cristóvão. Botafogo, sous sa forme actuelle, résulte de la fusion en 1942 de deux clubs distincts nés à la fin du XIXe siècle dans le quartier du même nom. Flamengo, enfin, est fondé comme club d'aviron en 1895, mais ne crée sa section football qu'en 1911, en partie avec des joueurs venus de Fluminense après un désaccord avec les dirigeants de ce dernier.",
+        "Fluminense est le plus ancien des quatre en tant que club de football, fondé en 1902 dans le quartier chic de Laranjeiras. Vasco da Gama naît en 1898 comme club d'aviron avant de développer sa section football, porté par la communauté portugaise du quartier de São Cristóvão. Botafogo, sous sa forme actuelle, résulte de la fusion en 1942 de deux clubs distincts nés en 1894 (aviron) et en 1904 (football) dans le quartier du même nom. Flamengo, enfin, est fondé comme club d'aviron en 1895, mais ne crée sa section football qu'en 1911, en partie avec des joueurs venus de Fluminense après un désaccord avec les dirigeants de ce dernier.",
     },
 
     {
@@ -101,7 +101,7 @@ export const article: Article = {
     {
       type: "p",
       text:
-        "Fondé en 1908 dans le quartier huppé de Laranjeiras, Fluminense a longtemps porté l'image d'un club de l'élite carioca, quand le football était encore une pratique réservée à une bourgeoisie blanche. Ses couleurs, le grenat, le vert et le blanc, sont reprises d'une composition inspirée de son hymne.",
+        "Fondé en 1902 dans le quartier huppé de Laranjeiras, Fluminense a longtemps porté l'image d'un club de l'élite carioca, quand le football était encore une pratique réservée à une bourgeoisie blanche. Ses trois couleurs, le grenat, le vert et le blanc, lui valent le surnom de « Tricolor ».",
     },
 
     {
@@ -234,7 +234,7 @@ export const article: Article = {
     {
       type: "p",
       text:
-        "À Rio, l'hymne d'un club n'est pas un simple détail protocolaire : il est souvent chanté en intégralité et à pleine voix par les torcidas, avant même le coup d'envoi. Les couleurs de Fluminense, par exemple, sont directement inspirées de la description de son propre hymne. Ces chants font partie du folklore de chaque club, au même titre que les surnoms et les couleurs.",
+        "À Rio, l'hymne d'un club n'est pas un simple détail protocolaire : il est souvent chanté en intégralité et à pleine voix par les torcidas, avant même le coup d'envoi. Plusieurs de ces hymnes populaires, dont ceux de Flamengo, Fluminense, Vasco et Botafogo, ont été composés dans les années 1940 par Lamartine Babo, grand nom de la musique populaire carioca. Ces chants font partie du folklore de chaque club, au même titre que les surnoms et les couleurs.",
     },
 
     {
