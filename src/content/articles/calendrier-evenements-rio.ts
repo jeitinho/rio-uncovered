@@ -134,7 +134,7 @@ export const article: Article = {
     {
       type: "p",
       text:
-        "Période de vacances scolaires au Brésil comme en France, avec une affluence en légère hausse, mais sans grand événement à date fixe à signaler ici.",
+        "Juillet correspond aux vacances scolaires d'hiver au Brésil, et juillet-août aux grandes vacances en Europe : l'affluence est en légère hausse, mais sans grand événement à date fixe à signaler ici.",
     },
     {
       type: "h3",
