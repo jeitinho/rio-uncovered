@@ -103,7 +103,7 @@ export const article: Article = {
     {
       type: "p",
       text:
-        "Le plus grand marché populaire de Rio, en Zona Norte. On y vient moins pour une liste précise d'achats que pour une immersion complète dans le Rio du quotidien : vêtements, musique, produits afro-brésiliens, décoration, accessoires de carnaval, épices et street food se mélangent sur plusieurs rues.",
+        "Le plus grand marché populaire de Rio, en Zona Norte, autour du célèbre Mercadão de Madureira. On y vient moins pour une liste précise d'achats que pour une immersion complète dans le Rio du quotidien : vêtements, musique, produits afro-brésiliens, décoration, accessoires de carnaval, épices et street food se mélangent sur plusieurs rues.",
     },
     {
       type: "p",
@@ -145,7 +145,7 @@ export const article: Article = {
     {
       type: "p",
       text:
-        "Demandez toujours une « estampa tailandesa ». C'est la meilleure finition disponible sur les répliques de maillots de football, avec un prix moyen d'environ 60 R$ (soit environ 10 €) — largement en dessous des maillots officiels vendus en boutique, qui dépassent souvent les 300 R$.",
+        "Demandez toujours une « camisa tailandesa » (version « thaïlandaise »). C'est la meilleure finition disponible sur les répliques de maillots de football, avec un prix moyen d'environ 60 R$ (soit environ 10 €) — largement en dessous des maillots officiels vendus en boutique, qui dépassent souvent les 300 R$.",
     },
     {
       type: "bonasavoir",
@@ -214,7 +214,7 @@ export const article: Article = {
         {
           q: "Comment reconnaître un maillot de football de bonne qualité sur un marché ?",
           a:
-            "Demandez systématiquement une « estampa tailandesa », la meilleure finition disponible pour les répliques non officielles, à un prix d'environ 60 R$.",
+            "Demandez systématiquement une « camisa tailandesa » (version « thaïlandaise »), la meilleure finition disponible pour les répliques non officielles, à un prix d'environ 60 R$.",
         },
         {
           q: "Ces marchés sont-ils sûrs pour les touristes ?",
