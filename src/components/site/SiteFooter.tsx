@@ -1,6 +1,6 @@
 import { Instagram, ExternalLink, Mail } from "lucide-react";
 import logo from "@/assets/jeitinho-logo.png";
-import { getCategoriesByPillarIn } from "@/content/localized";
+import { getCategoriesByPillarIn } from "@/content/localized-categories";
 import { CONCIERGERIE_URL, CONTACT_EMAIL, INSTAGRAM_HANDLE, INSTAGRAM_URL } from "@/lib/site";
 import { conciergerieUrl } from "@/lib/localize-links";
 import { useLocale } from "@/i18n/locale";

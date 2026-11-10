@@ -1,7 +1,7 @@
 import { Menu, X, ChevronDown, ExternalLink } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import logo from "@/assets/jeitinho-logo.png";
-import { getCategoriesByPillarIn } from "@/content/localized";
+import { getCategoriesByPillarIn } from "@/content/localized-categories";
 import { CONCIERGERIE_BOOK_URL } from "@/lib/site";
 import { conciergerieUrl } from "@/lib/localize-links";
 import { useLocale } from "@/i18n/locale";
