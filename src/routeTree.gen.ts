@@ -9,39 +9,29 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as McpRouteImport } from './routes/mcp'
-import { Route as PartenairesRouteImport } from './routes/partenaires'
-import { Route as RssDotxmlRouteImport } from './routes/rss[.]xml'
-import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as Char123LocaleChar125RouteImport } from './routes/{-$locale}'
-import { Route as Char91DotmcpChar93ListToolsRouteImport } from './routes/[.mcp]/list-tools'
-import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } from './routes/[.well-known]/oauth-protected-resource'
-import { Route as ApiPartenairesRouteImport } from './routes/api.partenaires'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as RssDotxmlRouteImport } from './routes/rss[.]xml'
+import { Route as PartenairesRouteImport } from './routes/partenaires'
+import { Route as McpRouteImport } from './routes/mcp'
 import { Route as Char123LocaleChar125IndexRouteImport } from './routes/{-$locale}/index'
-import { Route as Char123LocaleChar125AProposRouteImport } from './routes/{-$locale}/a-propos'
-import { Route as Char123LocaleChar125ContactRouteImport } from './routes/{-$locale}/contact'
 import { Route as Char123LocaleChar125ManuelJeitinhoRouteImport } from './routes/{-$locale}/manuel-jeitinho'
-import { Route as Char91DotmcpChar93InvokeToolToolRouteImport } from './routes/[.mcp]/invoke-tool/$tool'
-import { Route as Char123LocaleChar125AuteursIndexRouteImport } from './routes/{-$locale}/auteurs.index'
-import { Route as Char123LocaleChar125AuteursSlugRouteImport } from './routes/{-$locale}/auteurs.$slug'
+import { Route as Char123LocaleChar125ContactRouteImport } from './routes/{-$locale}/contact'
+import { Route as Char123LocaleChar125AProposRouteImport } from './routes/{-$locale}/a-propos'
+import { Route as ApiPartenairesRouteImport } from './routes/api.partenaires'
+import { Route as Char91DotwellKnownChar93OauthProtectedResourceRouteImport } from './routes/[.well-known]/oauth-protected-resource'
+import { Route as Char91DotmcpChar93ListToolsRouteImport } from './routes/[.mcp]/list-tools'
 import { Route as Char123LocaleChar125BlogIndexRouteImport } from './routes/{-$locale}/blog.index'
-import { Route as Char123LocaleChar125BlogSlugRouteImport } from './routes/{-$locale}/blog.$slug'
+import { Route as Char123LocaleChar125AuteursIndexRouteImport } from './routes/{-$locale}/auteurs.index'
 import { Route as Char123LocaleChar125BlogRechercheRouteImport } from './routes/{-$locale}/blog.recherche'
+import { Route as Char123LocaleChar125BlogSlugRouteImport } from './routes/{-$locale}/blog.$slug'
+import { Route as Char123LocaleChar125AuteursSlugRouteImport } from './routes/{-$locale}/auteurs.$slug'
+import { Route as Char91DotmcpChar93InvokeToolToolRouteImport } from './routes/[.mcp]/invoke-tool/$tool'
 import { Route as Char123LocaleChar125BlogCategorieSlugRouteImport } from './routes/{-$locale}/blog.categorie.$slug'
 
-const McpRoute = McpRouteImport.update({
-  id: '/mcp',
-  path: '/mcp',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PartenairesRoute = PartenairesRouteImport.update({
-  id: '/partenaires',
-  path: '/partenaires',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const RssDotxmlRoute = RssDotxmlRouteImport.update({
-  id: '/rss.xml',
-  path: '/rss.xml',
+const Char123LocaleChar125Route = Char123LocaleChar125RouteImport.update({
+  id: '/{-$locale}',
+  path: '/{-$locale}',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
@@ -49,26 +39,19 @@ const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
-const Char123LocaleChar125Route = Char123LocaleChar125RouteImport.update({
-  id: '/{-$locale}',
-  path: '/{-$locale}',
+const RssDotxmlRoute = RssDotxmlRouteImport.update({
+  id: '/rss.xml',
+  path: '/rss.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
-const Char91DotmcpChar93ListToolsRoute =
-  Char91DotmcpChar93ListToolsRouteImport.update({
-    id: '/.mcp/list-tools',
-    path: '/.mcp/list-tools',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const Char91DotwellKnownChar93OauthProtectedResourceRoute =
-  Char91DotwellKnownChar93OauthProtectedResourceRouteImport.update({
-    id: '/.well-known/oauth-protected-resource',
-    path: '/.well-known/oauth-protected-resource',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const ApiPartenairesRoute = ApiPartenairesRouteImport.update({
-  id: '/api/partenaires',
-  path: '/api/partenaires',
+const PartenairesRoute = PartenairesRouteImport.update({
+  id: '/partenaires',
+  path: '/partenaires',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const McpRoute = McpRouteImport.update({
+  id: '/mcp',
+  path: '/mcp',
   getParentRoute: () => rootRouteImport,
 } as any)
 const Char123LocaleChar125IndexRoute =
@@ -77,10 +60,10 @@ const Char123LocaleChar125IndexRoute =
     path: '/',
     getParentRoute: () => Char123LocaleChar125Route,
   } as any)
-const Char123LocaleChar125AProposRoute =
-  Char123LocaleChar125AProposRouteImport.update({
-    id: '/a-propos',
-    path: '/a-propos',
+const Char123LocaleChar125ManuelJeitinhoRoute =
+  Char123LocaleChar125ManuelJeitinhoRouteImport.update({
+    id: '/manuel-jeitinho',
+    path: '/manuel-jeitinho',
     getParentRoute: () => Char123LocaleChar125Route,
   } as any)
 const Char123LocaleChar125ContactRoute =
@@ -89,17 +72,34 @@ const Char123LocaleChar125ContactRoute =
     path: '/contact',
     getParentRoute: () => Char123LocaleChar125Route,
   } as any)
-const Char123LocaleChar125ManuelJeitinhoRoute =
-  Char123LocaleChar125ManuelJeitinhoRouteImport.update({
-    id: '/manuel-jeitinho',
-    path: '/manuel-jeitinho',
+const Char123LocaleChar125AProposRoute =
+  Char123LocaleChar125AProposRouteImport.update({
+    id: '/a-propos',
+    path: '/a-propos',
     getParentRoute: () => Char123LocaleChar125Route,
   } as any)
-const Char91DotmcpChar93InvokeToolToolRoute =
-  Char91DotmcpChar93InvokeToolToolRouteImport.update({
-    id: '/.mcp/invoke-tool/$tool',
-    path: '/.mcp/invoke-tool/$tool',
+const ApiPartenairesRoute = ApiPartenairesRouteImport.update({
+  id: '/api/partenaires',
+  path: '/api/partenaires',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const Char91DotwellKnownChar93OauthProtectedResourceRoute =
+  Char91DotwellKnownChar93OauthProtectedResourceRouteImport.update({
+    id: '/.well-known/oauth-protected-resource',
+    path: '/.well-known/oauth-protected-resource',
     getParentRoute: () => rootRouteImport,
+  } as any)
+const Char91DotmcpChar93ListToolsRoute =
+  Char91DotmcpChar93ListToolsRouteImport.update({
+    id: '/.mcp/list-tools',
+    path: '/.mcp/list-tools',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const Char123LocaleChar125BlogIndexRoute =
+  Char123LocaleChar125BlogIndexRouteImport.update({
+    id: '/blog/',
+    path: '/blog/',
+    getParentRoute: () => Char123LocaleChar125Route,
   } as any)
 const Char123LocaleChar125AuteursIndexRoute =
   Char123LocaleChar125AuteursIndexRouteImport.update({
@@ -107,16 +107,10 @@ const Char123LocaleChar125AuteursIndexRoute =
     path: '/auteurs/',
     getParentRoute: () => Char123LocaleChar125Route,
   } as any)
-const Char123LocaleChar125AuteursSlugRoute =
-  Char123LocaleChar125AuteursSlugRouteImport.update({
-    id: '/auteurs/$slug',
-    path: '/auteurs/$slug',
-    getParentRoute: () => Char123LocaleChar125Route,
-  } as any)
-const Char123LocaleChar125BlogIndexRoute =
-  Char123LocaleChar125BlogIndexRouteImport.update({
-    id: '/blog/',
-    path: '/blog/',
+const Char123LocaleChar125BlogRechercheRoute =
+  Char123LocaleChar125BlogRechercheRouteImport.update({
+    id: '/blog/recherche',
+    path: '/blog/recherche',
     getParentRoute: () => Char123LocaleChar125Route,
   } as any)
 const Char123LocaleChar125BlogSlugRoute =
@@ -125,11 +119,17 @@ const Char123LocaleChar125BlogSlugRoute =
     path: '/blog/$slug',
     getParentRoute: () => Char123LocaleChar125Route,
   } as any)
-const Char123LocaleChar125BlogRechercheRoute =
-  Char123LocaleChar125BlogRechercheRouteImport.update({
-    id: '/blog/recherche',
-    path: '/blog/recherche',
+const Char123LocaleChar125AuteursSlugRoute =
+  Char123LocaleChar125AuteursSlugRouteImport.update({
+    id: '/auteurs/$slug',
+    path: '/auteurs/$slug',
     getParentRoute: () => Char123LocaleChar125Route,
+  } as any)
+const Char91DotmcpChar93InvokeToolToolRoute =
+  Char91DotmcpChar93InvokeToolToolRouteImport.update({
+    id: '/.mcp/invoke-tool/$tool',
+    path: '/.mcp/invoke-tool/$tool',
+    getParentRoute: () => rootRouteImport,
   } as any)
 const Char123LocaleChar125BlogCategorieSlugRoute =
   Char123LocaleChar125BlogCategorieSlugRouteImport.update({
@@ -280,25 +280,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/mcp': {
-      id: '/mcp'
-      path: '/mcp'
-      fullPath: '/mcp'
-      preLoaderRoute: typeof McpRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/partenaires': {
-      id: '/partenaires'
-      path: '/partenaires'
-      fullPath: '/partenaires'
-      preLoaderRoute: typeof PartenairesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/rss.xml': {
-      id: '/rss.xml'
-      path: '/rss.xml'
-      fullPath: '/rss.xml'
-      preLoaderRoute: typeof RssDotxmlRouteImport
+    '/{-$locale}': {
+      id: '/{-$locale}'
+      path: '/{-$locale}'
+      fullPath: '/{-$locale}'
+      preLoaderRoute: typeof Char123LocaleChar125RouteImport
       parentRoute: typeof rootRouteImport
     }
     '/sitemap.xml': {
@@ -308,32 +294,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/{-$locale}': {
-      id: '/{-$locale}'
-      path: '/{-$locale}'
-      fullPath: '/{-$locale}'
-      preLoaderRoute: typeof Char123LocaleChar125RouteImport
+    '/rss.xml': {
+      id: '/rss.xml'
+      path: '/rss.xml'
+      fullPath: '/rss.xml'
+      preLoaderRoute: typeof RssDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/.mcp/list-tools': {
-      id: '/.mcp/list-tools'
-      path: '/.mcp/list-tools'
-      fullPath: '/.mcp/list-tools'
-      preLoaderRoute: typeof Char91DotmcpChar93ListToolsRouteImport
+    '/partenaires': {
+      id: '/partenaires'
+      path: '/partenaires'
+      fullPath: '/partenaires'
+      preLoaderRoute: typeof PartenairesRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/.well-known/oauth-protected-resource': {
-      id: '/.well-known/oauth-protected-resource'
-      path: '/.well-known/oauth-protected-resource'
-      fullPath: '/.well-known/oauth-protected-resource'
-      preLoaderRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/api/partenaires': {
-      id: '/api/partenaires'
-      path: '/api/partenaires'
-      fullPath: '/api/partenaires'
-      preLoaderRoute: typeof ApiPartenairesRouteImport
+    '/mcp': {
+      id: '/mcp'
+      path: '/mcp'
+      fullPath: '/mcp'
+      preLoaderRoute: typeof McpRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/{-$locale}/': {
@@ -343,11 +322,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof Char123LocaleChar125IndexRouteImport
       parentRoute: typeof Char123LocaleChar125Route
     }
-    '/{-$locale}/a-propos': {
-      id: '/{-$locale}/a-propos'
-      path: '/a-propos'
-      fullPath: '/{-$locale}/a-propos'
-      preLoaderRoute: typeof Char123LocaleChar125AProposRouteImport
+    '/{-$locale}/manuel-jeitinho': {
+      id: '/{-$locale}/manuel-jeitinho'
+      path: '/manuel-jeitinho'
+      fullPath: '/{-$locale}/manuel-jeitinho'
+      preLoaderRoute: typeof Char123LocaleChar125ManuelJeitinhoRouteImport
       parentRoute: typeof Char123LocaleChar125Route
     }
     '/{-$locale}/contact': {
@@ -357,19 +336,40 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof Char123LocaleChar125ContactRouteImport
       parentRoute: typeof Char123LocaleChar125Route
     }
-    '/{-$locale}/manuel-jeitinho': {
-      id: '/{-$locale}/manuel-jeitinho'
-      path: '/manuel-jeitinho'
-      fullPath: '/{-$locale}/manuel-jeitinho'
-      preLoaderRoute: typeof Char123LocaleChar125ManuelJeitinhoRouteImport
+    '/{-$locale}/a-propos': {
+      id: '/{-$locale}/a-propos'
+      path: '/a-propos'
+      fullPath: '/{-$locale}/a-propos'
+      preLoaderRoute: typeof Char123LocaleChar125AProposRouteImport
       parentRoute: typeof Char123LocaleChar125Route
     }
-    '/.mcp/invoke-tool/$tool': {
-      id: '/.mcp/invoke-tool/$tool'
-      path: '/.mcp/invoke-tool/$tool'
-      fullPath: '/.mcp/invoke-tool/$tool'
-      preLoaderRoute: typeof Char91DotmcpChar93InvokeToolToolRouteImport
+    '/api/partenaires': {
+      id: '/api/partenaires'
+      path: '/api/partenaires'
+      fullPath: '/api/partenaires'
+      preLoaderRoute: typeof ApiPartenairesRouteImport
       parentRoute: typeof rootRouteImport
+    }
+    '/.well-known/oauth-protected-resource': {
+      id: '/.well-known/oauth-protected-resource'
+      path: '/.well-known/oauth-protected-resource'
+      fullPath: '/.well-known/oauth-protected-resource'
+      preLoaderRoute: typeof Char91DotwellKnownChar93OauthProtectedResourceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/.mcp/list-tools': {
+      id: '/.mcp/list-tools'
+      path: '/.mcp/list-tools'
+      fullPath: '/.mcp/list-tools'
+      preLoaderRoute: typeof Char91DotmcpChar93ListToolsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/{-$locale}/blog/': {
+      id: '/{-$locale}/blog/'
+      path: '/blog'
+      fullPath: '/{-$locale}/blog/'
+      preLoaderRoute: typeof Char123LocaleChar125BlogIndexRouteImport
+      parentRoute: typeof Char123LocaleChar125Route
     }
     '/{-$locale}/auteurs/': {
       id: '/{-$locale}/auteurs/'
@@ -378,18 +378,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof Char123LocaleChar125AuteursIndexRouteImport
       parentRoute: typeof Char123LocaleChar125Route
     }
-    '/{-$locale}/auteurs/$slug': {
-      id: '/{-$locale}/auteurs/$slug'
-      path: '/auteurs/$slug'
-      fullPath: '/{-$locale}/auteurs/$slug'
-      preLoaderRoute: typeof Char123LocaleChar125AuteursSlugRouteImport
-      parentRoute: typeof Char123LocaleChar125Route
-    }
-    '/{-$locale}/blog/': {
-      id: '/{-$locale}/blog/'
-      path: '/blog'
-      fullPath: '/{-$locale}/blog/'
-      preLoaderRoute: typeof Char123LocaleChar125BlogIndexRouteImport
+    '/{-$locale}/blog/recherche': {
+      id: '/{-$locale}/blog/recherche'
+      path: '/blog/recherche'
+      fullPath: '/{-$locale}/blog/recherche'
+      preLoaderRoute: typeof Char123LocaleChar125BlogRechercheRouteImport
       parentRoute: typeof Char123LocaleChar125Route
     }
     '/{-$locale}/blog/$slug': {
@@ -399,12 +392,19 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof Char123LocaleChar125BlogSlugRouteImport
       parentRoute: typeof Char123LocaleChar125Route
     }
-    '/{-$locale}/blog/recherche': {
-      id: '/{-$locale}/blog/recherche'
-      path: '/blog/recherche'
-      fullPath: '/{-$locale}/blog/recherche'
-      preLoaderRoute: typeof Char123LocaleChar125BlogRechercheRouteImport
+    '/{-$locale}/auteurs/$slug': {
+      id: '/{-$locale}/auteurs/$slug'
+      path: '/auteurs/$slug'
+      fullPath: '/{-$locale}/auteurs/$slug'
+      preLoaderRoute: typeof Char123LocaleChar125AuteursSlugRouteImport
       parentRoute: typeof Char123LocaleChar125Route
+    }
+    '/.mcp/invoke-tool/$tool': {
+      id: '/.mcp/invoke-tool/$tool'
+      path: '/.mcp/invoke-tool/$tool'
+      fullPath: '/.mcp/invoke-tool/$tool'
+      preLoaderRoute: typeof Char91DotmcpChar93InvokeToolToolRouteImport
+      parentRoute: typeof rootRouteImport
     }
     '/{-$locale}/blog/categorie/$slug': {
       id: '/{-$locale}/blog/categorie/$slug'
